@@ -1,11 +1,13 @@
 import "./Home.css";
-import React, { useEffect, useState } from "react";
+import React, { useEffect,} from "react";
+
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 function Home() {
- useEffect(() => {AOS.init({duration: 2000});},
- []);
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="App" style={{ backgroundColor: "#FAEAEB" }}>
       <header className="App-header">
@@ -161,6 +163,7 @@ function Home() {
             >
               {/* <Link to="/about">Read more</Link>  */}
             </p>
+            
           </p>
           <div
             style={{
@@ -169,7 +172,6 @@ function Home() {
               height: "100px",
               width: "600px",
               bottom: "100px",
-              
             }}
           >
             {" "}
@@ -177,54 +179,81 @@ function Home() {
               src={require("./family.png")}
               alt="img"
               className="background-image"
-             data-aos="zoom-in"
+              data-aos="zoom-in"
             />
+            <div
+              style={{
+                width: "100%",
+                height: "150px",
+                backgroundColor: "#FAEAEB",
+              }}
+            ></div>
           </div>
+          
           <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+          <div>
+          <h1
+            style={{
+              position: "absolute",
+              left: "40%",
+              top: "1700px",
+              fontSize: "3.5rem",
+              fontFamily: "jaldi",
+              color: "#007BC0",
+            }}
+          >
+            OUR SERVICES
+          </h1>
+          <p>
+            {" "}
+            <img
+              src={require("./machine.png")}
+              alt="img"
+              className="machine"
+              data-aos="fade-right"
+            />
+          
+            {" "}
+            <img
+              src={require("./itroom.png")}
+              alt="img"
+              className="itroom"
+              data-aos="fade-up"
+            />
+          
+<p>
+          
+            {" "}
+            <img
+              src={require("./inovation.png")}
+              alt="img"
+              className="inovation"
+              data-aos="fade-left"
+            />
+            </p>
+          </p>
         </div>
         <div>
-          <h1 style={{ fontSize: "3rem" }}> OUR PROMISES TO YOU</h1>
+          <h1 style={{ fontSize: "2.8rem",  }}> OUR PROMISES TO YOU</h1>
           <br />
           <div className="imageAndTextContainer">
             <img
-              style={{ marginTop: "73px", width: "650px",height:'600px' }}
+              style={{ marginTop: "73px", width: "650px", height: "600px" }}
               src={require("./teamwork.png")}
               alt="img"
               className="background-image2"
-              data-aos= "fade-right"
+              data-aos="fade-right"
             />
+            </div>
             <div className="textContainer">
               <p
                 style={{
-                  position: "relative",
+                  position: "absolute",
                   fontSize: "1.7rem",
                   textAlign: "left",
-                  marginLeft: "30px",
-                  marginTop: "50px",
+                  marginLeft: "48%",
+                  bottom: "100px",
+                  top: "337%",
                   fontFamily: "jaldi",
                 }}
               >
@@ -360,18 +389,30 @@ function Home() {
           D<span style={{ color: "#FFFFFF" }}>ELERVING </span>
           <span>S</span>
           <span style={{ color: "#ffffff" }}>OLUTIONS</span>
-          
-         
         </p>
-        <p style={{position:'absolute',width:'400px',fontFamily:'jaldi',fontSize:'1.7rem',marginTop:'170px',marginLeft:'150px'}}>
-          Welcome to HIGHER SYSTEMS, your premier destination for custom software development, IT consulting, cloud services.
-          </p>
-          <img
-              style={{ marginTop: "30px",marginLeft:'500px', width: "450px",height:'350px' }}
-              src={require("./contact.png")}
-              alt="img"
-              
-            />
+        <p
+          style={{
+            position: "absolute",
+            width: "400px",
+            fontFamily: "jaldi",
+            fontSize: "1.7rem",
+            marginTop: "170px",
+            marginLeft: "150px",
+          }}
+        >
+          Welcome to HIGHER SYSTEMS, your premier destination for custom
+          software development, IT consulting, cloud services.
+        </p>
+        <img
+          style={{
+            marginTop: "30px",
+            marginLeft: "500px",
+            width: "450px",
+            height: "350px",
+          }}
+          src={require("./contact.png")}
+          alt="img"
+        />
       </div>
       <div className="footer">Higher Systems | all Rights Reserved</div>
     </div>

@@ -153,3 +153,34 @@
     font-size: 1.5rem;
     color: black;
   }
+  .machine{
+    position: relative;
+    right: 280px;
+    width:27%;
+    height:500px;
+    top:518px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .itroom{
+    position:relative;
+    right:230px;
+    top:518px;
+    width:27%;
+    height:500px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    ;
+
+  }
+  .inovation{
+    position:relative;
+    left:30%;
+    bottom:51px;
+    width:27%;
+    height:500px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    ;
+  }
