@@ -1,27 +1,31 @@
-
-.App {
-  text-align: center;
+.ham-bar{
+  position: relative;
+    display: flex;
+    background-color:  hwb(120 0% 98% / 0.732);
+    max-width: 100%;
+    height:'100px';
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: hwb(120 0% 98%);
-  min-height: 100px;
+.class-navbar {
+  position: fixed;
+  background-color:rgba(0, 0, 0, 0.186);
+  width: 100%;
+  min-height: 120px;
   display: flex;
   flex-direction: row;
   align-items: center;
   font-size: calc(20px);
-  color: white;
+  
+  top: 0px;
+  transition: all 0.4s ;
+}
+.scrolled {
+  background-color: #20434F;
+}
+  
+.hamburger-menu{
+  display: none;
+  position: fixed;
+  top: 0;
 }
 
 .ptag {
@@ -40,14 +44,19 @@
     transform: rotate(360deg);
   }
 }
-
+.hom-overlay-text{
+  color:#FFFFFF;
+  font-family: jaldi;
+  font-size: 7rem;
+  
+}
 .home {
   border: "3px solid white";
 }
 /* NavigationBar.css */
 
 .navbar {
-  background-color: hsl(0, 75%, 2%); /* Set background color */
+  background-color: #ffffff; /* Set background color */
   padding: 10px; /* Add padding for better appearance */
 }
 
@@ -58,66 +67,78 @@
   display: flex; /* Use flexbox for horizontal alignment */
 }
 
-.nav-item {
-  margin-right: 30px; /* Add margin between navigation items */
-}
+
 
 .nav-item:last-child {
   margin-right: 0; /* Remove margin from the last navigation item */
 }
 
-.nav-item {
-  color: #ffffff; /* Set text color */
+.hom-nav-item {
+  color: #20434F; /* Set text color *
   font-size: 1rem; /* Set font weight for better visibility */
   font-weight: bold;
-  width: 100px;
+  width: 150px;
   height: 40px;
-  border: 1px solid#FFFFFF; /* Replace with the desired border color code */
-  background-color: #0a0a0a; /* Set the background color */
-  color: #ffffff; /* Set the text color */
-  padding: 10px 15px; /* Adjust padding as needed */
+   /* Replace with the desired border color code */
+   /* Set the background color */
+  /* Set the text color */
+  padding: 10px 25px; /* Adjust padding as needed */
   border-radius: 5px; /* Set the border-radius for rounded corners */
 }
-
-.nav-item:hover {
-  background-color: #007bc0;
+.nav-button{
+  background-color: #6C757D;
+  width:100px;
+  height:40px;
+  border: 1px solid grey;
+  border-radius: 15px;
+  padding: 10px 15px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
 }
-.background-image {
-  width: 100%;
-  height: 300px;
+.nav-button:hover {
+  background-color: #665AA6;
+
+}
+.background-img {
+  position: absolute;
+  width:500px;
+  height:550px;
+  right: 10%;
+  top: 150%;
+  border-radius: 10px;
+  
+  
+}
+.background-image{
+  width:100%;
 }
 
 .image-container {
   position: relative;
 }
 
-.background-image {
-  width: 100%;
-  height: 600px;
-}
 
-.overlay-text {
-  position: absolute;
-  top: 15%; /* Adjust the top position as needed */
-  left: 12%;
-  font-size: 8rem; /* Adjust the font size as needed */
-  color: white; /* Set the text color */
-  font-weight: bold; /* Set the font weight if needed */
-  text-align: center; /* Center the text */
-}
+
+
+
 .para1 {
   font-size: 1.5rem;
 }
-.background-image2 {
-  width: 35%;
-  height: 500px;
+.background-img2 {
+  position: absolute;
+  width: 650px;
+  height: 600px;
   border-radius: 15px;
-  position: relative;
-  margin-left: 100px; /* Adjust the margin as needed */
-  margin-bottom: 50px;
+  position: absolute;
+  top:340% ;
+  left: 6%;
+ /* Adjust the margin as needed */
+  
 }
 .imageAndTextContainer {
   display: flex;
+  
 }
 
 .textContainer {
@@ -136,32 +157,13 @@
 .margins {
   margin: bottom 30px;
 }
-.App-header2 {
-  background-color: hwb(120 0% 98%);
-  min-height: 400px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-size: calc(20px);
-  color: white;}
-  .footer{ background-color: #ffffff;
-    min-height: 100px;
-    padding-left: 41%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 1.5rem;
-    color: black;
-  }
+
   .machine{
-    position: relative;
-    right: 280px;
+    position: absolute;
+    right: 10%;
     width:27%;
     height:500px;
-    top:518px;
-    border-radius: 10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    border-radius: 10px; 
   }
   .itroom{
     position:relative;
@@ -184,3 +186,140 @@
     margin-bottom: 50px;
     ;
   }
+  .home-high{
+
+    position: absolute;
+    margin-left: 240px;
+    margin-bottom: 280px;
+    font-family: jaldi;
+    font-size: 3.2rem;
+    
+  }
+
+  .business-footer{
+    background: #e7e7e7;
+    color: black;
+    padding:2rem 0;
+    margin-top: 10%;
+  }
+  
+  .business-row{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .business-ft-1{                      /********* FOOTER-1  ************************/
+    margin-left:5%;
+  }
+  
+  .business-ft-1 h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    }
+  
+  
+  .business-ft-1 p{
+    padding: 1rem 2rem 1rem 0;
+    font-size:  19px;
+    padding-right: 30%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  }
+  
+  .business-footer-icon i{
+     padding:0.5rem;
+     background-color: black;
+     margin: 0  0.1rem;
+     border-radius: 50%;
+    }
+  
+    .business-ft-2{
+      margin-right:20%;
+    }
+                        
+  .business-ft-2 a{
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    margin-right: 10%;
+  
+  }
+  
+  .business-ft-2 h5{
+    font-size:25px;
+    padding-bottom: 20px;
+    font-weight:bold;
+  }
+  
+  
+  .business-ft-3 {          /**************   FOOTER-3 **************************/
+    margin-left:5%;
+  
+  }
+  
+  .business-ft-3 h5{
+    font-size: 25px;
+    padding-bottom: 15px;
+  }
+  
+  .business-ft-3 p{
+    font-size: 19px;
+    color:bLACK;
+    padding:10px;
+  }
+  
+  .business-ft-reserved{
+    height:60px;
+    margin-left: 40%;
+    margin-top: 30px;
+  }
+  
+.business-ft-reserved h {
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+}
+.footer{
+position: relative;
+  width: 100%;
+  right: 40%;
+}
+  
+@media screen and (max-width:412px) {
+ .home-navbar{
+  display: none;
+ }
+ .hamburger-menu{
+  display:flex;
+  position: absolute;
+  margin-left:0%;
+  background-color: hwb(120 0% 98% / 0.651);
+  width:97%;
+}
+.menu-open{
+  background-color:hwb(120 0% 98% / 0.651);
+  width: 98%;
+  position: absolute;
+  right: 0%;
+  top: 0;
+  z-index: 999;
+  height: 100%;
+}
+.background-image {
+  position:absolute;
+  margin-right:40%;
+  width: 100%;
+  height: 400px;
+  display:'flex';
+  left:'0px';
+}
+
+.ham-bar{
+    display: flex;
+    background-color:  hwb(120 0% 98% / 0.732);
+    max-width: 100%;
+}
+.hom-imgtext{
+  font-size: 1rem;
+}
+}

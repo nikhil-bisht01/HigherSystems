@@ -1,0 +1,213 @@
+.App {
+  text-align: center;
+  background-color: #007bc0;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.navbar {
+  position:relative;
+  background-color: hwb(120 0% 98% / 0);
+  width: 100%;
+  
+  min-height: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: calc(20px);
+  color: white;}
+
+
+.ptag {
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+.home {
+  border: "3px solid white";
+}
+/* NavigationBar.css */
+
+.navbar {
+  background-color: #ffffff; /* Set background color */
+  padding: 10px; /* Add padding for better appearance */
+}
+
+.nav-list {
+  list-style-type: none; /* Remove default list styling */
+  margin-left: 400px; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Use flexbox for horizontal alignment */
+}
+
+.nav-item {
+  margin-right: 30px; /* Add margin between navigation items */
+}
+
+.nav-item:last-child {
+  margin-right: 0; /* Remove margin from the last navigation item */
+}
+
+.nav-item {
+  color: #ffffff; /* Set text color *
+  font-size: 1rem; /* Set font weight for better visibility */
+  font-weight: bold;
+  width: 100px;
+  height: 40px;
+  border: 1px solid#FFFFFF; /* Replace with the desired border color code */
+  background-color: black; /* Set the background color */
+  /* Set the text color */
+  padding: 10px 15px; /* Adjust padding as needed */
+  border-radius: 5px; /* Set the border-radius for rounded corners */
+}
+
+.nav-item:hover {
+  background-color: #007bc0;
+}
+.cnt-background-image {
+  position: relative;
+  top: 0px;
+  margin-left:0px;
+  
+  
+}
+
+.cnt-image-container {
+  position: relative;
+}
+
+.cnt-background-image {
+  width: 100%;
+  height: 600px;
+}
+
+.cnt-overlay-text {
+  position: absolute;
+  top: 2%; /* Adjust the top position as needed */
+  left:35%;
+  font-size: 8rem; /* Adjust the font size as needed */
+  color: white; /* Set the text color */
+  font-weight: bold; /* Set the font weight if needed */
+  display: flex;
+  justify-content: center; /* Center the text */
+  font-family: jaldi;
+}
+.para1 {
+  font-size: 1.5rem;
+}
+.background-image2 {
+  width: 35%;
+  height: 500px;
+  border-radius: 15px;
+  position: relative;
+  margin-left: 100px; /* Adjust the margin as needed */
+  margin-bottom: 50px;
+}
+.imageAndTextContainer {
+  display: flex;
+}
+
+.textContainer {
+  margin-left: 20px; /* Adjust the margin as needed */
+}
+
+.para_q {
+  font-size: 1.5rem;
+  border: 1px solid #007bc0;
+}
+.customers {
+  text-align: left;
+  font-size: 35px;
+  font-weight: bold;
+}
+.margins {
+  margin: bottom 30px;
+}
+.App-header2 {
+  background-color:#2B91CA;
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: calc(20px);
+  color: white;}
+  .footer{ background-color: #ffffff;
+    min-height: 100px;
+    padding-left: 41%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5rem;
+    color: black;
+  }
+  .machine{
+    position: relative;
+    right: 280px;
+    width:27%;
+    height:500px;
+    top:518px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .itroom{
+    position:relative;
+    right:230px;
+    top:518px;
+    width:27%;
+    height:500px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    ;
+
+  }
+  .inovation{
+    position:relative;
+    left:30%;
+    bottom:51px;
+    width:27%;
+    height:500px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    ;
+  }
+  .box{
+    width:390px;
+    height:266px;
+    background-color:#4E8CD5;
+    margin:20px;
+    text-align: center;
+    font-weight: normal;
+    
+  }
+  .App-header2 {
+    background-color:#2B91CA;
+    min-height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: calc(20px);
+    color: white;}
+    .footer{ background-color: #ffffff;
+      min-height: 100px;
+      padding-left: 41%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 1.5rem;
+      color: black;
+    }

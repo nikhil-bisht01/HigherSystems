@@ -4,50 +4,19 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div className="App" style={{ backgroundColor: "#FAEAEB" }}>
-      <header className="App-header">
-        <img
-          src={require("./logo.png")}
-          alt="logo"
-          style={{ width: "80px", aspectRatio: 1, marginLeft: "50px" }}
-        />
-        <div>
-          <span>
-            <div className="nav-list">
-              <ul className="nav-list">
-                <button className="nav-item" style={{ borderRadius: "12px" }}>
-                  HOME
-                </button>
-                <button className="nav-item" style={{ borderRadius: "12px" }}>
-                  <Link to="/about">ABOUT</Link>
-                </button>
-                <button
-                  className="nav-item"
-                  style={{ borderRadius: "12px", width: "150px" }}
-                >
-                  SOLUTIONS
-                </button>
-                <button
-                  className="nav-item"
-                  style={{ borderRadius: "12px", width: "150px" }}
-                >
-                  CONTACT US
-                </button>
-              </ul>
-            </div>
-          </span>
-        </div>
-      </header>
+    <div className="App" style={{ backgroundColor: "#D8E9F2" }}>
+
       <div className="image-container">
         <img
-          src={require("./laptop.jpg")}
+          src={require("./About1.jpg")}
           alt="img"
           className="background-image"
         />
-        <div className="overlay-text">ABOUT US</div>
+       <div style={{fontSize:'8rem', position:'absolute', marginLeft:'35%',top:'45%',color:'#ffffff',fontWeight:'bold',fontFamily:'jaldi'}}>ABOUT US</div>
         <br />
+      
       </div>
-      <div className="box">
+      <div className="abt-box">
         <h1>
           Executive Summary!
           <br />
@@ -68,13 +37,13 @@ function About() {
             backgroundColor: "#727272",
             position: "absolute",
             left: "800px",
-            top: "705px",
+            top: "615px",
             width: "650px",
             fontSize: "25px",
             padding: "20px",
             margin: "100px",
             borderRadius: "10px",
-            height: "702px",
+            height: "690px",
           }}
         >
           <h1>
@@ -255,8 +224,51 @@ function About() {
               alt="img"
               
             />
-      </div>
-      <div className="footer">Higher Systems | all Rights Reserved</div>
+             <div className="navbar" style={{backgroundColor:'rgba(0, 0, 0, 0.5',position:'fixed',left:"0px",top:"0px",width:"100%",height:"100px"}}>
+        <img
+          src={require("./logo.png")}
+          alt="logo"
+          style={{ width: "80px", aspectRatio: 1, marginLeft: "60px" }}
+        />
+        <div>
+          <span>
+            <div className="nav-list">
+              <ul className="nav-list">
+                <button className="nav-item" style={{ borderRadius: "12px",backgroundColor:''}}> 
+                <Link to="/" style={{textDecoration:'none', color:'#ffffff'}}>HOME</Link>
+                </button>
+                <button
+                  className="nav-item"
+                  style={{
+                    borderRadius: "12px",
+                    textDecoration: " none",
+                    cursor: " pointer",
+                  }}
+                >
+                  <Link to="/about" style={{textDecoration:'none', color:'#ffffff'}}>ABOUT</Link>
+                </button>
+                <button
+                  className="nav-item"
+                  style={{ borderRadius: "12px", width: "150px" }}
+                >
+               SOLUTIONS
+                </button>
+                <button
+                  className="nav-item"
+                  style={{ borderRadius: "12px", width: "150px" }}
+                >
+                    <Link to="/connect" style={{textDecoration:'none', color:'#ffffff'}}>CONTACT US</Link>
+                </button>
+              </ul>
+              
+            </div>
+            
+          </span>
+        </div>
+        </div>
+     
+    </div>
+    <div className="footer">Higher Systems | all Rights Reserved</div>
     </div>
     
   );

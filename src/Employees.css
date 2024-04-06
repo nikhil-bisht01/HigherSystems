@@ -1,0 +1,128 @@
+.login-for{
+  display: inline;
+  position: absolute;
+  top: 40px;
+  left: 63%;
+  width:400px;
+  height:700px;
+  border-radius:20px ;
+  background-color: #ffffff79;
+  justify-content: center;
+  
+}
+.login-img{
+  background-color: #D8E9F2;
+  width: 100%;
+   height:770px;}
+
+.login-img2{
+  position: absolute;
+  top: 18%;
+  right: 47%;
+  width: 1900px;
+  height: 600px;
+}
+.log-h1{
+  position: relative;
+  width:150px;
+  height: 40px;
+  font-size: 3rem;
+  margin-left: 18px;
+ 
+  
+}
+.log-btn{
+  width: 350px;
+  padding: 40px 120px 40px;
+}
+.log-button:hover{
+  background-color: #058AD4;
+  color: #FFFFFF;
+}
+.lable{
+  font-size: 1.1rem;
+  
+  margin-left: 45px;
+}
+.log-input{
+  margin-left: 45px;
+  width:250px;
+}
+.log-submit{
+  margin-top: 70px;
+  margin-left: 100px;
+  background-color: #057ad48d;
+  border: none;
+  width:200px;
+  height:35px;
+  color: #FFFFFF;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.log-submit:hover{
+  background-color: #0579D4;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.log-input{
+  width: 54%;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #ffffff13;
+}
+.log-email{
+  margin-left:45px ;
+  width: 100%;
+  height: 23px;
+  border: 1px solid rgba(0, 0, 0, 0.232);
+  border-radius: 60px;
+  background-color: #ffffff13;
+}
+.forgot-password{
+  position: absolute;
+  top: 55%;
+  right:5%;
+}
+.remember-me{
+  position: absolute;
+  top: 55%;
+  right: 60%;
+}
+.log-in-button{
+  margin-top: 180px;
+  margin-bottom: 45px;
+  
+  
+  margin-left: 97px;
+  background-color: #057ad48d;
+  border: none;
+  width:200px;
+  height:35px;
+  color: #FFFFFF;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.log-in-button:hover{
+  background-color: #0579D4;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.sign-up-link:hover{
+  font-weight: bold;
+}
+.Captcha{
+  position: absolute;
+  top: 62%;
+  right: 12%;
+}
+.avtar{
+  position:absolute;
+  top: 6%;
+  left: 33%;
+  width:120px;
+ height: 120px;
+ border-radius: 100%;
+}

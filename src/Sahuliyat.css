@@ -1,0 +1,88 @@
+.rechargeButtoncontainer {
+  width: 100%;
+  text-align: center;
+}
+
+.rechargeButtoncontainer button {
+  width: 38%;
+  background-color: rgb(15, 107, 211);
+  border-radius: 0.4rem;
+  border: none;
+  color: white;
+  padding: 10px 0;
+  font-size: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0);
+}
+
+.rechargeButtoncontainer button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Your existing styles remain unchanged */
+
+/* Media query for 280px width */
+/* Your existing styles remain unchanged */
+
+/* Media query for 280px width */
+@media screen and (max-width: 400px) {
+  /* Adjustments for 280px width */
+  .rechargeBackground {
+    width: 90vw;
+    padding: 20px;
+  }
+
+  .rechargeCenterdiv h1 {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .gridContainer {
+    flex-direction: column;
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 1px;
+  }
+
+  .gridItem {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .rechargeAmount {
+    padding: 30px 15px;
+  }
+
+  .rechargeAmount h2 {
+    font-size: 13px;
+  }
+
+  .rechargeAmount .radioGrid{
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.6rem;
+  }
+  .rechargeAmount .radioGrid .rechargeRadiobutton input {
+    width: 14px;
+  }
+  .radioGrid .rechargeRadiobutton label {
+    font-size: 13px;
+  }
+
+  #amount {
+    width: 100%;
+  }
+
+  .noteParagraph {
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+
+  .rechargeButtoncontainer button {
+    width: 100%;
+    font-size: 16px;
+  }
+}
