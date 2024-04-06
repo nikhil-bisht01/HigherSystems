@@ -9,6 +9,7 @@ import Signup from './Signup'
 import Example from './Example'
 import Employee from './Employee'
 import Business from './Business' 
+import Infra from './Infra'
 import { Route, Routes } from 'react-router-dom'
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/Example' element={<Example/>}/>
         <Route path='/Employee' element={<Employee/>}/>
         <Route path='/Business' element={<Business/>}/>
+        <Route path='/Infra' element={<Infra/>}/>
       </Routes>
       
   )
