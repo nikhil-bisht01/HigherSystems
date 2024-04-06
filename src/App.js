@@ -8,8 +8,8 @@ import Login from './Login'
 import Signup from './Signup'
 import Example from './Example'
 import Employee from './Employee'
+import Business from './Business' 
 import { Route, Routes } from 'react-router-dom'
-
 function App() {
   return (
       <Routes>
@@ -22,6 +22,7 @@ function App() {
         <Route path='/signup' element={<Signup/>} />
         <Route path='/Example' element={<Example/>}/>
         <Route path='/Employee' element={<Employee/>}/>
+        <Route path='/Business' element={<Business/>}/>
       </Routes>
       
   )

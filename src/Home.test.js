@@ -8,6 +8,7 @@ import Login from './Login';
 import Signup from './Signup';
 import Example from './Example'
 import Employee from './Employee'
+import Business from './Business'
 test('renders learn react link', () => {
   render(<Home />);
   render(<About />);
@@ -16,8 +17,9 @@ test('renders learn react link', () => {
   render(<Sahuliyat />);
   render(<Login />);
   render(<Signup />);
-  render(<Example/>)
-  render(<Employee/>)
+  render(<Example/>);
+  render(<Employee/>);
+  render(<Business/>);
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
