@@ -1,0 +1,319 @@
+.App {
+    font-family: jaldi;
+  }
+  
+  .navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    z-index: 1000;
+  }
+  
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 1rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ccc;
+  }
+  
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .open .line:nth-child(1) {
+    margin-left:15px;
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .open .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .open .line:nth-child(4) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /***********************************************  Footer CSS   ******************************************************************/
+  .extra-footer{
+    background: #007bc0 ;
+    color: white;
+    padding:2rem 0;
+  }
+
+  .extra-row{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .extra-ft-1{
+    margin-left:5%;
+  
+  }
+
+  .extra-ft-1 img{
+    width:40px;
+    height:40px;
+  }
+
+  .extra-ft-1 h3{
+    font:jaldi;
+    font-size: 20px;
+    font-weight:bold;
+    padding: 0.5rem 0;
+
+  }
+
+  .extra-ft-1 h{
+    font-size: 15px;
+  }
+
+  .extra-ft-1 span{
+    font:jaldi;
+    font-weight:100;
+    
+  }
+
+  .extra-ft-1 p{
+    padding: 1rem 2rem 1rem 0;
+    font-size:18px;
+    
+  }
+
+  .extra-footer-icon i{
+     padding:0.5rem;
+     background-color:rgb(241, 186, 186);
+     margin: 0  0.5rem;
+     border-radius: 50%;
+     
+  }
+
+  .extra-footer{
+    color:white;
+    font-size: 24px;
+  }
+
+  .extra-ft-2{
+
+    margin-top: 3%;
+    margin-right: 10%;
+  }
+
+  .extra-ft-2 ul{
+    list-style: none;
+    
+  }
+
+  .extra-ft-2 li{
+    padding-bottom: 10px;
+  }
+
+  .extra-ft-2 a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  
+  }
+
+  .extra-ft-2 h5{
+    font-size:26px;
+    padding-bottom: 20px;
+    font-weight:bold;
+    margin-left: 5%;
+  }
+
+
+  .extra-ft-3 {
+  
+    margin-top: 3%;
+    margin-right: 0%;
+
+  }
+
+  .extra-ft-3 p{
+    font-size: 20px;
+    color:white;
+    padding:10px;
+  }
+
+  .extra-ft-3 h5{
+    font-size: 26px;
+    padding-bottom: 15px;
+  }
+
+  
+
+     
+  
+
+
+  
+
+/*********************************************  MEDIA QUERY FOR 412PX***********************************************************/
+
+  @media (max-width: 412px) {
+    .nav-links {                   /**********  NAVBAR CSS*************/
+      display: none;
+    }
+    .arrow{
+      width: 20px;
+      height:20px;
+    }
+  
+    .burger {
+      display:flex;
+      
+    }
+
+    .line{
+      width:20px;
+      height:1px;
+    }
+  
+    .open {
+      position: fixed;
+      top: 15;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+    }
+  
+    .open .nav-links {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+    }
+  
+    .open.nav-links li {
+      margin: 0.1rem 0;
+    }
+  
+
+  .extra-row {                   /*******  FOOTER CSS  **************/
+    flex-direction: column;
+  }
+
+  .extra-footer{
+    background: #007bc0 ;
+    color: white;
+    padding:2rem 0;
+  }
+
+  .extra-row{
+    display: flex;
+    flex-direction: column;
+    }
+
+  .extra-ft-1 h3{                   /******** FOOTER-1 CSS*************/
+    font:jaldi;
+    font-size: 20px;
+    font-weight:bold;
+    padding: 0.5rem 0;
+
+  }
+  .extra-ft-1 span{
+    font:jaldi;
+    font-weight:100;
+    
+  }
+
+  .extra-footer-icon{
+     padding:0.5rem;
+    }
+
+  
+    .extra-ft-2{                     /******** FOOTER-2 CSS*************/
+      margin-top: 10%;
+      margin-left: 5%;
+    }
+      
+     .extra-ft-2 ul{
+      list-style: none;
+      
+    }
+  
+    .extra-ft-2 li{
+      padding-bottom: 10px;
+    }
+  
+    .extra-ft-2 a{
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+    
+    }
+  
+    .extra-ft-2 h5{
+      margin-left: 0%;
+      font-size:26px;
+      font-weight: bold;
+      padding-bottom: 20px;
+    }
+
+    .extra-ft-3 {                             /******** FOOTER-3 CSS*************/
+     margin-top: 10%;
+     margin-right: 0%;
+     margin-left: 5%;
+
+
+    }
+  
+    .extra-ft-3 p {
+     font-size: 20px;
+     color:white;
+     padding:10px;
+    }
+  
+    .extra-ft-3 h5 {
+    font-size: 26px;
+    padding-bottom: 15px;
+    } 
+    
+    .extra-ft-3 i{
+      padding-right: 5%;
+    }
+  
+}
+
+  
+
+     
