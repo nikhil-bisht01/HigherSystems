@@ -10,7 +10,10 @@ import Example from './Example'
 import Employee from './Employee'
 import Business from './Business' 
 import Infra from './Infra'
+import Implementation from './Implementation'
+import DMS from './DMS'
 import { Route, Routes } from 'react-router-dom'
+
 function App() {
   return (
       <Routes>
@@ -25,6 +28,8 @@ function App() {
         <Route path='/Employee' element={<Employee/>}/>
         <Route path='/Business' element={<Business/>}/>
         <Route path='/Infra' element={<Infra/>}/>
+        <Route path= '/DMS' element={<DMS/>}/>
+        <Route path='/Implementation' element={<Implementation/>}/>
       </Routes>
       
   )

@@ -1,0 +1,44 @@
+
+  
+  .business-footer{
+    background: #20434f;;
+    color:#f2f4f4;
+    display: flex;
+    margin-top:3%;
+    width:100%;
+
+}
+    .business-ft{                    
+      font-size: 20px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+  
+ 
+    .business-ft p{
+        font-size: 14px;
+      }
+      
+    .business-ft a{
+        color:#f2f4f4;
+        font-size: 14px;
+        padding:10px;       }
+
+    .business-ft-2{  
+      margin-left: 5%;   
+
+    }  
+    
+    .business-ft-2 ul{
+      list-style: none;
+    }
+
+    .business-ft-2 a{
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-size: 14px;
+      padding:2px;
+      color:#f2f4f4;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+          
+    

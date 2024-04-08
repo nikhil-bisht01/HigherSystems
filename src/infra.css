@@ -22,11 +22,11 @@
 
 .infra-sol {
   position: absolute;
-  left: 20%;
+  left: 35%;
   top: 30%;
-  font-family: jaldi;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: white;
-  font-size: 60px;
+  font-size: 30px;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -102,118 +102,72 @@
 
 
 /********************************    IMAGES CONTAINER    ***********************************************************/
-
-
- .container {
-   Display: flex;
-   justify-content: flex-start;
-   width: fit-content;
-   left: 2%;
- }
-
- .image-row {
-   display: flex;
-   justify-content: center;
-
- }
-
- .image-row img {
-   width: 437px;
-   height: 544px;
-   margin: 20px;
- }
-
- .image-container {
-   position: relative;
-   width: 437px;
-   height: 544px;
- }
-
-
- .text-overlay {
-   position: absolute;
-   left: 5%;
-   right: 5%;
-   width: 100%;
-   bottom:0;
- }
-
- .text-overlay h1 {
-   font-size: 20px;
-   font-weight: bold;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  
-   
- }
-
- .text-overlay p {
-   font-size: 14px;
-   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   margin-top: 10%;
- }
-
- 
-
- .service1 {
-   margin-left: 90%;
-   margin-bottom: 30%;
-   margin-top: 10%;
-   font-size: 26px;
-   font-weight: bold;
-   font: jaldi;
- }
-
- .style {
-   font: inter;
-   font-size: 20px;
-   margin-left: 27%;
- }
-
- .contact-info {
-   margin-left: 80%;
- }
-
- .infra-contact-info{
-  margin-left:80% ;
-  margin-bottom: 12%;
- }
-
-
-
-
-
-
-.card-row{
+.container {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  padding:0;
 }
 
- .card-container{
-  width:15rem;
-  border-radius: 1rem;
-  box-shadow: 0px 10px 8px #999;
+.image-row {
   display: flex;
-  flex-direction: column;
-  margin:0.5rem;
-  background-color: white;
-  height: fit-content;
- }
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding:15px;
+}
 
 
- .card-image{
-  width:100%;
-  height:200px;
-  border-radius: 1rem 1rem 0 0;
 
- }
+.image-container {
+  width: 270px;
+  height: 270px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+}
 
- .card-title,
- .card-description{
-  margin: 0.5rem 5%;
- }
 
- 
- /*******************************************   MEDIA QUERY FOR 412PX   ************************************************/
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+  transition: all .05s ease-in-out;
+  
+}
+.image-container:hover img{
+  transform: scale(1.2) ;
+  opacity: 0.6;
+
+}
+
+
+
+.text-1 {
+  position: absolute;
+  justify-content: center;
+  bottom: 35%;
+  left: 5%;
+  width: 90%;
+  font-size: 29px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: black;
+}
+
+
+.business-ft-reserved{                   /****************  LAST FOOTER ****************************/
+  height:20px;
+  margin-left: 45%;
+  margin-top: 15px;
+}
+
+.business-ft-reserved h{
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+
+/*******************************************   MEDIA QUERY FOR 412PX   ************************************************/
  @media (max-width: 412px) {
   .nav-links {                   /**********  NAVBAR CSS*************/
     display: none;
