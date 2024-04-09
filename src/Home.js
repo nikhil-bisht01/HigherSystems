@@ -10,44 +10,18 @@ function Home() {
   }, []);
 
   const [isClosed, setIsClosed] = useState(true);
-  window.addEventListener('scroll', function() {
-    var navbar = document.querySelector('.class-navbar');
-    if(window.scrollY > 100) {
-        navbar.style.backgroundColor = '#F2F4F4'; 
-        navbar.style.color = '#20434F  !important'; 
-    } else {
-        navbar.style.backgroundColor = 'transparent'; 
-    }
-});
+ 
 
   return (
     <div style={{ backgroundColor: "#FFFFFF" }}>
       <div className="App" style={{ backgroundColor: "#FFFFFF" }}>
-        <div className="image-container">
-       
-          <img
+      <img
             src={require("./landing1.png")}
             alt="img"
-            className="background-image"
-            style={{ position: "sticky"}} 
+            className="image-background"
+            style={{ width:'100%',position:'sticky'}} 
           />
-        </div>
-        <div
-          className="hom-overlay-text"
-          style={{
-            position: "absolute",
-            fontSize: "7rem",
-            top: "20%",
-            left: "48%",
-            fontFamily: "jaldi",
-          }}
-        >
-          <span className="home-imgtext" style={{ marginLeft: "150px", fontSize: "5rem" }}>
-            {" "}
-            HIGH<span style={{ fontWeight: "normal" }}>ER</span>
-          
-           <span> INDIA</span></span>
-          <div style={{ position: "absolute", left: "32%", bottom: "33%" }}>
+           <div style={{position:'absolute',right:'24%',top:'40%', fontFamily:'Articulate' }}>
           <span
               style={{ fontSize: "3rem", color: "red", fontWeight: "normal" }}
             >
@@ -78,6 +52,22 @@ function Home() {
               olutions
             </span>
           </div>
+        <div
+          className="hom-overlay-text"
+          style={{
+            position: "absolute",
+            fontSize: "7rem",
+            top: "20%",
+            left: "48%",
+            fontFamily: "jaldi",
+          }}
+        >
+          <span className="home-imgtext" style={{ marginLeft: "170px", fontSize: "8rem",fontFamily:'Mosstrate' }}>
+            {" "}
+            HIGH<span style={{ fontWeight: "normal" }}>ER</span>
+          
+           <span> INDIA</span></span>
+         
           <br style={{ marginBottom: "20px" }} />
           <button
             style={{
@@ -89,7 +79,7 @@ function Home() {
               borderRadius: "7px",
               fontWeight: "bold",
               marginTop: "120px",
-              marginLeft:'22%',
+              marginLeft:'30%',
               transition: "background-color 0.3s ease", // Add a smooth transition for the color change
             }}
             onMouseOver={(e) => {
@@ -107,7 +97,7 @@ function Home() {
         <br />
         <br />
 
-        <div style={{ fontFamily: "Jaldi" }}>
+        <div style={{ fontFamily: "Open Sans" }}>
           <h1 style={{ fontSize: "3rem", fontWeight: "bold" }}>
             WELCOME TO HIGHER INDIA
           </h1>
@@ -121,6 +111,7 @@ function Home() {
                 fontFamily: "Jaldi",
                 width: "90%",
                 marginLeft: "5%",
+                
               }}
             >
              Higher India appears to be a versatile IT solutions provider catering to a wide range of clients, including both corporate entities and the public sector. Their services cover various aspects of information technology, extending from infrastructure solutions to security measures. Here's a breakdown of what they offer:
@@ -150,9 +141,9 @@ Overall, Higher India seems to offer a comprehensive suite of IT services tailor
                 style={{
                   position: "relative",
                   height: "0px",
-                right: "40%",
+                right: "38%",
                   fontSize: "3rem",
-                  fontFamily: "jaldi",
+                  fontFamily: "Open Sans",
                 }}
               >
                 About us:{" "}
@@ -192,7 +183,7 @@ Higher India's impressive track record spans across various industries, where it
                   src={require("./website.gif")}
                   alt="img"
                   className="background-img"
-                  data-aos="zoom-in"
+                 
                 />
                 <div
                   style={{
@@ -211,9 +202,9 @@ Higher India's impressive track record spans across various industries, where it
                   style={{
                     position: "absolute",
                     left: "42%",
-                    top: "230%",
+                    top: "222%",
                     fontSize: "2.8rem",
-                    fontFamily: "jaldi",
+                    fontFamily: "Open Sans",
                     color:'#',
                   }}
                 >
@@ -225,13 +216,13 @@ Higher India's impressive track record spans across various industries, where it
               <img
                     src={require("./machine.png")}
                     alt="img"
-                    className=""
+                    className="img-content"
                     data-aos="fade-right"
                   />
                   <img
                     src={require("./itroom.png")}
                     alt="img"
-                    className=""
+                    className="img-content"
                     data-aos="fade-up"
                   />
                 
@@ -239,14 +230,12 @@ Higher India's impressive track record spans across various industries, where it
                     <img
                       src={require("./inovation.png")}
                       alt="img"
-                      className=""
+                      className="img-content"
                       data-aos="fade-left"
                     />
-                  
-
               </div>
               <div>
-                <h1 style={{position:'relative', fontSize: "2.8rem" }}> OUR PROMISES TO YOU</h1>
+                <h1 style={{position:'relative', fontSize: "2.8rem", fontFamily: 'Open Sans', marginTop:'60px'}}> OUR PROMISES TO YOU</h1>
                 <br />
                 <div >
                   <img
@@ -266,6 +255,7 @@ Higher India's impressive track record spans across various industries, where it
                       fontSize: "1.2rem",
                       textAlign: "left",
                       marginLeft: "48%",
+                      marginTop: "5%",
                       fontFamily: "jaldi",
                     }}
                   >
@@ -289,9 +279,9 @@ Visitors to Higher India's web portal can explore a wide range of services tailo
           <br />
 
 
-          <div style={{ position:'relative', fontSize: "1.2rem" ,width:'90%',left:'5%', top:'410%' }}>
+          <div style={{ position:'relative', fontSize: "1rem" ,width:'90%',left:'5%', top:'410%' }}>
             {" "}
-            <h1 style={{ fontSize: "3rem" }}>Future Outlook</h1>Looking ahead,
+            <h1 style={{ fontSize: "3rem", fontFamily:'Open Sans'  }}>Future Outlook</h1>Looking ahead,
             Higher India Software Services Provider Company is poised for
             continued growth and success. The company is actively exploring
             opportunities in emerging technologies and markets, with a focus on

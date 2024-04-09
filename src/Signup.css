@@ -1,15 +1,18 @@
 .login-form{
-  display: inline;
+  display: row;
   position: absolute;
-  top: 60px;
-  left: 63%;
-  width:400px;
-  height:670px;
+  top: 19%;
+  left: 50%;
+  width:700px;
+  height:600px;
   border-radius:20px ;
   background-color: #ffffff79;
   justify-content: center;
-  
+  line-break: 10px;
+  letter-spacing:2px;
 }
+
+
 .login-img{
   background-color: #D8E9F2;
   width: 100%;

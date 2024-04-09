@@ -1,5 +1,6 @@
 import React from "react";
 import "./contact.css";
+import Navbar from "./Navbar";
 // Your component code goes here
 import { Link } from "react-router-dom";
 function Connect() {
@@ -151,64 +152,7 @@ Uttar Pradesh - 244901</p></div>
               
             />
             </div>
-      <div
-        className="navbar"
-        style={{
-          backgroundColor: "rgba(0, 0, 0, 0.5",
-          position: "fixed",
-          left: "0px",
-          top: "0px",
-          width: "100%",
-          height: "100px",
-        }}
-      >
-        <img
-          src={require("./logo.png")}
-          alt="logo"
-          style={{ width: "80px", aspectRatio: 1, marginLeft: "60px" }}
-        />
-        <div>
-          <span>
-            <div className="nav-list">
-              <ul className="nav-list">
-                <button
-                  className="nav-item"
-                  style={{ borderRadius: "12px", backgroundColor: "" }}
-                >
-                    <Link to="/" style={{textDecoration:'none', color:'#ffffff'}}>HOME</Link>
-                </button>
-                <button
-                  className="nav-item"
-                  style={{
-                    borderRadius: "12px",
-                    textDecoration: " none",
-                    cursor: " pointer",
-                  }}
-                >
-                  <Link
-                    to="/about"
-                    style={{ textDecoration: "none", color: "#ffffff" }}
-                  >
-                    ABOUT
-                  </Link>
-                </button>
-                <button
-                  className="nav-item"
-                  style={{ borderRadius: "12px", width: "150px" }}
-                >
-                  SOLUTIONS
-                </button>
-                <button
-                  className="nav-item"
-                  style={{ borderRadius: "12px", width: "150px" }}
-                >
-                  CONTACT US
-                </button>
-              </ul>
-            </div>
-          </span>
-        </div>
-      </div>
+      <Navbar/>
       <div className="footer">Higher Systems | all Rights Reserved</div>
     </div>
   );

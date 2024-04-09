@@ -1,18 +1,21 @@
 import "./About.css";
 import React from "react";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 function About() {
   return (
-    <div className="App" style={{ backgroundColor: "#D8E9F2" }}>
-
-      <div className="image-container">
-        <img
+    
+    <div className="App" style={{ backgroundColor: "#ffffff" }}>
+ <img
+        style={{ width: '100%',position:'absolute', left:'0px'}}
           src={require("./About1.jpg")}
           alt="img"
-          className="background-image"
+          
         />
-       <div style={{fontSize:'8rem', position:'absolute', marginLeft:'35%',top:'45%',color:'#ffffff',fontWeight:'bold',fontFamily:'jaldi'}}>ABOUT US</div>
+      <div className="image-container">
+       
+       <div style={{fontSize:'8rem', position:'absolute', marginLeft:'10%',top:'45%',color:'#ffffff',fontWeight:'bold',fontFamily:'jaldi'}}>ABOUT US</div>
         <br />
       
       </div>
@@ -224,48 +227,7 @@ function About() {
               alt="img"
               
             />
-             <div className="navbar" style={{backgroundColor:'rgba(0, 0, 0, 0.5',position:'fixed',left:"0px",top:"0px",width:"100%",height:"100px"}}>
-        <img
-          src={require("./logo.png")}
-          alt="logo"
-          style={{ width: "80px", aspectRatio: 1, marginLeft: "60px" }}
-        />
-        <div>
-          <span>
-            <div className="nav-list">
-              <ul className="nav-list">
-                <button className="nav-item" style={{ borderRadius: "12px",backgroundColor:''}}> 
-                <Link to="/" style={{textDecoration:'none', color:'#ffffff'}}>HOME</Link>
-                </button>
-                <button
-                  className="nav-item"
-                  style={{
-                    borderRadius: "12px",
-                    textDecoration: " none",
-                    cursor: " pointer",
-                  }}
-                >
-                  <Link to="/about" style={{textDecoration:'none', color:'#ffffff'}}>ABOUT</Link>
-                </button>
-                <button
-                  className="nav-item"
-                  style={{ borderRadius: "12px", width: "150px" }}
-                >
-               SOLUTIONS
-                </button>
-                <button
-                  className="nav-item"
-                  style={{ borderRadius: "12px", width: "150px" }}
-                >
-                    <Link to="/connect" style={{textDecoration:'none', color:'#ffffff'}}>CONTACT US</Link>
-                </button>
-              </ul>
-              
-            </div>
-            
-          </span>
-        </div>
-        </div>
+         <Navbar/>   
      
     </div>
     <div className="footer">Higher Systems | all Rights Reserved</div>

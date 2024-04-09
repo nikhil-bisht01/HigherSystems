@@ -12,6 +12,7 @@ import Business from './Business'
 import Infra from './Infra'
 import Implementation from './Implementation'
 import DMS from './DMS'
+import Navbar from './Navbar'
 import { Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path='/Infra' element={<Infra/>}/>
         <Route path= '/DMS' element={<DMS/>}/>
         <Route path='/Implementation' element={<Implementation/>}/>
+        <Route path='/Components/Navbar' element={<Navbar/>}/>
       </Routes>
       
   )

@@ -12,6 +12,7 @@ import Business from './Business'
 import Infra from './Infra'
 import DMS from './DMS'
 import Implementation from './Implementation'
+import Navbar from './Navbar';
 test('renders learn react link', () => {
   render(<Home />);
   render(<About />);
@@ -26,6 +27,7 @@ test('renders learn react link', () => {
   render(<Infra/>);
   render(<Implementation/>);
   render(<DMS/>);
+  render(<Navbar/>);
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });

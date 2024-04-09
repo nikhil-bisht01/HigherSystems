@@ -2,9 +2,10 @@ import "./Business.css";
 import Footer from "./Components/Footer";
 import React, { useEffect, } from "react";
 import { useState } from "react";
+
 import { Link } from "react-router-dom";
 function Business() {
- 
+  
  
   return ( 
     <div style={{}}>
@@ -19,10 +20,26 @@ function Business() {
       
 
 {/******************************************************Images Container ******************************************************/}
-        <div className="container">
-          <div className="image-row">
-            <div className="image-cont">
-              <Link to="./DMS" ><img src={require('./Security.png')} alt="img" />
+        <div className="container" style={{borderRadius:'1.5rem'}}>
+          <div className="image-row" style={{borderRadius:'1.5rem'}}>
+            <div className="image-cont" 
+            onMouseOver={(e) => {
+              const img = e.currentTarget.querySelector('img');
+              img.style.opacity = "0.6";
+              img.style.transform = "scale(1.2)";
+              img.style.borderRadius = "1.2rem";
+              img.style.transition = "all 1s ease-in-out";
+              // Store the initial border radius value
+              img.dataset.initialBorderRadius = img.style.borderRadius;
+          }}
+          onMouseOut={(e) => {
+              const img = e.currentTarget.querySelector('img');
+              img.style.opacity = "1";
+              img.style.transform = "scale(1)";
+              // Restore the initial border radius value
+              img.style.borderRadius = img.dataset.initialBorderRadius;
+          }}>
+              <Link to="./DMS" ><img src={require('./Security.png')} alt="img"style={{borderRadius:'1.5rem'}} />
               <h1 className="text-1">Document Management System</h1></Link>
             </div>
           

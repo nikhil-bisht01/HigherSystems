@@ -2,11 +2,22 @@
 import React, { useState } from 'react';
 import "./Login.css";
 import YourComponent from "./Example";
-
+import Navbar from './Navbar';
+import { Link } from'react-router-dom';
 function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
+  const [isClosed, setIsClosed] = useState(true);
+  window.addEventListener('scroll', function() {
+    var navbar = document.querySelector('.class-navbar');
+    if(window.scrollY > 100) {
+        navbar.style.backgroundColor = '#F2F4F4'; 
+        navbar.style.color = '#20434F  !important'; 
+    } else {
+        navbar.style.backgroundColor = 'transparent'; 
+    }
+});
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -51,6 +62,7 @@ function LoginPage() {
         {/* Don't have an account? Sign Up Link */}
         <p className='sign-up'>Don't have an account?<a href= "/Signup"  className="sign-up-link">Sign up</a></p>
       </div>
+      <Navbar/>
     </div>
   );
 }

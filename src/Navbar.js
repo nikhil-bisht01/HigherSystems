@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./navbar.css";
 import React, { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
@@ -6,20 +6,11 @@ function Navbar() {
   
   return (
 
+    
   <div
-    className="home-navbar"
-    style={{
-      backgroundColor: "rgba(0, 0, 0, 0.5",
-      position: "fixed",
-      left: "0px",
-      top: "0px",
-      width: "100%",
-      height: "100px",
-    }}
+    className="class-navbar"
+   style={{background:'#ffffff'}}
   >
-    <script>
-  
-    </script>
     <img
       src={require("./logo.png")}
       alt="logo"
@@ -29,11 +20,13 @@ function Navbar() {
       <span>
         <div className="nav-list">
           <ul>
-            <span className="hom-nav-item">HOME</span>
+          <span className="hom-nav-item"> <Link
+                to="/"
+                style={{ textDecoration: "none", color:'#20434F' }}>HOME</Link></span>
             <span className="hom-nav-item">
               <Link
                 to="/about"
-                style={{ textDecoration: "none", color: "#ffffff" }}
+                style={{ textDecoration: "none", color:'#20434F' }}
               >
                 ABOUT
               </Link>
@@ -42,7 +35,7 @@ function Navbar() {
             <span className="hom-nav-item">
               <Link
                 to="/connect"
-                style={{ textDecoration: "none", color: "#ffffff" }}
+                style={{ textDecoration: "none", color:'#20434F' }}
               >
                 CONTACT US
               </Link>
@@ -72,6 +65,7 @@ function Navbar() {
       </span>
     </div>
   </div>
+
   )
 }
 export default Navbar;
