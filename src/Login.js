@@ -1,4 +1,4 @@
-
+import Footer from './Components/Footer'
 import React, { useState } from 'react';
 import "./Login.css";
 import YourComponent from "./Example";
@@ -33,36 +33,54 @@ function LoginPage() {
 
   return (
     <div>
-     
-      <img className='login-img2' src={require('./login-img.png')} alt='img' />
-      <div className='login-for'>
-        <div className='log-btn' style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <h1 className='log-h1'>Login</h1>
+    <div style={{overflow:'hidden'}}>
+     <div className='child'><img className='img-cont' src={require('./login-img.png')} alt='img' /></div>
+
+      <div className='child' id='child1'>
+      <div className='child3'>
+      
+          <h1 className='heading'>Login</h1>
           {/* Remember Me Checkbox */}
-          <label className='remember-me'>
+      </div>
+         
+        
+        <form onSubmit={handleLogin}>
+          <div className='child3'>
+            <label className='text' style={{marginTop:'-40px'}}>E-mail or Username*</label>
+          <input className='credentials'placeholder='example@gmail.com ' style={{width:'298px',border:'1px solid gray'   }} type="email" value={email} onChange={e => setEmail(e.target.value)} required />
+          </div>
+
+          <div className='child3'>
+          <label className='text' style={{marginTop:'-40px'}}> Password:</label>
+          <input className='credentials' placeholder=' example@123' style={{width:'298px',border:'1px solid gray'  }} type="password" value={password} onChange={e => setPassword(e.target.value)} required />
+          <label className='checkbox'>
             <input type="checkbox" checked={rememberMe} onChange={() => setRememberMe(!rememberMe)} />
             Remember me
           </label>
-        </div>
-        <form onSubmit={handleLogin}>
-          <label className='lable'>
-            E-mail or Username*
-          </label>
-          <input className='log-email'placeholder='example@gmail.com ' style={{ border: '1px solid black',width:'280px' }} type="email" value={email} onChange={e => setEmail(e.target.value)} required />
-          <label className='lable'>
-            Password:
-          </label>
-          <input className='log-input' placeholder=' example@123' style={{ border: '1px solid black',width:'298px' }} type="password" value={password} onChange={e => setPassword(e.target.value)} required />
+          <a href="/Forgot-password" className="pass-link">Forgot password?</a>
+          <div className='Captcha'><YourComponent/></div>
+          </div>
+
+
+        
           {/* Forgot Password Link */}
-          <a href="/Forgot-password" className="forgot-password">Forgot password?</a>
-          <br />
-           <div className='Captcha'><YourComponent/></div>
-          <button className='log-in-button' >Login</button>
+         
+        
+          
+
+           <div className='child3'>
+          <button className='button' >Login</button>
+          <p className='new'>Don't have an account?<a href= "/Signup"  className="sign-up-link">Sign up</a></p>
+          </div>
         </form>
         {/* Don't have an account? Sign Up Link */}
-        <p className='sign-up'>Don't have an account?<a href= "/Signup"  className="sign-up-link">Sign up</a></p>
+       
       </div>
       <Navbar/>
+      
+    </div>
+    <div style={{marginTop:'45%'}}><Footer/></div>
+    
     </div>
   );
 }

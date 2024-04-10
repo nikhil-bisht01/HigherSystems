@@ -1,126 +1,44 @@
-.overlay-text {
-  position: absolute;
-  margin-top: 8%; /* Adjust the top position as needed */
-  left: 60%;
-  font-size: 8rem; /* Adjust the font size as needed */
-  color: white; /* Set the text color */
-  font-weight: bold; /* Set the font weight if needed */
-  text-align: center; /* Center the text */
-}
-/* styles.css (or your preferred styling approach) */
-
-.abt-box {
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin: 100px;
-  width: 600px; /* Adjust the width as needed */
-  color: #ffffff;
-  background-color: #727272;
-  font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 10px;
-  height: 690px;
-  margin-bottom: 50px;
+/**************************     Header    *************************************************/
+.about-bg {
+  position: relative;
 }
 
-.back-box {
-  border: 1px solid rgb(0, 0, 0);
-  position: absolute; /* Overlap the back box on top of the front box */
-  width: 600px;
-  top: 810px;
-  left: 900px;
-  right: 0;
-  bottom: 0;
-  height: 100px;
-  background-color: #727272; /* Semi-transparent background */
-  border-radius: 10px;
+.abt-img {
+  width: 100vw;
+  height: 400px;
+  display: block; 
 }
-.para2 {
-  font-family: jaldi;
-}
-.overlay-text2 {
+
+.about-text {
   position: absolute;
-  top: 220%; /* Adjust the top position as needed */
-  left: 17%;
-  font-size: 6rem; /* Adjust the font size as needed */
-  color: white; /* Set the text color */
-  font-weight: bold; /* Set the font weight if needed */
-  text-align: center; /* Center the text */
+  margin-bottom:10% ;
+  margin-left: 45%;
+  font-size: 30px;
+  transform: translateY(-50%);
 }
-.box2 {
-  position: absolute;
-  bottom: 0px;
-  top: 1900px;
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin: 100px;
-  width: 400px; /* Adjust the width as needed */
-  height: 600px;
-  color: #fcfafa;
-  background-color: hsla(0, 0%, 0%, 0.642);
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 10px;
+
+.about-text h1{
+  font-size: 70px;
+  font-weight: bold;
+  color: white;
+  font-family: Montserrat;
 }
-.box3 {
-  position: absolute;
-  top: 0px;
-  bottom: 100px;
-  left: 480px;
-  border: 1px solid #ccc;
-  padding: 40px;
-  width: 400px; /* Adjust the width as needed */
-  height: 560px;
-  color: #fcfafa;
-  background-color: hsla(0, 0%, 0%, 0.642);
-  font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 10px;
-}
-.box4 {
-  position: absolute;
-  top: 0px;
-  bottom: 100px;
-  left: 1000px;
-  border: 1px solid #ccc;
-  padding: 40px;
-  width: 400px; /* Adjust the width as needed */
-  height: 560px;
-  color: #fcfafa;
-  background-color: hsla(0, 0%, 0%, 0.642);
-  font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 10px;
-}
-.para4{
-  font-family: jaldi;
-  font-size: 1.7rem;
-}
-.footer{position: relative;
-   background-color: #ffffff;
-  min-height: 100px;
-  padding-left: 41%;
+
+/***********************    IMAGES CONTAINER    **************************************************/
+.Exe-cont{
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  font-size: 1.5rem;
-  color: black;
-  margin-left: 0px;
+  padding:10px;
+  margin-right: 15%;
+  margin-left:15%;
+  margin-top: 3%;
 }
-.App-header2 {
-  background-color:#2B91CA;
-  min-height: 400px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-size: calc(20px);
-  color: white;}
-  .footer{ background-color: #ffffff;
-    min-height: 100px;
-    padding-left: 41%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 1.5rem;
-    color: black;
-  }
+
+.Exe-img{
+  width:300px;
+  height:400px;
+}
+
+
+

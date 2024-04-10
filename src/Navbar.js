@@ -1,73 +1,35 @@
-import "./navbar.css";
-import React, { useEffect, useState } from "react";
-
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "./logo.png";
+import "./navbar.css";
+
 function Navbar() {
-  
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-
-    
-  <div
-    className="class-navbar"
-   style={{background:'#ffffff'}}
-  >
-    <img
-      src={require("./logo.png")}
-      alt="logo"
-      style={{ width: "80px", aspectRatio: 1, marginLeft: "60px" }}
-    />
-    <div>
-      <span>
-        <div className="nav-list">
-          <ul>
-          <span className="hom-nav-item"> <Link
-                to="/"
-                style={{ textDecoration: "none", color:'#20434F' }}>HOME</Link></span>
-            <span className="hom-nav-item">
-              <Link
-                to="/about"
-                style={{ textDecoration: "none", color:'#20434F' }}
-              >
-                ABOUT
-              </Link>
-            </span>
-            <span className="hom-nav-item">SOLUTIONS</span>
-            <span className="hom-nav-item">
-              <Link
-                to="/connect"
-                style={{ textDecoration: "none", color:'#20434F' }}
-              >
-                CONTACT US
-              </Link>
-              <span
-                className="hom-nav-item"
-                style={{ marginLeft: "130px" }}
-              >
-                <button className="nav-button">
-                  {" "}
-                  <Link
-                    to="/Login"
-                    style={{ textDecoration: "none", color: "#ffffff" }}
-                  >
-                    Login
-                  </Link>
-                </button>
-              </span>
-              <span className="hom-nav-item">
-                <button className="nav-button"> <Link
-                    to="/Signup"
-                    style={{ textDecoration: "none", color: "#ffffff" }}
-                  >Sign Up</Link></button>
-              </span>
-            </span>
-          </ul>
+    <div className="navbar" style={{ background: '#ffffff' }}>
+      <img src={logo} alt="logo" className="nav-img" />
+      <button className="menu-icon" onClick={toggleMenu}>
+        <div className={`menu-bars ${isOpen ? 'open' : ''}`}></div>
+      </button>
+      <div className={`menu ${isOpen ? 'open' : ''}`}>
+        <ul>
+          <li><Link to="/" onClick={toggleMenu}>HOME</Link></li>
+          <li><Link to="/about" onClick={toggleMenu}>ABOUT</Link></li>
+          <li><Link to="/solution" onClick={toggleMenu}>SOLUTION</Link></li>
+          <li><Link to="/connect" onClick={toggleMenu}>CONTACT US</Link></li>
+        </ul>
+        <div className="auth-buttons">
+          <button className="nav-button"><Link to="/login" onClick={toggleMenu}>Login</Link></button>
+          <button className="nav-button"><Link to="/signup" onClick={toggleMenu}>Sign Up</Link></button>
         </div>
-      </span>
+      </div>
     </div>
-  </div>
-
-  )
+  );
 }
-export default Navbar;
 
-   
+export default Navbar;

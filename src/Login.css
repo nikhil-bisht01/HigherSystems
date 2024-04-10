@@ -1,10 +1,10 @@
-.login-for{
+#child1{
   display: inline;
   position: absolute;
-  top: 60px;
-  left: 63%;
+  top: 17.2%;
+  left: 58%;
   width:400px;
-  height:670px;
+  height:600px;
   border:1px solid grey;
   border-radius:20px ;
   background-color: #ffffff79;
@@ -14,43 +14,50 @@
 .login-img{
   background-color: #D8E9F2;
   width: 100%;
-   height:770px;}
+   height:700px;}
 
-.login-img2{
+.img-cont{
   position: absolute;
-  top: 12%;
+  top: 20%;
   right: 55%;
-  width: 600px;
-  height: 600px;
+  width: 1400px;
+  height: 550px;
 }
-.log-h1{
+.heading{
   width:150px;
   height: 40px;
   font-size: 3rem;
-  margin-left: 18px;
+  margin-left:33%;
  
   
 }
-.log-btn{
-  width: 350px;
-  padding: 40px 120px 40px;
-}
-.log-button:hover{
-  background-color: #058AD4;
-  color: #FFFFFF;
-}
-.lable{
+
+.text{
   font-size: 1.1rem;
+  margin-left: 15%;
   
-  margin-left: 45px;
 }
-.log-input{
-  margin-left: 45px;
-  width:250px;
+
+.credentials{
+  width: 59.8%;
+  height: 38px;
+  border: 1px solid rgba(128, 128, 128, 0.475);
+  border-radius: 5px;
+  background-color: #ffffff13;
+  margin-left: 10%;
 }
-.log-submit{
-  margin-top: 70px;
-  margin-left: 100px;
+.child3{
+width:100%;
+height: 149px;
+
+}
+.pass-link{
+ position: absolute;
+ margin-top: -35px; 
+ margin-left: 58%;
+} 
+
+.button{
   background-color: #057ad48d;
   border: none;
   width:200px;
@@ -58,57 +65,18 @@
   color: #FFFFFF;
   font-size: 1rem;
   border-radius: 5px;
-}
-
-.log-submit:hover{
-  background-color: #0579D4;
-  color: #FFFFFF;
-  cursor: pointer;
-}
-
-.log-input{
-  width: 54%;
-  height: 40px;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: #ffffff13;
-}
-.log-email{
-  margin-left:45px ;
-  width: 100%;
-  height: 23px;
-  border: 1px solid rgba(0, 0, 0, 0.232);
-  border-radius: 60px;
-  background-color: #ffffff13;
-}
-.forgot-password{
-  position: absolute;
-  top: 55%;
-  right:5%;
-}
-.remember-me{
-  position: absolute;
-  top: 55%;
-  right: 60%;
-}
-.log-in-button{
-  margin-top: 150px;
-  margin-bottom: 45px;
-  
-  
-  margin-left: 100px;
-  background-color: #057ad48d;
-  border: none;
-  width:200px;
-  height:35px;
-  color: #FFFFFF;
-  font-size: 1rem;
-  border-radius: 5px;
+  display: inline;
+  align-items: center;
+  margin-left: 23%;
+  margin-top: 80px;
 }
 .log-in-button:hover{
   background-color: #0579D4;
   color: #FFFFFF;
   cursor: pointer;
+}
+.new{
+  margin-left: 20%;
 }
 .sign-up-link:hover{
   font-weight: bold;
@@ -117,4 +85,8 @@
   position: absolute;
   top: 61%;
   right: 13%;
+}
+.checkbox{
+  margin-top: 5px;
+  margin-left: 36px;
 }
