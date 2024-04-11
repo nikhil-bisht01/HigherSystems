@@ -8,6 +8,7 @@ import Login from './Login'
 import Signup from './Signup'
 import Example from './Example'
 import Employee from './Employee'
+import Solution from './Solution'
 import Business from './Business' 
 import Infra from './Infra'
 import Implementation from './Implementation'
@@ -30,6 +31,7 @@ function App() {
         <Route path='/Business' element={<Business/>}/>
         <Route path='/Infra' element={<Infra/>}/>
         <Route path= '/DMS' element={<DMS/>}/>
+        <Route path= '/Solution' element={<Solution/>}/>
         <Route path='/Implementation' element={<Implementation/>}/>
         <Route path='/Components/Navbar' element={<Navbar/>}/>
       </Routes>

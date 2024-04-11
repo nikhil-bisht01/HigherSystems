@@ -48,7 +48,7 @@ function Business() {
   
 
 
-      <div className="img-container " >
+      <div className="img-container1 " >
        
        <div onMouseEnter={myFunction} className="image-cont" onClick={() => handleImageClick("Document Management System")}>
 
@@ -76,7 +76,7 @@ function Business() {
       <br/>
 
 
-      <div className="img-container" >
+      <div className="img-container1" >
        <div className="image-cont" onClick={() => handleImageClick("Asset Management System")}>
          <img src={require('./assets.svg')} alt="img" />
         
