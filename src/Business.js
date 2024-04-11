@@ -69,8 +69,12 @@ function Business() {
          <img src={require("./management.svg")} alt="img" />
       </div>
       <p>Human Resource Management System</p>
-     
-       <div className="image-cont">
+      </div >
+      <br/>
+
+
+      <div className="img-container1" >
+       <div className="image-cont" onClick={() => handleImageClick("Asset Management System")}>
          <img src={require('./assets.svg')} alt="img" />
        <div/> 
        
