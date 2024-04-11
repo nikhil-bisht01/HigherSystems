@@ -52,12 +52,9 @@ function SignupPage() {
 
   return (
     <div>
+        <Navbar />
       <div>
-        <img
-          className="login-img"
-          src={require("./login2.png")}
-          alt="login image"
-        />
+       
         <img
           className="signup-img"
           src={require("./signin.png")}
@@ -80,12 +77,13 @@ function SignupPage() {
         </p>
         <div className="login">
           <form onSubmit={handleSignup}>
+            <div className="child"><h1>Sign Up</h1></div>
             <div className="child">
               <div>
-                <label className="label">First Name</label>
+                <label style={{marginLeft:'-20px'}}>First Name</label>
                 <input
-                  className="log-email"
-                  style={{ border: "1px solid black", width: "200px" }}
+                  className="cont"
+                  style={{width:'250px',border:'1px solid gray', marginLeft:"-20px"}}
                   type="text"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
@@ -93,10 +91,10 @@ function SignupPage() {
                 />
               </div>
               <div>
-                <label className="label">Last Name</label>
+                <label style={{marginLeft:'-20px'}} >Last Name</label>
                 <input
-                  className="log-email"
-                  style={{ border: "1px solid black", width: "200px" }}
+                  className="cont"
+               style={{width:'250px',border:'1px solid gray', marginLeft:"-20px"}}
                   type="text"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
@@ -106,10 +104,10 @@ function SignupPage() {
             </div>
             <div className="child">
               <div>
-                <label className="label">E-mail *</label>
+                <label style={{marginLeft:'-20px'}}>E-mail *</label>
                 <input
-                  className="log-email"
-                  style={{ border: "1px solid black", width: "305px" }}
+                  className="cont"
+                  style={{width:'250px',border:'1px solid gray', marginLeft:"-20px"}}
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -117,10 +115,10 @@ function SignupPage() {
                 />
               </div>
               <div>
-                <label className="label">Phone Number*</label>
+                <label style={{marginLeft:'-20px'}}>Phone Number*</label>
                 <input
-                  className="log-email"
-                  style={{ border: "1px solid black", width: "305px" }}
+                  className="cont"
+                  style={{width:'250px',border:'1px solid gray', marginLeft:"-20px"}}
                   type="tel"
                   value={phoneNo}
                   onChange={(e) => setPhone(e.target.value)}
@@ -130,9 +128,10 @@ function SignupPage() {
             </div>
             <div className="child">
               <div>
-                <label className="label">Password:</label>
+                <label style={{marginLeft:'-20px'}}>Password:</label>
                 <input
-                  className="log-emal"
+                  className="cont"
+                  
                   type="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
@@ -140,17 +139,17 @@ function SignupPage() {
                 />
               </div>
               <div>
-                <label className="label">Confirm Password:</label>
+                <label style={{marginLeft:'-20px'}}>Confirm Password:</label>
                 <input
-                  className="log-email"
-                  type="password"
+                  className="cont"
+                 
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
                   required
                 />
               </div>
             </div>
-            <div className="child4">
+            <div className="child">
               <button className="log-sub" type="submit">
                 Sign Up
               </button>
@@ -158,7 +157,7 @@ function SignupPage() {
           </form>
         </div>
       </div>
-      <Navbar />
+    
     </div>
   );
 }

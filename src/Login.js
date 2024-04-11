@@ -33,6 +33,7 @@ function LoginPage() {
 
   return (
     <div>
+       <Navbar/>
     <div style={{overflow:'hidden'}}>
      <div className='child'><img className='img-cont' src={require('./login-img.png')} alt='img' /></div>
 
@@ -76,7 +77,7 @@ function LoginPage() {
         {/* Don't have an account? Sign Up Link */}
        
       </div>
-      <Navbar/>
+     
       
     </div>
     <div style={{marginTop:'45%'}}><Footer/></div>

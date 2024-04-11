@@ -1,92 +1,82 @@
+import React, { useState } from "react";
 import "./Business.css";
 import Footer from "./Components/Footer";
-import React, { useEffect, } from "react";
-import { useState } from "react";
-
+import Header from "./Navbar";
 import { Link } from "react-router-dom";
-function Business() {
 
+function Business() {
+  const [selectedService, setSelectedService] = useState("");
+  const [showQueryForm, setShowQueryForm] = useState(false);
+  const [formValues, setFormValues] = useState({ name: "", email: "", query: "" });
+  
+
+  const handleImageClick = (serviceName) => {
+    if (showQueryForm && selectedService === serviceName) {
+      setShowQueryForm(false); // Close query form if the same image is clicked again
+    } else {
+      setSelectedService(serviceName);
+      setShowQueryForm(true); // Show query form when image is clicked
+      setFormValues({ ...formValues, name: serviceName }); // Populate form with image name
+    }
+  };
+
+  const handleChange = (e) => {
+    setFormValues({ ...formValues, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Add code to handle form submission (e.g., send form data to server)
+    console.log("Form submitted:", formValues);
+    // Display submitted details
+  
+    // Show alert messages
+    window.alert("Message has been sent!");
+    window.alert("Thank you for visiting! Our team will contact you soon.");
+  };
+
+  const handleCloseForm = () => {
+    setShowQueryForm(false);
+  };
 
   return (
-    <div style={{}}>
-
-
-
-      {/*********************    BACKGROUND IMAGE    *********************/}
-      <div className="business-image-container" >
+    <div className="business-container">
+      <div className="business-image-container">
         <img src={require("./Office1.jpg")} alt="img" className="business-background-image" />
-        <h className="Business-Sol">BUSINESS SERVICES</h>
+        <h2 className="business-heading">BUSINESS SERVICES</h2>
       </div>
 
-
-      {/******************************************************Images Container ******************************************************/}
-      <div className="container" style={{ borderRadius: '1.5rem' }}>
-        <div className="image-row" style={{ borderRadius: '1.5rem' }}>
-          <div className="image-cont"
-            onMouseOver={(e) => {
-              const img = e.currentTarget.querySelector('img');
-              img.style.opacity = "0.6";
-              img.style.transform = "scale(1.2)";
-              img.style.borderRadius = "1.2rem";
-              img.style.transition = "all 1s ease-in-out";
-              // Store the initial border radius value
-              img.dataset.initialBorderRadius = img.style.borderRadius;
-            }}
-            onMouseOut={(e) => {
-              const img = e.currentTarget.querySelector('img');
-              img.style.opacity = "1";
-              img.style.transform = "scale(1)";
-              // Restore the initial border radius value
-              img.style.borderRadius = img.dataset.initialBorderRadius;
-            }}>
-            <Link to="./DMS" ><img src={require('./Security.png')} alt="img" style={{ borderRadius: '1.5rem' }} />
-              <h1 className="text-1">Document Management System</h1></Link>
-          </div>
-
-          <div className="image-cont">
-            <img src={require('./Cloud.jpg')} alt="img" />
-            <h1 className="text-1">Content Management Systems</h1>
-          </div>
-
-          <div className="image-cont">
-            <img src={require('./ERP.webp')} alt="img" />
-            <h1 className="text-1">Enterprise-Level Software Solutions</h1>
-          </div>
-
-          <div className="image-cont">
-            <img src={require("./Human.png")} alt="img" />
-            <h1 className="text-1">Human Resource Management System</h1>
-          </div>
+      <div className="img-container">
+        <div className="image-cont" onClick={() => handleImageClick("Document Management System")}>
+          
+            <img src={require('./transformation.svg')} alt="Document Management System" style={{ borderRadius: '1.5rem' }} />
+          
         </div>
+        <p>Document Management System</p>
+
+        {/* Add more images and descriptions here */}
       </div>
-      <div className="cont">
-        <div className="image-row">
-          <div className="image-cont">
-            <img src={require('./Assest.png')} alt="img" />
-            <h1 className="text-1">Asset Management System</h1>
-          </div>
 
-          <div className="image-cont">
-            <img src={require('./Identity.jpg')} alt="img" />
-            <h1 className="text-1">Inventory Management System</h1>
-          </div>
-
-          <div className="image-cont">
-            <img src={require("./Digital.jpg")} alt="img" />
-            <h1 className="text-1">Digital Transformation and eLearning</h1>
-          </div>
+      {showQueryForm && (
+        <div className="query-form">
+          <form onSubmit={handleSubmit}>
+            <button className="close-button" onClick={handleCloseForm}>X</button>
+            <h2>Query Form</h2>
+            <input type="text" name="name" value={formValues.name} onChange={handleChange} readOnly />
+            <input type="email" name="email" placeholder="Email" value={formValues.email} onChange={handleChange} required />
+            <textarea name="query" placeholder="Your Query" value={formValues.query} onChange={handleChange} required />
+            <button type="submit">Submit</button>
+          </form>
+         
         </div>
-      </div>
-
-
-      {/***********************************************************FOOTER HEADING*********************************************************************/}
+      )}
 
       <Footer />
       <div className='class-footer'>
-        <h> Higher Systems | All Rights Reserved</h>
+        <h>Higher Systems | All Rights Reserved</h>
       </div>
     </div>
-
   );
 }
+
 export default Business;
