@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Business.css";
 import Footer from "./Components/Footer";
 import Header from "./Navbar";
-import myFunction from "./Components/animations";
 import { Link } from "react-router-dom";
 
 function Business() {
@@ -41,77 +40,61 @@ function Business() {
   };
 
   return (
-    <div className="business-image-container" >
-    <img src={require("./Office1.jpg")} alt="img" className="business-background-image" />
-    <h className="Business-Sol">BUSINESS SERVICES</h>
-  
-  
+    <div className="business-container">
+      <div className="business-image-container">
+        <img src={require("./Office1.jpg")} alt="img" className="business-background-image" />
+        <h2 className="business-heading">BUSINESS SERVICES</h2>
+      </div>
 
+      <div className="img-container">
+        <div className="image-cont" onClick={() => handleImageClick("Document Management System")}>
+          
+            <img src={require('./transformation.svg')} alt="Document Management System" style={{ borderRadius: '1.5rem' }} />
+          
+        </div>
+        <p>Document Management System</p>
 
-      <div className="img-container " >
-       
-       <div onMouseEnter={myFunction} className="image-cont" onClick={() => handleImageClick("Document Management System")}>
-
-         <img src={require('./transformation.svg')} alt="img"style={{borderRadius:'1.5rem'}} />
-        
-       </div> 
-       <p>Document Management System</p>
-
-       
-       <div className="image-cont" onClick={() => handleImageClick("Content Management System")}>
-         <img src={require('./content-management-system.svg')} alt="Content Management System" />
+        {/* Add more images and descriptions here */}
+      </div>
+      <div className="img-container" >
+      <div className="image-cont">
+         <img src={require('./content-management-system.svg')} alt="img" />
       </div>
        <p >Content Management Systems</p>
-       
-      <div className="image-cont" onClick={() => handleImageClick("Enterprise-Level Software Solutions")}>
+       <div >
          <img src={require('./software.svg')} alt="img" />
       </div>
        <p>Enterprise-Level Software Solutions</p>
-       
-      <div className="image-cont" onClick={() => handleImageClick("Human Resource Management System")}>
+       <div className="image-cont">
          <img src={require("./management.svg")} alt="img" />
       </div>
       <p>Human Resource Management System</p>
-      </div >
-      <br/>
-
-
-      <div className="img-container" >
-       <div className="image-cont" onClick={() => handleImageClick("Asset Management System")}>
+     
+       <div className="image-cont">
          <img src={require('./assets.svg')} alt="img" />
-        
+       <div/> 
+       
         
        </div>
        <p className="p1">Asset Management System</p>
 
-       <div className="image-cont" onClick={() => handleImageClick("Inventory Management System")}>
+       <div className="image-cont">
          <img src={require('./inventory-management.svg')} alt="img"  />
            
        </div>
        <p className="p1">Inventory Management System</p>
-       <div className="image-cont" onClick={() => handleImageClick("Digital Transformation and eLearning")}>
+       <div className="image-cont">
          <img src={require("./worldwide.svg")} alt="img" />
        
        </div>
        <p className="p1" >Digital Transformation and eLearning</p>
      </div>
-    <></>
 
-{/* /***********************************************************FOOTER HEADING*********************************************************************/}
- 
-<Footer/>
-<div id="box"></div>
-<div id="play"></div>
-  <div id="play"></div>
-  <div id="play"></div>    
-  <div id="play"></div>
-  <div id="play"></div>
-  <div id="play"></div>
-  
-    <div className='class-footer'> 
-          <h> Higher Systems | All Rights Reserved</h>
-        </div>
-        {showQueryForm && (
+      <Footer />
+      <div className='class-footer'>
+        <h>Higher Systems | All Rights Reserved</h>
+
+      </div> {showQueryForm && (
         <div className="query-form">
           <form onSubmit={handleSubmit}>
             <button className="close-button" onClick={handleCloseForm}>X</button>
@@ -124,11 +107,7 @@ function Business() {
          
         </div>
       )}
-
-      </div>
-
-    
-    
+    </div>
   );
 }
 
