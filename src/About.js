@@ -22,7 +22,7 @@ function About() {
           </div>
         </div>
         <div class="Exe-img">
-          <img src={require("./Exe.png")} alt="img" />
+          <img src={require("./Group 108 (1).svg")} alt="img" />
           <div class="Exe-overlay">
             <h1>Company Overview</h1>
             <p>Higher Systems was founded in 2014 and has since grown into a global software service force. The company specializes in custom software development, IT consulting, cloud services, etc. With a team of highly skilled professionals and a customer-centric approach, Higher Systems has successfully delivered various projects across various industries.</p>
@@ -52,7 +52,7 @@ function About() {
           </div>
 
           <div class="tech-img">
-            <img src={require("./Exe.png")} alt="img" />
+            <img src={require("./Group 108 (1).svg")} alt="img" />
             <div class="core-overlay">
               <h1>Quality Assurance and Compliance</h1>
               <p>Higher Systems places a strong emphasis on quality assurance and compliance with industry standards and regulations. Rigorous testing protocols and adherence to best practices ensure that the delivered solutions meet the highest quality standards and are in compliance with relevant regulations.</p>
@@ -73,16 +73,16 @@ function About() {
         <img src={require("./Adobe.jpeg")} alt="img" />
         <img src={require("./aruba.jpeg")} alt="img" />
         <img src={require("./checkpoint.jpeg")} alt="img" />
-        <img src={require("./Exe.png")} alt="img" />
-        <img src={require("./Exe.png")} alt="img" />
-        <img src={require("./Exe.png")} alt="img" />
-        <img src={require("./Exe.png")} alt="img" />
-        <img src={require("./Exe.png")} alt="img" />
-        <img src={require("./Exe.png")} alt="img" />
-        <img src={require("./Exe.png")} alt="img" />
-        <img src={require("./Exe.png")} alt="img" />
-        <img src={require("./Exe.png")} alt="img" />
-        <img src={require("./Exe.png")} alt="img" />
+        <img src={require("./sectona.jpeg")} alt="img" />
+        <img src={require("./seqrite.jpeg")} alt="img" />
+        <img src={require("./trend.jpeg")} alt="img" />
+        <img src={require("./ruckus.jpeg")} alt="img" />
+        <img src={require("./nutanix.jpeg")} alt="img" />
+        <img src={require("./netapp.jpeg")} alt="img" />
+        <img src={require("./ivanti.jpeg")} alt="img" />
+        <img src={require("./filewave.jpeg")} alt="img" />
+        <img src={require("./cisco.png")} alt="img" />
+  
       </div>
 
 
