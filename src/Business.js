@@ -48,9 +48,9 @@ function Business() {
   
 
 
-      <div className="img-container1 " >
+      <div className="parrent" >
        
-       <div onMouseEnter={myFunction} className="image-cont" onClick={() => handleImageClick("Document Management System")}>
+       <div onMouseEnter={myFunction} className="child" onClick={() => handleImageClick("Document Management System")}>
 
          <img src={require('./transformation.svg')} alt="img"style={{borderRadius:'1.5rem'}} />
         
@@ -58,17 +58,17 @@ function Business() {
        <p>Document Management System</p>
 
        
-       <div className="image-cont" onClick={() => handleImageClick("Content Management System")}>
-         <img src={require('./content-management-system.svg')} alt="Content Management System" />
+       <div className="child" >
+         <img onClick={() => handleImageClick("Content Management System")} src={require('./content-management-system.svg')} alt="Content Management System" />
       </div>
        <p >Content Management Systems</p>
        
-      <div className="image-cont" onClick={() => handleImageClick("Enterprise-Level Software Solutions")}>
+      <div className="child" onClick={() => handleImageClick("Enterprise-Level Software Solutions")}>
          <img src={require('./software.svg')} alt="img" />
       </div>
        <p>Enterprise-Level Software Solutions</p>
        
-      <div className="image-cont" onClick={() => handleImageClick("Human Resource Management System")}>
+      <div className="child" onClick={() => handleImageClick("Human Resource Management System")}>
          <img src={require("./management.svg")} alt="img" />
       </div>
       <p>Human Resource Management System</p>
@@ -76,18 +76,20 @@ function Business() {
       
 
 
-      <div className="img-container1" >
-       <div className="image-cont" onClick={() => handleImageClick("Asset Management System")}>
-         <img src={require('./assets.svg')} alt="img" />
+      <div className="parrent" >
+       <div className="child1"  onClick={() => handleImageClick("Asset Management System")}>
+         <img src={require('./transformation.svg')} alt="img" />
+         
        </div>
        <p className="p1">Asset Management System</p>
+      
 
-       <div className="image-cont" onClick={() => handleImageClick("Inventory Management System")}>
+       <div className="child1" onClick={() => handleImageClick("Inventory Management System")}>
          <img src={require('./inventory-management.svg')} alt="img"  />
            
        </div>
        <p className="p1">Inventory Management System</p>
-       <div className="image-cont" onClick={() => handleImageClick("Digital Transformation and eLearning")}>
+       <div className="child1" onClick={() => handleImageClick("Digital Transformation and eLearning")}>
          <img src={require("./worldwide.svg")} alt="img" />
        
        </div>

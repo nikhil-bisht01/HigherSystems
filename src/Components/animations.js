@@ -1,5 +1,5 @@
 function myFunction() {
-  var imglarge = document.querySelector(".image-cont img")
+  var imglarge = document.querySelector(".child img")
   var container= document.querySelector("#box")
 imglarge.addEventListener("mouseenter", function () {
   container.style.opacity = 1;
