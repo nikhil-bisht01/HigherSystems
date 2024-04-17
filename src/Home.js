@@ -13,7 +13,7 @@ function Home() {
       </div>
       
 
-      {/***********************   HIGHER  INDIA   ****************************************/}
+{/***********************   HIGHER  INDIA   ****************************************/}
       <div className="home">
         <h1>HIGHER INDIA</h1>
         <p>Higher India appears to be a versatile IT solutions provider catering to a wide range of clients, including both corporate entities and the public sector. Their services cover various aspects of information technology, extending from infrastructure solutions to security measures. Here's a breakdown of what they offer:
@@ -25,21 +25,18 @@ function Home() {
           Overall, Higher India seems to offer a comprehensive suite of IT services tailored to meet the diverse needs of businesses and organizations of varying sizes and sectors. Their focus on end-to-end solutions suggests that they aim to provide holistic support throughout the entire IT lifecycle, from planning and implementation to ongoing maintenance and support. </p>
       </div >
 
-      {/***************************   ABOUT US    *****************************************/}
+{/***************************   ABOUT US    *****************************************/}
       <div className="about" >
-        <div className="about-content">
           <h1>About us</h1>
-          <p>
-            Higher India is a leading player in the
-            Higher India is a prominent figure in the dynamic and fiercely competitive software services industry. Renowned for its specialization in custom software development, IT consulting, and cloud services, the company stands out for its commitment to excellence and innovation.
-            Employing a team of exceptionally talented professionals, Higher India is well-equipped to tackle complex challenges and deliver high-quality solutions tailored to meet the unique needs of its clients. With a customer-centric approach at its core, the company has earned a reputation for consistently exceeding client expectations and fostering long-term partnerships.
-            Higher India's impressive track record spans across various industries, where it has successfully executed a diverse range of projects. Whether it's healthcare, finance, e-commerce, or any other sector, the company's expertise and dedication ensure the seamless execution and delivery of projects, driving tangible results for its clients. Through its relentless pursuit of excellence and commitment to innovation, Higher India continues to solidify its position as a leader in the software services industry.
+          <p> Higher India is a leading player in the
+              Higher India is a prominent figure in the dynamic and fiercely competitive software services industry. Renowned for its specialization in custom software development, IT consulting, and cloud services, the company stands out for its commitment to excellence and innovation.
+              Employing a team of exceptionally talented professionals, Higher India is well-equipped to tackle complex challenges and deliver high-quality solutions tailored to meet the unique needs of its clients. With a customer-centric approach at its core, the company has earned a reputation for consistently exceeding client expectations and fostering long-term partnerships.
+              Higher India's impressive track record spans across various industries, where it has successfully executed a diverse range of projects. Whether it's healthcare, finance, e-commerce, or any other sector, the company's expertise and dedication ensure the seamless execution and delivery of projects, driving tangible results for its clients. Through its relentless pursuit of excellence and commitment to innovation, Higher India continues to solidify its position as a leader in the software services industry.
           </p>
-        </div>
-        <img src={require("./website.gif")} alt="img" className="about-img" />
       </div>
 
-      {/*********************************  Servies Container   ************************************************/}
+      
+{/*********************************  Servies Container   ************************************************/}
       <div className="services-cont">
         <h1>OUR SERVICES</h1>
       </div>
@@ -58,7 +55,8 @@ function Home() {
         </div>
       </div>
 
-      {/*********************************   FUTURE OUTLOOK    ****************************************** */}
+
+{/*********************************   FUTURE OUTLOOK    ****************************************** */}
       <div className="future">
         <h1>Future Outlook</h1>
         <p>Looking ahead,Higher India Software Services Provider Company is poised for
@@ -71,10 +69,10 @@ function Home() {
 
       
 
-      {/******************************    FOOTER ****************************************************/}
+{/******************************    FOOTER ****************************************************/}
       <Footer />
 
-      {/*********************************   LAST FOOTER   **************************************************/}
+{/*********************************   LAST FOOTER   **************************************************/}
       <div className="footer-reserved">
         <h1>Higher Systems | All Rights Reserved</h1>
       </div>

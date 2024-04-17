@@ -5,8 +5,8 @@
 
 .abt-img {
   width: 100vw;
-  height: 500px;
-  display: block; 
+  height: 400px;
+  display: block;
 }
 
 .about-text {
@@ -22,10 +22,10 @@
 
 
 /***********************    IMAGES CONTAINER    **************************************************/
-.Exe-cont{
+.Exe-cont {
   display: flex;
   flex-direction: row;
-  margin-top:5%;
+  margin-top: 5%;
   justify-content: space-evenly;
 
 }
@@ -34,42 +34,38 @@
   position: relative;
   width: 100%;
   max-width: 300px;
-  height: 400px; 
+  height: 400px;
   margin-bottom: 20px;
-  
 }
-
 .Exe-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   border-radius: 1rem;
-
 }
-
 .Exe-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* Ensure overlay fills the container */
-  box-sizing: border-box; /* Include padding in the overlay size */
+  height: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.Exe-overlay h1{
+.Exe-overlay h1 {
   font-size: 20px;
   color: black;
-  margin-top: 0%;
   font-family: Montserrat;
 }
+
 .Exe-overlay p {
   font-size: 14px;
-  margin:10%;
-  color:black;
+  margin: 10%;
+  color: black;
   font-weight: 500;
   text-align: justify;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -77,8 +73,8 @@
 
 
 /************************  Components   *******************************************/
-.comp{
-  margin-top :5%;
+.comp {
+  margin-top: 5%;
   text-align: center;
 }
 
@@ -91,8 +87,8 @@
 
 .tech-img {
   position: relative;
-  width: 300px;
-  height:400px;
+  width: 250px;
+  height: 250px;
   overflow: hidden;
   border-radius: 1rem;
 }
@@ -105,18 +101,19 @@
 .core-overlay {
   position: absolute;
   top: 0%;
-  color:#20434F;
+  color:black;
 }
 
 .core-overlay h1 {
-  font-size: 26px;
+  font-size: 20px;
 }
 
 .core-overlay p {
-  margin-left: 3%;
-  margin-right:3%;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-top: 0%;
   text-align: justify;
+  font-weight: 400;
 }
 
 
@@ -124,52 +121,52 @@
 
 
 /************************   PARTNERS    ********************************************/
-.partner{
-  margin-top :5%;
+.partner {
+  margin-top: 5%;
   text-align: center;
-  margin-bottom:3%;
-  
+  margin-bottom: 3%;
+
 }
 
-.partner h1{
-  color:black;
+.partner h1 {
+  color: black;
   font-size: 25px;
   font-weight: 700;
   font-family: Montserrat;
 }
 
-.partner p{
+.partner p {
   margin-top: 0%;
   display: flex;
   text-align: justify;
   font-size: 16px;
-  color:#20434F;
+  color: #20434F;
   margin-left: 1in;
   margin-right: 1in;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.partner-img{
-  margin-top:0%;
+.partner-img {
+  margin-top: 0%;
   margin-left: 50px;
-  margin-right:50px;
+  margin-right: 50px;
 }
 
-.partner-img img{
-  width:200px;
-  height:200px;
-  padding:10px
+.partner-img img {
+  width: 200px;
+  height: 200px;
+  padding: 10px
 }
 
 
 .partners-row {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 
 
-/*******************    LAST FOOTER   ********************************/ 
+/*******************    LAST FOOTER   ********************************/
 .footer-reserved {
   width: 100%;
   font-size: 14px;
@@ -179,81 +176,204 @@
   align-items: center;
 
 }
+
 .footer-reserved h1 {
   font-size: 14px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: black;
   font-weight: 500;
-} 
+}
+
+
 
 
 
 /*******************    MEDIA QUERY   *********************************/
+
 @media screen and (max-width: 412px) {
+  /**************     BACKGROUND  IMAGE   **********************/
+  .about-bg {
+    position: relative;
+  }
+  
+  .abt-img {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+  
   .about-text {
-    margin-left: 50%; 
-    font-size: 20px; 
+    position: absolute;
+    font-size: 25px;
+    transform: translateY(-50%);
+    color: white;
+    font-weight: 600;
+    font-family: Montserrat;
   }
 
-  .about-text h1 {
-    font-size: 40px;
-  }
-    .comp {
-      margin-top: 15%; 
-    }
-
-  
-    .partner h1 {
-      font-size: 18px; 
-    }
-  
-    .partner p {
-      font-size: 12px; 
-    }
-
-
-    .partners-row {
-      flex-direction: column;
-    }
-  }
-  
-
-
-
-
-
-
-
-@media screen and (min-width: 413px) and (max-width: 768px) {
-  .about-text {
-    margin-left: 40%; 
-    font-size: 26px; 
+  /*************    EXECUTIVE CONTAINER   *******************/
+  .Exe-cont {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
   }
 
-  .about-text h1 {
-    font-size: 60px; 
+  .Exe-img {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
   }
 
-  .comp {
-    margin-top: 10%; 
+  .Exe-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
+  .Exe-overlay h1 {
+    font-size: 20px;
+    color: black;
+    margin-top: 0%;
+    font-family: Montserrat;
+  }
+
+  .Exe-overlay p {
+    font-size: 14px;
+    margin: 10%;
+    color: black;
+    font-weight: 500;
+    text-align: justify;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  /*************    CORE COMPONENTS   ******************/
+  .comp-img {
+    margin-top: 5%;
+  }
+
+  .tech-img {
+    max-width: 100%;
+    margin: 10px;
+  }
+
+  .core-overlay {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .core-overlay h1 {
+    font-size: 20px;
+  }
+
+  .core-overlay p {
+    font-size: 14px;
+  }
+
+  /****************   PARTNER   ***********************/
   .partner {
-    margin-left: 2%; 
-    margin-right: 2%;
+    margin-top: 3%;
   }
 
   .partner h1 {
-    font-size: 20px; 
+    font-size: 20px;
   }
 
   .partner p {
-    font-size: 14px; 
+    font-size: 14px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
-  .partners-row {
-    flex-direction: row; 
-}
+  .partner-img {
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .partner-img img {
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+  }
 }
 
+
+@media screen and (max-width: 768px) {
+  .abt-img {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+  
+  .about-text {
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    font-size: 30px;
+    transform: translateY(-50%);
+    color: white;
+    font-weight: 600;
+    font-family: Montserrat;
+  }
+  .Exe-cont {
+    flex-direction: row; 
+    align-items: center; 
+    margin-top: 3%; 
+  }
+
+  .Exe-img {
+    max-width: 80%; 
+    padding: 10px; 
+  }
+
+  .Exe-overlay {
+    padding: 20px; 
+  }
+
+  .Exe-overlay h1 {
+    font-size: 18px; 
+  }
+
+  .Exe-overlay p {
+    font-size: 12px;
+    margin: 5%; 
+  }
+
+  .comp-img {
+    margin-top: 3%; 
+  }
+
+  .tech-img {
+    width: 80%; 
+    height: auto; 
+    max-width: 300px; 
+  }
+
+  .tech-img img {
+    width: 100%;
+    height: 100%; 
+  }
+
+  .core-overlay h1 {
+    font-size: 20px; 
+  }
+
+  .core-overlay p {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    margin-left: 0; /* Remove left margin for smaller screens */
+    margin-right: 0; /* Remove right margin for smaller screens */
+  }
+}
 

@@ -14,25 +14,25 @@ function Solution() {
     <div style={{ overflow: 'hidden' }}>
       <Navbar />
       <div class="sol-bg">
-        <img src={require("./Assest.jpg")} alt="img" class="sol-img" />
-        <div class="sol-text"><h1>Solution</h1></div>
+        <img src={require("./solution.png")} alt="img" class="sol-img" />
+    
       </div>
 
 {/**********************   SOLUTION SERVICES*************************************/}
 
-      <div className="services-cont">
+      <div className="services-cont1">
         <h1>OUR SERVICES</h1>
       </div>
-      <div className="services-container">
-        <div className="ser-img">
+      <div className="services-container1">
+        <div className="ser-img1">
           <Link to="./Infra"><img src={require('./Cloud.jpg')} alt="img" />
             <h1>IT Infrastructure</h1></Link>
         </div>
-        <div className="ser-img">
+        <div className="ser-img1">
           <Link to="./Business"><img src={require('./ERP.webp')} alt="img" />
             <h1>Business Solutions</h1></Link>
         </div>
-        <div className="ser-img">
+        <div className="ser-img1">
           <Link to="./Implement"><img src={require('./Digital.jpg')} alt="img" />
             <h1>Implementation and Support</h1></Link>
         </div>

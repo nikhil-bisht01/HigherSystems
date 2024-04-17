@@ -14,7 +14,9 @@ import Infra from './Infra'
 import Implementation from './Implementation'
 import DMS from './DMS'
 import Navbar from './Navbar'
+import Contactform from './Contactform'
 import { Route, Routes } from 'react-router-dom'
+
 
 function App() {
   return (
@@ -32,6 +34,7 @@ function App() {
         <Route path='/Infra' element={<Infra/>}/>
         <Route path= '/DMS' element={<DMS/>}/>
         <Route path= '/Solution' element={<Solution/>}/>
+        <Route path= '/Contactform' element={<Contactform/>}/>
         <Route path='/Implementation' element={<Implementation/>}/>
         <Route path='/Components/Navbar' element={<Navbar/>}/>
       </Routes>

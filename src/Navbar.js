@@ -8,27 +8,35 @@ function Header() {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    
   };
 
   return (
-    <div className="navbar" style={{ background: '#ffffff' }}>
-      <img src={logo} alt="logo" className="nav-img" />
-      <button className="menu-icon" onClick={toggleMenu}>
-        <div className={`menu-bars ${isOpen ? 'open' : ''}`}></div>
-      </button>
-      <div className={`menu ${isOpen ? 'open' : ''}`}>
-        <ul>
-          <li><Link to="/" onClick={toggleMenu}>HOME</Link></li>
-          <li><Link to="/about" onClick={toggleMenu}>ABOUT</Link></li>
-          <li><Link to="/solution" onClick={toggleMenu}>SOLUTION</Link></li>
-          <li><Link to="/connect" onClick={toggleMenu}>CONTACT US</Link></li>
-        </ul>
-        <div className="auth-buttons">
-          <button className="nav-button"><Link to="/login" onClick={toggleMenu}>Login</Link></button>
-          <button className="nav-button"><Link to="/signup" onClick={toggleMenu}>Sign Up</Link></button>
-        </div>
+     <div className="navbar" style={{ background: '#ffffff' }}>
+       <div>
+        <img src={logo} alt="logo" className="nav-img" />
       </div>
+       <div className={`parent-nav ${isOpen ? "active" : ""}`}>
+        <div className="child-nav"><Link to="/" onClick={toggleMenu}>Home</Link></div>
+        <div className="child-nav"><Link to="/About" onClick={toggleMenu}>About</Link></div>
+        <div className="child-nav"><Link to="/Solution" onClick={toggleMenu}>Solution</Link></div>
+        <div className="child-nav"><Link to="/Connect" onClick={toggleMenu}>Contact</Link></div>
+         
+      </div>
+     {isOpen && (
+        <div className="menu-toggle" onClick={toggleMenu}>
+          <i className="fas fa-times"></i>
+         </div>
+      )}
+      {!isOpen && (
+        <div className="menu-toggle" onClick={toggleMenu}>
+          <i className="fas fa-bars"></i>
+        </div>
+       )}
     </div>
+    
+
+   
   );
 }
 

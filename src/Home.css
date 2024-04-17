@@ -2,13 +2,11 @@
 .home-bg {
   position: relative;
 }
-
 .home-img {
   width: 100vw;
   height: 500px;
   display: block;
 }
-
 .overlay-text {
   position: absolute;
   top: 50%;
@@ -16,7 +14,6 @@
   font-size: 30px;
   transform: translateY(-50%);
 }
-
 .overlay-text h1 {
   font-size: 70px;
   font-weight: bold;
@@ -24,7 +21,6 @@
   font-family: Montserrat;
 
 }
-
 .overlay-text span {
   font-size: 70px;
   font-weight: 300;
@@ -45,7 +41,7 @@
   font-family: Montserrat;
   color: black;
   font-family: 700;
-  margin-left: 40%;
+  text-align: center;
 }
 
 .home p {
@@ -55,48 +51,37 @@
   text-align: justify;
   margin-left: 2in;
   margin-right: 2in;
-  margin-top: 2%;
+  margin-top: 0%;
+
 }
 
 
 
 /*************************    About   *************************************/
-.about {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10%;
+.about{
+  margin: 2ch;
+  margin-top: 5%;
+
 }
 
-.about-content {
-  flex: 1;
-}
-
-.about-content h1 {
+.about h1 {
   font-size: 25px;
   font-family: Montserrat;
   color: black;
-  font-weight: 700;
-  margin-left: 50%;
+  font-family: 700;
+  text-align: center;
 }
 
-.about-content p {
+.about p {
   font-size: 16px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #20434F;
   text-align: justify;
-  margin-left: 1.5in;
-  margin-top: 3%;
-
-}
-
-.about-img {
-  width: 400px;
-  height: 400px;
-  margin-left: 1.5in;
+  margin-left: 2in;
+  margin-right: 2in;
   margin-top: 0%;
-  margin-right: 3%;
-}
 
+}
 
 
 /******************************   Services Container   ***************************/
@@ -108,8 +93,9 @@
   font-size: 25px;
   font-family: Montserrat;
   color: black;
-  font-weight: 800;
-  margin-left: 44%;
+  font-weight: 700;
+  text-align: center;
+  
 }
 
 .services-container {
@@ -169,7 +155,7 @@
   font-family: Montserrat;
   color: black;
   font-weight: 700;
-  margin-left: 43%;
+  text-align: center;
 }
 
 .future p {
@@ -177,9 +163,9 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #20434F;
   text-align: justify;
-  margin-left: 1.5in;
-  margin-right: 1.5in;
-  margin-top: 3%;
+  margin-left: 2in;
+  margin-right: 2in;
+  margin-top: 2%;
 }
 
 /********************************     FOOTER RESERVED   *************************************************/
@@ -203,8 +189,33 @@
 
 /***************************  MEDIA QUERY FOR 412PX*********************************************************/
 @media only screen and (max-width: 412px) {
-  .home {
-    /****** HEAD ********/
+  .home-img {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translateY(-50%);
+  }
+  
+  .overlay-text h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    font-family: Montserrat;
+  
+  }
+  
+  .overlay-text span {
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+  }
+  .home {           /****** HEAD ********/
     margin: 1ch;
     margin-top: 3%;
   }
@@ -221,8 +232,7 @@
     margin-top: 2%;
   }
 
-  .about {
-    /*********** ABOUT *****************/
+  .about {             /*********** ABOUT *****************/
     flex-direction: column;
     align-items: center;
     margin-top: 5%;
@@ -249,15 +259,12 @@
     margin: 3% 0;
   }
 
-  .services-cont {
-    /********  Services    ***********/
+  .services-cont {                   /********  Services    ***********/
     margin-top: 5%;
   }
 
   .services-cont h1 {
     font-size: 20px;
-    margin-left: 0;
-    text-align: center;
   }
 
   .services-container {
@@ -269,23 +276,39 @@
   }
 
   .ser-img {
-    width: 90%;
-    height: auto;
-    margin-bottom: 5%;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 200px;
+    height: 20px;
   }
-
-  .ser-img h1 {
-    font-size: 18px;
-  }
-
+  
   .ser-img img {
-    transition: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all .05s ease-in-out;
   }
-
+  
+  .ser-img h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #20434F;
+    text-align: center;
+    font-size: 25px;
+  
+  }
+  
   .ser-img:hover img {
-    transform: none;
-    opacity: 1;
+    transform: scale(1.2);
+    opacity: 0.6;
+  
   }
+  
+  
 
 .future {         /*********    FUTURE    *****************/
     margin-top: 5%;
@@ -295,7 +318,8 @@
   .future h1 {
     font-size: 20px;
     margin-left: 0;
-    text-align: center;
+  
+    text-align: justify;
   }
 
   .future p {
@@ -307,6 +331,8 @@
     margin-bottom: 3%;
   }
 }
+
+
 
 /*****************************  MEDIA QUERY FOR 768PX  **********************************************/
 @media only screen and (max-width: 768px) {
@@ -373,7 +399,6 @@
     width: 200px;
     height: 200px;
     margin-bottom: 5%;
-    padding:10px;
     border-radius:1rem;
 
   }
@@ -396,9 +421,95 @@
   .future p {
     margin-left: 1ch;
     margin-right: 1ch;
-    text-align: center;
+    text-align: justify;
   }
 }
 
+/***********   MEDIA QUERY FOR MORE THAN 768PX SCREEN    **************/
 
+@media only screen and (min-width: 769px) and (max-width: 1014px) {
+  .home {
+    margin: 1ch;
+    margin-top: 5%;
+  }
 
+  .home h1 {
+    font-size: 32px; 
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .home p {
+    margin-left: 1ch;
+    margin-right: 1ch;
+  }
+
+  .about {
+    flex-direction: row; 
+    align-items: center;
+    margin-top: 5%;
+  }
+
+  .about-content h1 {
+    font-size: 32px; 
+    text-align: center;
+  }
+
+  .about-content p {
+    margin-right: 10px;
+    margin-left: 5px;
+    text-align: justify;
+  }
+
+  .about-img {
+    width: 200px;
+    height: 200px;
+    margin-left: 4%;
+  }
+
+  .services-cont {
+    margin-top: 5%;
+  }
+
+  .services-cont h1 {
+    font-size: 32px; 
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .services-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 10%; 
+    margin-left: 10%; 
+    margin-top: 3%;
+  }
+
+  .ser-img {
+    width: 200px;
+    height: 200px;
+    margin: 2%;
+    border-radius: 1rem;
+  }
+
+  .ser-img h1 {
+    font-size: 25px; 
+  }
+
+  .future {
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+
+  .future h1 {
+    font-size: 32px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .future p {
+    margin-left: 1ch;
+    margin-right: 1ch;
+    text-align: center;
+  }
+}

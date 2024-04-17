@@ -8,8 +8,7 @@ function About() {
     <div style={{ overflow: 'hidden' }}>
       <Navbar />
       <div class="about-bg">
-        <img src={require("./About1.jpg")} alt="img" class="abt-img" />
-        <h1 className="about-text">ABOUT US</h1>
+        <img src={require("./about.jpg")} alt="img" class="abt-img" />
       </div>
 
 {/****************************  Images Container**************************************************/}
@@ -36,7 +35,7 @@ function About() {
         <h1> Core Components</h1>
         <div class="comp-img">
           <div class="tech-img">
-            <img src={require("./Exe.png")} alt="img" />
+            <img src={require("./Group 30 (1).svg")} alt="img" />
             <div class="core-overlay">
               <h1>Technical Expertise</h1>
               <p>Higher Systems boasts a team of seasoned software engineers, architects, and designers with expertise in the latest technologies. This technical prowess enables the company to develop innovative and scalable solutions tailored to meet the unique needs of each client.</p>
@@ -44,7 +43,7 @@ function About() {
           </div>
 
           <div class="tech-img">
-            <img src={require("./Exe.png")} alt="img" />
+            <img src={require("./comapny.jpg")} alt="img" />
             <div class="core-overlay">
               <h1>Industry Specialization</h1>
               <p>The company has successfully served clients across diverse industries. This broad industry exposure has equipped Higher Systems with valuable insights and a nuanced understanding of industry-specific challenges and opportunities.</p>
@@ -52,7 +51,7 @@ function About() {
           </div>
 
           <div class="tech-img">
-            <img src={require("./Group 108 (1).svg")} alt="img" />
+            <img src={require("./Group 30.svg")} alt="img" />
             <div class="core-overlay">
               <h1>Quality Assurance and Compliance</h1>
               <p>Higher Systems places a strong emphasis on quality assurance and compliance with industry standards and regulations. Rigorous testing protocols and adherence to best practices ensure that the delivered solutions meet the highest quality standards and are in compliance with relevant regulations.</p>
@@ -64,26 +63,7 @@ function About() {
 
 
 
-{/*************************   PARTNER   ********************************************** */}
-      <div className="partner">
-        <h1> OUR PARTNERS IN TECHNOLOGY</h1>
-        <p>At Higher Systems, we take great satisfaction in our solid technological alliances. Working together with top IT firms enables us to provide our clients with cutting-edge solutions and unmatched support. Through these strategic partnerships, we can take advantage of the most recent advancements in infrastructure, software, and hardware to fulfill the various demands of companies in a variety of sectors. By collaborating closely with our partners, we make sure that our clients get access to the newest technology and are provided with professional advice and assistance at every stage. By working together, we enable businesses to prosper in the digital age and confidently accomplish their objectives.</p>
-      </div>
-      <div className="partner-img">
-        <img src={require("./Adobe.jpeg")} alt="img" />
-        <img src={require("./aruba.jpeg")} alt="img" />
-        <img src={require("./checkpoint.jpeg")} alt="img" />
-        <img src={require("./sectona.jpeg")} alt="img" />
-        <img src={require("./seqrite.jpeg")} alt="img" />
-        <img src={require("./trend.jpeg")} alt="img" />
-        <img src={require("./ruckus.jpeg")} alt="img" />
-        <img src={require("./nutanix.jpeg")} alt="img" />
-        <img src={require("./netapp.jpeg")} alt="img" />
-        <img src={require("./ivanti.jpeg")} alt="img" />
-        <img src={require("./filewave.jpeg")} alt="img" />
-        <img src={require("./cisco.png")} alt="img" />
-  
-      </div>
+
 
 
 

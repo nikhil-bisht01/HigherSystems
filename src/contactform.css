@@ -1,9 +1,49 @@
+.name{
+  display: flex;
+  justify-content: space-between;
+  gap:5%;
+}
 
+.name1{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 
-form label {
+.name1-label {
   display: block;
   margin-bottom: 10px;
 }
+/****************   MAIL    **************************/  
+.mail{
+  display: flex;
+  justify-content: space-between;
+  gap:5%;
+}
+
+.mail1{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.name1-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/********************     BUSINESS & INFO   **************************************/
+.business{
+  display: flex;
+  justify-content: space-betwee;
+  gap:5%;  
+}
+
+.business1{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 
 form label span {
   display: block;
