@@ -35,10 +35,10 @@ function LoginPage() {
     <div>
        <Navbar/>
     <div style={{overflow:'hidden'}}>
-     <div className='child'><img className='img-cont' src={require('./login-img.png')} alt='img' /></div>
+     <div ><img className='img-cont' src={require('./login-img.png')} alt='img' /></div>
 
-      <div className='child' id='child1'>
-      <div className='child3'>
+      <div className='login-form' id='child1'>
+      <div className='login-child3'>
       
           <h1 className='heading'>Login</h1>
           {/* Remember Me Checkbox */}
@@ -46,19 +46,19 @@ function LoginPage() {
          
         
         <form onSubmit={handleLogin}>
-          <div className='child3'>
-            <label className='text' style={{marginTop:'-40px'}}>E-mail or Username*</label>
-          <input className='credentials'placeholder='example@gmail.com ' style={{width:'298px',border:'1px solid gray'   }} type="email" value={email} onChange={e => setEmail(e.target.value)} required />
+          <div className='login-child3'>
+            <label className='login-text' style={{marginTop:'-40px'}}>E-mail or Username*</label>
+          <input className='login-credentials'placeholder='example@gmail.com ' style={{width:'298px',border:'1px solid gray'   }} type="email" value={email} onChange={e => setEmail(e.target.value)} required />
           </div>
 
-          <div className='child3'>
-          <label className='text' style={{marginTop:'-40px'}}> Password:</label>
-          <input className='credentials' placeholder=' example@123' style={{width:'298px',border:'1px solid gray'  }} type="password" value={password} onChange={e => setPassword(e.target.value)} required />
-          <label className='checkbox'>
+          <div className='login-child3'>
+          <label className='login-text' style={{marginTop:'-40px', }}> Password:</label>
+          <input className='login-credentials' placeholder=' example@123' style={{width:'298px',border:'1px solid gray'  }} type="password" value={password} onChange={e => setPassword(e.target.value)} required />
+          <label className='login-checkbox'>
             <input type="checkbox" checked={rememberMe} onChange={() => setRememberMe(!rememberMe)} />
             Remember me
           </label>
-          <a href="/Forgot-password" className="pass-link">Forgot password?</a>
+          <a href="/Forgot-password" className="login-forgot">Forgot password?</a>
           <div className='Captcha'><YourComponent/></div>
           </div>
 
@@ -66,12 +66,9 @@ function LoginPage() {
         
           {/* Forgot Password Link */}
          
-        
-          
-
            <div className='child3'>
-          <button className='button' >Login</button>
-          <p className='new'>Don't have an account?<a href= "/Signup"  className="sign-up-link">Sign up</a></p>
+          <button className='login--button' >Login</button>
+          <p className='text-link'>Don't have an account?<a href= "/Signup"  className="sign-up-link">Sign up</a></p>
           </div>
         </form>
         {/* Don't have an account? Sign Up Link */}
