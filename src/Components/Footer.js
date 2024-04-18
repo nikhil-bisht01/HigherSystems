@@ -23,6 +23,7 @@ function Footer() {
           <a href="./Implementation">Implementations and Support</a>
         </div>
       </div>
+      
       <div className='business-ft'>
         <h5>CONTACT INFO</h5>
         <div className='ft-icons'>
@@ -32,10 +33,6 @@ function Footer() {
         </div>
       </div>
     </div>
-
-
-  
-
   );
 }
 export default Footer;

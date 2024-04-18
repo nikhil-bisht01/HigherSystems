@@ -21,54 +21,30 @@
 }
 
 
-/***********************    IMAGES CONTAINER    **************************************************/
+/***********************    COMPANY OVERVIEW    **************************************************/
 .Exe-cont {
-  display: flex;
-  flex-direction: row;
+  margin: 2ch;
   margin-top: 5%;
-  justify-content: space-evenly;
 
 }
 
-.Exe-img {
-  position: relative;
-  width: 100%;
-  max-width: 300px;
-  height: 400px;
-  margin-bottom: 20px;
-}
-.Exe-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1rem;
-}
-.Exe-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.Exe-overlay h1 {
-  font-size: 20px;
-  color: black;
+.Exe-cont h1 {
+  font-size: 25px;
   font-family: Montserrat;
+  color: black;
+  font-weight: 700;
+  text-align: center;
 }
 
-.Exe-overlay p {
-  font-size: 14px;
-  margin: 10%;
-  color: black;
-  font-weight: 500;
-  text-align: justify;
+.Exe-cont p {
+  font-size: 16px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #20434F;
+  text-align: justify;
+  margin-left: 2in;
+  margin-right: 2in;
+  margin-top: 0%;
+
 }
 
 
@@ -76,6 +52,14 @@
 .comp {
   margin-top: 5%;
   text-align: center;
+}
+.comp h1{
+  font-size: 25px;
+  font-family: Montserrat;
+  color: black;
+  font-weight: 700;
+  text-align: center;
+
 }
 
 .comp-img {
@@ -93,77 +77,21 @@
   border-radius: 1rem;
 }
 
-.tech-img img {
-  width: 300px;
-  height: 400px;
-}
-
-.core-overlay {
-  position: absolute;
-  top: 0%;
-  color:black;
-}
-
-.core-overlay h1 {
+.tech-img h1{
   font-size: 20px;
-}
-
-.core-overlay p {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 0%;
-  text-align: justify;
-  font-weight: 400;
-}
-
-
-
-
-
-/************************   PARTNERS    ********************************************/
-.partner {
-  margin-top: 5%;
-  text-align: center;
-  margin-bottom: 3%;
-
-}
-
-.partner h1 {
-  color: black;
-  font-size: 25px;
-  font-weight: 700;
-  font-family: Montserrat;
-}
-
-.partner p {
-  margin-top: 0%;
-  display: flex;
-  text-align: justify;
-  font-size: 16px;
-  color: #20434F;
-  margin-left: 1in;
-  margin-right: 1in;
+  font-weight: 600;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.partner-img {
+.tech-img p {
+  margin-left: 5%;
+  margin-right: 5%;
   margin-top: 0%;
-  margin-left: 50px;
-  margin-right: 50px;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: justify;
+  font-weight: 400;
 }
-
-.partner-img img {
-  width: 200px;
-  height: 200px;
-  padding: 10px
-}
-
-
-.partners-row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 
 
 /*******************    LAST FOOTER   ********************************/
@@ -191,122 +119,62 @@
 /*******************    MEDIA QUERY   *********************************/
 
 @media screen and (max-width: 412px) {
-  /**************     BACKGROUND  IMAGE   **********************/
+
   .about-bg {
     position: relative;
   }
   
   .abt-img {
     width: 100vw;
-    height: auto;
+    height: 200px;
     display: block;
   }
   
-  .about-text {
-    position: absolute;
-    font-size: 25px;
-    transform: translateY(-50%);
-    color: white;
-    font-weight: 600;
-    font-family: Montserrat;
-  }
-
   /*************    EXECUTIVE CONTAINER   *******************/
+
   .Exe-cont {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
     margin-top: 5%;
   }
-
-  .Exe-img {
-    position: relative;
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  .Exe-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .Exe-overlay h1 {
+  
+  .Exe-cont h1 {
     font-size: 20px;
-    color: black;
-    margin-top: 0%;
-    font-family: Montserrat;
-  }
-
-  .Exe-overlay p {
-    font-size: 14px;
-    margin: 10%;
-    color: black;
-    font-weight: 500;
-    text-align: justify;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-
-  /*************    CORE COMPONENTS   ******************/
-  .comp-img {
-    margin-top: 5%;
-  }
-
-  .tech-img {
-    max-width: 100%;
-    margin: 10px;
-  }
-
-  .core-overlay {
-    width: 100%;
-    padding: 20px;
+    color: black;
+    font-weight: 700;
     text-align: center;
   }
-
-  .core-overlay h1 {
+  
+  .Exe-cont p {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 2%;
+    margin-right:2%;
+    color: #20434F;
+    text-align: justify;
+  }
+  /*************    CORE COMPONENTS   ******************/
+  .comp h1{
     font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-weight: 700;
+    text-align: center;
   }
-
-  .core-overlay p {
-    font-size: 14px;
-  }
-
-  /****************   PARTNER   ***********************/
-  .partner {
-    margin-top: 3%;
-  }
-
-  .partner h1 {
-    font-size: 20px;
-  }
-
-  .partner p {
-    font-size: 14px;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-  }
-
-  .partner-img {
+  .comp-img {
     margin-top: 0%;
-    margin-left: auto;
-    margin-right: auto;
+  }
+  .tech-img h1{
+    font-size:18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+
   }
 
-  .partner-img img {
-    width: 120px;
-    height: 120px;
-    padding: 5px;
-  }
+ 
+
+
 }
 
 
@@ -327,53 +195,37 @@
     font-weight: 600;
     font-family: Montserrat;
   }
-  .Exe-cont {
-    flex-direction: row; 
-    align-items: center; 
-    margin-top: 3%; 
-  }
 
-  .Exe-img {
-    max-width: 80%; 
-    padding: 10px; 
-  }
 
-  .Exe-overlay {
-    padding: 20px; 
+/***********    EXE-CONTAINER   **************/
+  .Exe-cont {             
+    margin: 1ch;
+    margin-top: 5%;
   }
-
-  .Exe-overlay h1 {
-    font-size: 18px; 
+  .Exe-cont h1 {
+    font-size: 20px;
+    margin-left: 0;
+    text-align: center;
   }
-
-  .Exe-overlay p {
-    font-size: 12px;
-    margin: 5%; 
+  .Exe-cont p {
+    margin-left: 1ch;
+    margin-right: 1ch;
   }
-
   .comp-img {
     margin-top: 3%; 
   }
-
   .tech-img {
     width: 80%; 
     height: auto; 
     max-width: 300px; 
   }
-
-  .tech-img img {
-    width: 100%;
-    height: 100%; 
-  }
-
-  .core-overlay h1 {
+  .tech-img h1 {
     font-size: 20px; 
   }
-
-  .core-overlay p {
-    font-size: 14px; /* Adjust font size for smaller screens */
-    margin-left: 0; /* Remove left margin for smaller screens */
-    margin-right: 0; /* Remove right margin for smaller screens */
+  .tech-img p {
+    font-size: 14px; 
+    margin-left: 0; 
+    margin-right: 0; 
   }
 }
 

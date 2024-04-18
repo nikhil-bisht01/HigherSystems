@@ -14,16 +14,16 @@ function Solution() {
     <div style={{ overflow: 'hidden' }}>
       <Navbar />
       <div class="sol-bg">
-        <img src={require("./solution.png")} alt="img" class="sol-img" />
-    
+        <img src={require("./solution4.png")} alt="img" class="sol-img" />
+        
       </div>
 
 {/**********************   SOLUTION SERVICES*************************************/}
 
-      <div className="services-cont1">
+<div className="sol-services">
         <h1>OUR SERVICES</h1>
       </div>
-      <div className="services-container1">
+      <div className="ser-cont">
         <div className="ser-img1">
           <Link to="./Infra"><img src={require('./Cloud.jpg')} alt="img" />
             <h1>IT Infrastructure</h1></Link>
@@ -37,16 +37,7 @@ function Solution() {
             <h1>Implementation and Support</h1></Link>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
+      
       <Footer />
       <div className="footer-reserved">
         <h1>Higher Systems | All Rights Reserved</h1>

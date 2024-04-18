@@ -32,13 +32,16 @@ function Connect() {
       </div>
       <div className="big-box">
         <div className="box">
-          <h1>C - 312, Twin Arcade,Military Road,Marol Andheri (East),Mumbai, Maharashtra 400059</h1>
+        <img src={require("./location.svg")} alt='data' className="con-icons"/>
+          <span>C - 312, Twin Arcade,Military Road,Marol Andheri (East),Mumbai, Maharashtra 400059</span>
         </div>
         <div className="box">
-          <h1>213, Block A4, Savitri Heights 2, VIP Road, Zirakpur, Punjab</h1>
+        <img src={require("./location.svg")} alt='data' className="con-icons"/>
+          <span>213, Block A4, Savitri Heights 2, VIP Road, Zirakpur, Punjab</span>
         </div>
         <div className="box">
-          <h1>Mohd. Johar Ali Road,Rampur,Uttar Pradesh - 244901</h1>
+        <img src={require("./location.svg")} alt='data' className="con-icons"/>
+          <span>Mohd. Johar Ali Road,Rampur,Uttar Pradesh - 244901</span>
         </div>
       </div>
 
