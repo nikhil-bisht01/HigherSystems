@@ -5,7 +5,7 @@
 
 .cnt-background-image {
   width: 100vw;
-  height: 350px;
+  height: 400px;
 }
 .cnt-overlay-text {
   position: absolute;
@@ -64,6 +64,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 5%;
+    margin-bottom: 5%;
   }
   .box{
     margin-bottom: 1%;
@@ -89,7 +90,7 @@
   @media screen and (max-width: 412px) {
     .cnt-background-image {
       width: 100vw;
-      height:200px;
+      height:260px;
     }
     .cnt-overlay-text {
       font-size: 20px;
@@ -157,10 +158,10 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width:413px)and (max-width: 768px) {
   .cnt-background-image {
     width: 100vw;
-    height:200px;
+    height:350px;
   }
   .cnt-overlay-text {
     font-size: 20px;

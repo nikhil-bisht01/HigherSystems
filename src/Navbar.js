@@ -12,7 +12,7 @@ function Header() {
   };
 
   return (
-     <div className="navbar" style={{ background: '#ffffff' }}>
+     <div className="navbar" style={{ background: '#ffffff' ,position:'fixed'}}>
        <div>
         <img src={logo} alt="logo" className="nav-img" />
       </div>

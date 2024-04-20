@@ -5,7 +5,7 @@
 
 .sol-img {
   width: 100vw;
-  height: 350px;
+  height: 400px;
   display: block;
 }
 
@@ -43,6 +43,7 @@
   margin-right: 15%;
   margin-left: 15%;
   margin-top: 2%;
+  margin-bottom: 5%;
 }
 
 .ser-img1 {
@@ -66,7 +67,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  color: #20434F;
+  color:#20434F;
   text-align: center;
   font-size: 25px;
 
@@ -104,7 +105,8 @@
 @media screen and (max-width: 768px) { 
   .sol-img {
     width: 100vw;
-    height:200px;
+    height:350px;
+    
     display: block;
   }
   
@@ -177,7 +179,7 @@
 @media screen and (max-width: 412px) { 
   .sol-img {
     width: 100vw;
-    height:200px;
+    height:260px;
     display: block;
   }
   
