@@ -77,12 +77,12 @@ function SignupPage() {
         </p>
         <div className="login">
           <form onSubmit={handleSignup}>
-            <div className="child"><h1>Sign Up</h1></div>
-            <div className="child">
+            <div className="form-group"><h1>Sign Up</h1></div>
+            <div className="form-group">
               <div>
                 <label style={{marginLeft:'-20px'}}>First Name</label>
                 <input
-                  className="cont"
+                  className="form-control"
                   style={{width:'250px',border:'1px solid gray', marginLeft:"-20px"}}
                   type="text"
                   value={firstName}
@@ -91,10 +91,10 @@ function SignupPage() {
                 />
               </div>
               <div>
-                <label style={{marginLeft:'-20px'}} >Last Name</label>
+                <label style={{marginLeft:'20px'}} >Last Name</label>
                 <input
-                  className="cont"
-               style={{width:'250px',border:'1px solid gray', marginLeft:"-20px"}}
+                  className="form-control"
+               style={{width:'250px',border:'1px solid gray', marginLeft:"20px"}}
                   type="text"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
@@ -102,11 +102,11 @@ function SignupPage() {
                 />
               </div>
             </div>
-            <div className="child">
+            <div className="form-group">
               <div>
                 <label style={{marginLeft:'-20px'}}>E-mail *</label>
                 <input
-                  className="cont"
+                  className="form-control"
                   style={{width:'250px',border:'1px solid gray', marginLeft:"-20px"}}
                   type="email"
                   value={email}
@@ -115,10 +115,10 @@ function SignupPage() {
                 />
               </div>
               <div>
-                <label style={{marginLeft:'-20px'}}>Phone Number*</label>
+                <label style={{marginLeft:'20px'}}>Phone Number*</label>
                 <input
-                  className="cont"
-                  style={{width:'250px',border:'1px solid gray', marginLeft:"-20px"}}
+                  className="form-control"
+                  style={{width:'250px',border:'1px solid gray', marginLeft:"20px"}}
                   type="tel"
                   value={phoneNo}
                   onChange={(e) => setPhone(e.target.value)}
@@ -126,12 +126,12 @@ function SignupPage() {
                 />
               </div>
             </div>
-            <div className="child">
+            <div className="form-group">
               <div>
                 <label style={{marginLeft:'-20px'}}>Password:</label>
                 <input
-                  className="cont"
-                  
+                  className="form-control"
+                  style={{ marginLeft:"-20px"}}
                   type="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
@@ -139,18 +139,18 @@ function SignupPage() {
                 />
               </div>
               <div>
-                <label style={{marginLeft:'-20px'}}>Confirm Password:</label>
+                <label style={{marginLeft:'20px'}}>Confirm Password:</label>
                 <input
-                  className="cont"
-                 
+                  className="form-control"
+                 style={{ marginLeft:"20px"}}
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
                   required
                 />
               </div>
             </div>
-            <div className="child">
-              <button className="log-sub" type="submit">
+            <div className="form-group">
+              <button className="btn btn-primary" type="submit">
                 Sign Up
               </button>
             </div>

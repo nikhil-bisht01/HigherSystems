@@ -20,6 +20,9 @@ function Business() {
       setFormValues({ ...formValues, name: serviceName }); // Populate form with image name
     }
   };
+ 
+  
+
 
   const handleChange = (e) => {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
@@ -52,57 +55,67 @@ function Business() {
        
        <div onMouseEnter={myFunction} className="child" onClick={() => handleImageClick("Document Management System")}>
 
-         <img src={require('./transformation.svg')} alt="img"style={{borderRadius:'1.5rem'}} />
+         <img src={require('./doucment.svg')} alt="img"style={{borderRadius:'1.5rem'}} />
         
        </div> 
        <p>Document Management System</p>
+       
 
        
        <div className="child" >
-         <img onClick={() => handleImageClick("Content Management System")} src={require('./content-management-system.svg')} alt="Content Management System" />
+         <img onClick={() => handleImageClick("Content Management System")} src={require('./content-management.svg')} alt="Content Management System" />
+       
       </div>
+      
        <p >Content Management Systems</p>
+    
        
       <div className="child" onClick={() => handleImageClick("Enterprise-Level Software Solutions")}>
-         <img src={require('./software.svg')} alt="img" />
+         <img className="img1" src={require('./enterprisre.svg')} alt="img" />
       </div>
        <p>Enterprise-Level Software Solutions</p>
-       
+      
       <div className="child" onClick={() => handleImageClick("Human Resource Management System")}>
-         <img src={require("./management.svg")} alt="img" />
+         <img src={require("./human resource.svg")} alt="img" />
       </div>
       <p>Human Resource Management System</p>
+     
       </div >
       
 
 
       <div className="parrent" >
+        <div className="page2">
+
        <div className="child1"  onClick={() => handleImageClick("Asset Management System")}>
-         <img src={require('./transformation.svg')} alt="img" />
+         <img src={require('./assets (2).svg')} alt="img" />
          
        </div>
        <p className="p1">Asset Management System</p>
-      
+     
 
        <div className="child1" onClick={() => handleImageClick("Inventory Management System")}>
-         <img src={require('./inventory-management.svg')} alt="img"  />
+         <img src={require('./inventory.svg')} alt="img"  />
            
        </div>
        <p className="p1">Inventory Management System</p>
-       <div className="child1" onClick={() => handleImageClick("Digital Transformation and eLearning")}>
-         <img src={require("./worldwide.svg")} alt="img" />
+     
+       <div className="child1"style={{marginLeft:'50px'}} onClick={() => handleImageClick("Digital Transformation and eLearning")}>
+         <img src={require("./elearning.svg")} alt="img" />
        
        </div>
-       <p className="p1" >Digital Transformation and eLearning</p>
+       <p className="p1" >Digital Transformation and E-Learning</p>
+      
      </div>
-    <></>
+        </div>
+    
 
  {/* /FOOTER HEADING/ */}
  
 <Footer/>
 <div id="box"></div>
 <div id="play"></div>
-  <div id="play"></div>
+  <div id="play1" style={{position:'absolute'}}></div>
   <div id="play"></div>    
   <div id="play"></div>
   <div id="play"></div>
@@ -114,7 +127,7 @@ function Business() {
         {showQueryForm && (
         <div className="query-form">
           <form onSubmit={handleSubmit}>
-            <button className="form-btn" onClick={handleCloseForm}> <img style={{width:'40px', height:'40px',marginLeft:'-17%',opacity:'0.8', }}  src={require('./remove.svg')} alt="img" /></button>
+            <button className="button-f2" onClick={handleCloseForm}> <img style={{width:'40px', height:'40px',marginLeft:'-17%',opacity:'0.8', }}  src={require('./remove.svg')} alt="img" /></button>
             <h2 style={{marginLeft:'17%'}}>Let Me Know More about</h2>
             <div style={{display:'flex',flexDirection:'column' }}>
             <label style={{marginLeft:'50px'}}>Service Name</label>

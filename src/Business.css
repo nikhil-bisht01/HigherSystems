@@ -98,7 +98,12 @@
   border-radius: 10px;
   height: 0px;
 }
- 
+ .page2{
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly; 
+ flex-wrap: wrap;
+ }
 
 
  /* /IMAGES CONTAINER CSS/ */
@@ -117,8 +122,8 @@
 
 
 .child{
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   margin: 20px;
   position: relative;
   overflow: hidden;
@@ -126,8 +131,8 @@
 
 }
 .child1{
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   margin: 20px;
   position: relative;
   overflow: hidden;
@@ -177,7 +182,10 @@ opacity: 0;
   opacity: 1;
  
 }
-
+.child .img1:hover .hunt{
+  width:200px;
+  height: 300px;
+}
 
 .text-1 {
   position: absolute;
@@ -204,11 +212,13 @@ p{
 
   margin-top: 200px;
   margin-left: -22%;
+  
 }
+
 
 .p1{
   margin-left: -27%;
-  margin-top: 17%;
+  margin-top: 20%;
 }
 
 
@@ -236,9 +246,10 @@ p{
     border: 1px solid gray;
     transition: left 2s ease-in-out;
   }
-  .form-btn{
+  .button-f2{
     width: 40px;
-    color:white;
+    height: 40px;
+    color:gray;
     font-weight: bold;
     background-color: white;
     border: none;
@@ -246,11 +257,11 @@ p{
     transition: all 0.3S ease-in-out;
 
   }
-  .form-btn:hover{
+  .button-f2:hover{
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1.1);
   }
-  .form-btn img:hover{
+  .button-f2 img:hover{
     opacity: 1;
     transform: scale(1.1);
   }

@@ -25,15 +25,15 @@ function Solution() {
       </div>
       <div className="ser-cont">
         <div className="ser-img1">
-          <Link to="./Infra"><img src={require('./Cloud.jpg')} alt="img" />
+          <Link to="/Infra"><img src={require('./Cloud.jpg')} alt="img" />
             <h1>IT Infrastructure</h1></Link>
         </div>
         <div className="ser-img1">
-          <Link to="./Business"><img src={require('./ERP.webp')} alt="img" />
+          <Link to="/Business"><img src={require('./ERP.webp')} alt="img" />
             <h1>Business Solutions</h1></Link>
         </div>
         <div className="ser-img1">
-          <Link to="./Implement"><img src={require('./Digital.jpg')} alt="img" />
+          <Link to="/Implement"><img src={require('./Digital.jpg')} alt="img" />
             <h1>Implementation and Support</h1></Link>
         </div>
       </div>
