@@ -9,6 +9,7 @@ import Signup from './Signup'
 import Example from './Example'
 import Employee from './Employee'
 import Solution from './Solution'
+import Business from './Business' 
 import Implementation from './Implementation'
 import DMS from './DMS'
 import Navbar from './Navbar'
@@ -29,7 +30,7 @@ function App() {
         <Route path='/Example' element={<Example/>}/>
         <Route path='/Employee' element={<Employee/>}/>
         <Route path='/Business' element={<Business/>}/>
-        <Route path='/Infra' element={<Infra/>}/>
+    
         <Route path= '/DMS' element={<DMS/>}/>
         <Route path= '/Solution' element={<Solution/>}/>
         <Route path= '/Contactform' element={<Contactform/>}/>

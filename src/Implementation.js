@@ -1,5 +1,6 @@
 import "./Implementation.css";
 import React, { useEffect, } from "react";
+import Navbar from "./Navbar"
 import Footer from "./Components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -9,12 +10,11 @@ function Implement() {
     AOS.init({ duration: 2000 });
   }, []);
   return (
-    <div style={{ overflow:'hidden'}}>
+    <div style={{ }}>
       
 
 {/********************************************   BACKGROUND IMAGE    ******************************************************/}
-
-
+<Navbar/>
 {/*******************************************   IMAGE CONTAINER   *********************************************************/}
 
 
