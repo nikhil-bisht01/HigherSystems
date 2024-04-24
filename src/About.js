@@ -8,7 +8,7 @@ function About() {
     <div style={{ overflow: 'hidden' }}>
       <Navbar />
       <div class="about-bg">
-        <img src={require("./about1.jpg")} alt="img" class="abt-img" />
+        <img src={require("./About1.jpg")} alt="img" class="abt-img" />
       </div>
 
       {/****************************    COMPANY OVERVIEW    **************************************************/}

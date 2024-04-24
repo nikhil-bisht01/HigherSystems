@@ -45,7 +45,7 @@ function Business() {
 
   return (
     <div className="business-image-container" >
-    <img src={require("./Office1.jpg")} alt="img" className="business-background-image" />
+    <img src={require("./About1.jpg")} alt="img" className="business-background-image" />
     <h className="Business-Sol">BUSINESS SERVICES</h>
   
   
