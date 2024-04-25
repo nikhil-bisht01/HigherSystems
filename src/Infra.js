@@ -1,89 +1,92 @@
 import "./infra.css";
-import React, { useEffect, } from "react";
+import React, { useEffect } from "react";
 import Footer from "./Components/Footer";
 function Infra() {
   return (
-    <div >
-
-      <div className="infra-image-container" >
-        <img src={require("./I1.jpg")} alt="img" className="infra-background-image" />
+    <div>
+      <div className="infra-image-container">
+        <img
+          src={require("./I1.jpg")}
+          alt="img"
+          className="infra-background-image"
+        />
         <h className="infra-sol">IT INFRASTRUCTURE SOLUTION</h>
       </div>
 
-{/****************************************************************Images Container *************************************************************/}
-      <div className="container">
-        <div className="image-row">
-          <div className="image-container">
-            <img src={require("./Virtualization.png")} alt="img" />
-              <h1 className="text-1">Data Security </h1>
-          </div>
-
-          <div className="image-container">
-            <img src={require('./Cloud.jpg')} alt="img" />
-            <h1 className="text-1">Security Information and Event Management</h1>
-          </div>
-
-          <div className="image-container">
-            <img src={require('./ERP.webp')} alt="img" />
-            <h1 className="text-1">Firewall and Gateway Security</h1>
-          </div>
-
-          <div className="image-container">
-            <img src={require("./Human.png")} alt="img" />
-            <h1 className="text-1">Storage and Backup Resolutions</h1>
-          </div>
+      {/********** Images Container **************/}
+      <div className="image-container1">
+        <div className="image-cont">
+          <img src={require("./server.svg")} alt="img" />
         </div>
+        <p>Data Security</p>
+
+        <div className="image-cont">
+          <img src={require("./SIEM.svg")} alt="img" />
+        </div>
+        <p>Security Information and Event Management</p>
+
+        <div className="image-cont">
+          <img src={require("./firewall.svg")} alt="img" />
+        </div>
+        <p>Firewall and Gateway Security</p>
+
+        <div className="image-cont">
+          <img src={require("./cloud.svg")} alt="img" />
+        </div>
+        <p>Storage and Backup Solutions</p>
+      </div>
+      <br/>
+
+      <div className="img-container">
+        <div className="image-cont">
+          <img src={require("./cloud-service.svg")} alt="img" />
+        </div>
+        <p className="p1">Network & Wi-Fi</p>
+
+        <div className="image-cont">
+          <img src={require("./server (1).svg")} alt="img" />
+        </div>
+        <p className="p1">Cloud Computing</p>
+        <div className="image-cont">
+          <img src={require("./virtual-reality.svg")} alt="img" />
+        </div>
+        <p className="p1">Virtualization</p>
+      </div>
+      
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
+
+      <div className="image-container1">
+        <div className="image-cont">
+          <img src={require("./cctv-camera.svg")} alt="img" />
+        </div>
+        <p>Security Systems</p>
+
+        <div className="image-cont">
+          <img src={require("./consulting.svg")} alt="img" />
+        </div>
+        <p>IT Managed Services</p>
+
+        <div className="image-cont">
+          <img src={require("./identity.svg")} alt="img" />
+        </div>
+        <p>Privileged Identity Management</p>
+
+        <div className="image-cont">
+          <img src={require("./accessibility.svg")} alt="img" />
+        </div>
+        <p>Privileged Access management</p>
       </div>
 
-      <div className="container">
-        <div className="image-row">
-          <div className="image-container">
-            <img src={require('./Assest.png')} alt="img" />
-            <h1 className="text-1">NETWORK & Wi-Fi</h1>
-          </div>
+      
 
-          <div className="image-container">
-            <img src={require('./Identity.jpg')} alt="img" />
-            <h1 className="text-1">Cloud Computing</h1>
-          </div>
-
-          <div className="image-container">
-            <img src={require("./Digital.jpg")} alt="img" />
-            <h1 className="text-1">Virtualization</h1>
-          </div>
-        </div>
-      </div>
-
-      <div className="container">
-        <div className="image-row">
-          <div className="image-container">
-           <img src={require("./camera.png")} alt="img" />
-              <h1 className="text-1">Security systems</h1>
-          </div>
-
-          <div className="image-container">
-            <img src={require('./Cloud.jpg')} alt="img" />
-            <h1 className="text-1">IT Managed Services</h1>
-          </div>
-
-          <div className="image-container">
-            <img src={require('./Managed.jpg')} alt="img" />
-            <h1 className="text-1">Privileged Identity Management</h1>
-          </div>
-
-          <div className="image-container">
-            <img src={require("./access.png")} alt="img" />
-            <h1 className="text-1">Privileged access management</h1>
-          </div>
-        </div>
-      </div>
+      
       {/**************************************************************FOOTER  **********************************************************************/}
       <Footer />
-
-
     </div>
-
-
   );
 }
 export default Infra;

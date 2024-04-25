@@ -1,12 +1,20 @@
 .login{
+<<<<<<< Updated upstream
   display: flex;
   position: absolute;
   top: 19%;
+=======
+  display: row;
+  position: relative;
+  margin-top: 9%;
+>>>>>>> Stashed changes
   left: 50%;
   width:700px;
   height:600px;
+  border: 2px solid rgba(0, 0, 0, 0.556);
   border-radius:20px ;
   background-color: #ffffff79;
+<<<<<<< Updated upstream
   justify-content: space-evenly;
   line-break: 10px;
   
@@ -21,12 +29,32 @@ box-shadow: 5px 5px 5px 5px #0000002e;
   align-items: center;
   text-align: left;
   justify-content: space-around;
+=======
+  /* overflow: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.child{
+  width:100%;
+  height: 14vh;
+  position: relative;
+  /* background-color: aquamarine;
+  border: 1px solid black; */
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  
+
+>>>>>>> Stashed changes
 }
 
 .login-img{
   background-color: #D8E9F2;
   width: 100%;
    height:770px;}
+<<<<<<< Updated upstream
 
 .form-control{
   margin-bottom:40px;
@@ -54,25 +82,54 @@ box-shadow: 5px 5px 5px 5px #0000002e;
   color: #FFFFFF;
   font-size: 1rem;
   border-radius: 5px;
+=======
+.log-button{
+  width:400px;
+  font-size: 3rem;
+  margin-left: 0px;
+  margin-top: 0px;
+  
+ 
+  
+}
+.log-btn{
+  width: 350px;
+  padding: 40px 120px 40px;
+}
+.log-button:hover{
+  color: #FFFFFF;
+}
+
+.log-submit:hover{
+  background-color: #0579D4;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.h1{
+  position: relative;
+  display: table-row;
+>>>>>>> Stashed changes
   text-align: center;
 }
 .sign-up{
-  margin-left: 24%;
+  font-weight: normal;
 }
-.signup-link:hover{
+
+.sign-up:hover{
   font-weight: bold;
 }
 .signup-img{
   position: absolute;
-  right:58%;
-  top: 27%;
+  right:62%;
+  top: 37%;
   width:400px;
-  height:450px;
+  height:430px;
 }
 .welcome{
   position: absolute;
-  top:5px;
-  left: 21%;
+  top:10%;
+  left: 16%;
   font-size: 2.5rem;
   font-family: 'Poppins', sans-serif;
   color: #FFFFFF;

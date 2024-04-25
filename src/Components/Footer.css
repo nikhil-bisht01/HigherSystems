@@ -42,11 +42,22 @@
   color:white;
   margin:0.5rem 0;
   
+<<<<<<< Updated upstream
 }
 .ft-icon i:hover{
   color:white;
   size-adjust: 2rem;
   opacity: 1;
+=======
+  .business-footer{
+    position: relative;
+    background: #20434f;;
+    color:#f2f4f4;
+    display: flex;
+    margin-top:3%;
+    width:100%;
+    height: 250px;
+>>>>>>> Stashed changes
 
 }
 .ft-2 h3{

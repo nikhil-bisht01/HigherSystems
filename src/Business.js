@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Business.css";
 import Footer from "./Components/Footer";
+<<<<<<< Updated upstream
 import Header from "./Navbar";
 import myFunction from "./Components/animations";
 import { Link } from "react-router-dom";
@@ -120,6 +121,86 @@ function Business() {
   <div id="play"></div>
   <div id="play"></div>
   <div id="play"></div>
+=======
+import Navbar from "./Navbar";
+import React, { useEffect, } from "react";
+import { useState } from "react";
+import myFunction from "./Components/animations";
+import { Link } from "react-router-dom";
+function Business() {
+  return ( 
+    <div style={{}}>
+     
+      {/*********************    BACKGROUND IMAGE    *********************/} 
+      <div className="business-image-container" >
+        <img src={require("./Office1.jpg")} alt="img" className="business-background-image" />
+        <h className="Business-Sol">BUSINESS SERVICES</h>
+        
+      </div>
+      
+      
+
+{/******************************************************Images Container ******************************************************/}
+<div className="img-container " >
+       
+       <div onMouseEnter={myFunction} className="image-cont" >
+
+         <Link to="./DMS" ><img src={require('./transformation.svg')} alt="img"style={{borderRadius:'1.5rem'}} /></Link>  
+        
+       </div> 
+       <p>Document Management System</p>
+
+       
+       <div className="image-cont">
+         <img src={require('./content-management-system.svg')} alt="img" />
+      </div>
+       <p >Content Management Systems</p>
+       
+      <div className="image-cont">
+         <img src={require('./software.svg')} alt="img" />
+      </div>
+       <p>Enterprise-Level Software Solutions</p>
+       
+      <div className="image-cont">
+         <img src={require("./management.svg")} alt="img" />
+      </div>
+      <p>Human Resource Management System</p>
+      </div >
+      <br/>
+
+
+      <div className="img-container" >
+       <div className="image-cont">
+         <img src={require('./assets.svg')} alt="img" />
+        
+        
+       </div>
+       <p className="p1">Asset Management System</p>
+
+       <div className="image-cont">
+         <img src={require('./inventory-management.svg')} alt="img"  />
+           
+       </div>
+       <p className="p1">Inventory Management System</p>
+       <div className="image-cont">
+         <img src={require("./worldwide.svg")} alt="img" />
+       
+       </div>
+       <p className="p1" >Digital Transformation and eLearning</p>
+     </div>
+    <></>
+
+{/* /***********************************************************FOOTER HEADING*********************************************************************/}
+ <Navbar/>
+<Footer/>
+<div id="play"></div>
+<div></div>
+  <div></div>
+  <div></div>    
+  <div></div>
+  <div></div>
+  <div></div>
+>>>>>>> Stashed changes
   
     <div className='class-footer'> 
           <h> Higher Systems | All Rights Reserved</h>

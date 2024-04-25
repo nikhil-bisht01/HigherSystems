@@ -4,10 +4,16 @@
   z-index: 1000;
   display: flex;
   align-items: center;
+<<<<<<< Updated upstream
   justify-content: space-between;
   padding: 10px 20px;
   box-shadow: 5px 5px 5px 5px #0000002e;
   height: 80px;
+=======
+  font-size: calc(20px);
+  
+  top: 0px;
+>>>>>>> Stashed changes
 }
 
 
@@ -48,10 +54,23 @@
 } 
 /*******************    NAV-BUTTON    *****************************/
 .nav-button{
+<<<<<<< Updated upstream
   height:40px;
   width:80px;
   border-radius: 0.5rem;
   margin-top:4%;
+=======
+ 
+  background-color: #6C757D;
+  width:120px;
+  height:40px;
+  border: 1px solid grey;
+  border-radius: 15px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  align-items: center;
+>>>>>>> Stashed changes
 }
 .nav-button a{
   color:black;
