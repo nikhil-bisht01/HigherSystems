@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./Business.css";
 import Footer from "./Components/Footer";
-import Header from "./Navbar";
+import Navbar  from "./Navbar";
 import myFunction from "./Components/animations";
-import { Link } from "react-router-dom";
+
 
 function Business() {
   const [selectedService, setSelectedService] = useState("");
@@ -51,13 +51,14 @@ function Business() {
   };
 
   return (
+    <div style={{overflow:'hidden'}}>
+      <Navbar/>
     <div className="business-image-container" >
-    <img src={require("./About1.jpg")} alt="img" className="business-background-image" />
-    <h className="Business-Sol">BUSINESS SERVICES</h>
+    <img src={require("./Bus.jpg")} alt="img" className="business-background-image" />
   
   
 
-
+{/***********************    PARRENT   ************************************/}
       <div className="parrent" >
        
        <div onMouseEnter={myFunction} className="child" onClick={() => handleImageClick("Document Management System")}>
@@ -134,7 +135,7 @@ function Business() {
         {showQueryForm && (
         <div className="query-form">
           <form onSubmit={handleSubmit}>
-            <button className="button-f2" onClick={handleCloseForm}> <img style={{width:'40px', height:'40px',marginLeft:'-17%',opacity:'0.8', }}  src={require('./remove.svg')} alt="img" /></button>
+            <button className="button-f2" onClick={handleCloseForm}> <img style={{width:'30px', height:'30px',marginLeft:'-17%',opacity:'0.8', }}  src={require('./remove.svg')} alt="img" /></button>
             <h2 style={{marginLeft:'17%'}}>Let Me Know More about</h2>
             <div style={{display:'flex',flexDirection:'column' }}>
             <label style={{marginLeft:'50px'}}>Service Name</label>
@@ -148,12 +149,13 @@ function Business() {
           
             </div>
             <button style={{marginLeft:'25%',marginTop:'40px'}} type="submit">Submit</button>
-            <img style={{width:'150px', height:'150px', marginLeft:'20%'}} src={require('./mailbox.svg')} alt="img" />
+            
           </form>
          
         </div>
       )}
 
+      </div>
       </div>
 
     

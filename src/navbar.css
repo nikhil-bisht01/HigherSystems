@@ -9,8 +9,6 @@
   box-shadow: 5px 5px 5px 5px #0000002e;
   height: 80px;
 }
-
-
 .nav-img {
   width: 60px;
   height:60px;
@@ -25,8 +23,6 @@
   display: flex;
   align-items: center;
   margin-left: 20%;
-
-
 }
 .child-nav{
   justify-content: space-evenly;
@@ -72,14 +68,16 @@
 /************************     MEDIA QUERY FOR 412PX AND 768PX   ********************************/
  
 @media screen and (max-width: 768px) {
-  
+
+  .navbar {
+    padding: 10px;
+    width:100%;
+  }
   .parent-nav{
     margin-left: 0;
-
     flex-direction: column;
     align-items: center;
   }
-  
   .child-nav {
     margin-top: 3%;
   }
@@ -113,6 +111,7 @@
 @media screen and (max-width: 412px) {
   .navbar {
     padding: 10px;
+    width:100%;
   }
   
   .nav-img {
