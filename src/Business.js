@@ -8,35 +8,42 @@ import { Link } from "react-router-dom";
 function Business() {
   const [selectedService, setSelectedService] = useState("");
   const [showQueryForm, setShowQueryForm] = useState(false);
-  const [formValues, setFormValues] = useState({ name: "", PhoneNo:"", email: "", query: "" });
-  
+  const [formValues, setFormValues] = useState({ name: "", PhoneNo: "", email: "", query: "" });
 
   const handleImageClick = (serviceName) => {
     if (showQueryForm && selectedService === serviceName) {
-      setShowQueryForm(false); // Close query form if the same image is clicked again
+      setShowQueryForm(false);
     } else {
       setSelectedService(serviceName);
-      setShowQueryForm(true); // Show query form when image is clicked
-      setFormValues({ ...formValues, name: serviceName }); // Populate form with image name
+      setShowQueryForm(true);
+      setFormValues({ ...formValues, name: serviceName });
     }
   };
- 
-  
-
 
   const handleChange = (e) => {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add code to handle form submission (e.g., send form data to server)
-    console.log("Form submitted:", formValues);
-    // Display submitted details
-  
-    // Show alert messages
-    window.alert("Message has been sent!");
-    window.alert("Thank you for visiting! Our team will contact you soon.");
+    try {
+      const response = await fetch("", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formValues),
+      });
+      if (response.ok) {
+        window.alert("Message has been sent!");
+        window.alert("Thank you for visiting! Our team will contact you soon.");
+      } else {
+        throw new Error("Failed to submit form");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      window.alert("Failed to submit form. Please try again later.");
+    }
   };
 
   const handleCloseForm = () => {

@@ -12,6 +12,7 @@ import Solution from './Solution'
 import Business from './Business' 
 import Implementation from './Implementation'
 import DMS from './DMS'
+import Infra from './Infra'
 import Navbar from './Navbar'
 import Contactform from './Contactform'
 import { Route, Routes } from 'react-router-dom'
@@ -30,7 +31,7 @@ function App() {
         <Route path='/Example' element={<Example/>}/>
         <Route path='/Employee' element={<Employee/>}/>
         <Route path='/Business' element={<Business/>}/>
-    
+        <Route path='/Infra' element={<Infra/>}/>
         <Route path= '/DMS' element={<DMS/>}/>
         <Route path= '/Solution' element={<Solution/>}/>
         <Route path= '/Contactform' element={<Contactform/>}/>
