@@ -8,7 +8,7 @@ import myFunction from "./Components/animations";
 function Implementation() {
   const [selectedService, setSelectedService] = useState("");
   const [showQueryForm, setShowQueryForm] = useState(false);
-  const [formValues, setFormValues] = useState({ name: "", PhoneNo: "", email: "", query: "" });
+  const [formValues, setFormValues] = useState({ name: "", phoneNumber: "", email: "", enquery: "" });
 
   const handleImageClick = (serviceName) => {
     if (showQueryForm && selectedService === serviceName) {
