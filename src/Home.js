@@ -28,7 +28,7 @@ function Home() {
 {/***************************   ABOUT US    *****************************************/}
       <div className="about" >
           <h1>About us</h1>
-          <p> Higher India is a leading player in the
+          <p> 
               Higher India is a prominent figure in the dynamic and fiercely competitive software services industry. Renowned for its specialization in custom software development, IT consulting, and cloud services, the company stands out for its commitment to excellence and innovation.
               Employing a team of exceptionally talented professionals, Higher India is well-equipped to tackle complex challenges and deliver high-quality solutions tailored to meet the unique needs of its clients. With a customer-centric approach at its core, the company has earned a reputation for consistently exceeding client expectations and fostering long-term partnerships.
               Higher India's impressive track record spans across various industries, where it has successfully executed a diverse range of projects. Whether it's healthcare, finance, e-commerce, or any other sector, the company's expertise and dedication ensure the seamless execution and delivery of projects, driving tangible results for its clients. Through its relentless pursuit of excellence and commitment to innovation, Higher India continues to solidify its position as a leader in the software services industry.
@@ -50,7 +50,7 @@ function Home() {
             <h1>Business Solutions</h1></Link>
         </div>
         <div className="ser-img">
-          <Link to="./Implement"><img src={require('./Digital.jpg')} alt="img" />
+          <Link to="./Implementation"><img src={require('./Digital.jpg')} alt="img" />
             <h1>Implementation and Support</h1></Link>
         </div>
       </div>

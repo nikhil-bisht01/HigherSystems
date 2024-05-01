@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Business.css";
 import Footer from "./Components/Footer";
-import Navbar  from "./Navbar";
+import Navbar from "./Navbar";
 import myFunction from "./Components/animations";
 
 
@@ -21,11 +21,13 @@ function Business() {
   };
 
   const handleChange = (e) => {
+    console.log(e.target.value);
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log('FORM VALUES:',formValues);
     try {
       const response = await fetch("", {
         method: "POST",
@@ -51,116 +53,110 @@ function Business() {
   };
 
   return (
-    <div style={{overflow:'hidden'}}>
-      <Navbar/>
-    <div className="business-image-container" >
-    <img src={require("./Bus.jpg")} alt="img" className="business-background-image" />
-  
-  
+    <div style={{ overflow: 'hidden' }}>
+      <Navbar />
+      <div className="business-image-container" >
+        <img src={require("./Green.jpg")} alt="img" className="business-background-image" />
+        <div className="bus-overlay-text">Business Solution</div>
+      </div>
 
-{/***********************    PARRENT   ************************************/}
+
+
+      {/***********************    PARRENT   ************************************/}
       <div className="parrent" >
-       
-       <div onMouseEnter={myFunction} className="child" onClick={() => handleImageClick("Document Management System")}>
 
-         <img src={require('./doucment.svg')} alt="img"style={{borderRadius:'1.5rem'}} />
-        
-       </div> 
-       <p>Document Management System</p>
-       
+        <div onMouseEnter={myFunction} className="child" onClick={() => handleImageClick("Document Management System")}>
+          <img src={require('./doucment.svg')} alt="img" />
+        </div>
+        <p>Document Management System</p>
 
-       
-       <div className="child" >
-         <img onClick={() => handleImageClick("Content Management System")} src={require('./content-management.svg')} alt="Content Management System" />
-       
-      </div>
-      
-       <p >Content Management Systems</p>
-    
-       
-      <div className="child" onClick={() => handleImageClick("Enterprise-Level Software Solutions")}>
-         <img className="img1" src={require('./enterprisre.svg')} alt="img" />
-      </div>
-       <p>Enterprise-Level Software Solutions</p>
-      
-      <div className="child" onClick={() => handleImageClick("Human Resource Management System")}>
-         <img src={require("./human resource.svg")} alt="img" />
-      </div>
-      <p>Human Resource Management System</p>
-     
+
+        <div className="child" >
+          <img onClick={() => handleImageClick("Content Management System")} src={require('./content-management.svg')} alt="Content Management System" />
+        </div>
+        <p >Content Management Systems</p>
+
+
+        <div className="child" onClick={() => handleImageClick("Enterprise-Level Software Solutions")}>
+          <img className="img1" src={require('./enterprisre.svg')} alt="img" />
+        </div>
+        <p>Enterprise-Level Software Solutions</p>
+
+
+        <div className="child" onClick={() => handleImageClick("Human Resource Management System")}>
+          <img src={require("./human resource.svg")} alt="img" />
+        </div>
+        <p>Human Resource Management System</p>
+
+
       </div >
-      
-
 
       <div className="parrent" >
         <div className="page2">
 
-       <div className="child1"  onClick={() => handleImageClick("Asset Management System")}>
-         <img src={require('./assets (2).svg')} alt="img" />
-         
-       </div>
-       <p className="p1">Asset Management System</p>
-     
+          <div className="child1" onClick={() => handleImageClick("Asset Management System")}>
+            <img src={require('./assets (2).svg')} alt="img" />
 
-       <div className="child1" onClick={() => handleImageClick("Inventory Management System")}>
-         <img src={require('./inventory.svg')} alt="img"  />
-           
-       </div>
-       <p className="p1">Inventory Management System</p>
-     
-       <div className="child1"style={{marginLeft:'50px'}} onClick={() => handleImageClick("Digital Transformation and eLearning")}>
-         <img src={require("./elearning.svg")} alt="img" />
-       
-       </div>
-       <p className="p1" >Digital Transformation and E-Learning</p>
-      
-     </div>
-        </div>
-    
+          </div>
+          <p className="p1">Asset Management System</p>
 
- {/* /FOOTER HEADING/ */}
- 
-<Footer/>
-<div id="box"></div>
-<div id="play"></div>
-  <div id="play1" style={{position:'absolute'}}></div>
-  <div id="play"></div>    
-  <div id="play"></div>
-  <div id="play"></div>
-  <div id="play"></div>
-  
-    <div className='class-footer'> 
-          <h> Higher Systems | All Rights Reserved</h>
+
+          <div className="child1" onClick={() => handleImageClick("Inventory Management System")}>
+            <img src={require('./inventory.svg')} alt="img" />
+
+          </div>
+          <p className="p1">Inventory Management System</p>
+
+          <div className="child1" style={{}} onClick={() => handleImageClick("Digital Transformation and eLearning")}>
+            <img src={require("./elearning.svg")} alt="img" />
+
+          </div>
+          <p className="p1" >Digital Transformation and E-Learning</p>
+
         </div>
-        {showQueryForm && (
+      </div>
+
+
+      {/* /FOOTER HEADING/ */}
+
+      <Footer />
+      <div id="box"></div>
+      <div id="play"></div>
+      <div id="play1" style={{ position: 'absolute' }}></div>
+      <div id="play"></div>
+      <div id="play"></div>
+      <div id="play"></div>
+      <div id="play"></div>
+
+      <div className='class-footer'>
+        <h> Higher Systems | All Rights Reserved</h>
+      </div>
+      {showQueryForm && (
         <div className="query-form">
-          <form onSubmit={handleSubmit}>
-            <button className="button-f2" onClick={handleCloseForm}> <img style={{width:'30px', height:'30px',marginLeft:'-17%',opacity:'0.8', }}  src={require('./remove.svg')} alt="img" /></button>
-            <h2 style={{marginLeft:'17%'}}>Let Me Know More about</h2>
-            <div style={{display:'flex',flexDirection:'column' }}>
-            <label style={{marginLeft:'50px'}}>Service Name</label>
-            <input style={{width:'350px', marginLeft:'50px',textAlign:'center'}} type="text" name="name" value={formValues.name} onChange={handleChange} readOnly />
-            <label style={{marginLeft:'50px'}}>E-mail</label>
-            <input  style={{width:'350px', marginLeft:'50px'}} type="email" name="email" placeholder="Email" value={formValues.email} onChange={handleChange} required />
-            <label style={{marginLeft:'50px'}}>Phone No</label>
-            <input  style={{width:'350px', marginLeft:'50px', height:'39.2px',border:'1px solid #cccccc', borderRadius:'5px'}} type="PhoneNo" name="Phoneno" placeholder="9876543210" value={formValues.number} onChange={handleChange} required />
-            <label style={{marginLeft:'50px'}}>Query</label>
-            <textarea  style={{width:'350px', marginLeft:'50px',height:'150px'}} name="query" placeholder="Your Query" value={formValues.query} onChange={handleChange} required />
-          
+         {/*  <form onSubmit={handleSubmit}>
+            <button className="button-f2" onClick={handleCloseForm}> <img style={{ width: '20px', height: '20px', marginLeft: '-17%', opacity: '0.8', }} src={require('./remove.svg')} alt="img" /></button>
+            <h2 style={{ marginLeft: '17%', marginTop: '-5%' }}>Let Me Know More about</h2>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <label style={{ marginLeft: '50px' }}>Service Name</label>
+              <input style={{ width: '350px', marginLeft: '50px', textAlign: 'center' }} type="text" name="name" value={formValues.name} onChange={handleChange} readOnly />
+              <label style={{ marginLeft: '50px' }}>E-mail</label>
+              <input style={{ width: '350px', marginLeft: '50px' }} type="email" name="email" placeholder="Email" value={formValues.email} onChange={handleChange} required />
+              <label style={{ marginLeft: '50px' }}>Phone No</label>
+              <input style={{ width: '350px', marginLeft: '50px', height: '39.2px', border: '1px solid #cccccc', borderRadius: '5px' }} type="PhoneNo" name="Phoneno" placeholder="9876543210" value={formValues.number} onChange={handleChange} required />
+              <label style={{ marginLeft: '50px',height:'3%'}}>Query</label>
+              <textarea style={{ width: '350px', marginLeft: '50px', height: '150px' }} name="query" placeholder="Your Query" value={formValues.query} onChange={handleChange} required />
+
             </div>
-            <button style={{marginLeft:'25%',marginTop:'40px'}} type="submit">Submit</button>
-            
-          </form>
-         
+            <button style={{ marginLeft: '25%', marginTop: '40px' }} type="submit">Submit</button>
+          </form> */}
         </div>
       )}
 
-      </div>
-      </div>
+    </div>
 
-    
-    
+
+
   );
 }
 
-export default Business;
+export default Business;

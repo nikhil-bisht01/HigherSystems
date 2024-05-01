@@ -14,7 +14,7 @@ function About() {
       {/****************************    COMPANY OVERVIEW    **************************************************/}
       <div class="Exe-cont">
         <h1>Company Overview</h1>
-        <p>Established in 2014, Higher Systems swiftly rose to prominence in software services, offering tailored solutions globally. Specializing in custom software development, our seasoned team crafts innovative applications driving efficiency. We excel in IT consulting, guiding through challenges with strategic insights. Cloud services support seamless operations and innovation. Committed to client satisfaction, we deliver cutting-edge solutions, empowering businesses to thrive.</p>
+        <p>Established in 2014, Higher India swiftly rose to prominence in software services, offering tailored solutions globally. Specializing in custom software development, our seasoned team crafts innovative applications driving efficiency. We excel in IT consulting, guiding through challenges with strategic insights. Cloud services support seamless operations and innovation. Committed to client satisfaction, we deliver cutting-edge solutions, empowering businesses to thrive.</p>
       </div>
 
       {/***************************  COMPONENETS   **************************************/}
@@ -24,7 +24,7 @@ function About() {
         <div class="comp-img">
           <div class="tech-img">
             <h1>Technical Expertise</h1>
-            <p>Higher Systems boasts a team of seasoned software engineers, architects, and designers with expertise in the latest technologies. This technical prowess enables the company to develop innovative and scalable solutions tailored to meet the unique needs of each client.</p>
+            <p>Higher India boasts a team of seasoned software engineers, architects, and designers with expertise in the latest technologies. This technical prowess enables the company to develop innovative and scalable solutions tailored to meet the unique needs of each client.</p>
           </div>
           <div class="tech-img">
             <h1>Industry Specialization</h1>
@@ -32,7 +32,7 @@ function About() {
           </div>
           <div class="tech-img">
             <h1>Quality Assurance and Compliance</h1>
-            <p>Higher Systems places a strong emphasis on quality assurance and compliance with industry standards and regulations. Rigorous testing protocols and adherence to best practices ensure that the delivered solutions meet the highest quality standards and are in compliance with relevant regulations.</p>
+            <p>Higher India places a strong emphasis on quality assurance and compliance with industry standards and regulations. Rigorous testing protocols and adherence to best practices ensure that the delivered solutions meet the highest quality standards and are in compliance with relevant regulations.</p>
           </div>
 
         </div>

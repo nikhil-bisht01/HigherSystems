@@ -41,8 +41,8 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #20434F;
   text-align: justify;
-  margin-left: 2in;
-  margin-right: 2in;
+  margin-left: 1.5in;
+  margin-right: 1.5in;
   margin-top: 0%;
 
 }
@@ -122,15 +122,16 @@
 /*******************    MEDIA QUERY   *********************************/
 
 @media screen and (max-width: 412px) {
-
-  .about-bg {
+ .about-bg {
     position: relative;
+    height:200px;
+
   }
   
   .abt-img {
     width: 100vw;
-    height: 260px;
-    display: block;
+    height: 200px;
+
   }
   
   /*************    EXECUTIVE CONTAINER   *******************/
@@ -181,7 +182,12 @@
 }
 
 
-@media screen and(min-width:412px) and (max-width: 768px) {
+@media screen and (min-width: 412px) and (max-width: 768px) {
+  
+  .about-bg{
+    position: relative;
+    height:300px;
+  }
   .abt-img {
     width: 100vw;
     height: 350px;
@@ -199,21 +205,19 @@
     font-family: Montserrat;
   }
 
-
-/***********    EXE-CONTAINER   **************/
+  /* EXE-CONTAINER */
   .Exe-cont {             
-    margin: 1ch;
     margin-top: 5%;
   }
   .Exe-cont h1 {
     font-size: 20px;
-    margin-left: 0;
     text-align: center;
   }
   .Exe-cont p {
-    margin-left: 1ch;
-    margin-right: 1ch;
+    margin-left: 0.5in;
+    margin-right: 0.5in;
   }
+
   .comp-img {
     margin-top: 3%; 
   }
@@ -231,4 +235,3 @@
     margin-right: 0; 
   }
 }
-

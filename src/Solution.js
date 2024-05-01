@@ -33,7 +33,7 @@ function Solution() {
             <h1>Business Solutions</h1></Link>
         </div>
         <div className="ser-img1">
-          <Link to="/Implement"><img src={require('./Digital.jpg')} alt="img" />
+          <Link to="/Implementation"><img src={require('./Digital.jpg')} alt="img" />
             <h1>Implementation and Support</h1></Link>
         </div>
       </div>

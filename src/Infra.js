@@ -1,89 +1,180 @@
+import React, { useState } from "react";
 import "./infra.css";
-import React, { useEffect, } from "react";
 import Footer from "./Components/Footer";
+import Navbar from "./Navbar";
+import myFunction from "./Components/animations";
+
+
 function Infra() {
+  const [selectedService, setSelectedService] = useState("");
+  const [showQueryForm, setShowQueryForm] = useState(false);
+  const [formValues, setFormValues] = useState({ name: "", PhoneNo: "", email: "", query: "" });
+
+  const handleImageClick = (serviceName) => {
+    if (showQueryForm && selectedService === serviceName) {
+      setShowQueryForm(false);
+    } else {
+      setSelectedService(serviceName);
+      setShowQueryForm(true);
+      setFormValues({ ...formValues, name: serviceName });
+    }
+  };
+
+  const handleChange = (e) => {
+    setFormValues({ ...formValues, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formValues),
+      });
+      if (response.ok) {
+        window.alert("Message has been sent!");
+        window.alert("Thank you for visiting! Our team will contact you soon.");
+      } else {
+        throw new Error("Failed to submit form");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      window.alert("Failed to submit form. Please try again later.");
+    }
+  };
+
+  const handleCloseForm = () => {
+    setShowQueryForm(false);
+  };
+
   return (
-    <div >
-
+    <div style={{ overflow: 'hidden' }}>
+      <Navbar />
       <div className="infra-image-container" >
-        <img src={require("./I1.jpg")} alt="img" className="infra-background-image" />
-        <h className="infra-sol">IT INFRASTRUCTURE SOLUTION</h>
+        <img src={require("./imple.jpg")} alt="img" className="infra-background-image" />
+        <div className="infra-overlay-text">IT Infrastructure Solutions</div>
       </div>
 
-{/****************************************************************Images Container *************************************************************/}
-      <div className="container">
-        <div className="image-row">
-          <div className="image-container">
-            <img src={require("./Virtualization.png")} alt="img" />
-              <h1 className="text-1">Data Security </h1>
+      
+{/***********************    LINE--1   ************************************/}
+      <div className="parrent" >
+        <div className="page2">
+          <div className="child" style={{marginRight:'7%'}}> 
+            <img onClick={() => handleImageClick("Data Security")} src={require('./doucment.svg')} alt="img" style={{marginRight:'5%'}}/>
           </div>
+          <p>Data Security</p>
 
-          <div className="image-container">
-            <img src={require('./Cloud.jpg')} alt="img" />
-            <h1 className="text-1">Security Information and Event Management</h1>
-          </div>
 
-          <div className="image-container">
-            <img src={require('./ERP.webp')} alt="img" />
-            <h1 className="text-1">Firewall and Gateway Security</h1>
+          <div className="child"  style={{marginLeft:'5% '}}>
+            <img onClick={() => handleImageClick("Security Information and Event Management")} src={require('./content-management.svg')} alt="img" />
           </div>
+          <p>Security Information and Event Management</p>
 
-          <div className="image-container">
-            <img src={require("./Human.png")} alt="img" />
-            <h1 className="text-1">Storage and Backup Resolutions</h1>
+
+          <div className="child" >
+            <img className="img1" onClick={() => handleImageClick("Firewall and Gateway Security")} src={require('./firewall (1).svg')} alt="img" />
           </div>
+          <p>Firewall and Gateway Security</p>
+
+
+          <div className="child" >
+            <img onClick={() => handleImageClick("Storage and Backup Solutions")} src={require("./backup.svg")} alt="img" />
+          </div>
+          <p>Storage and Backup Solutions</p>
         </div>
       </div>
 
-      <div className="container">
-        <div className="image-row">
-          <div className="image-container">
-            <img src={require('./Assest.png')} alt="img" />
-            <h1 className="text-1">NETWORK & Wi-Fi</h1>
-          </div>
 
-          <div className="image-container">
-            <img src={require('./Identity.jpg')} alt="img" />
-            <h1 className="text-1">Cloud Computing</h1>
-          </div>
+{/***********************    LINE--2   ************************************/}
+      <div className="parrent" >
+        <div className="page2">
 
-          <div className="image-container">
-            <img src={require("./Digital.jpg")} alt="img" />
-            <h1 className="text-1">Virtualization</h1>
+          <div onMouseEnter={myFunction} className="child">
+            <img onClick={() => handleImageClick("Network & WiFi")} src={require('./wifi.svg')} alt="img" />
           </div>
+          <p>Network & WiFi</p>
+
+          <div className="child" >
+            <img onClick={() => handleImageClick("Cloud Computing")} src={require('./cloud-computing.svg')} alt="img" />
+          </div>
+          <p >Cloud Computing</p>
+          
+          <div className="child" >
+            <img onClick={() => handleImageClick("Virtualization")} className="img1" src={require('./enterprisre.svg')} alt="img" />
+          </div>
+          <p>Virtualization</p>
+
+
+          <div className="child">
+            <img onClick={() => handleImageClick("Security Systems")} src={require("./cctv-camera.svg")} alt="img" />
+          </div>
+          <p>Security Systems</p>
+        </div >
+      </div>
+
+      {/*********************   LINE--3   ****************************/}
+      <div className="parrent" >
+        <div className="page2">
+
+          <div className="child1" >
+            <img onClick={() => handleImageClick("IT Managed Services")} src={require('./modular.svg')} alt="img" />
+          </div>
+          <p className="p1">IT Managed Services</p>
+
+
+          <div className="child1" >
+            <img onClick={() => handleImageClick("Privileged Identity Management")} src={require('./identity-card.svg')} alt="img" />
+          </div>
+          <p className="p1">Privileged Identity Management</p>
+
+          <div className="child1" >
+            <img onClick={() => handleImageClick("Privileged Access Management")} src={require("./copyright.svg")} alt="img" />
+          </div>
+          <p className="p1" >Privileged Access Management</p>
+
         </div>
       </div>
 
-      <div className="container">
-        <div className="image-row">
-          <div className="image-container">
-           <img src={require("./camera.png")} alt="img" />
-              <h1 className="text-1">Security systems</h1>
-          </div>
 
-          <div className="image-container">
-            <img src={require('./Cloud.jpg')} alt="img" />
-            <h1 className="text-1">IT Managed Services</h1>
-          </div>
-
-          <div className="image-container">
-            <img src={require('./Managed.jpg')} alt="img" />
-            <h1 className="text-1">Privileged Identity Management</h1>
-          </div>
-
-          <div className="image-container">
-            <img src={require("./access.png")} alt="img" />
-            <h1 className="text-1">Privileged access management</h1>
-          </div>
-        </div>
-      </div>
       {/**************************************************************FOOTER  **********************************************************************/}
       <Footer />
+      <div id="box"></div>
+      <div id="play"></div>
+      <div id="play1" style={{ position: 'absolute' }}></div>
+      <div id="play"></div>
+      <div id="play"></div>
+      <div id="play"></div>
+      <div id="play"></div>
 
+      <div className='class-footer'>
+        <h> Higher Systems | All Rights Reserved</h>
+      </div>
+      {showQueryForm && (
+        <div className="query-form">
+          <form onSubmit={handleSubmit}>
+            <button className="button-f2" onClick={handleCloseForm}> <img style={{ width: '20px', height: '20px', marginLeft: '-17%', opacity: '0.8', }} src={require('./remove.svg')} alt="img" /></button>
+            <h2 style={{ marginLeft: '17%', marginTop: '-5%' }}>Let Me Know More about</h2>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <label style={{ marginLeft: '50px' }}>Service Name</label>
+              <input style={{ width: '350px', marginLeft: '50px', textAlign: 'center' }} type="text" name="name" value={formValues.name} onChange={handleChange} readOnly />
+              <label style={{ marginLeft: '50px' }}>E-mail</label>
+              <input style={{ width: '350px', marginLeft: '50px' }} type="email" name="email" placeholder="Email" value={formValues.email} onChange={handleChange} required />
+              <label style={{ marginLeft: '50px' }}>Phone No</label>
+              <input style={{ width: '350px', marginLeft: '50px', height: '39.2px', border: '1px solid #cccccc', borderRadius: '5px' }} type="PhoneNo" name="Phoneno" placeholder="9876543210" value={formValues.number} onChange={handleChange} required />
+              <label style={{ marginLeft: '50px' }}>Query</label>
+              <textarea style={{ width: '350px', marginLeft: '50px', height: '150px' }} name="query" placeholder="Your Query" value={formValues.query} onChange={handleChange} required />
 
+            </div>
+            <button style={{ marginLeft: '25%', marginTop: '40px' }} type="submit">Submit</button>
+
+          </form>
+
+        </div>
+      )}
     </div>
-
-
   );
 }
 export default Infra;
