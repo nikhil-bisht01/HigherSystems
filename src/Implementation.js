@@ -28,7 +28,7 @@ function Implementation() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:4000/services", {
+      const response = await fetch("http://localhost:4000/service", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -38,12 +38,10 @@ function Implementation() {
       if (response.ok) {
         window.alert("Message has been sent!");
         window.alert("Thank you for visiting! Our team will contact you soon.");
-      } else {
-        throw new Error("Failed to submit form");
-      }
+      } 
     } catch (error) {
-      console.error("Error:", error);
-      window.alert("Failed to submit form. Please try again later.");
+      console.error("Error:", error.message);
+      window.alert(error.message);
     }
   };
 
@@ -103,9 +101,9 @@ function Implementation() {
               <label style={{ marginLeft: '50px' }}>E-mail</label>
               <input style={{ width: '350px', marginLeft: '50px' }} type="email" name="email" placeholder="Email" value={formValues.email} onChange={handleChange} required />
               <label style={{ marginLeft: '50px' }}>Phone No</label>
-              <input style={{ width: '350px', marginLeft: '50px', height: '39.2px', border: '1px solid #cccccc', borderRadius: '5px' }} type="PhoneNo" name="Phoneno" placeholder="9876543210" value={formValues.number} onChange={handleChange} required />
+              <input style={{ width: '350px', marginLeft: '50px', height: '39.2px', border: '1px solid #cccccc', borderRadius: '5px' }} type="PhoneNo" name="phoneNumber" placeholder="9876543210" value={formValues.number} onChange={handleChange} required />
               <label style={{ marginLeft: '50px'}}>Query</label>
-              <textarea style={{ width: '350px', marginLeft: '50px', height: '150px' }} name="query" placeholder="Your Query" value={formValues.query} onChange={handleChange} required />
+              <textarea style={{ width: '350px', marginLeft: '50px', height: '150px' }} name="enquery" placeholder="Your Query" value={formValues.query} onChange={handleChange} required />
             </div>
             <button style={{ marginLeft: '25%', marginTop: '40px' }} type="submit">Submit</button>
           </form>
