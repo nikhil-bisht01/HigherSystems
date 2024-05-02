@@ -16,7 +16,7 @@ import Infra from './Infra'
 import Navbar from './Navbar'
 import Contactform from './Contactform'
 import { Route, Routes } from 'react-router-dom'
-
+import ChatBot from './chaatbot'
 
 function App() {
   return (
@@ -37,6 +37,7 @@ function App() {
         <Route path= '/Contactform' element={<Contactform/>}/>
         <Route path='/Implementation' element={<Implementation/>}/>
         <Route path='/Components/Navbar' element={<Navbar/>}/>
+        <Route path='/ChatBot' element={<ChatBot/>}/>
       </Routes>
       
   )
