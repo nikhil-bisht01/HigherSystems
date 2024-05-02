@@ -27,7 +27,7 @@ function Business() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('FORM VALUES:',formValues);
+    console.log('FORM VALUES:', formValues);
     try {
       const response = await fetch("", {
         method: "POST",
@@ -64,7 +64,6 @@ function Business() {
 
       {/***********************    PARRENT   ************************************/}
       <div className="parrent" >
-
         <div onMouseEnter={myFunction} className="child" onClick={() => handleImageClick("Document Management System")}>
           <img src={require('./doucment.svg')} alt="img" />
         </div>
@@ -87,33 +86,27 @@ function Business() {
           <img src={require("./human resource.svg")} alt="img" />
         </div>
         <p>Human Resource Management System</p>
-
-
       </div >
 
-      <div className="parrent" >
-        <div className="page2">
+     { /*****************    PARRENT ---1     ********************** */}
 
-          <div className="child1" onClick={() => handleImageClick("Asset Management System")}>
-            <img src={require('./assets (2).svg')} alt="img" />
-
-          </div>
-          <p className="p1">Asset Management System</p>
-
-
-          <div className="child1" onClick={() => handleImageClick("Inventory Management System")}>
-            <img src={require('./inventory.svg')} alt="img" />
-
-          </div>
-          <p className="p1">Inventory Management System</p>
-
-          <div className="child1" style={{}} onClick={() => handleImageClick("Digital Transformation and eLearning")}>
-            <img src={require("./elearning.svg")} alt="img" />
-
-          </div>
-          <p className="p1" >Digital Transformation and E-Learning</p>
-
+      <div className="parrent-1" >
+        <div className="child" onClick={() => handleImageClick("Asset Management System")}>
+          <img src={require('./assets (2).svg')} alt="img" />
         </div>
+        <p className="bus">Asset Management System</p>
+
+
+        <div className="child" onClick={() => handleImageClick("Inventory Management System")}>
+          <img src={require('./inventory.svg')} alt="img" />
+        </div>
+        <p className="bus">Inventory Management System</p>
+
+
+        <div className="child" style={{}} onClick={() => handleImageClick("Digital Transformation and eLearning")}>
+          <img src={require("./elearning.svg")} alt="img" />
+        </div>
+        <p className="bus" >Digital Transformation and E-Learning</p>
       </div>
 
 
@@ -131,9 +124,10 @@ function Business() {
       <div className='class-footer'>
         <h> Higher Systems | All Rights Reserved</h>
       </div>
-      {showQueryForm && (
-        <div className="query-form">
-         {/*  <form onSubmit={handleSubmit}>
+      {
+        showQueryForm && (
+          <div className="query-form">
+            <form onSubmit={handleSubmit}>
             <button className="button-f2" onClick={handleCloseForm}> <img style={{ width: '20px', height: '20px', marginLeft: '-17%', opacity: '0.8', }} src={require('./remove.svg')} alt="img" /></button>
             <h2 style={{ marginLeft: '17%', marginTop: '-5%' }}>Let Me Know More about</h2>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
@@ -148,15 +142,11 @@ function Business() {
 
             </div>
             <button style={{ marginLeft: '25%', marginTop: '40px' }} type="submit">Submit</button>
-          </form> */}
-        </div>
-      )}
-
-    </div>
-
-
-
-  );
+          </form> 
+          </div>
+        )
+      }
+      </div >
+    );
 }
-
 export default Business;
