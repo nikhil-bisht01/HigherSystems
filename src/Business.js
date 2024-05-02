@@ -126,7 +126,7 @@ function Business() {
       </div>
       {
         showQueryForm && (
-          <div className="query-form">
+          <div className="bus-query-form">
             <form onSubmit={handleSubmit}>
             <button className="button-f2" onClick={handleCloseForm}> <img style={{ width: '20px', height: '20px', marginLeft: '-17%', opacity: '0.8', }} src={require('./remove.svg')} alt="img" /></button>
             <h2 style={{ marginLeft: '17%', marginTop: '-5%' }}>Let Me Know More about</h2>
@@ -139,14 +139,12 @@ function Business() {
               <input style={{ width: '350px', marginLeft: '50px', height: '39.2px', border: '1px solid #cccccc', borderRadius: '5px' }} type="PhoneNo" name="Phoneno" placeholder="9876543210" value={formValues.number} onChange={handleChange} required />
               <label style={{ marginLeft: '50px',height:'3%'}}>Query</label>
               <textarea style={{ width: '350px', marginLeft: '50px', height: '150px' }} name="query" placeholder="Your Query" value={formValues.query} onChange={handleChange} required />
-
             </div>
             <button style={{ marginLeft: '25%', marginTop: '40px' }} type="submit">Submit</button>
           </form> 
           </div>
-        )
-      }
+        )}
       </div >
     );
 }
-export default Business;
+export default Business;

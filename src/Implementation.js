@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Implementation.css";
 import Footer from "./Components/Footer";
 import Navbar from "./Navbar";
-import myFunction from "./Components/animations";
 
 
 function Implementation() {
@@ -28,7 +27,7 @@ function Implementation() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:4000/services", {
+      const response = await fetch("http://localhost:4000/service", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -40,8 +39,8 @@ function Implementation() {
         window.alert("Thank you for visiting! Our team will contact you soon.");
       }
     } catch (error) {
-      console.error("Error:", error);
-      window.alert("Failed to submit form. Please try again later.");
+      console.error("Error:", error.message);
+      window.alert(error.message);
     }
   };
 
@@ -63,21 +62,17 @@ function Implementation() {
       <div className="imple-parrent" >
         <div className="imple-child" onClick={() => handleImageClick("Oracle Utilities Application Framework Implementation")}>
           <img src={require("./framework.svg")} alt="img" />
-        <div className="imple-p">Oracle Utilities Application Framework Implementation</div>
-      </div>
-
-
+          <div className="imple-p">Oracle Utilities Application Framework Implementation</div>
+        </div>
 
         <div className="imple-child" onClick={() => handleImageClick("Active Directory Implementation")}>
           <img src={require("./folder.svg")} alt="img" />
-        <div className="imple-p">Active Directory Implementation</div>
+          <div className="imple-p">Active Directory Implementation</div>
         </div>
       </div>
 
 
-
-
-      {/************************      FOOTER        ******************************/}
+{/************************      FOOTER        ******************************/}
       <Footer />
       <div id="box"></div>
       <div id="play"></div>
@@ -92,7 +87,7 @@ function Implementation() {
       </div>
 
 
-      {/********************************      QUERY FORM        ***************************************** */}
+{/********************************      QUERY FORM        ***************************************** */}
       {showQueryForm && (
         <div className="query-form">
           <form onSubmit={handleSubmit}>

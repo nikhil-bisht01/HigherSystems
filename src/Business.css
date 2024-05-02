@@ -12,20 +12,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 40px;
+  font-size: 45px;
   color: white;
   font-weight: bold;
   font-family: Montsarret;
 }
-
-
-
-
-
-
-
-
-
 /*******    BOX     *********/
 .box {
   position: absolute;
@@ -52,13 +43,7 @@
   left: 6%;
   opacity: 0;
 }
-
-
-
-
-
-
-
+/**********  PARRENT    ****************/
 .page2 {
   display: flex;
   align-items: center;
@@ -66,46 +51,17 @@
   flex-wrap: wrap;
 }
 
-
-/* /IMAGES CONTAINER CSS/ */
-.container {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-}
-
-.image-row {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 15px;
-}
-
-
 .child {
   width: 70px;
   height: 70px;
   margin: 20px;
   position: relative;
   overflow: hidden;
-
-
 }
-
-.child-1 {
-  width: 70px;
-  height: 70px;
-  margin: 20px;
-  position: relative;
-  overflow: hidden;
-  margin-top: 5%;
-}
-
 .child1 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
   opacity: 0.7;
   transition: all 0.2s ease-in-out;
 }
@@ -277,14 +233,13 @@ p {
   .business-image-container {
     /**********  Business--Images   *******************/
     position: relative;
-    height: 20px;
+    height: 290px;
   }
 
   .business-background-image {
     height: 260px;
     width: 100vw;
   }
-
   .bus-overlay-text {
     position: absolute;
     top: 59%;
@@ -295,13 +250,16 @@ p {
     font-weight: bold;
     font-family: Montsarret;
   }
-
   .parrent {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
+  .parrent-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .child {
     /*******   PAGE--2  *******************/
     margin-bottom: 20px;
@@ -339,16 +297,16 @@ p {
     margin: 0;
   }
 
-  .query-form {
-    /**********   QUERY FORM    ******************/
+  .bus-query-form {     /**********   QUERY FORM    ******************/
     position: fixed;
     margin-right: 2%;
     top: 30%;
     width: 400px;
     height: 100%;
+    background-color: white;
+    border: 1px solid black;
   }
-
-  .query-form form {
+  .bus-query-form form {
     margin: 0 auto;
   }
 
@@ -368,11 +326,11 @@ p {
     font-size: 20px;
   }
 
-  .query-form input[type="text"],
-  .query-form input[type="email"],
-  .query-form input[type="PhoneNo"],
-  .query-form textarea {
-    width: 100%;
+  .bus-query-form input[type="text"],
+  .bus-query-form input[type="email"],
+  .bus-query-form input[type="PhoneNo"],
+  .bus-query-form textarea {
+    width: 70%;
     margin-bottom: 10px;
     padding: 10px;
     box-sizing: border-box;
@@ -380,7 +338,7 @@ p {
     border-radius: 5px;
   }
 
-  .query-form button[type="submit"] {
+  .bus-query-form button[type="submit"] {
     width: 50%;
     margin-top: 20px;
     padding: 10px;
@@ -392,7 +350,7 @@ p {
     cursor: pointer;
   }
 
-  .query-form img {
+  .bus-query-form img {
     width: 30px;
     height: 30px;
   }
@@ -521,40 +479,3 @@ p {
 
 
 
-/* @media only screen and (max-width: 768px) {
-  .business-image-container {
-    height: 350px;
-  }
-  .business-background-image {
-    height: 350px;
-    width: 100vw;
-  } 
-  .parrent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .child, .child1 {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .child img, .child1 img {
-    max-width: 100px;
-    height: auto;
-    border-radius: 1.5rem;
-  }
-
-  .p, .p1 {
-    margin: 0;
-  }
-
-  .page2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-
-} */

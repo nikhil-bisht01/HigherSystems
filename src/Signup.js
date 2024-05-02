@@ -19,7 +19,7 @@ function SignupPage() {
     }
 
     try {
-      const response = await fetch("your-backend-api-url/signup", {
+      const response = await fetch("http://localhost:4000/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -33,16 +33,13 @@ function SignupPage() {
         }),
       });
 
+      const data = await response.json();
+
       if (response.ok) {
         alert("Signup Successful");
         // Redirect the user to the dashboard or login page
       } else {
-        const data = await response.json();
-        if (response.status === 409) {
-          alert("User already exists in the database");
-        } else {
-          alert("Signup failed");
-        }
+        alert("Signup failed: " + data.error);
       }
     } catch (error) {
       console.error("Error during signup:", error);
@@ -52,9 +49,8 @@ function SignupPage() {
 
   return (
     <div>
-        <Navbar />
+      <Navbar />
       <div>
-       
         <img
           className="signup-img"
           src={require("./signin.png")}
@@ -157,7 +153,6 @@ function SignupPage() {
           </form>
         </div>
       </div>
-    
     </div>
   );
 }
