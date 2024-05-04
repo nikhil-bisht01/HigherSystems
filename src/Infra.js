@@ -61,10 +61,12 @@ function Infra() {
 
       {/***********************    LINE--1   ************************************/}
       <div className="infra-parrent" >
-        <div className="infra-child" style={{}}>
-          <img onClick={() => handleImageClick("Security Information and Event Management")} src={require('./content-management.svg')} alt="img" style={{}} />
+        <div>
+        <div className="infra-child" >
+          <img onClick={() => handleImageClick("Security Information and Event Management")} src={require('./content-management.svg')} alt="img"  />
         </div>
         <p className="infra-p">Security System and Event Management</p>
+        </div>
 
         <div className="infra-child" >
           <img onClick={() => handleImageClick("Firewall and Gateway Security")} src={require('./firewall (1).svg')} alt="img" />
