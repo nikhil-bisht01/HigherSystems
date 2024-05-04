@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Implementation.css";
 import Footer from "./Components/Footer";
 import Navbar from "./Navbar";
-import myFunction from "./Components/animations";
 
 
 function Implementation() {
@@ -38,7 +37,7 @@ function Implementation() {
       if (response.ok) {
         window.alert("Message has been sent!");
         window.alert("Thank you for visiting! Our team will contact you soon.");
-      } 
+      }
     } catch (error) {
       console.error("Error:", error.message);
       window.alert(error.message);
@@ -59,24 +58,21 @@ function Implementation() {
 
 
 
-{/***********************    PARRENT   ************************************/}
+      {/***********************    PARRENT   ************************************/}
       <div className="imple-parrent" >
         <div className="imple-child" onClick={() => handleImageClick("Oracle Utilities Application Framework Implementation")}>
-          <img src={require('./framework.svg')} alt="img" />
+          <img src={require("./framework.svg")} alt="img" />
+          <div className="imple-p">Oracle Utilities Application Framework Implementation</div>
         </div>
-        <p>Oracle Utilities Application Framework Implementation</p>
-
-
 
         <div className="imple-child" onClick={() => handleImageClick("Active Directory Implementation")}>
           <img src={require("./folder.svg")} alt="img" />
+          <div className="imple-p">Active Directory Implementation</div>
         </div>
-        <p>Active Directory Implementation</p>
-      </div >
+      </div>
 
 
-
-
+{/************************      FOOTER        ******************************/}
       <Footer />
       <div id="box"></div>
       <div id="play"></div>
@@ -89,6 +85,9 @@ function Implementation() {
       <div className='class-footer'>
         <h> Higher Systems | All Rights Reserved</h>
       </div>
+
+
+{/********************************      QUERY FORM        ***************************************** */}
       {showQueryForm && (
         <div className="query-form">
           <form onSubmit={handleSubmit}>
@@ -101,9 +100,9 @@ function Implementation() {
               <label style={{ marginLeft: '50px' }}>E-mail</label>
               <input style={{ width: '350px', marginLeft: '50px' }} type="email" name="email" placeholder="Email" value={formValues.email} onChange={handleChange} required />
               <label style={{ marginLeft: '50px' }}>Phone No</label>
-              <input style={{ width: '350px', marginLeft: '50px', height: '39.2px', border: '1px solid #cccccc', borderRadius: '5px' }} type="PhoneNo" name="phoneNumber" placeholder="9876543210" value={formValues.number} onChange={handleChange} required />
-              <label style={{ marginLeft: '50px'}}>Query</label>
-              <textarea style={{ width: '350px', marginLeft: '50px', height: '150px' }} name="enquery" placeholder="Your Query" value={formValues.query} onChange={handleChange} required />
+              <input style={{ width: '350px', marginLeft: '50px', height: '39.2px', border: '1px solid #cccccc', borderRadius: '5px' }} type="PhoneNo" name="Phoneno" placeholder="9876543210" value={formValues.number} onChange={handleChange} required />
+              <label style={{ marginLeft: '50px' }}>Query</label>
+              <textarea style={{ width: '350px', marginLeft: '50px', height: '150px' }} name="query" placeholder="Your Query" value={formValues.query} onChange={handleChange} required />
             </div>
             <button style={{ marginLeft: '25%', marginTop: '40px' }} type="submit">Submit</button>
           </form>
