@@ -97,6 +97,7 @@
 
 .services-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
@@ -137,9 +138,6 @@
   opacity: 0.6;
 
 }
-
-
-
 
 /***************************    FUTURE OUTLOOK    **********************************************/
 .future {
@@ -185,7 +183,7 @@
 
 
 /***************************  MEDIA QUERY FOR 412PX*********************************************************/
-@media only screen and (max-width: 412px) {
+@media screen and (max-width: 412px) {
   .home-img {
     width: 100vw;
     height: 260px;
@@ -224,8 +222,8 @@
 
   .home p {
     font-size: 14px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 2ch;
+    margin-right: 2ch;
     margin-top: 2%;
   }
 
@@ -256,7 +254,8 @@
   }
 
   .services-container {
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-right: 5%;
     margin-left: 5%;
@@ -267,8 +266,9 @@
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 4%;
   }
   
   .ser-img img {
@@ -286,7 +286,7 @@
     margin: 0;
     color: #20434F;
     text-align: center;
-    font-size: 25px;
+    font-size: 19px;
   
   }
   
@@ -305,17 +305,15 @@
 
   .future h1 {
     font-size: 20px;
-    margin-left: 0;
-  
-    text-align: justify;
+    text-align: center;
   }
 
   .future p {
     font-size: 14px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 1.5ch;
+    margin-right: 1.5ch;
     margin-top: 3%;
-    text-align: center;
+    text-align: justify;
     margin-bottom: 3%;
   }
 }
@@ -323,7 +321,7 @@
 
 
 /*****************************  MEDIA QUERY FOR 768PX  **********************************************/
-@media  only screen  and (max-width: 768px) {
+@media  only screen and (min-width:413px) and (max-width: 768px) {
   
   .home {              /********    HOME    *****************/
     margin: 1ch;
@@ -375,16 +373,16 @@
   }
 
   .services-container {
-    flex-wrap: wrap;
     justify-content: center;
-
     margin-top: 3%;
+    display: flex;
+    flex-direction: row;
   
   }
 
   .ser-img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin:10px;
     border-radius:1rem;
 
@@ -406,8 +404,8 @@
   }
 
   .future p {
-    margin-left: 1ch;
-    margin-right: 1ch;
+    margin-left: 1.5ch;
+    margin-right: 1.5ch;
     text-align: justify;
   }
 }

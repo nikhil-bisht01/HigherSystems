@@ -38,7 +38,7 @@ function Connect() {
         <img src={require("./location.svg")} alt='data' className="con-icons"/>
           <span>213, Block A4, Savitri Heights 2, VIP Road, Zirakpur, Punjab</span>
         </div>
-        <div className="boxing">
+        <div className="boxing ">
         <img src={require("./location.svg")} alt='data' className="con-icons"/>
           <span>Mohd. Johar Ali Road,Rampur,Uttar Pradesh - 244901</span>
         </div>
@@ -49,7 +49,7 @@ function Connect() {
 {/**************************    FOOTER    *******************************/}
       <Footer />
       <div className="footer-reserved" >
-        <h1>Higher Systems | all Rights Reserved</h1>
+        <h1>Higher Systems | All Rights Reserved</h1>
       </div>
     </div>
   );

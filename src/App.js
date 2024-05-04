@@ -37,7 +37,7 @@ function App() {
         <Route path= '/Contactform' element={<Contactform/>}/>
         <Route path='/Implementation' element={<Implementation/>}/>
         <Route path='/Components/Navbar' element={<Navbar/>}/>
-        <Route path='/ChatBot' element={<ChatBot/>}/>
+        <Route path='/chaatbot' element={<ChatBot/>}/>
       </Routes>
       
   )

@@ -8,35 +8,30 @@ function Header() {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-    
   };
 
   return (
-     <div className="navbar" style={{ background: '#ffffff' ,position:'fixed'}}>
-       <div>
+    <div className="navbar" style={{ background: '#ffffff' ,position:'fixed'}}>
+      <div>
         <img src={logo} alt="logo" className="nav-img" />
       </div>
-       <div className={`parent-nav ${isOpen ? "active" : ""}`}>
+      <div className={`parent-nav ${isOpen ? "active" : ""}`}>
         <div className="child-nav"><Link to="/" onClick={toggleMenu}>Home</Link></div>
         <div className="child-nav"><Link to="/About" onClick={toggleMenu}>About</Link></div>
         <div className="child-nav"><Link to="/Solution" onClick={toggleMenu}>Solution</Link></div>
         <div className="child-nav"><Link to="/Connect" onClick={toggleMenu}>Contact</Link></div>
-         
       </div>
-     {isOpen && (
+      {isOpen && (
         <div className="menu-toggle" onClick={toggleMenu}>
           <i className="fas fa-times"></i>
-         </div>
+        </div>
       )}
       {!isOpen && (
         <div className="menu-toggle" onClick={toggleMenu}>
           <i className="fas fa-bars"></i>
         </div>
-       )}
+      )}
     </div>
-    
-
-   
   );
 }
 

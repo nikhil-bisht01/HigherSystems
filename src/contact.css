@@ -88,9 +88,7 @@
   }
 
 
-  
-  
-  /********************   MEDIA QUERIES FOR 412PX AND 768PX***********************************/
+/********************   MEDIA QUERIES FOR 412PX AND 768PX***********************************/
   
   @media screen and (max-width: 412px) {
     .cnt-background-image {
@@ -160,6 +158,11 @@
       width:20px;
       height:20px;
     }
+
+    .boxing{
+      position: relative;
+      margin-bottom: 3%;
+    }
 }
 
 
@@ -172,7 +175,6 @@
     font-size: 20px;
   }
  /*************  CONTACT TEXT ********************/ 
-
   .contact-text{
     margin-top: 0%;
     margin-left: 0%;

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./infra.css";
 import Footer from "./Components/Footer";
 import Navbar from "./Navbar";
-import myFunction from "./Components/animations";
 
 
 function Infra() {
@@ -62,71 +61,85 @@ function Infra() {
 
       {/***********************    LINE--1   ************************************/}
       <div className="infra-parrent" >
-        <div className="infra-child">
-          <img onClick={() => handleImageClick("Data Security")} src={require('./doucment.svg')} alt="img" style={{}} />
-          <div>Data Security</div>
-        </div>
-
         <div className="infra-child" style={{}}>
           <img onClick={() => handleImageClick("Security Information and Event Management")} src={require('./content-management.svg')} alt="img" style={{}} />
-          <div>Security System and<br />Event Management</div>
         </div>
+        <p className="infra-p">Security System and Event Management</p>
 
         <div className="infra-child" >
           <img onClick={() => handleImageClick("Firewall and Gateway Security")} src={require('./firewall (1).svg')} alt="img" />
-          <div>Firewall and <br />Gateway Security</div>
         </div>
+        <p className="infra-p"> Firewall and Gateway Security</p>
 
         <div className="infra-child" >
           <img onClick={() => handleImageClick("Storage and Backup Solutions")} src={require("./backup.svg")} alt="img" />
-          <div>Storage and <br />Backup Solutions</div>
         </div>
+        <p className="infra-p">Storage and Backup Solutions</p>
+
+      </div>
+
+      {/***********************    LINE--2   ************************************/}
+      <div className="infra-parrent-1" >
+    
+        <div className="infra-child-1" >
+          <img onClick={() => handleImageClick("Cloud Computing")} src={require('./cloud-computing.svg')} alt="img" />
+        </div>
+        <p className="infra-p1">Cloud Computing</p>
+
+
+        <div className="infra-child-1" >
+          <img onClick={() => handleImageClick("Virtualization")} className="img1" src={require('./enterprisre.svg')} alt="img" />
+        </div>
+        <p className="infra-p1">Virtualization</p>
+
+
+        <div className="infra-child-1">
+          <img onClick={() => handleImageClick("Security Systems")} src={require("./cctv-camera.svg")} alt="img" />
+        </div >
+        <p className="infra-p1">Security System</p>
+
+      </div>
+
+      {/*********************   LINE--3   ****************************/}
+      <div className="infra-parrent-2" >
+        <div className="infra-child-2" >
+          <img onClick={() => handleImageClick("IT Managed Services")} src={require('./modular.svg')} alt="img" />
+        </div>
+        <p className="infra-p2">IT Managed Services</p>
+
+
+        <div className="infra-child-2" >
+          
+          <img onClick={() => handleImageClick("Privileged Identity Management")} src={require('./identity-card.svg')} alt="img" />
+        </div>
+        <p className="infra-p2">Privileged Identity Management</p>
+
+        <div className="infra-child-2" >
+
+          <img onClick={() => handleImageClick("Privileged Access Management")} src={require("./copyright.svg")} alt="img" />
+        </div>
+        <p className="infra-p2">Privileged Access Management</p>
+      </div>
+
+      <div className="infra-parrent-3">
+      <div className="infra-child-3">
+
+          <img onClick={() => handleImageClick("Data Security")} src={require('./doucment.svg')} alt="img" style={{}} />
+        </div>
+        <p className="infra-p">Data Security</p>
+
+        <div className="infra-child-1">
+          <div>
+          <img onClick={() => handleImageClick("Network & WiFi")} src={require('./wifi.svg')} alt="img" />
+        </div>
+        <p className="infra-p1"> Network & WiFi</p>
+        </div>
+
+
       </div>
 
 
-        {/***********************    LINE--2   ************************************/}
-        <div className="infra-parrent" >
-          <div className="infra-child">
-            <img onClick={() => handleImageClick("Network & WiFi")} src={require('./wifi.svg')} alt="img" />
-            <div>Network & WiFi</div>
-          </div>
-
-          <div className="infra-child" >
-            <img onClick={() => handleImageClick("Cloud Computing")} src={require('./cloud-computing.svg')} alt="img" />
-            <div>Cloud Computing</div>
-          </div>
-
-          <div className="infra-child" >
-            <img onClick={() => handleImageClick("Virtualization")} className="img1" src={require('./enterprisre.svg')} alt="img" />
-            <div>Virtualization</div>
-          </div>
-
-          <div className="infra-child">
-            <img onClick={() => handleImageClick("Security Systems")} src={require("./cctv-camera.svg")} alt="img" />
-            <div>Security Systems</div>
-          </div >
-        </div>
-
-        {/*********************   LINE--3   ****************************/}
-        <div className="infra-parrent-1" >
-          <div className="infra-child-2" >
-            <img onClick={() => handleImageClick("IT Managed Services")} src={require('./modular.svg')} alt="img" />
-            <div className="p1">IT Managed Services</div>
-          </div>
-
-          <div className="infra-child-2" >
-            <img onClick={() => handleImageClick("Privileged Identity Management")} src={require('./identity-card.svg')} alt="img" />
-            <div className="p1">Privileged Identity Management</div>
-          </div>
-
-          <div className="infra-child-2" >
-            <img onClick={() => handleImageClick("Privileged Access Management")} src={require("./copyright.svg")} alt="img" />
-            <div className="p1" >Privileged Access Management</div>
-          </div>
-        </div>
-    
-
-{/**************************************************************FOOTER  **********************************************************************/}
+      {/**************************************************************FOOTER  **********************************************************************/}
       <Footer />
       <div id="box"></div>
       <div id="play"></div>
@@ -154,12 +167,9 @@ function Infra() {
                 <input style={{ width: '350px', marginLeft: '50px', height: '39.2px', border: '1px solid #cccccc', borderRadius: '5px' }} type="PhoneNo" name="Phoneno" placeholder="9876543210" value={formValues.number} onChange={handleChange} required />
                 <label style={{ marginLeft: '50px' }}>Query</label>
                 <textarea style={{ width: '350px', marginLeft: '50px', height: '150px' }} name="query" placeholder="Your Query" value={formValues.query} onChange={handleChange} required />
-
               </div>
               <button style={{ marginLeft: '25%', marginTop: '40px' }} type="submit">Submit</button>
-
             </form>
-
           </div>
         )
       }

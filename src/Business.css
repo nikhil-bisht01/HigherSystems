@@ -1,481 +1,128 @@
-/******************************   images    **************************************/
-.business-image-container {
-  position: relative;
-  width: 100%;
+.bus-image-container {
+    position: relative;
+    width: 100%;
 }
-.business-background-image {
-  width: 100%;
-  height: 350px;
+
+.bus-background-image {
+    width: 100%;
+    height: 350px;
 }
+
 .bus-overlay-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 45px;
-  color: white;
-  font-weight: bold;
-  font-family: Montsarret;
-}
-/*******    BOX     *********/
-.box {
-  position: absolute;
-  top: 40%;
-  left: 7%;
-  width: 250px;
-  background-color: #ffffff;
-  opacity: 0;
-  border: 1px solid gray;
-  border-radius: 10px;
-  height: 0px;
-}
-
-#play {
-  padding: 4vw;
-  background-color: #007ac0cd;
-  border-radius: 10px;
-  color: #FFFFFF;
-  width: 300px;
-  height: 0px;
-  font-size: 1vw;
-  position: absolute;
-  top: 55%;
-  left: 6%;
-  opacity: 0;
-}
-/**********  PARRENT    ****************/
-.page2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.child {
-  width: 70px;
-  height: 70px;
-  margin: 20px;
-  position: relative;
-  overflow: hidden;
-}
-.child1 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.7;
-  transition: all 0.2s ease-in-out;
-}
-
-.child1:hover img {
-
-  opacity: 1;
-
-}
-
-
-
-
-.child img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
-  opacity: 0.7;
-  transition: all 0.2s ease-in-out;
-}
-
-.child:hover img {
-
-  opacity: 1;
-
-}
-
-.child .img1:hover .hunt {
-  width: 200px;
-  height: 300px;
-}
-
-.text-1 {
-  position: absolute;
-  justify-content: center;
-  bottom: 35%;
-  left: 5%;
-  width: 90%;
-  font-size: 29px;
-  font-weight: bold;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: black;
-}
-
-.parrent {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-
-  flex-wrap: wrap;
-
-}
-
-.parrent-1{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-
-  flex-wrap: wrap;
-
-}
-p {
-  margin-top: 200px;
-  margin-left: -22%;
-}
-.p1 {
-  margin-left: -27%;
-  margin-top: 20%;
-}
-
-
-
-
-
-
-
-/**********  BOX AND PLAY   *************/
-.box {
-  position: absolute;
-  top: 40%;
-  left: 7%;
-  width: 250px;
-  background-color: #ffffff;
-  opacity: 0;
-  border: 1px solid gray;
-  border-radius: 10px;
-  height: 0px;
-}
-#play {
-  padding: 4vw;
-  background-color: #007ac0cd;
-  border-radius: 10px;
-  color: #FFFFFF;
-  width: 300px;
-  height: 0px;
-  font-size: 1vw;
-  position: absolute;
-  top: 55%;
-  left: 6%;
-  opacity: 0;
-}
-
-/*********  QUERY FORM  *********/
-.query-form {
-  position: fixed;
-  right: 0%;
-  top: 10%;
-  width: 450px;
-  height: 100%;
-  background-color: white;
-  border: 1px solid gray;
-  transition: left 2s ease-in-out;
-}
-.button-f2 {
-  width: 40px;
-  height: 40px;
-  color: gray;
-  font-weight: bold;
-  background-color: white;
-  border: none;
-  opacity: 0.8;
-  transition: all 0.3S ease-in-out;
-}
-.button-f2:hover {
-  opacity: 1;
-  transform: scale(1.1);
-}
-.button-f2 img:hover {
-  opacity: 1;
-  transform: scale(1.1);
-}
-.h2 {
-  font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-
- /*********   LAST  FOOTER   *************/
-.business-ft-reserved {
-  height: 15px;
-  margin-top: 15px;
-  margin-left: 45%;
-}
-.class-footer {
-  width: 100%;
-  font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-
-
-
-
-
-/*************************    MAX-WIDTH:412PX     ********************************************/
-
-@media only screen and (max-width: 412px) {
-
-  .business-image-container {
-    /**********  Business--Images   *******************/
-    position: relative;
-    height: 290px;
-  }
-
-  .business-background-image {
-    height: 260px;
-    width: 100vw;
-  }
-  .bus-overlay-text {
     position: absolute;
-    top: 59%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 25px;
-    color: white;
-    font-weight: bold;
-    font-family: Montsarret;
-  }
-  .parrent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .parrent-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .child {
-    /*******   PAGE--2  *******************/
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .child img {
-    max-width: 100px;
-    height: auto;
-    border-radius: 1.5rem;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  .page2 {
-    /********  PAGE--1  ***************/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .child1 {
-    margin-bottom: 50px;
-    text-align: center;
-  }
-
-  .child1 img {
-    max-width: 100px;
-    height: auto;
-  }
-
-  .p1 {
-    margin: 0;
-  }
-
-  .bus-query-form {     /**********   QUERY FORM    ******************/
-    position: fixed;
-    margin-right: 2%;
-    top: 30%;
-    width: 400px;
-    height: 100%;
-    background-color: white;
-    border: 1px solid black;
-  }
-  .bus-query-form form {
-    margin: 0 auto;
-  }
-
-  .button-f2 {
-    width: 30px;
-    height: 30px;
-    color: gray;
-    font-weight: bold;
-    background-color: white;
-    border: none;
-    opacity: 0.8;
-    transition: all 0.3S ease-in-out;
-  }
-
-
-  .label style {
-    font-size: 20px;
-  }
-
-  .bus-query-form input[type="text"],
-  .bus-query-form input[type="email"],
-  .bus-query-form input[type="PhoneNo"],
-  .bus-query-form textarea {
-    width: 70%;
-    margin-bottom: 10px;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-
-  .bus-query-form button[type="submit"] {
-    width: 50%;
-    margin-top: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .bus-query-form img {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-
-/**************** 768px media query  *****************/
-@media only screen and (min-width:413px) and (max-width: 768px) {
-
-  .business-image-container {
-    /**********  Business--Images   *******************/
-    position: relative;
-    height: 340px;
-  }
-
-  .business-background-image {
-    height: 300px;
-    width: 100vw;
-  }
-
-  .bus-overlay-text {
-    position: absolute;
-    top: 59%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 40px;
     color: white;
     font-weight: bold;
-    font-family: Montsarret;
-  }
-
-  .parrent {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .child,
-  .child1 {   /*******   PAGE--2  *******************/
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .child img,
-  .child1 img {
-    max-width: 100px;
-    height: auto;
-    border-radius: 1.5rem;
-  }
-
-  p,
-  .p1 {
-    margin: 0;
-  }
-
-  .page2 {
-    /********  PAGE--1  ***************/
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .child1 {
-    margin-bottom: 50px;
-    text-align: center;
-  }
-
-  .query-form {
-    /**********   QUERY FORM    ******************/
-    position: fixed;
-    margin-right: 2%;
-    top: 30%;
-    width: 400px;
-    height: 100%;
-  }
-
-  .query-form form {
-    margin: 0 auto;
-  }
-
-  .button-f2 {
-    width: 30px;
-    height: 30px;
-    color: gray;
-    font-weight: bold;
-    background-color: white;
-    border: none;
-    opacity: 0.8;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .label {
-    font-size: 20px;
-  }
-
-  .query-form input[type="text"],
-  .query-form input[type="email"],
-  .query-form input[type="PhoneNo"],
-  .query-form textarea {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-
-  .query-form button[type="submit"] {
-    width: 50%;
-    margin-top: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .query-form img {
-    width: 30px;
-    height: 30px;
-  }
+    font-family: Montserrat;
 }
 
+/**********  PARRENT  **************/
+.bus-parrent-1 {       /*******    parrent-1   *******/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 4%;
+}
+.bus-child-1{
+    width:70px;
+    height:70px;
+}
+.bus-child-1 img{
+    width: 70px;
+    height: 70px;
+    opacity: 0.6;
+    cursor:pointer;
+    margin-left: 34%;
+    transition: all 0.2s ease-in-out;
+}
+
+.bus-parrent-2{     /******* Parrent-2   *********/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 4%;
+}
+.bus-child-2{
+    width:70px;
+    height:70px;
+}
+.bus-child-2 img{
+    width: 70px;
+    height: 70px;
+    cursor:pointer;
+    opacity: 0.6;
+    margin-left: 34%;
+    transition: all 0.2s ease-in-out;
+}
+
+.bus-parrent-3{   /******  Parrent-3***********/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:2%;
+    margin-left:0%;
+}
+.bus-child-3{
+    width:70px;
+    height:70px;
+}
+.bus-child-3 img{
+    width: 70px;
+    height: 70px;
+    opacity: 0.6;
+    cursor:pointer;
+    margin-left: 34%;
+    transition: all 0.2s ease-in-out;
+}
+.bus-p3{
+    margin-left:-20%;
+}
+.bus-child-1 img:hover{
+    opacity:1;}
+.bus-child-2 img:hover{
+    opacity:1;
+}
+.bus-child-3 img:hover{
+  opacity:1;
+}
+/********** BOX AND PLAY *************/
+.box {
+    position: absolute;
+    top: 40%;
+    left: 7%;
+    width: 250px;
+    background-color: #ffffff;
+    opacity: 0;
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 0px;
+  }
+ 
+  #play {
+    padding: 4vw;
+    background-color: #007ac0cd;
+    border-radius: 10px;
+    color: #FFFFFF;
+    width: 300px;
+    /* height: 0px;  */
+    /* Commented out to allow the button to expand based on content */
+    font-size: 1vw;
+    position: absolute;
+    top: 55%;
+    left: 6%;
+    opacity: 0;
+  }
+ 
 
 
 

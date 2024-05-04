@@ -1,246 +1,461 @@
  .imple-image-container {
-  position: relative;
-  width: 100%;
-}
+   position: relative;
+   width: 100%;
+ }
 
-.imple-background-image {
-  width: 100%;
-  height: 350px;
-}
+ .imple-background-image {
+   width: 100%;
+   height: 350px;
+ }
 
-.imple-overlay-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 40px;
-  color: white;
-  font-weight: bold;
-  font-family: Montserrat;  
-}
+ .imple-overlay-text {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 40px;
+   color: white;
+   font-weight: bold;
+   font-family: Montserrat;
+ }
 
-/*************** Parent *******************/
+ /*************** Parent *******************/
 
-.imple-parrent {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-top: 2%;
-}
-.imple-child {
-  cursor: pointer;  /* Changed cursor to pointer for better indication */
-}
-.imple-child img {
-  width: 70px;
-  height: 70px;
-  opacity: 0.7;
-  transition: all 0.2s ease-in-out;
-}
-.imple-p{
-  margin-left: -18%; 
-  margin-top: 3%;
-}
-.imple-child:hover img {
-  opacity: 1;
-}
-.imple-child.img:hover .hunt {
-  width: 200px;
-  height: 300px;
-}
+ .imple-parrent {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-left: 2%;
+   margin-right: 2%;
+   margin-top: 4%;
+ }
+
+ .imple-child-1,
+ .imple-child-2 {
+   cursor: pointer;
+   padding: 20px;
+ }
+
+ .imple-child-1 img,
+ .imple-child-2 img {
+   width: 70px;
+   height: 70px;
+   opacity: 0.7;
+   margin-left: 34%;
+   transition: all 0.2s ease-in-out;
+ }
+
+ .imple-p {
+   margin-left: -18%;
+   margin-top: 3%;
+ }
+
+ .imple-child:hover img {
+   opacity: 1;
+ }
+
+ .imple-child.img:hover .hunt {
+   width: 200px;
+   height: 300px;
+ }
 
 
-/********** BOX AND PLAY *************/
-.box {
-  position: absolute;
-  top: 40%;
-  left: 7%;
-  width: 250px;
-  background-color: #ffffff;
-  opacity: 0;
-  border: 1px solid gray;
-  border-radius: 10px;
-  height: 0px;
-}
-#play {
-  padding: 4vw;
-  background-color: #007ac0cd;
-  border-radius: 10px;
-  color: #FFFFFF;
-  width: 300px;
-  /* height: 0px;  */ /* Commented out to allow the button to expand based on content */
-  font-size: 1vw;
-  position: absolute;
-  top: 55%;
-  left: 6%;
-  opacity: 0;
-}
+ /********** BOX AND PLAY *************/
+ .box {
+   position: absolute;
+   top: 40%;
+   left: 7%;
+   width: 250px;
+   background-color: #ffffff;
+   opacity: 0;
+   border: 1px solid gray;
+   border-radius: 10px;
+   height: 0px;
+ }
 
-/********* QUERY FORM *********/
-.query-form {
+ #play {
+   padding: 4vw;
+   background-color: #007ac0cd;
+   border-radius: 10px;
+   color: #FFFFFF;
+   width: 300px;
+   /* height: 0px;  */
+   /* Commented out to allow the button to expand based on content */
+   font-size: 1vw;
+   position: absolute;
+   top: 55%;
+   left: 6%;
+   opacity: 0;
+ }
+
+ /********* QUERY FORM *********/
+ .query-form {
   position: fixed;
   top: 10%;
-  width: 450px;
+  left: 73%;
+  width: 400px;
   height: 100%;
   background-color: white;
   border: 1px solid gray;
   transition: left 2s ease-in-out;
 }
-.button-f2 {
-  width: 40px;
-  height: 40px;
-  color: gray;
-  font-weight: bold;
-  background-color: white;
+.query-p{
+  font-size: 14px;
+  margin-left: 15%;
+  margin-top:-8%;
+}
+.query-label {
+  padding: 20px;
+}
+.button-f2{
+  width:36px;
+  height:28px;
+  margin-top:2%;
   border: none;
-  /* opacity: 0.8; */ /* Removed opacity for full visibility */
-  transition: all 0.3s ease-in-out;
+  cursor:pointer;
+  background-color:white;
 }
-.h2 {
-  font-size: 10px;
-  font-family: Montserrat, sans-serif;  /* Corrected font family */
+.button-f2 img{
+  width:20px;
+  height:20px;
+  cursor:pointer;
+  opacity:0.5;
+}
+.button-f2 img:hover{
+  opacity:1;
+}
+.query-label label{
+  display: block;
+  margin-bottom: 10px;
+}
+.query-label input[type="text"],
+.query-label input[type="email"],
+.query-label input[type="tel"],
+.query-label textarea {
+  width: 340px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.submit-btn {
+  margin-top: 10px;
+  margin-left:20%;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: #0056b3;
 }
 
-.business-ft-reserved {       /***** LAST FOOTER *****/
-  height: 15px;
-  margin-top: 15px;
-  margin-left: 45%;
-}
 
-.class-footer {
-  width: 100%;
-  font-size: 14px;
-  font-family: Montserrat, sans-serif;  /* Corrected font family */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.business-ft-reserved {       /*****   LAST FOOTER   *****/
-  height: 15px;
-  margin-top: 15px;
-  margin-left: 45%;
-}
-
-.class-footer {
-  width: 100%;
-  font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+ 
 
 /********************   MEDIA QUERY     ********************************/
 
-@media screen and  (max-width: 412px){
-  .imple-image-container {
-    position: relative;
-    width: 100%;
+ @media screen and (max-width: 412px) {
+   .imple-image-container {
+     position: relative;
+     width: 100%;
+   }
+
+   .imple-background-image {
+     width: 100%;
+     height: 260px;
+   }
+
+   .imple-overlay-text {
+     position: absolute;
+     width: 100%;
+     margin-left: 10%;
+     margin-top: 10%;
+     transform: translate(-50%, -50%);
+     font-size: 20px;
+     color: white;
+     font-weight: bold;
+     font-family: Montserrat;
+   }
+
+   /*************** Parent *******************/
+   .imple-parrent {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+
+   .imple-child-1 {
+     margin-bottom: 25px;
+     cursor: pointer;
+   }
+
+   .imple-1 {
+     text-align: center;
+     width: 400px;
+   }
+
+   .imple-child-1 img {
+     width: 70px;
+     height: 70px;
+     opacity: 0.7;
+     transition: all 0.2s ease-in-out;
+     margin-left: 39%;
+   }
+
+   .imple-child-2 {
+     margin-bottom: 20px;
+     /* Adjust spacing between children */
+     cursor: pointer;
+   }
+
+   .imple-2 {
+     text-align: center;
+     /* Center the text */
+   }
+
+   .imple-child-2 img {
+     width: 70px;
+     height: 70px;
+     opacity: 0.7;
+     margin-left: 31%;
+     transition: all 0.2s ease-in-out;
+   }
+
+   /********** BOX AND PLAY *************/
+   .box {
+     position: absolute;
+     top: 40%;
+     left: 7%;
+     width: 250px;
+     background-color: #ffffff;
+     opacity: 0;
+     border: 1px solid gray;
+     border-radius: 10px;
+     height: 0px;
+   }
+
+   #play {
+     padding: 4vw;
+     background-color: #007ac0cd;
+     border-radius: 10px;
+     color: #FFFFFF;
+     width: 300px;
+     font-size: 1vw;
+     position: absolute;
+     top: 55%;
+     left: 6%;
+     opacity: 0;
+   }
+
+/********* QUERY FORM *********/
+   .query-form {
+     position: fixed;
+     top: 10%;
+     left:2%;
+     width: 395px;
+     height: 70%;
+     background-color: white;
+     border: 1px solid gray;
+     transition: left 2s ease-in-out;
+   }
+   .button-f2 {
+     width: 20px;
+     height: 20px;
+     color: gray;
+     font-weight: bold;
+     background-color: white;
+     border: none;
+     opacity: 1;
+     transition: all 0.3s ease-in-out;
+   }
+   .query-p{
+    font-size: 14px;
+    margin-left: 15%;
+    margin-top:-8%;
   }
-  
-  .imple-background-image {
-    width: 100%;
-    height: 260px;
+   .query-p h2 {
+     font-size: 14px;
+   }
+   .query-label {
+     display: flex;
+     flex-direction: column;
+   }
+   .query-label label {
+     font-size: 12px;
+     margin-left: 30px;
+     margin-bottom: 6px;
+   }
+   .query-label input {
+     width: 350px;
+     margin-left: 50px;
+     text-align: center;
+     border: 1px solid #cccccc;
+     border-radius: 5px;
+   }
+   .query-label label{
+    display: block;
+    margin-bottom: 10px;
+    margin-left:6%;
   }
-  
-  .imple-overlay-text {
-    position: absolute;
-    width:100%;
-    margin-left: 10%;
-    margin-top: 10%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    color: white;
-    font-weight: bold;
-    font-family: Montserrat;  
+  .query-label input[type="text"],
+  .query-label input[type="email"],
+  .query-label input[type="tel"],
+  .query-label textarea {
+    width: 340px;
+    margin-left:5%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
   }
-  
-  /*************** Parent *******************/
-    .imple-parrent {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .imple-child {
-      margin-bottom: 20px; /* Adjust spacing between children */
-    }
-  
-    .imple-p {
-      text-align: center; /* Center the text */
-    }
-    .imple-child {
-      cursor: pointer;  /* Changed cursor to pointer for better indication */
-    }
-    .imple-child img {
-      width: 70px;
-      height: 70px;
-      opacity: 0.7;
-      transition: all 0.2s ease-in-out;
-    }
-  
-  
-  
-  /********** BOX AND PLAY *************/
-  .box {
-    position: absolute;
-    top: 40%;
-    left: 7%;
-    width: 250px;
-    background-color: #ffffff;
-    opacity: 0;
-    border: 1px solid gray;
-    border-radius: 10px;
-    height: 0px;
-  }
-  #play {
-    padding: 4vw;
-    background-color: #007ac0cd;
-    border-radius: 10px;
-    color: #FFFFFF;
-    width: 300px;
-    font-size: 1vw;
-    position: absolute;
-    top: 55%;
-    left: 6%;
-    opacity: 0;
-  }
-  
-  /********* QUERY FORM *********/
-  .query-form {
+   .submit-btn {
+     margin-left: 20%;
+     margin-top: 40px;
+   }
+ }
+
+
+ /********   768px   ********/
+ @media screen and (min-width: 413px) and (max-width:768px) {
+   .imple-image-container {
+     position: relative;
+     width: 100%;
+   }
+
+   .imple-background-image {
+     width: 100%;
+     height: 300px;
+   }
+
+   .imple-overlay-text {
+     position: absolute;
+     top: 59%;
+     left: 69%;
+     width: 100%;
+     transform: translate(-50%, -50%);
+     font-size: 30px;
+     color: white;
+     font-weight: bold;
+     font-family: Montserrat;
+   }
+
+   .imple-parrent {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+
+   .imple-child-1 {
+     margin-bottom: 25px;
+     /* Adjust spacing between children */
+     cursor: pointer;
+   }
+
+   .imple-1 {
+     text-align: center;
+     width: 400px;
+   }
+
+   .imple-child-1 img {
+     width: 70px;
+     height: 70px;
+     opacity: 0.7;
+     transition: all 0.2s ease-in-out;
+     margin-left: 39%;
+   }
+
+   .imple-child-2 {
+     margin-bottom: 20px;
+     cursor: pointer;
+   }
+
+   .imple-2 {
+     text-align: center;
+   }
+
+   .imple-child-2 img {
+     width: 70px;
+     height: 70px;
+     opacity: 0.7;
+     margin-left: 31%;
+     transition: all 0.2s ease-in-out;
+   }
+
+   /*************   Query Form    ************/
+   .query-form {
     position: fixed;
-    margin-left:5%; /* Adjusted right position for better visibility */
-    top: 10%;
-    width: 450px;
+    top: 8%;
+    left:48%;
+    width: 395px;
     height: 100%;
     background-color: white;
     border: 1px solid gray;
     transition: left 2s ease-in-out;
   }
   .button-f2 {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     color: gray;
     font-weight: bold;
     background-color: white;
     border: none;
-    /* opacity: 0.8; */ /* Removed opacity for full visibility */
+    opacity: 1;
     transition: all 0.3s ease-in-out;
   }
-  .h2 {
+  .query-p{
+   font-size: 14px;
+   margin-left: 15%;
+   margin-top:-8%;
+ }
+  .query-p h2 {
     font-size: 14px;
-    font-family: Montserrat, sans-serif;  /* Corrected font family */
   }
-  
-}
+  .query-label {
+    display: flex;
+    flex-direction: column;
+  }
+  .query-label label {
+    font-size: 12px;
+    margin-left: 30px;
+    margin-bottom: 6px;
+  }
+  .query-label input {
+    width: 350px;
+    margin-left: 50px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+  }
+  .query-label label{
+   display: block;
+   margin-bottom: 10px;
+   margin-left:6%;
+ }
+ .query-label input[type="text"],
+ .query-label input[type="email"],
+ .query-label input[type="tel"],
+ .query-label textarea {
+   width: 340px;
+   margin-left:5%;
+   padding: 8px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+ }
+  .submit-btn {
+    margin-left: 20%;
+    margin-top: 40px;
+  }
+  .submit-btn img{
+    opacity:1;
+  }
 
 
-
-
-
-
-
+ }
