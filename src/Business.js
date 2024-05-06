@@ -50,7 +50,6 @@ function Business() {
   const handleCloseForm = () => {
     setShowQueryForm(false);
   };
-
   return (
     <div style={{ overflow: 'hidden' }}>
       <Navbar />
@@ -59,68 +58,67 @@ function Business() {
         <div className="bus-overlay-text">Business Solution</div>
       </div>
 
-
-
       {/***********************    PARRENT   ************************************/}
-      <div className="bus-parrent-1" >
-        <div>
-          <div className="bus-child-1" onClick={() => handleImageClick("Document Management System")}>
-            <img src={require('./doucment.svg')} alt="img" />
+      <div className="Bus-parrent">
+        <div className="bus-parrent-1" >
+          <div>
+            <div className="DMS" onClick={() => handleImageClick("DMS")}>
+              <img src={require('./doucment.svg')} alt="img" />
+            </div>
+            <p className="parrent-p1">Document Management System</p>
           </div>
-          <p>Document Management System</p>
+
+          <div>
+            <div className="CMS" >
+              <img onClick={() => handleImageClick("Content Management System")} src={require('./content-management.svg')} alt="Content Management System" />
+            </div>
+            <p className="parrent-p1">Content Management Systems</p>
+          </div>
+
+          <div>
+            <div className="HRMS" onClick={() => handleImageClick("Human Resource Management System")}>
+              <img src={require("./human resource.svg")} alt="img" className="human" />
+            </div>
+            <p className="parrent-p1">Human Resource Management System</p>
+          </div>
+        </div >
+
+        { /*****************    PARRENT ---1     ********************** */}
+
+        <div className="bus-parrent-2" >
+          <div>
+            <div className="AMS" onClick={() => handleImageClick("Asset Management System")}>
+              <img src={require('./assets (2).svg')} alt="img" />
+            </div>
+            <p className="bus-p2">Asset Management System</p>
+          </div>
+
+          <div>
+            <div className="IMS" onClick={() => handleImageClick("Inventory Management System")}>
+              <img src={require('./inventory.svg')} alt="img" />
+            </div>
+            <p className="bus-p2">Inventory Management System</p>
+          </div>
+
+          <div>
+            <div className="DTEL" onClick={() => handleImageClick("Digital Transformation and E-Learning")}>
+              <img src={require("./elearning.svg")} alt="img" />
+            </div>
+            <p className="bus-p2" >Digital Transformation and E-Learning</p>
+          </div>
         </div>
 
-        <div>
-          <div className="bus-child-1" >
-            <img onClick={() => handleImageClick("Content Management System")} src={require('./content-management.svg')} alt="Content Management System" />
-          </div>
-          <p >Content Management Systems</p>
-        </div>
 
-        <div>
-          <div className="bus-child-1" onClick={() => handleImageClick("Human Resource Management System")}>
-            <img src={require("./human resource.svg")} alt="img" />
+        {/*****************     PARRENT-3        *****************/}
+        <div className="bus-parrent-3">
+          <div>
+            <div className="ELSS" onClick={() => handleImageClick("Enterprise-Level Software Solutions")}>
+              <img src={require('./enterprisre.svg')} alt="img" />
+            </div>
+            <p className="busparrent-p3">Enterprise-Level Software Solutions</p>
           </div>
-          <p>Human Resource Management System</p>
-        </div>
-      </div >
-
-      { /*****************    PARRENT ---1     ********************** */}
-
-      <div className="bus-parrent-2" >
-        <div>
-          <div className="bus-child-2" onClick={() => handleImageClick("Asset Management System")}>
-            <img src={require('./assets (2).svg')} alt="img" />
-          </div>
-          <p className="bus">Asset Management System</p>
-        </div>
-
-        <div>
-          <div className="bus-child-2" onClick={() => handleImageClick("Inventory Management System")}>
-            <img src={require('./inventory.svg')} alt="img" />
-          </div>
-          <p className="bus">Inventory Management System</p>
-        </div>
-
-        <div>
-          <div className="bus-child-2" onClick={() => handleImageClick("Digital Transformation and eLearning")}>
-            <img src={require("./elearning.svg")} alt="img" />
-          </div>
-          <p className="bus" >Digital Transformation and E-Learning</p>
         </div>
       </div>
-
-
-      {/*****************     PARRENT-3        *****************/}
-      <div className="bus-parrent-3">
-        <div>
-          <div className="bus-child-3" onClick={() => handleImageClick("Enterprise-Level Software Solutions")}>
-            <img src={require('./enterprisre.svg')} alt="img" />
-          </div>
-          <p className="bus-p3">Enterprise-Level Software Solutions</p>
-        </div>
-      </div>
-
 
       {/************      FOOTER HEADING       ************/}
 
@@ -133,23 +131,23 @@ function Business() {
       <div id="play"></div>
       <div id="play"></div>
 
-      <div className='class-footer'>
-        <h> Higher Systems | All Rights Reserved</h>
+      <div className="footer-reserved" >
+        <h1>Higher Systems | All Rights Reserved</h1>
       </div>
 
 
       {/**********************    QUERY FORM    *******************************/}
       {
         showQueryForm && (
-          <div className="query-form">
+          <div className="business-form">
             <form onSubmit={handleSubmit}>
-              <button className="button-f2" onClick={handleCloseForm}>
+              <button className="business-f2" onClick={handleCloseForm}>
                 <img src={require('./remove.svg')} alt="img" /></button>
-              <div className='query-p'>
+              <div className='bus-query'>
                 <h2>Let Me Know More About</h2>
               </div>
 
-              <div className='query-label'>
+              <div className='bus-label'>
                 <label htmlFor="name">Service Name</label>
                 <input type="text" name="name" value={formValues.name} onChange={handleChange} readOnly />
                 <label htmlFor="email">E-mail</label>
@@ -159,7 +157,7 @@ function Business() {
                 <label htmlFor="query">Query</label>
                 <textarea style={{ width: '340px', height: '150px' }} name="query" placeholder="Your Query" value={formValues.query} onChange={handleChange} required />
               </div>
-              <button className='submit-btn' type="submit">Submit</button>
+              <button className='submit-bus' type="submit">Submit</button>
             </form>
           </div>
         )

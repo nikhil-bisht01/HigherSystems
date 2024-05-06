@@ -20,7 +20,12 @@
 }
 
 /**********  PARRENT  **************/
-.bus-parrent-1 {       /*******    parrent-1   *******/
+.Bus-parrent {
+    align-items: center;
+}
+
+.bus-parrent-1 {
+    /*******    parrent-1   *******/
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -29,20 +34,28 @@
     margin-right: 2%;
     margin-top: 4%;
 }
-.bus-child-1{
-    width:70px;
-    height:70px;
+
+.DMS,
+.CMS,
+.HRMS {
+    width: 70px;
+    height: 70px;
+    margin-left: 40px;
 }
-.bus-child-1 img{
+
+.DMS img,
+.CMS img,
+.HRMS img {
     width: 70px;
     height: 70px;
     opacity: 0.6;
-    cursor:pointer;
+    cursor: pointer;
     margin-left: 34%;
     transition: all 0.2s ease-in-out;
 }
 
-.bus-parrent-2{     /******* Parrent-2   *********/
+.bus-parrent-2 {
+    /******* Parrent-2   *********/
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -51,50 +64,71 @@
     margin-right: 2%;
     margin-top: 4%;
 }
-.bus-child-2{
-    width:70px;
-    height:70px;
-}
-.bus-child-2 img{
+
+.AMS,
+.IMS,
+.DTEL {
     width: 70px;
     height: 70px;
-    cursor:pointer;
+    margin-left: 40px;
+}
+
+.AMS img,
+.IMS img,
+.DTEL img {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
     opacity: 0.6;
-    margin-left: 34%;
+    margin-left: 39%;
     transition: all 0.2s ease-in-out;
 }
 
-.bus-parrent-3{   /******  Parrent-3***********/
+.bus-parrent-3 {
+    /******  Parrent-3***********/
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-top:2%;
-    margin-left:0%;
+    margin-top: 4%;
+    margin-left: 0%;
 }
-.bus-child-3{
-    width:70px;
-    height:70px;
+
+.ELSS {
+    width: 70px;
+    height: 70px;
+    margin-left: 15px;
 }
-.bus-child-3 img{
+
+.ELSS img {
     width: 70px;
     height: 70px;
     opacity: 0.6;
-    cursor:pointer;
+    cursor: pointer;
     margin-left: 34%;
     transition: all 0.2s ease-in-out;
 }
-.bus-p3{
-    margin-left:-20%;
+
+.busparrent-p3 {
+    width: 100%;
 }
-.bus-child-1 img:hover{
-    opacity:1;}
-.bus-child-2 img:hover{
-    opacity:1;
+
+.DMS img:hover,
+.CMS img:hover,
+.HRMS img:hover {
+    opacity: 1;
 }
-.bus-child-3 img:hover{
-  opacity:1;
+
+.AMS img:hover,
+.IMS img:hover,
+.DTEL img:hover {
+    opacity: 1;
 }
+
+.ELSS img:hover {
+    opacity: 1;
+}
+
 /********** BOX AND PLAY *************/
 .box {
     position: absolute;
@@ -106,23 +140,434 @@
     border: 1px solid gray;
     border-radius: 10px;
     height: 0px;
-  }
- 
-  #play {
+}
+
+#play {
     padding: 4vw;
     background-color: #007ac0cd;
     border-radius: 10px;
     color: #FFFFFF;
     width: 300px;
-    /* height: 0px;  */
-    /* Commented out to allow the button to expand based on content */
     font-size: 1vw;
     position: absolute;
     top: 55%;
     left: 6%;
     opacity: 0;
-  }
+}
+
+.footer-reserved {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-reserved h1 {
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-weight: 500;
+}
+
+
+/********* QUERY FORM *********/
+.business-form {
+    position: fixed;
+    top: 11%;
+    left: 74%;
+    width: 395px;
+    height: 100%;
+    background-color: white;
+    border: 1px solid gray;
+    transition: left 2s ease-in-out;
+}
+
+.business-f2 {
+    width: 20px;
+    height: 20px;
+    color: gray;
+    font-weight: bold;
+    margin-top: 3%;
+    background-color: white;
+    border: none;
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.business-f2 img {
+    width: 20px;
+    height: 20px;
+}
+
+.bus-query {
+    font-size: 14px;
+    margin-left: 15%;
+    margin-top: -8%;
+}
+
+.bus-query h2 {
+    font-size: 14px;
+}
+
+.bus-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.bus-label label {
+    font-size: 12px;
+    margin-left: 30px;
+    margin-bottom: 6px;
+}
+
+.bus-label input {
+    width: 350px;
+    margin-left: 50px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.bus-label label {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 6%;
+}
+
+.bus-label input[type="text"],
+.bus-label input[type="email"],
+.bus-label input[type="tel"],
+.bus-label textarea {
+    width: 340px;
+    margin-left: 5%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit-bus {
+    margin-left: 20%;
+    margin-top: 40px;
+}
+
+
+/************       MEDIA-Query  ********************/
+@media screen and (max-width: 412px) {
+    .bus-image-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .bus-background-image {
+        width: 100%;
+        height: 260px;
+    }
+
+    .bus-overlay-text {
+        position: absolute;
+        width: 100%;
+        margin-left: 20%;
+        margin-top: 10%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+        color: white;
+        font-weight: bold;
+        font-family: Montserrat;
+    }
+
+    /***********        PARRENT   ****************/
+
+    .DMS img,
+    .CMS img,
+    .HRMS img{
+        width:50px;
+        height:50px;
+        margin-left:-15%;
+
+    }
+    .AMS img,
+    .IMS img,
+    .DTEL img{
+        width:50px;
+        height:50px;
+        margin-left:-15%;
+    }
+    .ELSS img{
+        width:50px;
+        height:50px;
+        margin-left:30%;
+    }
+    .parrent-p1{
+        font-size:9px;
+        margin-top:-13%;
+        margin-bottom: 5%;
+        margin-left:5%;
+    }
+    .bus-p2{
+        font-size: 9px;
+        margin-top:0%;
+        margin-bottom: 5%;
+        margin-left:15%;
+    }
+    .busparrent-p3{
+        font-size: 9px;
+        margin-top:0%;
+        margin-left:-5%;
+    }
  
+ /********** BOX AND PLAY *************/
+    .box {
+        position: absolute;
+        top: 40%;
+        left: 7%;
+        width: 250px;
+        background-color: #ffffff;
+        opacity: 0;
+        border: 1px solid gray;
+        border-radius: 10px;
+        height: 0px;
+    }
+    #play {
+        padding: 4vw;
+        background-color: #007ac0cd;
+        border-radius: 10px;
+        color: #FFFFFF;
+        width: 300px;
+        font-size: 1vw;
+        position: absolute;
+        top: 55%;
+        left: 6%;
+        opacity: 0;
+    }
+    /**************     QUERY FORM      **************/
+    .business-form {
+        position: fixed;
+        top: 30%;
+        left: 2%;
+        width: 395px;
+        height: 70%;
+        background-color: white;
+        border: 1px solid gray;
+        transition: left 2s ease-in-out;
+    }
+    
+    .business-f2 {
+        width: 20px;
+        height: 20px;
+        color: gray;
+        font-weight: bold;
+        margin-top: 3%;
+        background-color: white;
+        border: none;
+        opacity: 1;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .business-f2 img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .bus-query {
+        font-size: 14px;
+        margin-left: 15%;
+        margin-top: -8%;
+    }
+    
+    .bus-query h2 {
+        font-size: 14px;
+    }
+    
+    .bus-label {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bus-label label {
+        font-size: 12px;
+        margin-left: 30px;
+        margin-bottom: 6px;
+    }
+    
+    .bus-label input {
+        width: 350px;
+        margin-left: 50px;
+        text-align: center;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+    }
+    
+    .bus-label label {
+        display: block;
+        margin-bottom: 10px;
+        margin-left: 6%;
+    }
+    
+    .bus-label input[type="text"],
+    .bus-label input[type="email"],
+    .bus-label input[type="tel"],
+    .bus-label textarea {
+        width: 340px;
+        margin-left: 5%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    .submit-bus {
+        margin-left: 20%;
+        margin-top: 40px;
+    }
+
+}
 
 
+/****************     MEDIA QUERY FOR 768 PX      *************************/
+@media screen and (min-width:413px) and (max-width:768px) {
+    .bus-image-container {
+        position: relative;
+        width: 100%;
+    }
 
+    .bus-background-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .bus-overlay-text {
+        position: absolute;
+        width: 100%;
+        margin-left: 29%;
+        margin-top: 5%;
+        transform: translate(-50%, -50%);
+        font-size: 35px;
+        color: white;
+        font-weight: bold;
+        font-family: Montserrat;
+    }
+    
+    .DMS img,
+    .CMS img,
+    .HRMS img{
+        width:50px;
+        height:50px;
+
+    }
+    .AMS img,
+    .IMS img,
+    .DTEL img{
+        width:50px;
+        height:50px;
+    }
+    .ELSS img{
+        width:50px;
+        height:50px;
+    }
+    .parrent-p1{
+        font-size:12px;
+        margin-top:0%;
+        margin-bottom: 5%;
+    }
+    .bus-p2{
+        font-size: 12px;
+        margin-top:0%;
+        margin-bottom: 5%;
+    }
+    .busparrent-p3{
+        font-size: 12px;
+        margin-top:0%;
+        margin-left:-5%;
+    }
+
+/***************        QUERY FORM  ******************/
+.business-form {
+    position: fixed;
+    top: 30%;
+    left: 49%;
+    width: 395px;
+    height: 70%;
+    background-color: white;
+    border: 1px solid gray;
+    transition: left 2s ease-in-out;
+}
+
+.business-f2 {
+    width: 20px;
+    height: 20px;
+    color: gray;
+    font-weight: bold;
+    margin-top: 3%;
+    background-color: white;
+    border: none;
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.business-f2 img {
+    width: 20px;
+    height: 20px;
+}
+
+.bus-query {
+    font-size: 14px;
+    margin-left: 15%;
+    margin-top: -8%;
+}
+
+.bus-query h2 {
+    font-size: 14px;
+}
+
+.bus-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.bus-label label {
+    font-size: 12px;
+    margin-left: 30px;
+    margin-bottom: 6px;
+}
+
+.bus-label input {
+    width: 350px;
+    margin-left: 50px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.bus-label label {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 6%;
+}
+
+.bus-label input[type="text"],
+.bus-label input[type="email"],
+.bus-label input[type="tel"],
+.bus-label textarea {
+    width: 340px;
+    margin-left: 5%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit-bus {
+    margin-left: 20%;
+    margin-top: 40px;
+}
+}

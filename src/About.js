@@ -40,7 +40,7 @@ function About() {
 
       <Footer />
       <div className="footer-reserved" >
-        <h1>Higher Systems | all Rights Reserved</h1>
+        <h1>Higher Systems | All Rights Reserved</h1>
       </div>
     </div>
 

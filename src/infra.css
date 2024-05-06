@@ -6,6 +6,7 @@
 .infra-background-image {
     width: 100%;
     height: 350px;
+    margin-bottom: 5%;
 }
 
 .infra-overlay-text {
@@ -19,124 +20,104 @@
     font-family: Montserrat;
 }
 
-/**********  PARRENT  **************/
+
+/***********        PARRENT     *************/
 .infra-parrent {
-    /*******    parrent-1   *******/
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 4%;
+    margin-bottom: 20px;
+    justify-content: space-around;
+
 }
 
-.infra-child {
-    width: 70px;
-    height: 70px;
-}
-
-.infra-child img {
-    width: 70px;
-    height: 70px;
-    opacity: 0.6;
-    cursor: pointer;
-    margin-left: 34%;
-    transition: all 0.2s ease-in-out;
-}
-
-.infra-parrent-1 {
-    /******* Parrent-2   *********/
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 4%;
-}
-
-.infra-child-1 {
-    width: 70px;
-    height: 70px;
-}
-
-.infra-child-1 img {
-    width: 70px;
-    height: 70px;
-    cursor: pointer;
-    opacity: 0.6;
-    margin-left: 34%;
-    transition: all 0.2s ease-in-out;
-}
-
+.infra-parrent-1,
 .infra-parrent-2 {
-    /******  Parrent-3***********/
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 2%;
-    margin-left: 0%;
+    margin-bottom: 20px;
+    /* Adjust the gap between lines */
 }
 
-.infra-child-2 {
+.infra-parrent>div,
+.infra-parrent-1>div,
+.infra-parrent-2>div {
+    text-align: center;
+}
+
+.DS img {
     width: 70px;
     height: 70px;
+    cursor: pointer;
+    margin-left: 200%;
+    opacity:0.6;
 }
 
+.FAGS img {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    margin-left: 30%;
+    opacity:0.6;
+}
+
+.SABS img {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    margin-left: -100%;
+    opacity:0.6;
+}
+
+.infra-child-3 img,
+.infra-child img,
+.infra-child-1 img,
 .infra-child-2 img {
     width: 70px;
     height: 70px;
-    opacity: 0.6;
     cursor: pointer;
-    margin-left: 34%;
-    transition: all 0.2s ease-in-out;
+    opacity:0.6;
+}
+.infra-child-3 img:hover,
+.infra-child img:hover,
+.infra-child-1 img:hover,
+.infra-child-2 img:hover,
+.DS img:hover,
+.FAGS img:hover,
+.SABS img:hover {
+    opacity:1;
 }
 
-.bus-p3 {
-    margin-left: -20%;
+.DS-p {
+    margin-left: 200%;
+    margin-top: 5px;
+    font-size: 14px;
+    width: 100%;
 }
 
-.infra-child img:hover {
-    opacity: 1;
+.FAGS-p {
+    margin-left: 20%;
+    margin-top: 5px;
+    font-size: 14px;
+    width: 100%;
 }
 
-.infra-child-1 img:hover {
-    opacity: 1;
+.SABS-p {
+    margin-left: -35%;
+    margin-top: 5px;
+    font-size: 14px;
+    width: 100%;
 }
 
-.infra-child-2img:hover {
-    opacity: 1;
+.infra-p1,
+.infra-p2 {
+    margin-top: 5px;
+    font-size: 14px;
 }
 
-.infra-parrent-3 {
-    /******  Parrent-3***********/
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 2%;
-    margin-left: 0%;
-}
 
-.infra-child-3 {
-    width: 70px;
-    height: 70px;
-}
 
-.infra-child-3 img {
-    width: 70px;
-    height: 70px;
-    opacity: 0.6;
-    cursor: pointer;
-    margin-left: 34%;
-    transition: all 0.2s ease-in-out;
-}
-
-.infra-child-2img:hover {
-    opacity: 1;
-}
 
 /********** BOX AND PLAY *************/
 .box {
@@ -157,8 +138,6 @@
     border-radius: 10px;
     color: #FFFFFF;
     width: 300px;
-    /* height: 0px;  */
-    /* Commented out to allow the button to expand based on content */
     font-size: 1vw;
     position: absolute;
     top: 55%;
@@ -166,58 +145,76 @@
     opacity: 0;
 }
 
+
 /***************     QUERY FORM      *****************/
-.query-form {
+.infra-form {
     position: fixed;
-    top: 10%;
+    top: 11%;
     left: 73%;
-    width: 400px;
+    width: 395px;
     height: 100%;
     background-color: white;
     border: 1px solid gray;
     transition: left 2s ease-in-out;
 }
 
-.query-p {
+.infra-f2 {
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.infra-f2 img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.infra-q {
     font-size: 14px;
     margin-left: 15%;
     margin-top: -8%;
 }
 
-.query-label {
-    padding: 20px;
+.infra-q h2 {
+    font-size: 14px;
 }
 
-.button-f2 {
-    width: 36px;
-    height: 28px;
-    margin-top: 2%;
-    border: none;
-    cursor: pointer;
-    background-color: white;
+.infra-label {
+    display: flex;
+    flex-direction: column;
 }
 
-.button-f2 img {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    opacity: 0.5;
+.infra-label label {
+    font-size: 12px;
+    margin-left: 30px;
+    margin-bottom: 6px;
 }
 
-.button-f2 img:hover {
-    opacity: 1;
+.infra-label input {
+    width: 350px;
+    margin-left: 50px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
 }
 
-.query-label label {
+.infra-label label {
     display: block;
     margin-bottom: 10px;
+    margin-left: 6%;
 }
 
-.query-label input[type="text"],
-.query-label input[type="email"],
-.query-label input[type="tel"],
-.query-label textarea {
+.infra-label input[type="text"],
+.infra-label input[type="email"],
+.infra-label input[type="tel"],
+.infra-label textarea {
     width: 340px;
+    margin-left: 5%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -225,20 +222,16 @@
     box-sizing: border-box;
 }
 
-.submit-btn {
-    margin-top: 10px;
+.submit-infra {
     margin-left: 20%;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    margin-top: 40px;
 }
 
-.submit-btn:hover {
-    background-color: #0056b3;
+.submit-btn img {
+    opacity: 1;
 }
+
+
 
 /**************       QUERY FORM FOR 412px and 768px      ******************/
 @media screen and (max-width:412px) {
@@ -265,75 +258,305 @@
     }
 
     /**********     PARRENT     **************/
-    .infra-parrent {  /********     LINE-1      ************/
+
+    .infra-parrent{
         display: flex;
-        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-    }
-
-    .infra-child {
-        margin-bottom: 25px;
-        cursor: pointer;
-    }
-    .infra-child img {
-        width: 70px;
-        height: 70px;
-        opacity: 0.7;
-        transition: all 0.2s ease-in-out;
-        margin-left: 39%;
-    }
-
-    .infra-child {
         margin-bottom: 20px;
+        margin-left:5%;
+        margin-right:5%;
+
+    }
+    .infra-parrent-1,
+    .infra-parrent-2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .infra-child-3 img,
+    .infra-child img,
+    .infra-child-1 img,
+    .infra-child-2 img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .infra-p,
+    .infra-p1,
+    .infra-p2 {
+        font-size: 9px;
+    }
+    .DS img{
+        width:50px;
+        height:50px;
+        margin-left:10%;
+    }
+    .DS-p{
+        font-size:9px;
+        margin-left:2%;
+        width:100%;
+    }
+    .FAGS img{
+        width:50px;
+        height:50px;
+        margin-left:35%;
+    }
+    .FAGS-p{
+        font-size:9px;
+    }
+    .SABS img{
+        width: 50px;
+        height: 50px;
+        margin-left:10%;
+    }
+    .SABS-p{
+        font-size:9px;
+        margin-left:10%;
+    }
+
+
+        /*********      QUERY FORM      *********/
+
+        .infra-form {
+            position: fixed;
+            top: 40%;
+            left: 2%;
+            width: 395px;
+            height: 60%;
+            background-color: white;
+            border: 1px solid gray;
+            transition: left 2s ease-in-out;
+        }
+    
+        .infra-f2 {
+            width: 20px;
+            height: 20px;
+            font-weight: bold;
+            background-color: white;
+            border: none;
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
+        }
+    
+        .infra-f2 img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+    
+        .infra-q {
+            font-size: 14px;
+            margin-left: 15%;
+            margin-top: -8%;
+        }
+    
+        .infra-q h2 {
+            font-size: 14px;
+        }
+    
+        .infra-label {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .infra-label label {
+            font-size: 12px;
+            margin-left: 30px;
+            margin-bottom: 6px;
+        }
+    
+        .infra-label input {
+            width: 350px;
+            margin-left: 50px;
+            text-align: center;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+    
+        .infra-label label {
+            display: block;
+            margin-bottom: 10px;
+            margin-left: 6%;
+        }
+    
+        .infra-label input[type="text"],
+        .infra-label input[type="email"],
+        .infra-label input[type="tel"],
+        .infra-label textarea {
+            width: 340px;
+            margin-left: 5%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    
+        .submit-infra {
+            margin-left: 20%;
+            margin-top: 40px;
+        }
+    
+        .submit-btn img {
+            opacity: 1;
+        }
+    }
+
+
+
+
+/******************     MEDIA QUERY FOR 768PX       ********************/
+@media screen and (min-width: 413px) and (max-width:768px) {
+    .infra-image-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .infra-background-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .infra-overlay-text {
+        position: absolute;
+        top: 54%;
+        left: 69%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        font-size: 35px;
+        color: white;
+        font-weight: bold;
+        font-family: Montserrat;
+    }
+
+    .DS img {
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        margin-left: 80%;
+    }
+
+    .DS-p {
+        margin-left: 60%;
+        margin-top: 5px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .SABS img {
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        margin-left: 10%;
+    }
+
+    .SABS-p {
+        margin-left: 5%;
+        margin-top: 5px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .FAGS img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .infra-child-3 img,
+    .infra-child img,
+    .infra-child-1 img,
+    .infra-child-2 img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /*********      QUERY FORM      *********/
+
+    .infra-form {
+        position: fixed;
+        top: 30%;
+        left: 50%;
+        width: 395px;
+        height: 70%;
+        background-color: white;
+        border: 1px solid gray;
+        transition: left 2s ease-in-out;
+    }
+
+    .infra-f2 {
+        width: 20px;
+        height: 20px;
+        font-weight: bold;
+        background-color: white;
+        border: none;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .infra-f2 img {
+        width: 20px;
+        height: 20px;
         cursor: pointer;
     }
 
-    .infra-parrent-1{    /******        LINE--2     *********/
+    .infra-q {
+        font-size: 14px;
+        margin-left: 15%;
+        margin-top: -8%;
+    }
+
+    .infra-q h2 {
+        font-size: 14px;
+    }
+
+    .infra-label {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
-    .infra-child-1{
-        margin-bottom: 25px;
-        cursor: pointer;
+
+    .infra-label label {
+        font-size: 12px;
+        margin-left: 30px;
+        margin-bottom: 6px;
     }
-    .infra-child-1 img {
-        width: 70px;
-        height: 70px;
-        opacity: 0.7;
-        transition: all 0.2s ease-in-out;
-        margin-left: 39%;
+
+    .infra-label input {
+        width: 350px;
+        margin-left: 50px;
+        text-align: center;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
     }
-    .infra-parrent-2{    /******     LINE--3     ******/
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+
+    .infra-label label {
+        display: block;
+        margin-bottom: 10px;
+        margin-left: 6%;
     }
-    .infra-child-2{
-        margin-bottom: 25px;
-        cursor: pointer;
+
+    .infra-label input[type="text"],
+    .infra-label input[type="email"],
+    .infra-label input[type="tel"],
+    .infra-label textarea {
+        width: 340px;
+        margin-left: 5%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
     }
-    .infra-child-2 img {
-        width: 70px;
-        height: 70px;
-        opacity: 0.7;
-        transition: all 0.2s ease-in-out;
-        margin-left: 39%;
+
+    .submit-infra {
+        margin-left: 20%;
+        margin-top: 40px;
     }
-    .infra-parrent-3{    /******    LINE--2     ******/
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+
+    .submit-btn img {
+        opacity: 1;
     }
-    .infra-child-3{
-        margin-bottom: 25px;
-        cursor: pointer;
-    }
-    .infra-child-3 img {
-        width: 70px;
-        height: 70px;
-        opacity: 0.7;
-        transition: all 0.2s ease-in-out;
-        margin-left: 39%;
-    }
+
 }

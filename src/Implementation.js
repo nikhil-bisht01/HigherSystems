@@ -85,8 +85,8 @@ function Implementation() {
       <div id="play"></div>
       <div id="play"></div>
 
-      <div className='class-footer'>
-        <h> Higher Systems | All Rights Reserved</h>
+      <div className="footer-reserved" >
+        <h1>Higher Systems | All Rights Reserved</h1>
       </div>
 
 
