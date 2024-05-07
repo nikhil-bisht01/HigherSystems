@@ -49,8 +49,7 @@ function Infra() {
     setShowQueryForm(false);
   };
 
-  return (
-    /*************************       START         ***************************************** */
+  return (      /***********   START     *************** */
     <div style={{ overflow: 'hidden' }}>
       <Navbar />
       <div className="infra-image-container" >
@@ -60,7 +59,7 @@ function Infra() {
 
 
       
-      {/***********************    LINE--2   ************************************/}
+{/***********************    LINE--2   ************************************/}
       <div className="infra-parrent-1" >
         <div>
           <div className="infra-child-1" >
@@ -99,7 +98,7 @@ function Infra() {
           <div className="infra-child-2" >
             <img onClick={() => handleImageClick("Security Information and Event Management")} src={require('./content-management.svg')} alt="img" />
           </div>
-          <p className="infra-p2">Security System and Event Management</p>
+          <p className="infra-p2">Security Information and Event Management</p>
         </div>
 
         <div>
