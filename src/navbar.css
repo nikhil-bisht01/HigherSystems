@@ -78,6 +78,7 @@
   }
   .child-nav {
     margin-top: 3%;
+    margin-left:0%;
   }
   .nav-button {
     margin-top: 3%;
@@ -94,14 +95,16 @@
     box-shadow: 5px 5px 5px 5px #0000002e;
     height:250px;
   }
-
   .parent-nav.active {
     display: flex;
     flex-direction: column;
+    height:228px;
   }
-
   .menu-toggle {
     display: block;
+   }
+  .fas-fa-bars{
+    margin-right:10%;
   }
 }
 
@@ -118,7 +121,8 @@
   
   .child-nav {
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
+    margin-left: -5%;
   }
 
   .nav-button {

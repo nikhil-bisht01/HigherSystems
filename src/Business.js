@@ -54,7 +54,7 @@ function Business() {
     <div style={{ overflow: 'hidden' }}>
       <Navbar />
       <div className="bus-image-container" >
-        <img src={require("./Green.jpg")} alt="img" className="bus-background-image" />
+        <img src={require("./imple.jpg")} alt="img" className="bus-background-image" />
         <div className="bus-overlay-text">Business Solution</div>
       </div>
 

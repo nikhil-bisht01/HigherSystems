@@ -124,7 +124,6 @@
 }
 .ft-icons i:hover{
   color:aliceblue;
-
 }
 .ft-2 h3{
   font-family: Montsarret;
@@ -174,30 +173,24 @@
       color: white;
       padding: 2rem 0;
     }
-  
     .Ft-container {
       display: flex;
-      
     }
-  
     .ft-1 h3 {
-      font-family: Montserrat;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-size: 16px;
       font-weight: 700;
     }
-  
     .ft-1 span {
       font-family: Montserrat;
       font-size: 16px;
       font-weight: 500;
     }
-  
     .ft-1 h5 {
       font-size: 12px;
       font-weight: 400;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-  
     .ft-icon i {
       padding: 5px;
       color: white;
@@ -205,26 +198,21 @@
       margin-top: 0%;
       align-items: center;
     }
-  
     .ft-icon i:hover {
       color: aliceblue;
     }
-  
     .ft-2 h3 {
-      font-family: Montserrat;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-size: 16px;
       font-weight: 700;
     }
-  
     .ft-2 ul {
       list-style: none;
       margin-left: -12%;
     }
-  
     .ft-2 li {
       margin-left: 0%;
     }
-  
     .ft-2 ul a {
       text-decoration: none;
       color: white;
@@ -235,12 +223,10 @@
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
   
-    .ft-2 ul a:hover {
-      font-size: 16px;
-    }
+  
   
     .ft-3 h3 {
-      font-family: Montserrat;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-size: 16px;
       font-weight: 700;
     }

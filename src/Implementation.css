@@ -41,7 +41,7 @@
  .imple-child-2 img {
    width: 70px;
    height: 70px;
-   opacity: 0.7;
+   opacity: 0.6;
    margin-left: 34%;
    transition: all 0.2s ease-in-out;
  }
@@ -51,7 +51,8 @@
    margin-top: 3%;
  }
 
- .imple-child:hover img {
+ .imple-child-1 img:hover,
+ .imple-child-2 img:hover{
    opacity: 1;
  }
 
