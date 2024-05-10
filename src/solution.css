@@ -67,7 +67,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  color:#20434F;
+  color:black;
   text-align: center;
   font-size: 25px;
 
@@ -161,7 +161,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
-    color: #20434F;
+    color: black;
     text-align: center;
     font-size: 25px;
   
@@ -232,7 +232,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
-    color: #20434F;
+    color:black;
     text-align: center;
     font-size: 20px;
   }

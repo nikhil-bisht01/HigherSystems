@@ -59,6 +59,7 @@
 } 
 .child-nav a:hover{
   color:#20434F;
+  
 }
 
 
@@ -102,10 +103,11 @@
   }
   .menu-toggle {
     display: block;
+    margin-right:10px;
+    width:10px;
+    height:20px;
    }
-  .fas-fa-bars{
-    margin-right:10%;
-  }
+  
 }
 
 
