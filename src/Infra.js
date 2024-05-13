@@ -58,14 +58,16 @@ function Infra() {
       </div>
 
 
-      
-{/***********************    LINE--2   ************************************/}
+
+      {/***********************    LINE--2   ************************************/}
       <div className="infra-parrent-1" >
         <div>
           <div className="infra-child-1" >
-            <img onClick={() => handleImageClick("Cloud Computing")} src={require('./cloud-computing.svg')} alt="img" />
+            <div>
+              <img onClick={() => handleImageClick("Cloud Computing")} src={require('./cloud-computing.svg')} alt="img" />
+            </div>
+            <p className="infra-p1"  >Cloud Computing</p>
           </div>
-          <p className="infra-p1">Cloud Computing</p>
         </div>
 
         <div>

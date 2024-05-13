@@ -28,7 +28,6 @@
     align-items: center;
     margin-bottom: 20px;
     justify-content: space-around;
-
 }
 
 .infra-parrent-1,
@@ -37,7 +36,7 @@
     justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
-    /* Adjust the gap between lines */
+    
 }
 
 .infra-parrent>div,
@@ -51,7 +50,7 @@
     height: 70px;
     cursor: pointer;
     margin-left: 200%;
-    opacity:0.6;
+    opacity: 0.6;
 }
 
 .FAGS img {
@@ -59,7 +58,7 @@
     height: 70px;
     cursor: pointer;
     margin-left: 30%;
-    opacity:0.6;
+    opacity: 0.6;
 }
 
 .SABS img {
@@ -67,7 +66,7 @@
     height: 70px;
     cursor: pointer;
     margin-left: -100%;
-    opacity:0.6;
+    opacity: 0.6;
 }
 
 .infra-child-3 img,
@@ -77,8 +76,9 @@
     width: 70px;
     height: 70px;
     cursor: pointer;
-    opacity:0.6;
+    opacity: 0.6;
 }
+
 .infra-child-3 img:hover,
 .infra-child img:hover,
 .infra-child-1 img:hover,
@@ -86,7 +86,7 @@
 .DS img:hover,
 .FAGS img:hover,
 .SABS img:hover {
-    opacity:1;
+    opacity: 1;
 }
 
 .DS-p {
@@ -259,15 +259,16 @@
 
     /**********     PARRENT     **************/
 
-    .infra-parrent{
+    .infra-parrent {
         display: flex;
         justify-content: space-around;
         align-items: center;
         margin-bottom: 20px;
-        margin-left:5%;
-        margin-right:5%;
+        margin-left: 5%;
+        margin-right: 5%;
 
     }
+
     .infra-parrent-1,
     .infra-parrent-2 {
         display: flex;
@@ -289,121 +290,127 @@
     .infra-p2 {
         font-size: 9px;
     }
-    .DS img{
-        width:50px;
-        height:50px;
-        margin-left:10%;
-    }
-    .DS-p{
-        font-size:9px;
-        margin-left:2%;
-        width:100%;
-    }
-    .FAGS img{
-        width:50px;
-        height:50px;
-        margin-left:35%;
-    }
-    .FAGS-p{
-        font-size:9px;
-    }
-    .SABS img{
+
+    .DS img {
         width: 50px;
         height: 50px;
-        margin-left:10%;
+        margin-left: 10%;
     }
-    .SABS-p{
-        font-size:9px;
-        margin-left:10%;
+
+    .DS-p {
+        font-size: 9px;
+        margin-left: 2%;
+        width: 100%;
+    }
+
+    .FAGS img {
+        width: 50px;
+        height: 50px;
+        margin-left: 35%;
+    }
+
+    .FAGS-p {
+        font-size: 9px;
+    }
+
+    .SABS img {
+        width: 50px;
+        height: 50px;
+        margin-left: 10%;
+    }
+
+    .SABS-p {
+        font-size: 9px;
+        margin-left: 10%;
     }
 
 
-        /*********      QUERY FORM      *********/
+    /*********      QUERY FORM      *********/
 
-        .infra-form {
-            position: fixed;
-            top: 40%;
-            left: 2%;
-            width: 395px;
-            height: 60%;
-            background-color: white;
-            border: 1px solid gray;
-            transition: left 2s ease-in-out;
-        }
-    
-        .infra-f2 {
-            width: 20px;
-            height: 20px;
-            font-weight: bold;
-            background-color: white;
-            border: none;
-            opacity: 1;
-            transition: all 0.3s ease-in-out;
-        }
-    
-        .infra-f2 img {
-            width: 20px;
-            height: 20px;
-            cursor: pointer;
-        }
-    
-        .infra-q {
-            font-size: 14px;
-            margin-left: 15%;
-            margin-top: -8%;
-        }
-    
-        .infra-q h2 {
-            font-size: 14px;
-        }
-    
-        .infra-label {
-            display: flex;
-            flex-direction: column;
-        }
-    
-        .infra-label label {
-            font-size: 12px;
-            margin-left: 30px;
-            margin-bottom: 6px;
-        }
-    
-        .infra-label input {
-            width: 350px;
-            margin-left: 50px;
-            text-align: center;
-            border: 1px solid #cccccc;
-            border-radius: 5px;
-        }
-    
-        .infra-label label {
-            display: block;
-            margin-bottom: 10px;
-            margin-left: 6%;
-        }
-    
-        .infra-label input[type="text"],
-        .infra-label input[type="email"],
-        .infra-label input[type="tel"],
-        .infra-label textarea {
-            width: 340px;
-            margin-left: 5%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-    
-        .submit-infra {
-            margin-left: 20%;
-            margin-top: 40px;
-        }
-    
-        .submit-btn img {
-            opacity: 1;
-        }
+    .infra-form {
+        position: fixed;
+        top: 40%;
+        left: 2%;
+        width: 395px;
+        height: 60%;
+        background-color: white;
+        border: 1px solid gray;
+        transition: left 2s ease-in-out;
     }
+
+    .infra-f2 {
+        width: 20px;
+        height: 20px;
+        font-weight: bold;
+        background-color: white;
+        border: none;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .infra-f2 img {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .infra-q {
+        font-size: 14px;
+        margin-left: 15%;
+        margin-top: -8%;
+    }
+
+    .infra-q h2 {
+        font-size: 14px;
+    }
+
+    .infra-label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infra-label label {
+        font-size: 12px;
+        margin-left: 30px;
+        margin-bottom: 6px;
+    }
+
+    .infra-label input {
+        width: 350px;
+        margin-left: 50px;
+        text-align: center;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+    }
+
+    .infra-label label {
+        display: block;
+        margin-bottom: 10px;
+        margin-left: 6%;
+    }
+
+    .infra-label input[type="text"],
+    .infra-label input[type="email"],
+    .infra-label input[type="tel"],
+    .infra-label textarea {
+        width: 340px;
+        margin-left: 5%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .submit-infra {
+        margin-left: 20%;
+        margin-top: 40px;
+    }
+
+    .submit-btn img {
+        opacity: 1;
+    }
+}
 
 
 
@@ -560,18 +567,19 @@
     }
 
 }
-@media screen and (min-width:1000px) and (max-width:1920px){
+
+@media screen and (max-width:1080px) {
     .infra-image-container {
         position: relative;
         width: 100%;
     }
-    
+
     .infra-background-image {
         width: 100%;
         height: 350px;
         margin-bottom: 5%;
     }
-    
+
     .infra-overlay-text {
         position: absolute;
         top: 50%;
@@ -582,8 +590,8 @@
         font-weight: bold;
         font-family: Montserrat;
     }
-    
-    
+
+
     /***********        PARRENT     *************/
     .infra-parrent {
         display: flex;
@@ -591,9 +599,9 @@
         align-items: center;
         margin-bottom: 20px;
         justify-content: space-around;
-    
+
     }
-    
+
     .infra-parrent-1,
     .infra-parrent-2 {
         display: flex;
@@ -602,37 +610,37 @@
         margin-bottom: 20px;
         /* Adjust the gap between lines */
     }
-    
+
     .infra-parrent>div,
     .infra-parrent-1>div,
     .infra-parrent-2>div {
         text-align: center;
     }
-    
+
     .DS img {
         width: 70px;
         height: 70px;
         cursor: pointer;
         margin-left: 200%;
-        opacity:0.6;
+        opacity: 0.6;
     }
-    
+
     .FAGS img {
         width: 70px;
         height: 70px;
         cursor: pointer;
         margin-left: 30%;
-        opacity:0.6;
+        opacity: 0.6;
     }
-    
+
     .SABS img {
         width: 70px;
         height: 70px;
         cursor: pointer;
         margin-left: -100%;
-        opacity:0.6;
+        opacity: 0.6;
     }
-    
+
     .infra-child-3 img,
     .infra-child img,
     .infra-child-1 img,
@@ -640,8 +648,9 @@
         width: 70px;
         height: 70px;
         cursor: pointer;
-        opacity:0.6;
+        opacity: 0.6;
     }
+
     .infra-child-3 img:hover,
     .infra-child img:hover,
     .infra-child-1 img:hover,
@@ -649,39 +658,39 @@
     .DS img:hover,
     .FAGS img:hover,
     .SABS img:hover {
-        opacity:1;
+        opacity: 1;
     }
-    
+
     .DS-p {
         margin-left: 200%;
         margin-top: 5px;
         font-size: 14px;
         width: 100%;
     }
-    
+
     .FAGS-p {
         margin-left: 20%;
         margin-top: 5px;
         font-size: 14px;
         width: 100%;
     }
-    
+
     .SABS-p {
         margin-left: -35%;
         margin-top: 5px;
         font-size: 14px;
         width: 100%;
     }
-    
+
     .infra-p1,
     .infra-p2 {
         margin-top: 5px;
         font-size: 14px;
     }
-    
-    
-    
-    
+
+
+
+
     /********** BOX AND PLAY *************/
     .box {
         position: absolute;
@@ -694,7 +703,7 @@
         border-radius: 10px;
         height: 0px;
     }
-    
+
     #play {
         padding: 4vw;
         background-color: #007ac0cd;
@@ -707,8 +716,8 @@
         left: 6%;
         opacity: 0;
     }
-    
-    
+
+
     /***************     QUERY FORM      *****************/
     .infra-form {
         position: fixed;
@@ -720,7 +729,7 @@
         border: 1px solid gray;
         transition: left 2s ease-in-out;
     }
-    
+
     .infra-f2 {
         width: 20px;
         height: 20px;
@@ -730,34 +739,34 @@
         opacity: 1;
         transition: all 0.3s ease-in-out;
     }
-    
+
     .infra-f2 img {
         width: 20px;
         height: 20px;
         cursor: pointer;
     }
-    
+
     .infra-q {
         font-size: 14px;
         margin-left: 15%;
         margin-top: -8%;
     }
-    
+
     .infra-q h2 {
         font-size: 14px;
     }
-    
+
     .infra-label {
         display: flex;
         flex-direction: column;
     }
-    
+
     .infra-label label {
         font-size: 12px;
         margin-left: 30px;
         margin-bottom: 6px;
     }
-    
+
     .infra-label input {
         width: 350px;
         margin-left: 50px;
@@ -765,13 +774,13 @@
         border: 1px solid #cccccc;
         border-radius: 5px;
     }
-    
+
     .infra-label label {
         display: block;
         margin-bottom: 10px;
         margin-left: 6%;
     }
-    
+
     .infra-label input[type="text"],
     .infra-label input[type="email"],
     .infra-label input[type="tel"],
@@ -784,15 +793,15 @@
         border-radius: 4px;
         box-sizing: border-box;
     }
-    
+
     .submit-infra {
         margin-left: 20%;
         margin-top: 40px;
     }
-    
+
     .submit-btn img {
         opacity: 1;
     }
-    
+
 
 }
