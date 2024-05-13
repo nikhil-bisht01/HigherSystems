@@ -62,7 +62,7 @@ function Business() {
       <div className="Bus-parrent">
         <div className="bus-parrent-1" >
           <div>
-            <div className="DMS" onClick={() => handleImageClick("DMS")}>
+            <div className="DMS" onClick={() => handleImageClick("Document Management System ")}>
               <img src={require('./doucment.svg')} alt="img" />
             </div>
             <p className="parrent-p1">Document Management System</p>

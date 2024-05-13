@@ -29,7 +29,7 @@ function Home() {
       
 {/*********************************  Servies Container   ************************************************/}
       <div className="services-cont">
-        <h1>OUR SERVICES</h1>
+        <h1>Our Services</h1>
       </div>
       <div className="services-container">
         <div className="ser-img">
