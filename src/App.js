@@ -1,4 +1,5 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
 import Home from './Home'
 import About from './About'
 import Connect from './Connect'
@@ -15,8 +16,11 @@ import DMS from './DMS'
 import Infra from './Infra'
 import Navbar from './Navbar'
 import Contactform from './Contactform'
-import { Route, Routes } from 'react-router-dom'
 import ChatBot from './chaatbot'
+import Forget from './Forget'
+import OTP from './OTP'
+import Password from './Password'
+
 
 function App() {
   return (
@@ -38,6 +42,9 @@ function App() {
         <Route path='/Implementation' element={<Implementation/>}/>
         <Route path='/Components/Navbar' element={<Navbar/>}/>
         <Route path='/chaatbot' element={<ChatBot/>}/>
+        <Route path='/Forget' element={<Forget/>}/>
+        <Route path='/OTP' element={<OTP/>}/>
+        <Route path='/Password' element={<Password/>}/>
       </Routes>
       
   )

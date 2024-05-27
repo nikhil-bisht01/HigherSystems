@@ -8,10 +8,30 @@ function Implementation() {
   const [selectedService, setSelectedService] = useState("");
   const [showQueryForm, setShowQueryForm] = useState(false);
   const [formValues, setFormValues] = useState({ name: "", phoneNumber: "", email: "", enquery: "" });
+  const [isMobile, setIsMobile] = useState(false);
+
+  /**************TOUCH EVENT*******************/
+  useEffect(() => {
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+    setIsMobile(isTouchDevice);
+  }, []);
+
+  /**************   TOUCH EVENT**************/
+
 
   function closeForm() {
     document.querySelector('.query-form').style.left = '200%';
   }
+
+  /************HANDLE TOUCH EVENT **************/
+  const handleTouchStart = () => {
+    setIsHovered(true);
+  };
+
+  const handleTouchEnd = () => {
+    setIsHovered(false);
+  };
+  /**************************END HERE******************** */
 
   const handleImageClick = (serviceName) => {
     if (showQueryForm && selectedService === serviceName) {
@@ -22,7 +42,6 @@ function Implementation() {
       setFormValues({ ...formValues, name: serviceName });
     }
   };
-
 
   const handleChange = (e) => {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
@@ -48,6 +67,22 @@ function Implementation() {
     }
   };
 
+
+  /**********************   IMAGE HOVER DESCRIPTION START    ****************************** */
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    if (!isMobile) {
+      setIsHovered(true);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  /************************     IMAGE HOVER DESCRIPTION END     **********************************/
+
   const handleCloseForm = () => {
     setShowQueryForm(false);
   };
@@ -62,17 +97,53 @@ function Implementation() {
 
       {/**************   PARRENT   ***********************/}
       <div className="imple-parrent" >
-
-        <div className="imple-child-1" onClick={() => handleImageClick("Oracle Utilities Application Framework Implementation")}>
-          <img src={require("./framework.svg")} alt="img" />
-          <div className="imple-1">Oracle Utilities Application Framework Implementation</div>
+        <div className="imple-child-1" onMouseOver={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <div>
+            <img onClick={() => handleImageClick("Oracle Utilities Application Framework Implementation")} src={require('./framework.svg')} alt="img" />
+            <p className="imple-1">Oracle Utilities Application Framework Implementation</p>
+          </div>
+          {isHovered && (
+            <div className="impledesc">The OUAF is a platform for developing and deploying utility industry-specific applications.
+              It offers a structured environment with pre-built components and tools for rapid development, customization, and integration
+              of software solutions tailored to the needs of utility companies.</div>
+          )}
         </div>
 
-        <div className="imple-child-2" onClick={() => handleImageClick("Active Directory Implementation")}>
-          <img src={require("./folder.svg")} alt="img" />
-          <div className="imple-2">Active Directory Implementation</div>
+
+        <div className="imple-child-2" onMouseOver={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <div>
+            <img onClick={() => handleImageClick("Active Directory Implementation")} src={require('./folder.svg')} alt="img" />
+            <p className="imple-1">Active Directory Implementation</p>
+          </div>
+          {isHovered && (
+            <div className="impledesc">Active Directory is a Microsoft service used to manage users, computers, and resources within a network environment.
+              It centralizes network administration and provides authentication and authorization services for Windows-based systems.</div>
+          )}
         </div>
 
+        <div className="imple-child-3" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <div>
+            <img onClick={() => handleImageClick("Firewall Implementation & Support")} src={require('./firewall (1).svg')} alt="img" />
+            <p className="imple-1"> Firewall Implementation & Support</p>
+          </div>
+          {isHovered && (
+            <div className="impledesc">Firewall implementation involves deploying hardware or software barriers to monitor and control
+              incoming and outgoing network traffic, protecting against unauthorized access and cyber threats. Ongoing support includes
+              configuration, monitoring, and updates to ensure the firewall effectively filters traffic and maintains network security.</div>
+          )}
+        </div>
+
+        <div className="imple-child-4" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <div>
+            <img onClick={() => handleImageClick("Network Design Implementation & Support")} src={require('./wifi.svg')} alt="img" />
+            <p className="imple-1"> Network Design Implementation & Support</p>
+          </div>
+          {isHovered && (
+            <div className="impledesc">Network design implementation entails planning and deploying infrastructure components like routers,
+              switches, and cables to meet organizational requirements for connectivity and performance. Ongoing support involves troubleshooting,
+              optimizing, and expanding the network to adapt to changing business needs and technological advancements.</div>
+          )}
+        </div>
       </div>
 
       {/****** FOOTER  *********/}
@@ -95,7 +166,7 @@ function Implementation() {
         <div className="query-form">
           <form onSubmit={handleSubmit}>
             <button className="button-f2" onClick={handleCloseForm}>
-              <img src={require('./remove.svg')} alt="img"/></button>
+              <img src={require('./remove.svg')} alt="img" /></button>
             <div className='query-p'>
               <h2>Let Me Know More about</h2>
             </div>

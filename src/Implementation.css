@@ -32,13 +32,17 @@
  }
 
  .imple-child-1,
- .imple-child-2 {
+ .imple-child-2,
+ .imple-child-3,
+ .imple-child-4 {
    cursor: pointer;
    padding: 20px;
  }
 
  .imple-child-1 img,
- .imple-child-2 img {
+ .imple-child-2 img,
+ .imple-child-3 img,
+ .imple-child-4 img {
    width: 70px;
    height: 70px;
    opacity: 0.6;
@@ -52,10 +56,14 @@
  }
 
  .imple-child-1 img:hover,
- .imple-child-2 img:hover{
+ .imple-child-2 img:hover,
+ .imple-child-3 img:hover,
+ .imple-child-4 img:hover {
    opacity: 1;
  }
-
+.imple-1{
+  font-size:14px;
+}
  .imple-child.img:hover .hunt {
    width: 200px;
    height: 300px;
@@ -63,20 +71,21 @@
 
  /************  LAST  FOOTER *******************/
  .footer-reserved {
-  width: 100%;
-  height:auto;
-  font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   width: 100%;
+   height: auto;
+   font-size: 14px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
  }
+
  .footer-reserved h1 {
-  font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: black;
-  font-weight: 500;
-}
+   font-size: 14px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   color: black;
+   font-weight: 500;
+ }
 
  /********** BOX AND PLAY *************/
  .box {
@@ -108,73 +117,107 @@
 
  /********* QUERY FORM *********/
  .query-form {
-  position: fixed;
-  top: 10%;
-  left: 73%;
-  width: 400px;
-  height: 100%;
-  background-color: white;
-  border: 1px solid gray;
-  transition: left 2s ease-in-out;
-}
-.query-p{
-  font-size: 14px;
-  margin-left: 15%;
-  margin-top:-8%;
-}
-.query-label {
-  padding: 20px;
-}
-.button-f2{
-  width:36px;
-  height:28px;
-  margin-top:2%;
-  border: none;
-  cursor:pointer;
-  background-color:white;
-}
-.button-f2 img{
-  width:20px;
-  height:20px;
-  cursor:pointer;
-  opacity:0.5;
-}
-.button-f2 img:hover{
-  opacity:1;
-}
-.query-label label{
-  display: block;
-  margin-bottom: 10px;
-}
-.query-label input[type="text"],
-.query-label input[type="email"],
-.query-label input[type="tel"],
-.query-label textarea {
-  width: 340px;
-  padding: 8px;
-  margin-bottom: 10px;
+   position: fixed;
+   top: 10%;
+   left: 73%;
+   width: 400px;
+   height: 100%;
+   background-color: white;
+   border: 1px solid gray;
+   transition: left 2s ease-in-out;
+ }
+
+ .query-p {
+   font-size: 14px;
+   margin-left: 15%;
+   margin-top: -8%;
+ }
+
+ .query-label {
+   padding: 20px;
+ }
+
+ .button-f2 {
+   width: 36px;
+   height: 28px;
+   margin-top: 2%;
+   border: none;
+   cursor: pointer;
+   background-color: white;
+ }
+
+ .button-f2 img {
+   width: 20px;
+   height: 20px;
+   cursor: pointer;
+   opacity: 0.5;
+ }
+
+ .button-f2 img:hover {
+   opacity: 1;
+ }
+
+ .query-label label {
+   display: block;
+   margin-bottom: 10px;
+ }
+
+ .query-label input[type="text"],
+ .query-label input[type="email"],
+ .query-label input[type="tel"],
+ .query-label textarea {
+   width: 340px;
+   padding: 8px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+ }
+
+ .submit-btn {
+   margin-top: 10px;
+   margin-left: 20%;
+   padding: 10px 20px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+
+ .submit-btn:hover {
+   background-color: #0056b3;
+ }
+
+ .impledesc {
+  display: none;
+  position: absolute;
+  background-color: #fff; 
+  padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+  z-index: 1;
+  width:250px;
+  margin-left:0%;
+  margin-top:0%;
+  text-align: justify;
+  font-size:14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.submit-btn {
-  margin-top: 10px;
-  margin-left:20%;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+
+.p1 img:hover .impledesc{
+  display:block;
 }
-.submit-btn:hover {
-  background-color: #0056b3;
+.imple-child-1:hover .impledesc,
+.imple-child-2:hover .impledesc,
+.imple-child-3:hover .impledesc,
+.imple-child-4:hover .impledesc {
+  display: block;
 }
 
 
- 
 
-/********************   MEDIA QUERY     ********************************/
+
+ /********************   MEDIA QUERY     ********************************/
 
  @media only screen and (max-width: 412px) {
    .imple-image-container {
@@ -191,7 +234,7 @@
      position: absolute;
      width: 100%;
      margin-left: 10%;
-     margin-top: 10%;
+     margin-top: 0%;
      transform: translate(-50%, -50%);
      font-size: 20px;
      color: white;
@@ -213,35 +256,116 @@
 
    .imple-1 {
      text-align: center;
-     width: 400px;
+     font-size: 13px;
+
+   }
+   .imple-2 {
+     text-align: center;
+     font-size: 13px;
+    }
+
+   .imple-3 {
+     text-align: center;
+     font-size: 13px;
+   }
+
+   .imple-4 {
+     text-align: center;
+     font-size: 13px;
    }
 
    .imple-child-1 img {
-     width: 70px;
-     height: 70px;
+     width: 50px;
+     height: 50px;
      opacity: 0.7;
      transition: all 0.2s ease-in-out;
      margin-left: 39%;
    }
 
-   .imple-child-2 {
-     margin-bottom: 20px;
-     /* Adjust spacing between children */
-     cursor: pointer;
-   }
-
-   .imple-2 {
-     text-align: center;
-     /* Center the text */
-   }
-
    .imple-child-2 img {
-     width: 70px;
-     height: 70px;
+     width: 50px;
+     height: 50px;
      opacity: 0.7;
      margin-left: 31%;
      transition: all 0.2s ease-in-out;
    }
+
+   .imple-child-3 img {
+     width: 50px;
+     height: 50px;
+     opacity: 0.7;
+     transition: all 0.2s ease-in-out;
+     margin-left: 32%;
+   }
+
+   .imple-child-4 img {
+     width: 50px;
+     height: 50px;
+     opacity: 0.7;
+     transition: all 0.2s ease-in-out;
+     margin-left: 35%;
+   }
+
+   .imple-child-2 {
+    margin-top:-11%;
+    cursor: pointer;
+  }
+  .imple-child-3 {
+    cursor: pointer;
+    margin-top:-4%;
+  }
+  .imple-child-4{
+    cursor: pointer;
+    margin-top:-5%;
+  }
+
+  .impledesc {
+    display: none;
+    position: absolute;
+    background-color: #fff; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1;
+    width:250px;
+    margin-left:0%;
+    margin-top:0%;
+    text-align: justify;
+    font-size:14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .imple-child-1 img:hover .impledesc,.imple-child-1 img:active .impledesc
+  .imple-child-2 img:hover .impledesc,.imple-child-2 img:active .impledesc
+  .imple-child-3 img:hover .impledesc,.imple-child-3 img:active .impledesc
+  .imple-child-4 img:hover .impledesc,.imple-child-4 img:active .impledesc {
+    opacity: 1;
+  }
+  
+  /* .imple-child-1:hover .impledesc,
+  .imple-child-2:hover .impledesc,
+  .imple-child-3:hover .impledesc,
+  .imple-child-4:hover .impledesc {
+    display: block;
+  } */
+  
+.imple-child-1:hover .impledesc {
+  display: block;
+}
+
+  /* .impledesc {
+    display: none; 
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(100% + 10px); 
+  }
+    */
+
+
 
    /********** BOX AND PLAY *************/
    .box {
@@ -269,17 +393,18 @@
      opacity: 0;
    }
 
-/********* QUERY FORM *********/
+   /********* QUERY FORM *********/
    .query-form {
      position: fixed;
      top: 30%;
-     left:2%;
+     left: 2%;
      width: 395px;
      height: 70%;
      background-color: white;
      border: 1px solid gray;
      transition: left 2s ease-in-out;
    }
+
    .button-f2 {
      width: 20px;
      height: 20px;
@@ -290,23 +415,28 @@
      opacity: 1;
      transition: all 0.3s ease-in-out;
    }
-   .query-p{
-    font-size: 14px;
-    margin-left: 15%;
-    margin-top:-8%;
-  }
+
+   .query-p {
+     font-size: 14px;
+     margin-left: 15%;
+     margin-top: -8%;
+   }
+
    .query-p h2 {
      font-size: 14px;
    }
+
    .query-label {
      display: flex;
      flex-direction: column;
    }
+
    .query-label label {
      font-size: 12px;
      margin-left: 30px;
      margin-bottom: 6px;
    }
+
    .query-label input {
      width: 350px;
      margin-left: 50px;
@@ -314,28 +444,31 @@
      border: 1px solid #cccccc;
      border-radius: 5px;
    }
-   .query-label label{
-    display: block;
-    margin-bottom: 10px;
-    margin-left:6%;
-  }
-  .query-label input[type="text"],
-  .query-label input[type="email"],
-  .query-label input[type="tel"],
-  .query-label textarea {
-    width: 340px;
-    margin-left:5%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
+
+   .query-label label {
+     display: block;
+     margin-bottom: 10px;
+     margin-left: 6%;
+   }
+
+   .query-label input[type="text"],
+   .query-label input[type="email"],
+   .query-label input[type="tel"],
+   .query-label textarea {
+     width: 340px;
+     margin-left: 5%;
+     padding: 8px;
+     margin-bottom: 10px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+   }
+
    .submit-btn {
      margin-left: 20%;
      margin-top: 40px;
    }
-   
+
  }
 
 
@@ -369,10 +502,26 @@
      align-items: center;
    }
 
-   .imple-child-1 {
-     margin-bottom: 25px;
-     cursor: pointer;
-   }
+  .imple-child-2 {
+    margin-top: -2%;
+    cursor: pointer;
+  }
+  .imple-child-3 {
+    margin-top: -4%;
+    cursor: pointer;
+  }
+  .imple-child-4 {
+    margin-top: -2%;
+    cursor: pointer;
+  }
+  .imple-child-3 img{
+    margin-left:38%;
+
+  }
+  .imple-child-4 img{
+    margin-left:38%;
+  }
+
 
    .imple-1 {
      text-align: center;
@@ -400,79 +549,111 @@
      width: 70px;
      height: 70px;
      opacity: 0.7;
-     margin-left: 31%;
+     margin-left: 39%;
      transition: all 0.2s ease-in-out;
    }
 
+   .impledesc {
+    display: none;
+    position: absolute;
+    background-color: #fff; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1;
+    width:250px;
+    margin-left:0%;
+    margin-top:0%;
+    text-align: justify;
+    font-size:14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .imple-child-1:active .impledesc,
+  .imple-child-2:active .impledesc,
+  .imple-child-3:active .impledesc,
+  .imple-child-4:active .impledesc {
+    display: block;
+  }
+
    /*************   Query Form    ************/
    .query-form {
-    position: fixed;
-    top: 30%;
-    left:49%;
-    width: 395px;
-    height: 70%;
-    background-color: white;
-    border: 1px solid gray;
-    transition: left 2s ease-in-out;
-  }
-  .button-f2 {
-    width: 20px;
-    height: 20px;
-    color: gray;
-    font-weight: bold;
-    background-color: white;
-    border: none;
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
-  }
-  .query-p{
-   font-size: 14px;
-   margin-left: 15%;
-   margin-top:-8%;
- }
-  .query-p h2 {
-    font-size: 14px;
-  }
-  .query-label {
-    display: flex;
-    flex-direction: column;
-  }
-  .query-label label {
-    font-size: 12px;
-    margin-left: 30px;
-    margin-bottom: 6px;
-  }
-  .query-label input {
-    width: 350px;
-    margin-left: 50px;
-    text-align: center;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-  }
-  .query-label label{
-   display: block;
-   margin-bottom: 10px;
-   margin-left:6%;
- }
- .query-label input[type="text"],
- .query-label input[type="email"],
- .query-label input[type="tel"],
- .query-label textarea {
-   width: 340px;
-   margin-left:5%;
-   padding: 8px;
-   margin-bottom: 10px;
-   border: 1px solid #ccc;
-   border-radius: 4px;
-   box-sizing: border-box;
- }
-  .submit-btn {
-    margin-left: 20%;
-    margin-top: 40px;
-  }
-  .submit-btn img{
-    opacity:1;
-  }
+     position: fixed;
+     top: 30%;
+     left: 49%;
+     width: 395px;
+     height: 70%;
+     background-color: white;
+     border: 1px solid gray;
+     transition: left 2s ease-in-out;
+   }
+
+   .button-f2 {
+     width: 20px;
+     height: 20px;
+     color: gray;
+     font-weight: bold;
+     background-color: white;
+     border: none;
+     opacity: 1;
+     transition: all 0.3s ease-in-out;
+   }
+
+   .query-p {
+     font-size: 14px;
+     margin-left: 15%;
+     margin-top: -8%;
+   }
+
+   .query-p h2 {
+     font-size: 14px;
+   }
+
+   .query-label {
+     display: flex;
+     flex-direction: column;
+   }
+
+   .query-label label {
+     font-size: 12px;
+     margin-left: 30px;
+     margin-bottom: 6px;
+   }
+
+   .query-label input {
+     width: 350px;
+     margin-left: 50px;
+     text-align: center;
+     border: 1px solid #cccccc;
+     border-radius: 5px;
+   }
+
+   .query-label label {
+     display: block;
+     margin-bottom: 10px;
+     margin-left: 6%;
+   }
+
+   .query-label input[type="text"],
+   .query-label input[type="email"],
+   .query-label input[type="tel"],
+   .query-label textarea {
+     width: 340px;
+     margin-left: 5%;
+     padding: 8px;
+     margin-bottom: 10px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+   }
+
+   .submit-btn {
+     margin-left: 20%;
+     margin-top: 40px;
+   }
+
+   .submit-btn img {
+     opacity: 1;
+   }
 
 
  }

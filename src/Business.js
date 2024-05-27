@@ -4,6 +4,7 @@ import Footer from "./Components/Footer";
 import Navbar from "./Navbar";
 
 
+
 function Business() {
   const [selectedService, setSelectedService] = useState("");
   const [showQueryForm, setShowQueryForm] = useState(false);
@@ -47,9 +48,38 @@ function Business() {
     }
   };
 
+  /**************************************************************************** */
+  {
+    const [isHovered, setIsHovered] = useState(false);
+
+    const handleMouseEnter = () => {
+      setIsHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+      setIsHovered(false);
+    };
+
+    const handleImageClick = (busdesc) => {
+      console.log(busdesc);
+    };
+  }
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+  /*******************************************************************************/
+
   const handleCloseForm = () => {
     setShowQueryForm(false);
   };
+
+
   return (
     <div style={{ overflow: 'hidden' }}>
       <Navbar />
@@ -61,62 +91,99 @@ function Business() {
       {/***********************    PARRENT   ************************************/}
       <div className="Bus-parrent">
         <div className="bus-parrent-1" >
-          <div>
-            <div className="DMS" onClick={() => handleImageClick("Document Management System ")}>
-              <img src={require('./doucment.svg')} alt="img" />
+
+          <div className="bus-child-1" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div>
+              <img onClick={() => handleImageClick("Document Management System ")} src={require('./doucment.svg')} alt="img" />
+              <p className="bus-p1">Document Management System </p>
             </div>
-            <p className="parrent-p1">Document Management System</p>
+            {isHovered && (
+              <div className="busdesc">A Document Management System (DMS) organizes, stores, and tracks electronic documents and images, enhancing efficiency and accessibility for businesses. 
+              It streamlines document workflows, facilitates collaboration, and ensures compliance with regulatory standards.</div>
+            )}
           </div>
 
-          <div>
-            <div className="CMS" >
-              <img onClick={() => handleImageClick("Content Management System")} src={require('./content-management.svg')} alt="Content Management System" />
+          <div className="bus-child-1" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div>
+              <img onClick={() => handleImageClick("Content Management System")} src={require('./content-management.svg')} alt="img" />
+              <p className="bus-p1">Content Management System</p>
             </div>
-            <p className="parrent-p1">Content Management Systems</p>
+            {isHovered && (
+              <div className="busdesc">A Content Management System (CMS) is a software platform that enables users to create, manage, and 
+              modify digital content on websites without extensive technical knowledge. It simplifies content publishing, allows collaborative 
+              editing, and often includes features like version control and workflow management.</div>
+            )}
           </div>
 
-          <div>
-            <div className="HRMS" onClick={() => handleImageClick("Human Resource Management System")}>
-              <img src={require("./human resource.svg")} alt="img" className="human" />
+          <div className="bus-child-1" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div>
+              <img onClick={() => handleImageClick("Human Resource Management System ")} src={require('./human resource.svg')} alt="img" />
+              <p className="bus-p1">Human Resource Management System </p>
             </div>
-            <p className="parrent-p1">Human Resource Management System</p>
+            {isHovered && (
+              <div className="busdesc">A Human Resource Management System (HRMS) is software that automates HR tasks, including payroll, employee 
+              data management, recruitment, and performance evaluation. It centralizes HR processes, improves efficiency, and enhances employee management 
+              across an organization.</div>
+            )}
           </div>
         </div >
 
         { /*****************    PARRENT ---1     ********************** */}
 
         <div className="bus-parrent-2" >
-          <div>
-            <div className="AMS" onClick={() => handleImageClick("Asset Management System")}>
-              <img src={require('./assets (2).svg')} alt="img" />
+
+          <div className="bus-child-2" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div>
+              <img onClick={() => handleImageClick("Asset Management System")} src={require('./assets (2).svg')} alt="img" />
+              <p className="bus-p2">Asset Management System</p>
             </div>
-            <p className="bus-p2">Asset Management System</p>
+            {isHovered && (
+              <div className="busdesc">An Asset Management System (AMS) tracks and manages an organization's physical and digital 
+              assets throughout their lifecycle, from acquisition to disposal. It optimizes resource utilization, streamlines maintenance, 
+              and ensures regulatory compliance for efficient asset management.</div>
+            )}
           </div>
 
-          <div>
-            <div className="IMS" onClick={() => handleImageClick("Inventory Management System")}>
-              <img src={require('./inventory.svg')} alt="img" />
+          <div className="bus-child-2" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div>
+              <img onClick={() => handleImageClick("Inventory Management System")} src={require('./inventory.svg')} alt="img" />
+              <p className="bus-p2">Inventory Management System</p>
             </div>
-            <p className="bus-p2">Inventory Management System</p>
+            {isHovered && (
+              <div className="busdesc">An Inventory Management System (IMS) tracks and controls a company's stocked goods, facilitating 
+              efficient ordering, stocking, and selling processes. It optimizes inventory levels, reduces carrying costs, and minimizes 
+              stockouts for improved supply chain management.</div>
+            )}
           </div>
 
-          <div>
-            <div className="DTEL" onClick={() => handleImageClick("Digital Transformation and E-Learning")}>
-              <img src={require("./elearning.svg")} alt="img" />
+          <div className="bus-child-2" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div>
+              <img onClick={() => handleImageClick("Digital Transformation and E-Learning ")} src={require('./elearning.svg')} alt="img" />
+              <p className="bus-p2">Digital Transformation and E-Learning </p>
             </div>
-            <p className="bus-p2" >Digital Transformation and E-Learning</p>
+            {isHovered && (
+              <div className="busdesc">Digital Transformation leverages technology to reshape organizational processes, culture, and customer 
+              experiences, driving innovation and competitiveness. E-Learning utilizes digital platforms to deliver educational content and 
+              training remotely, enabling flexible learning opportunities and skill development.</div>
+            )}
           </div>
         </div>
 
 
         {/*****************     PARRENT-3        *****************/}
         <div className="bus-parrent-3">
-          <div>
-            <div className="ELSS" onClick={() => handleImageClick("Enterprise-Level Software Solutions")}>
-              <img src={require('./enterprisre.svg')} alt="img" />
+        <div className="bus-child-3" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div>
+              <img onClick={() => handleImageClick("Enterprise-Level Software Solutions")} src={require('./enterprisre.svg')} alt="img" />
+              <p className="bus-p3">Enterprise-Level Software Solutions</p>
             </div>
-            <p className="busparrent-p3">Enterprise-Level Software Solutions</p>
+            {isHovered && (
+              <div className="busdesc">Enterprise-Level Software Solutions are comprehensive platforms designed to meet the complex needs of 
+              large organizations, providing scalable, integrated, and customizable software applications for various business functions. They 
+              streamline operations, enhance productivity, and support strategic decision-making across the enterprise.</div>
+            )}
           </div>
+          
         </div>
       </div>
 
@@ -150,6 +217,8 @@ function Business() {
               <div className='bus-label'>
                 <label htmlFor="name">Service Name</label>
                 <input type="text" name="name" value={formValues.name} onChange={handleChange} readOnly />
+                {/* <label htmlFor="name">Full Name</label>
+                <input type="text" placeholder="Full Name" value={formValues.text} onChange={handleChange} required /> */}
                 <label htmlFor="email">E-mail</label>
                 <input type="email" name="email" placeholder="Email" value={formValues.email} onChange={handleChange} required />
                 <label htmlFor="Phoneno">Phone No</label>

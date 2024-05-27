@@ -106,7 +106,6 @@
   .sol-img {
     width: 100vw;
     height:350px;
-    
     display: block;
   }
   
@@ -122,7 +121,7 @@
   }
 
   .sol-services {
-    margin-top: 3%;
+    margin-top: 5%;
   }
   .sol-services h1{
     font-size: 25px;
@@ -179,7 +178,7 @@
 @media screen and (max-width: 412px) { 
   .sol-img {
     width: 100vw;
-    height:260px;
+    height:290px;
     display: block;
   }
   

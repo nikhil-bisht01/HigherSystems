@@ -11,7 +11,7 @@ function Header() {
   };
 
   return (
-    <div className="navbar" style={{ background: '#ffffff' ,position:'fixed'}}>
+    <div className="navbar" style={{ background: '#ffffff', position: 'fixed' }}>
       <div>
         <img src={logo} alt="logo" className="nav-img" />
       </div>
@@ -20,7 +20,13 @@ function Header() {
         <div className="child-nav"><Link to="/About" onClick={toggleMenu}>About</Link></div>
         <div className="child-nav"><Link to="/Solution" onClick={toggleMenu}>Solution</Link></div>
         <div className="child-nav"><Link to="/Connect" onClick={toggleMenu}>Contact</Link></div>
+        <div className="btn-div">
+          <button className="btn-nav"><Link to="/Login" onClick={toggleMenu}>Login</Link></button>
+          <button className="btn-nav"><Link to="/Signup" onClick={toggleMenu}>Sign up</Link></button>
+        </div>
       </div>
+
+       
       {isOpen && (
         <div className="menu-toggle" onClick={toggleMenu}>
           <i className="fas fa-times"></i>

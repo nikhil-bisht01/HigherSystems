@@ -24,111 +24,73 @@
 .Bus-parrent {
     align-items: center;
 }
-
-.bus-parrent-1 {
-    /*******    parrent-1   *******/
+.bus-parrent-1{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 5%;
+}
+.bus-parrent-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5%;
+    margin-left:-2%;
+}
+.bus-parrent-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5%;
     margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 4%;
 }
-
-.DMS,
-.CMS,
-.HRMS {
-    width: 70px;
-    height: 70px;
-    margin-left: 40px;
-}
-
-.DMS img,
-.CMS img,
-.HRMS img {
+.bus-child-1 img,
+.bus-child-2 img,
+.bus-child-3 img {
     width: 70px;
     height: 70px;
     opacity: 0.6;
     cursor: pointer;
     margin-left: 34%;
-    transition: all 0.2s ease-in-out;
 }
-
-.bus-parrent-2 {
-    /******* Parrent-2   *********/
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 4%;
-}
-
-.AMS,
-.IMS,
-.DTEL {
-    width: 70px;
-    height: 70px;
-    margin-left: 40px;
-}
-
-.AMS img,
-.IMS img,
-.DTEL img {
-    width: 70px;
-    height: 70px;
-    cursor: pointer;
-    opacity: 0.6;
-    margin-left: 39%;
-    transition: all 0.2s ease-in-out;
-}
-
-.bus-parrent-3 {
-    /******  Parrent-3***********/
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 4%;
-    margin-left: -5%;
-}
-
-.ELSS {
-    width: 70px;
-    height: 70px;
-    margin-left: 15px;
-}
-
-.ELSS img {
-    width: 70px;
-    height: 70px;
-    opacity: 0.6;
-    cursor: pointer;
-    margin-left: 95%;
-    transition: all 0.2s ease-in-out;
-}
-
-.busparrent-p3 {
-    width: 100%;
-}
-
-.DMS img:hover,
-.CMS img:hover,
-.HRMS img:hover {
+.bus-child-1 img:hover,
+.bus-child-2 img:hover,
+.bus-child-3 img:hover {
     opacity: 1;
 }
-
-.AMS img:hover,
-.IMS img:hover,
-.DTEL img:hover {
-    opacity: 1;
+.busdesc {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1;
+    width: 250px;
+    margin-left: -2%;
+    margin-top: 0%;
+    text-align: justify;
 }
 
-.ELSS img:hover {
-    opacity: 1;
+.bus-child-1:hover .busdesc,
+.bus-child-2:hover .busdesc,
+.bus-child-3:hover .busdesc {
+    display: block;
 }
+
+.bus-p1,
+.bus-p3 {
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bus-p2 {
+    margin-left: 0%;
+    font-size: 14px;
+}
+
 
 /********** BOX AND PLAY *************/
 .box {
@@ -274,7 +236,7 @@
         position: absolute;
         width: 100%;
         margin-left: 20%;
-        margin-top: 10%;
+        margin-top: 0%;
         transform: translate(-50%, -50%);
         font-size: 25px;
         color: white;
@@ -282,47 +244,88 @@
         font-family: Montserrat;
     }
 
-    /***********        PARRENT   ****************/
+    /***********PARRENT***************/
+    .Bus-parrent {
+        align-items: center;
+    }
 
-    .DMS img,
-    .CMS img,
-    .HRMS img{
-        width:50px;
-        height:50px;
-        margin-left:-15%;
-
+    .bus-parrent-1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 5%;
     }
-    .AMS img,
-    .IMS img,
-    .DTEL img{
-        width:50px;
-        height:50px;
-        margin-left:-15%;
-    }
-    .ELSS img{
-        width:50px;
-        height:50px;
-        margin-left:30%;
-    }
-    .parrent-p1{
-        font-size:9px;
-        margin-top:-13%;
-        margin-bottom: 5%;
-        margin-left:5%;
-    }
-    .bus-p2{
-        font-size: 9px;
-        margin-top:0%;
-        margin-bottom: 5%;
-        margin-left:15%;
-    }
-    .busparrent-p3{
-        font-size: 9px;
-        margin-top:0%;
+    .bus-parrent-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 5%;
         margin-left:-5%;
     }
- 
- /********** BOX AND PLAY *************/
+
+    .bus-parrent-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+
+    .bus-child-1 img,
+    .bus-child-2 img,
+    .bus-child-3 img {
+        width: 35px;
+        height: 35px;
+        opacity: 0.6;
+        cursor: pointer;
+        margin-left: 34%;
+    }
+
+    .bus-child-1 img:hover,
+    .bus-child-2 img:hover,
+    .bus-child-3 img:hover {
+        opacity: 1;
+    }
+
+    .busdesc {
+        display: none;
+        position: absolute;
+        background-color:white;
+        padding: 10px;
+        border: 1px solid #ccc;
+        z-index: 1;
+        width: 150px;
+        margin-left: -2%;
+        margin-top: 0%;
+        text-align: justify;
+        font-size: 10px;
+    }
+
+    .bus-child-1:hover .busdesc,
+    .bus-child-2:hover .busdesc,
+    .bus-child-3:hover .busdesc {
+        display: block;
+    }
+
+    .bus-p1,
+    .bus-p3 {
+        font-size: 10px;
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .bus-p2 {
+        margin-left: 0%;
+        font-size: 10px;
+        text-align: center;
+    }
+
+
+
+    /********** BOX AND PLAY *************/
     .box {
         position: absolute;
         top: 40%;
@@ -334,6 +337,7 @@
         border-radius: 10px;
         height: 0px;
     }
+
     #play {
         padding: 4vw;
         background-color: #007ac0cd;
@@ -346,6 +350,7 @@
         left: 6%;
         opacity: 0;
     }
+
     /**************     QUERY FORM      **************/
     .business-form {
         position: fixed;
@@ -357,7 +362,7 @@
         border: 1px solid gray;
         transition: left 2s ease-in-out;
     }
-    
+
     .business-f2 {
         width: 20px;
         height: 20px;
@@ -370,33 +375,33 @@
         cursor: pointer;
         transition: all 0.3s ease-in-out;
     }
-    
+
     .business-f2 img {
         width: 20px;
         height: 20px;
     }
-    
+
     .bus-query {
         font-size: 14px;
         margin-left: 15%;
         margin-top: -8%;
     }
-    
+
     .bus-query h2 {
         font-size: 14px;
     }
-    
+
     .bus-label {
         display: flex;
         flex-direction: column;
     }
-    
+
     .bus-label label {
         font-size: 12px;
         margin-left: 30px;
         margin-bottom: 6px;
     }
-    
+
     .bus-label input {
         width: 350px;
         margin-left: 50px;
@@ -404,13 +409,13 @@
         border: 1px solid #cccccc;
         border-radius: 5px;
     }
-    
+
     .bus-label label {
         display: block;
         margin-bottom: 10px;
         margin-left: 6%;
     }
-    
+
     .bus-label input[type="text"],
     .bus-label input[type="email"],
     .bus-label input[type="tel"],
@@ -423,7 +428,7 @@
         border-radius: 4px;
         box-sizing: border-box;
     }
-    
+
     .submit-bus {
         margin-left: 20%;
         margin-top: 40px;
@@ -448,127 +453,175 @@
         position: absolute;
         width: 100%;
         margin-left: 29%;
-        margin-top: 5%;
+        margin-top: 0%;
         transform: translate(-50%, -50%);
         font-size: 35px;
         color: white;
         font-weight: bold;
         font-family: Montserrat;
     }
-    
-    .DMS img,
-    .CMS img,
-    .HRMS img{
-        width:50px;
-        height:50px;
 
+    /*************   PARRENT  ****************/
+    .Bus-parrent {
+        align-items: center;
     }
-    .AMS img,
-    .IMS img,
-    .DTEL img{
-        width:50px;
-        height:50px;
+
+    .bus-parrent-1,
+    .bus-parrent-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 5%;
     }
-    .ELSS img{
-        width:50px;
-        height:50px;
+
+    .bus-parrent-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 5%;
+        margin-left: 2%;
     }
-    .parrent-p1{
-        font-size:12px;
-        margin-top:0%;
-        margin-bottom: 5%;
+
+    .bus-child-1 img,
+    .bus-child-2 img {
+        width: 50px;
+        height: 50px;
+        opacity: 0.6;
+        cursor: pointer;
+        margin-left: 36%;
     }
-    .bus-p2{
+
+    .bus-child-3 img {
+        width: 50px;
+        height: 50px;
+        opacity: 0.6;
+        cursor: pointer;
+        margin-left: 33%;
+    }
+
+    .bus-child-1 img:hover,
+    .bus-child-2 img:hover,
+    .bus-child-3 img:hover {
+        opacity: 1;
+    }
+
+    .busdesc {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #ccc;
+        z-index: 1;
+        width: 250px;
+        margin-left: -2%;
+        margin-top: 0%;
+        text-align: justify;
+    }
+
+    .bus-child-1:hover .busdesc,
+    .bus-child-2:hover .busdesc,
+    .bus-child-3:hover .busdesc {
+        display: block;
+    }
+
+    .bus-p1,
+    .bus-p3 {
+        font-size: 13px;
+        margin-top: 1%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .bus-p2 {
+        margin-left: 0%;
+        font-size: 13px;
+        margin-top: 1%;
+    }
+
+
+
+
+    /***************        QUERY FORM  ******************/
+    .business-form {
+        position: fixed;
+        top: 30%;
+        left: 49%;
+        width: 395px;
+        height: 70%;
+        background-color: white;
+        border: 1px solid gray;
+        transition: left 2s ease-in-out;
+    }
+
+    .business-f2 {
+        width: 20px;
+        height: 20px;
+        color: gray;
+        font-weight: bold;
+        margin-top: 3%;
+        background-color: white;
+        border: none;
+        opacity: 1;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .business-f2 img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .bus-query {
+        font-size: 14px;
+        margin-left: 15%;
+        margin-top: -8%;
+    }
+
+    .bus-query h2 {
+        font-size: 14px;
+    }
+
+    .bus-label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bus-label label {
         font-size: 12px;
-        margin-top:0%;
-        margin-bottom: 5%;
-    }
-    .busparrent-p3{
-        font-size: 12px;
-        margin-top:0%;
-        margin-left:-5%;
+        margin-left: 30px;
+        margin-bottom: 6px;
     }
 
-/***************        QUERY FORM  ******************/
-.business-form {
-    position: fixed;
-    top: 30%;
-    left: 49%;
-    width: 395px;
-    height: 70%;
-    background-color: white;
-    border: 1px solid gray;
-    transition: left 2s ease-in-out;
-}
+    .bus-label input {
+        width: 350px;
+        margin-left: 50px;
+        text-align: center;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+    }
 
-.business-f2 {
-    width: 20px;
-    height: 20px;
-    color: gray;
-    font-weight: bold;
-    margin-top: 3%;
-    background-color: white;
-    border: none;
-    opacity: 1;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
+    .bus-label label {
+        display: block;
+        margin-bottom: 10px;
+        margin-left: 6%;
+    }
 
-.business-f2 img {
-    width: 20px;
-    height: 20px;
-}
+    .bus-label input[type="text"],
+    .bus-label input[type="email"],
+    .bus-label input[type="tel"],
+    .bus-label textarea {
+        width: 340px;
+        margin-left: 5%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
 
-.bus-query {
-    font-size: 14px;
-    margin-left: 15%;
-    margin-top: -8%;
-}
-
-.bus-query h2 {
-    font-size: 14px;
-}
-
-.bus-label {
-    display: flex;
-    flex-direction: column;
-}
-
-.bus-label label {
-    font-size: 12px;
-    margin-left: 30px;
-    margin-bottom: 6px;
-}
-
-.bus-label input {
-    width: 350px;
-    margin-left: 50px;
-    text-align: center;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-}
-
-.bus-label label {
-    display: block;
-    margin-bottom: 10px;
-    margin-left: 6%;
-}
-
-.bus-label input[type="text"],
-.bus-label input[type="email"],
-.bus-label input[type="tel"],
-.bus-label textarea {
-    width: 340px;
-    margin-left: 5%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.submit-bus {
-    margin-left: 20%;
-    margin-top: 40px;
-}
+    .submit-bus {
+        margin-left: 20%;
+        margin-top: 40px;
+    }
 }

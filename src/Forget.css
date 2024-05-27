@@ -1,0 +1,177 @@
+.Outer-box {
+    display: flex;
+    flex-direction: row;
+    margin-bottom:-10%;
+}
+.forget-img{
+    height:600px;
+    margin-top:5%;
+    margin-left:10%;
+}
+.forget-box {
+    width: 400px;
+    height: 300px;
+    background-color: #ffffff79;
+    margin-top: 15%;
+    margin-left:6%;
+    align-items: center;
+    box-shadow: 5px 5px 5px 5px #0000002e;
+    border-radius: 10px;
+}
+.find-acc {
+    width: 390px;
+    height: 50px;
+    background-color: white;
+    margin-top: 10%;
+    border-bottom: 3px black;
+
+}
+.find-acc h1 {
+    font-size: 28px;
+    margin-left:17%;
+    margin-top: -5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.find-mail {
+    width: 300px;
+    height: 50px;
+    background-color: white;
+}
+.find-mail h1 {
+    font-size: 14px;
+    margin-left:35%;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.find-mail input{
+    width: 280px;
+    height: 40px;
+    border: 1px solid gray;
+    margin-left: 20%;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-bottom: -9%;
+}
+.forget-btn {
+    display: flex;
+    margin-left:15%;
+    margin-top: 10%;
+}
+.submit-button {
+    margin-top: 5%;
+    font-size: 15px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    margin-left: 5%;
+    color: white;
+    font-weight: 600;
+    border-radius: 7px;
+    background-color: #057ad48d;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.submit-button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.submit-button:hover {
+    background-color: #0579D4;
+}
+.or h1{
+    font-size:16px;
+    font-weight:500;
+    text-align: center;
+    margin-top:8%;
+}
+.or a{
+    text-decoration: none;
+    color:#1308e4
+}
+
+
+/*********************   MEDIA QUERY FOR 412PX    *****************************/
+@media screen and (max-width:412px) {
+    .forget-box {
+        width: 370px;
+        height: 400px;
+        background-color: white;
+        margin-top: 30%;
+        align-items: center;
+        box-shadow: 5px 5px 5px 5px #0000002e;
+        margin-left: -88%;
+        border-radius: 10px;
+    }
+
+    .forget-img {
+        width: 380px;
+        height: 400px;
+        opacity: 0.2;
+        margin-top: 35%;
+    }
+
+    .find-acc {
+        width: 300px;
+        background-color: white;
+        margin-top: 10%;
+        height: 50px;
+    }
+
+    .find-acc h1 {
+        font-size: 20px;
+        margin-left: 25%;
+        margin-top: 2%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .find-mail {
+        width: 300px;
+        height: 50px;
+        background-color: white;
+        border: none;
+    }
+
+    .find-mail h1 {
+        font-size: 14px;
+        margin-left: 10%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .mail-credentials {
+        width: 298px;
+        height: 40px;
+        border: 1px solid gray;
+        margin-left: 10%;
+        border-radius: 5px
+    }
+    .login-btn {
+        display: flex;
+        margin-left: 10%;
+        margin-top: 15%
+    }
+    .submit-button {
+        margin-top: 5%;
+        font-size: 15px;
+        width: 120px;
+        height: 40px;
+        border: none;
+        margin-left: 5%;
+        color: white;
+        font-weight: 600;
+        border-radius: 7px;
+        justify-content: space-evenly;
+        cursor: pointer;
+        background-color: #0579D4
+    }
+
+    .submit-button a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+    }
+
+    .submit-button:hover {
+        background-color: #0579D4;
+    }
+}
