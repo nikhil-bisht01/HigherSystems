@@ -7,7 +7,7 @@
   justify-content: space-between;
   padding: 10px 20px;
   box-shadow: 5px 5px 5px 5px #0000002e;
-  height: 80px;
+  height: 60px;
 }
 
 .nav-img {
@@ -112,7 +112,7 @@
   }
 
   .child-nav {
-    margin-top: 3%;
+    margin-top: 2%;
     margin-left: 0%;
   }
 
@@ -136,7 +136,7 @@
   .parent-nav.active {
     display: flex;
     flex-direction: column;
-    height: 300px;
+    height: 280px;
   }
 
   .menu-toggle {
@@ -204,7 +204,7 @@
     height: 240px;
     display: inline;
     align-items: center;
-    margin-top: -5%;
+    margin-top: -3%;
     transition: all 3s ease-in-out;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }

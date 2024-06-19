@@ -21,60 +21,80 @@
 }
 
 /***********        PARRENT     *************/
-.infra-parrent-1,
-.infra-parrent-3 {
+
+.infra-parrent {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
-    justify-content: space-around;
+    margin: 20px 0;
 }
-.infra-parrent-2{
+
+.infra-parrent-1,
+.infra-parrent-2,
+.infra-parrent-3,
+.infra-parrent-4 {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 20px;
     justify-content: space-around;
-    margin-left:0%;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.infra-child-1,
+.infra-child-2,
+.network,
+.SS,
+.DS,
+.FAGS,
+.SABS,
+.SIEM,
+.IMS {
+    position: relative;
+    width: 30%;
+    text-align: center;
 }
 
 .infra-child-1 img,
+.infra-child-2 img,
+.network img,
+.SS img,
 .DS img,
+.FAGS img,
 .SABS img,
-.FAGS img{
+.SIEM img,
+.IMS img {
     width: 70px;
     height: 70px;
-    opacity: 0.5;
-}
-.infra-child-2 img{
-    width: 70px;
-    height: 70px;
-    opacity: 0.5;
-    margin-left:5%;
-}
-.DS{
-    margin-left:13%;
-}
-.SABS{
-    margin-right:10%;
-}
-.infra-child-1 img:hover,
-.infra-child-2 img:hover,
-.DS img:hover,
-.SABS img:hover,
-.FAGS img:hover{
-    opacity: 1;
     cursor: pointer;
+    opacity: 0.6;
 }
 
-.infra-child-3 {
-    margin-left: 5%;
+.SIEM {
+    margin-left: 15%;
 }
+
+.IMS {
+    margin-right: 15%;
+}
+
 .infra-p1,
 .infra-p2,
-.infra-p3{
+.infra-p3,
+.infra-p4 {
+    margin-top: 10px;
     font-size: 14px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.infra-child-1 img:hover,
+.infra-child-2 img:hover,
+.network img:hover,
+.SS img:hover,
+.DS img:hover,
+.FAGS img:hover,
+.SABS img:hover,
+.IMS img:hover,
+.SIEM img:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 .infradesc {
@@ -85,28 +105,22 @@
     border: 1px solid #ccc;
     z-index: 1;
     width: 250px;
-    margin-left: -2%;
+    margin-left: 19%;
     margin-top: 0%;
     text-align: justify;
 }
+
 .infra-child-1:hover .infradesc,
 .infra-child-2:hover .infradesc,
+.network:hover .infradesc,
+.SS:hover .infradesc,
 .DS:hover .infradesc,
 .FAGS:hover .infradesc,
-.SABS:hover .infradesc{
+.SABS:hover .infradesc,
+.SIEM:hover .infradesc,
+.IMS:hover .infradesc {
     display: block;
 }
-.infra-parrent-4{
-    display:flex;
-    
-}
-
-.infra-child-4 img{
-    width:70px;
-    height:70px;
-}
-.infra-child-3 img
-
 
 
 /********** BOX AND PLAY *************/
@@ -121,6 +135,7 @@
     border-radius: 10px;
     height: 0px;
 }
+
 #play {
     padding: 4vw;
     background-color: #007ac0cd;
@@ -220,9 +235,8 @@
     opacity: 1;
 }
 
-
-
-/**************       QUERY FORM FOR 412px and 768px      ******************/
+/******       MEDIA QUERY FOR 412PX AND 768PX        ********/
+/****** for 412PX  ********/
 @media screen and (max-width:412px) {
     .infra-image-container {
         position: relative;
@@ -232,105 +246,160 @@
     .infra-background-image {
         width: 100%;
         height: 260px;
+        margin-bottom: 5%;
     }
 
     .infra-overlay-text {
         position: absolute;
         width: 100%;
-        margin-left: 17%;
-        margin-top: 10%;
+        margin-left: 20%;
+        margin-top: 7%;
         transform: translate(-50%, -50%);
         font-size: 20px;
         color: white;
         font-weight: bold;
-        font-family: Montserrat;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
-    /**********     PARRENT     **************/
+
+    /***********        PARRENT     *************/
+
+    .infra-parrent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
     .infra-parrent-1,
-    .infra-parrent-3 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 20px;
-    justify-content: space-around;
-}
-.infra-parrent-2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 20px;
-    justify-content: space-around;
-    margin-left:1%;
-}
+    .infra-parrent-2,
+    .infra-parrent-3,
+    .infra-parrent-4 {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 10px 0;
+    }
 
-.infra-child-1 img,
-.infra-child-2 img,
-.DS img,
-.SABS img,
-.FAGS img{
-    width: 35px;
-    height: 35px;
-    opacity: 0.5;
-    margin-left: 15%;
-}
-.DS{
-    margin-left:15%;
-}
-.SABS{
-    margin-right:10%;
-}
-.infra-child-1 img:hover,
-.infra-child-2 img:hover,
-.DS img:hover,
-.SABS img:hover,
-.FAGS img:hover{
-    opacity: 1;
-    cursor: pointer;
-}
+    .infra-child-1,
+    .infra-child-2,
+    .network,
+    .SS,
+    .DS,
+    .FAGS,
+    .SABS,
+    .SIEM,
+    .IMS {
+        position: relative;
+        width: 30%;
+        text-align: center;
+    }
 
-.infra-child-3 {
-    margin-left: 5%;
-}
+    .infra-child-1 img,
+    .infra-child-2 img,
+    .network img,
+    .SS img,
+    .DS img,
+    .FAGS img,
+    .SABS img,
+    .SIEM img,
+    .IMS img {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        opacity: 0.6;
+    }
 
-.infradesc {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid #ccc;
-    z-index: 1;
-    width: 100px;
-    font-size:9px;
-    margin-left: -6%;
-    margin-top: 0%;
-    text-align: justify;
-}
-.infra-child-1:hover .infradesc,
-.infra-child-2:hover .infradesc,
-.DS:hover .infradesc,
-.FAGS:hover .infradesc,
-.SABS:hover .infradesc{
-    display: block;
-}
-.infra-p3,
-.infra-p2,
-.infra-p1{
-    font-size:9px;
-    text-align:center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+    .SIEM {
+        margin-left: 15%;
+    }
+
+    .IMS {
+        margin-right: 15%;
+    }
+
+    .infra-p1,
+    .infra-p2,
+    .infra-p3,
+    .infra-p4 {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .infra-child-1 img:hover,
+    .infra-child-2 img :hover,
+    .network img :hover,
+    .SS img :hover,
+    .DS img :hover,
+    .FAGS img :hover,
+    .SABS img :hover,
+    .SIEM img :hover,
+    .IMS img :hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .infradesc {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #ccc;
+        z-index: 1;
+        width: 130px;
+        margin-left: -3%;
+        margin-top: 0%;
+        text-align: justify;
+        font-size: 10px;
+    }
+
+    .infra-child-1:hover .infradesc,
+    .infra-child-2:hover .infradesc,
+    .network:hover .infradesc,
+    .SS:hover .infradesc,
+    .DS:hover .infradesc,
+    .FAGS:hover .infradesc,
+    .SABS:hover .infradesc,
+    .SIEM:hover .infradesc,
+    .IMS:hover .infradesc {
+        display: block;
+    }
 
 
+    /********** BOX AND PLAY *************/
+    .box {
+        position: absolute;
+        top: 40%;
+        left: 7%;
+        width: 250px;
+        background-color: #ffffff;
+        opacity: 0;
+        border: 1px solid gray;
+        border-radius: 10px;
+        height: 0px;
+    }
 
-    /*********      QUERY FORM      *********/
+    #play {
+        padding: 4vw;
+        background-color: #007ac0cd;
+        border-radius: 10px;
+        color: #FFFFFF;
+        width: 300px;
+        font-size: 1vw;
+        position: absolute;
+        top: 55%;
+        left: 6%;
+        opacity: 0;
+    }
 
+
+    /***************     QUERY FORM      *****************/
     .infra-form {
         position: fixed;
-        top: 40%;
+        top: 11%;
         left: 2%;
         width: 395px;
-        height: 60%;
+        height: 100%;
         background-color: white;
         border: 1px solid gray;
         transition: left 2s ease-in-out;
@@ -410,11 +479,8 @@
     }
 }
 
-
-
-
-/******************     MEDIA QUERY FOR 768PX       ********************/
-@media screen and (min-width: 413px) and (max-width:768px) {
+/*****    for 768PX  *****/
+@media screen and (min-width:500px) and (max-width:768px) {
     .infra-image-container {
         position: relative;
         width: 100%;
@@ -427,174 +493,41 @@
 
     .infra-overlay-text {
         position: absolute;
-        top: 54%;
+        top: 59%;
         left: 69%;
         width: 100%;
         transform: translate(-50%, -50%);
-        font-size: 35px;
+        font-size: 30px;
         color: white;
         font-weight: bold;
         font-family: Montserrat;
     }
 
-/*************      PARRENT     ****************/
-.infra-parrent-1,
-.infra-parrent-3 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 20px;
-    justify-content: space-around;
-}
-.infra-parrent-2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 20px;
-    justify-content: space-around;
-    margin-left:1%;
-}
+    .infradesc {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #ccc;
+        z-index: 1;
+        width: 250px;
+        margin-left: 0%;
+        margin-top: 0%;
+        text-align: justify;
+        font-size: 14px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
 
-.infra-child-1 img,
-.infra-child-2 img,
-.DS img,
-.SABS img,
-.FAGS img{
-    width: 50px;
-    height: 50px;
-    opacity: 0.5;
-}
-.DS{
-    margin-left:15%;
-}
-.SABS{
-    margin-right:10%;
-}
-.infra-child-1 img:hover,
-.infra-child-2 img:hover,
-.DS img:hover,
-.SABS img:hover,
-.FAGS img:hover{
-    opacity: 1;
-    cursor: pointer;
-}
 
-.infra-child-3 {
-    margin-left: 5%;
-}
-
-.infradesc {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid #ccc;
-    z-index: 1;
-    width: 180px;
-    margin-left: -8%;
-    margin-top: 0%;
-    font-size:12px;
-    text-align: justify;
-}
-.infra-child-1:hover .infradesc,
-.infra-child-2:hover .infradesc,
-.DS:hover .infradesc,
-.FAGS:hover .infradesc,
-.SABS:hover .infradesc{
-    display: block;
-}
-.infra-p3,
-.infra-p2,
-.infra-p1{
-    font-size:10px;
-    text-align:center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-/*********      QUERY FORM      *********/
-
+    /*****      QUERY FORM     ********/
     .infra-form {
         position: fixed;
         top: 30%;
-        left: 50%;
+        left: 49%;
         width: 395px;
         height: 70%;
         background-color: white;
         border: 1px solid gray;
         transition: left 2s ease-in-out;
     }
-
-    .infra-f2 {
-        width: 20px;
-        height: 20px;
-        font-weight: bold;
-        background-color: white;
-        border: none;
-        opacity: 1;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .infra-f2 img {
-        width: 20px;
-        height: 20px;
-        cursor: pointer;
-    }
-
-    .infra-q {
-        font-size: 14px;
-        margin-left: 15%;
-        margin-top: -8%;
-    }
-
-    .infra-q h2 {
-        font-size: 14px;
-    }
-
-    .infra-label {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .infra-label label {
-        font-size: 12px;
-        margin-left: 30px;
-        margin-bottom: 6px;
-    }
-
-    .infra-label input {
-        width: 350px;
-        margin-left: 50px;
-        text-align: center;
-        border: 1px solid #cccccc;
-        border-radius: 5px;
-    }
-
-    .infra-label label {
-        display: block;
-        margin-bottom: 10px;
-        margin-left: 6%;
-    }
-
-    .infra-label input[type="text"],
-    .infra-label input[type="email"],
-    .infra-label input[type="tel"],
-    .infra-label textarea {
-        width: 340px;
-        margin-left: 5%;
-        padding: 8px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-
-    .submit-infra {
-        margin-left: 20%;
-        margin-top: 40px;
-    }
-
-    .submit-btn img {
-        opacity: 1;
-    }
-
 }

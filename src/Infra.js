@@ -173,7 +173,7 @@ function Infra() {
 
         {/***********************    LINE--3 ************************************/}
         <div className="infra-parrent-3" >
-          <div className="infra-child-3" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <div className="DS" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div>
               <img onClick={() => handleImageClick("Data Security")} src={require('./doucment.svg')} alt="img" />
               <p className="infra-p3">Data Security</p>
@@ -186,7 +186,7 @@ function Infra() {
             )}
           </div>
 
-          <div className="infra-child-3" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <div className="FAGS" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div>
               <img onClick={() => handleImageClick("Firewall and Gateway Security")} src={require('./firewall (1).svg')} alt="img" />
               <p className="infra-p3">Firewall and <br />Gateway Security</p>
@@ -199,10 +199,10 @@ function Infra() {
             )}
           </div>
 
-          <div className="infra-child-3" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <div className="SABS" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div>
               <img onClick={() => handleImageClick("Storage and Backup Solutions")} src={require('./doucment.svg')} alt="img" />
-              <p className="infra-p3">Storage and <br />Backup Solutions</p>
+              <p className="infra-p3">Storage and Backup<br/>Solutions</p>
             </div>
             {isHovered && (
               <div className="infradesc">Storage and backup solutions involve implementing technologies and processes to securely
@@ -215,7 +215,7 @@ function Infra() {
 
         {/***********************    LINE--4***************************************/}
         <div className="infra-parrent-4">
-          <div className="infra-child-4" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <div className="SIEM" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div>
               <img onClick={() => handleImageClick("Security Information & Event Management")} src={require('./content-management.svg')} alt="img" />
               <p className="infra-p4">Security Information <br />& Event Management</p>
@@ -227,7 +227,7 @@ function Infra() {
             )}
           </div>
 
-          <div className="infra-child-4" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <div className="IMS" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div>
               <img onClick={() => handleImageClick("IT Managed Services")} src={require('./modular.svg')} alt="img" />
               <p className="infra-p4">IT Managed Services</p>
@@ -242,7 +242,7 @@ function Infra() {
         </div>
       </div>
 
-      {/***********FOOTER  *************/}
+      {/*******    FOOTER    **********/}
       <Footer />
       <div id="box"></div>
       <div id="play"></div>
@@ -252,9 +252,7 @@ function Infra() {
       <div id="play"></div>
       <div id="play"></div>
 
-      <div className="footer-reserved" >
-        <h1>Higher Systems | All Rights Reserved</h1>
-      </div>
+      
 
       {
         showQueryForm && (

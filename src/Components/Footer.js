@@ -2,6 +2,7 @@ import React from 'react';
 import "./Footer.css";
 function Footer() {
   return (
+    <div>
     <div className='Footer'>
       <div className='Ft-container'>
 
@@ -29,8 +30,12 @@ function Footer() {
           <h3>CONTACT INFO</h3>
           <li><i class="fa-solid fa-phone"></i><a href="callto: 01354147831">01354147831</a></li>
           <li><i class="fa-solid fa-envelope"></i><a href="mailto:sales@higher.co.in">sales@higher.co.in</a></li>
-          <li><i class="fa-solid fa-location"></i><a href="https://www.google.com/maps/search/2%2F1,+2-Raipur+Road,+Nearby+Dalanwala+Thana+Survey+Chowk,+Dehradun-248004/@30.3258753,78.0525523,382m/data=!3m1!1e3?entry=ttu" target="_blank">2/1, 2-Raipur Road, Nearby Dalanwala Thana Survey Chowk, Dehradun-248004</a></li>
+          <li><i class="fa-solid fa-location"></i><a href="https://www.google.com/maps/search/2%2F1,+2-Raipur+Road,+Nearby+Dalanwala+Thana+Survey+Chowk,+Dehradun-248004/@30.3258753,78.0525523,382m/data=!3m1!1e3?entry=ttu" target="_blank">2/1, 2-Raipur Road, Nearby Dalanwala Thana Survey Chowk, Dehradun-248001</a></li>
         </div>
+      </div>
+    </div>
+    <div className="footer-reserved" >
+        <h1>Higher India | All Rights Reserved</h1>
       </div>
     </div>
   );

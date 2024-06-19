@@ -48,9 +48,7 @@ function Connect() {
 
 {/**************************    FOOTER    *******************************/}
       <Footer />
-      <div className="footer-reserved" >
-        <h1>Higher Systems | All Rights Reserved</h1>
-      </div>
+
     </div>
   );
 }

@@ -118,10 +118,7 @@ function SignupPage() {
       {/*************FOOTER****************/}
       < div className="foot" > <Footer /></div >
 
-      {/***********FOOTER RESERVED***************** */}
-      < div className="footer-reserved" >
-        <h1>Higher Systems | All Rights Reserved</h1>
-      </div >
+      
     </div >
   );
 }

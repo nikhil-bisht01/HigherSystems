@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import "./Login.css";
 import Footer from './Components/Footer';
 import Navbar from './Navbar';
-
+// import { useAuth } from './AuthContext';
+// import { useHistory } from 'react-router-dom';
+ 
 function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
+
+  
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -78,9 +82,7 @@ function LoginPage() {
 
 
       {/*********************FOOTER RESERVED************************** */}
-      <div className="footer-reserved">
-        <h1>Higher Systems | All Rights Reserved</h1>
-      </div>
+
     </div>
   );
 }

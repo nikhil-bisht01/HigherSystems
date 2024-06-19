@@ -198,9 +198,7 @@ function Business() {
       <div id="play"></div>
       <div id="play"></div>
 
-      <div className="footer-reserved" >
-        <h1>Higher Systems | All Rights Reserved</h1>
-      </div>
+      
 
 
       {/**********************    QUERY FORM    *******************************/}

@@ -16,13 +16,13 @@ function Home() {
 {/***********************   HIGHER  INDIA   ****************************************/}
       <div className="home">
         <h1>HIGHER INDIA</h1>
-        <p>Higher India is a versatile IT solutions provider catering to diverse clients, including corporates and the public sector. Their services span infrastructure solutions, backup storage networks, security measures, WiFi surveillance, and managed services. They design, implement, and maintain IT infrastructure, ensure secure data storage and retrieval, offer cybersecurity solutions, manage WiFi networks, and provide outsourcing for IT operations. With a focus on end-to-end support, they aim to meet various business needs effectively, covering the entire IT lifecycle from planning to ongoing maintenance.</p>
+        <p>Higher India is a versatile IT solutions provider catering to diverse clients, including corporates and the public sector. Our services span infrastructure solutions, backup storage networks, security measures, WiFi surveillance, and managed services. We design, implement, and maintain IT infrastructure, ensure secure data storage and retrieval, offer cybersecurity solutions, manage WiFi networks, and provide outsourcing for IT operations. With a focus on end-to-end support, we aim to meet various business needs effectively, covering the entire IT lifecycle from planning to ongoing maintenance.</p>
       </div >
 
 {/***************************   ABOUT US    *****************************************/}
       <div className="about" >
           <h1>About us</h1>
-          <p> Higher India excels in custom software development, IT consulting, and cloud services, renowned for excellence and innovation. Their talented team delivers tailored solutions, exceeding client expectations with a customer-centric approach. Across industries like healthcare, finance, and e-commerce, they execute diverse projects seamlessly, driving tangible results and fostering long-term partnerships. With a relentless pursuit of excellence, Higher India solidifies its leadership in the software services industry.
+          <p> Higher India excels in custom software development, IT consulting, and cloud services, renowned for excellence and innovation. Our talented team delivers tailored solutions, exceeding client expectations with a customer-centric approach. Across industries like healthcare, finance, and e-commerce, we execute diverse projects seamlessly, driving tangible results and fostering long-term partnerships. With a relentless pursuit of excellence, Higher India solidifies its leadership in the software services industry.
           </p>
       </div>
 
@@ -62,11 +62,6 @@ function Home() {
 
 {/******************************    FOOTER ****************************************************/}
       <Footer />
-
-{/*********************************   LAST FOOTER   **************************************************/}
-      <div className="footer-reserved">
-        <h1>Higher Systems | All Rights Reserved</h1>
-      </div>
 
     </div>
   );
