@@ -1,296 +1,180 @@
-.login{
+.signup-img {
+  position: absolute;
+  right: 58%;
+  top: 27%;
+  width: 400px;
+  height: 450px;
+}
+
+.signup {
   display: flex;
   position: absolute;
   top: 19%;
   left: 55%;
-  width:580px;
-  height:600px;
-  border-radius:20px ;
+  width: 600px;
+  height: 580px;
+  border-radius: 20px;
   background-color: #ffffff79;
   justify-content: space-evenly;
   line-break: 10px;
   box-shadow: 5px 5px 5px 5px #0000002e;
 }
-.form{
-  margin-left:2%;
-  width:750px;
-}
-.form-group{
-  width: 100%;
-  height:15.2vh;
-  display: flex;
-  align-items: center;
-  text-align: left;
-  margin-bottom:-1%;
-  justify-content: space-around;
-}
-.form-grp label{
-  margin-left:0px;
-}
-.login-img{
-  background-color: #D8E9F2;
-  width: 100%;
-   height:770px;}
 
-.form-control{
-  margin-bottom:40px;
-  margin-left:0px ;
-  width: 250px;
-  height: 35px;
-  border: 1px solid gray;
-  border-radius: 5px;
-  background-color: #ffffff13;
-} 
-.forgot-password{
-  position: absolute;
-  top: 55%;
-  right:5%;
+.sign-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
 }
-.name,
+
+
+.sign-group h1 {
+  font-size: 24px;
+  margin-left: 45%;
+  margin-bottom: 7%;
+}
+
+.sign-1 {
+  display: flex;
+  margin-right: 10px;
+  justify-content: space-evenly;
+}
+
+.sign-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
 .e-mail,
-.password{
-  display: flex;
-  flex-direction: column;
-}
-.password1{
-  margin-left:-1%;
-}
-.name label{
-  margin-top:0%;
-}
-.name1 label{
-  margin-left:-5px;
-}
-.btn-primary{
-  margin-bottom:40px ;
-  background-color: #057ad48d;
-  border: none;
-  width:200px;
-  height:40px;
-  color: #FFFFFF;
-  font-size: 1rem;
-  border-radius: 5px;
-  text-align: center;
-}
-.sign-up{
-  margin-left: 24%;
+.e-mail1 {
+  flex: 1;
+  margin-right: 10px;
 }
 
-.name1{
-  margin-left:0.8%;
+.e-mail input {
+  width: 250px;
 }
-.signup-link:hover{
-  font-weight: bold;
+
+.password,
+.password1 {
+  flex: 1;
+  margin-right: 10px;
 }
-.signup-img{
-  position: absolute;
-  right:58%;
-  top: 27%;
-  width:400px;
-  height:450px;
+
+.e-mail input,
+.e-mail1 input,
+.password input,
+.password1 input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
-.welcome{
-  position: absolute;
-  top:5px;
-  left: 21%;
-  font-size: 2.5rem;
-  font-family: 'Poppins', sans-serif;
-  color: #FFFFFF;
+
+/***************     Sign up Button    **************/
+
+.signmit {
+  margin-left: 31%;
+  margin-top: 5%;
 }
-.already-text h1{
-  font-size: 16px;
-  margin-left:30%;
-  margin-top:-5%;
-  font-weight: 500;
+
+.already-text h1 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 30%;
 }
-.already-text a{
-  text-decoration: none;
-}
+
+
 
 /***************   MEDIA QUERY FOR 412PX   ******************/
+@media screen and (max-width:412px) {
+  .signup-img {
+    position: relative;
+    width: 370px;
+    margin-top: 40%;
+    margin-left: 65%;
+    height: 550px;
+  }
 
-@media  screen and (max-width:412px) {
-.login{
-  display: flex;
-  position: absolute;
-  top: 15%;
-  left:4%;
-  width:380px;
-  height:650px;
-  border-radius:20px ;
-  background-color: #ffffff79;
-  justify-content: space-evenly;
-  line-break: 10px;
-  box-shadow: 5px 5px 5px 5px #0000002e;
-}
-.form-group{
-  width: 100%;
-  height:15.2vh;
-  display: flex;
-  align-items: center;
-  text-align: left;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.form-control{
-  margin-bottom:40px;
-  margin-left:0px ;
-  width: 250px;
-  height: 35px;
-  border: 1px solid gray;
-  border-radius: 5px;
-  background-color: #ffffff13;
-}
-.forgot-password{
-  position: absolute;
-  top: 55%;
-  right:5%;
-}
-.btn-primary{
-  margin-bottom:40px ;
-  background-color: #057ad48d;
-  border: none;
-  width:200px;
-  height:40px;
-  color: #FFFFFF;
-  font-size: 1rem;
-  border-radius: 5px;
-  text-align: center;
-}
-.name1 {
-  margin-top:-3%;
-  margin-left:-5%;
-}
-.password{
-  margin-top:3%;
-}
-.password1{
-  margin-top:-5%;
-  margin-left:9%;
-}
-.sign-up{
-  margin-left: 2%;
-}
-.e-mail1{
-  margin-left:10%;
-}
-.signup-link:hover{
-  font-weight: bold;
-}
-.signup-img{
-  position: absolute;
-  left:5%;
-  top: 27%;
-  width:350px;
-  height:450px;
-  opacity:0.5;
-}
-.welcome{
-  position: absolute;
-  top:5px;
-  left: 3%;
-  font-size: 2.5rem;
-  font-family: 'Poppins', sans-serif;
-  color: #FFFFFF;
-}
-.already-text h1{
-  font-size: 16px;
-  margin-left:20%;
-  margin-top:-17%;
-  font-weight: 500;
-}
-.already-text a{
-  text-decoration: none;
-}
-
-
-}
-
-/*************   MEDIA QUERY FOR 768PX   *******************/
-@media screen and (min-width:413px) and (max-width:768px){
-  .login{
+  .signup {
     display: flex;
     position: absolute;
-    top: 10%;
-    left:48%;
-    width:380px;
-    height:650px;
-    border-radius:20px ;
+    top: 15%;
+    left: 5%;
+    width: 350px;
+    height: 680px;
+    border-radius: 20px;
     background-color: #ffffff79;
     justify-content: space-evenly;
     line-break: 10px;
     box-shadow: 5px 5px 5px 5px #0000002e;
   }
-  .form-group{
-    width: 100%;
-    height:15.2vh;
+
+  .sign-group {
     display: flex;
-    align-items: center;
-    text-align: left;
-    margin-top:-5%;
+    justify-content: space-between;
+    margin-bottom: 2%;
     flex-direction: column;
-    justify-content: space-around;
   }
-  .form-control{
-    margin-bottom:40px;
-    margin-left:0px ;
+
+
+  .sign-group h1 {
+    font-size: 24px;
+    margin-left: 33%;
+    margin-bottom: 7%;
+  }
+
+  .sign-1 {
+    display: flex;
+    margin-right: 10px;
+    justify-content: space-evenly;
+  }
+
+  .sign-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .e-mail,
+  .e-mail1 {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .e-mail input {
     width: 250px;
-    height: 35px;
-    border: 1px solid gray;
-    border-radius: 5px;
-    background-color: #ffffff13;
   }
-  .forgot-password{
-    position: absolute;
-    top: 55%;
-    right:5%;
+
+  .password,
+  .password1 {
+    flex: 1;
+    margin-right: 10px;
   }
-  .btn-primary{
-    margin-bottom:40px ;
-    background-color: #057ad48d;
-    border: none;
-    width:200px;
-    height:40px;
-    color: #FFFFFF;
-    font-size: 1rem;
-    border-radius: 5px;
-    text-align: center;
+
+  .e-mail input,
+  .e-mail1 input,
+  .password input,
+  .password1 input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
   }
-  .name1 {
-    margin-top:-3%;
-    margin-left:-5.5%;
+
+  /***************     Sign up Button    **************/
+
+  .signmit {
+    margin-left: 31%;
+    margin-top: 5%;
   }
-  .name1 label{
-    margin-left:20px;
+
+  .already-text h1 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 9%;
+
   }
-  .password label{
-    margin-left:5px;
-  }
-  .password1{
-    margin-top:-5%;
-    margin-left:8.5%;
-  }
-  .e-mail1{
-    display: flex;
-    flex-direction: column;
-    margin-left: -6.5%;
-    margin-top:-23px;
-  }
-  .sign-up{
-    margin-left: 2%;
-  }
-  .signup-link:hover{
-    font-weight: bold;
-  }
-  .signup-img{
-    position: absolute;
-    left:3%;
-    top: 20%;
-    width:350px;
-    height:450px;
-    opacity:1;
-  }
-  .foot{
-    margin-top:102%;
+
+  .foot {
+    margin-top: 30%;
   }
 }

@@ -54,58 +54,57 @@ function SignupPage() {
       <div>
         <img className="signup-img" src={require("./signin.png")} alt="signup image" />
 
-        <div className="login">
+        <div className="signup">
           {/*********FORM************/}
-          <form onSubmit={handleSignup} className="form">
-            <div className="form-group"><h1>Sign Up</h1></div>
+          <form onSubmit={handleSignup} className="sign">
+            <div className="sign-group"><h1>Sign Up</h1></div>
 
             {/******Line--1***********/}
-            <div className="form-group">
-              <div className="name">
-                <label style={{ marginLeft: '0px' }}>First Name</label>
-                <input className="form-control" style={{ width: '250px', border: '1px solid gray', marginLeft: "0px" }} type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} required />
-              </div>
-
-              <div className="name1">
-                <label style={{ marginLeft: '20px' }}>Last Name</label>
-                <input className="form-control"
-                  style={{ width: '250px', border: '1px solid gray', marginLeft: "20px" }} type="text" value={lastName} onChange={(e) => setLastName(e.target.value)} required />
-              </div>
-            </div>
-
-            {/*******Line--2**********/}
-            <div className="form-group">
-              <div className="e-mail">
-                <label style={{ marginLeft: '0px' }}>E-mail *</label>
-                <input className="form-control" style={{ width: '250px', border: '1px solid gray', marginLeft: "0px" }}
-                  type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+            <div className="sign-group">
+              <div className="e-mail" style={{ marginLeft: '5px' }}>
+                <label >First Name *</label>
+                <input style={{ width: '250px' }} type="email" value={firstName} onChange={(e) => setEmail(e.target.value)} required />
               </div>
 
               <div className="e-mail1">
-                <label style={{ marginLeft: '25px' }}>Phone No.*</label>
-                <input className="form-control" style={{ width: '250px', border: '1px solid gray', marginLeft: "25px" }}
-                  type="tel" value={phoneNo} onChange={(e) => setPhone(e.target.value)} required />
+                <label>Last Name</label>
+                <input style={{ width: '250px' }} type="tel" value={lastName} onChange={(e) => setPhone(e.target.value)} required />
+              </div>
+            </div>
+
+
+
+            {/*******Line--2**********/}
+            <div className="sign-group">
+              <div className="e-mail" style={{ marginLeft: '5px' }}>
+                <label >E-mail *</label>
+                <input style={{ width: '250px' }} type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+              </div>
+
+              <div className="e-mail1">
+                <label>Phone No.*</label>
+                <input style={{ width: '250px' }} type="tel" value={phoneNo} onChange={(e) => setPhone(e.target.value)} required />
               </div>
             </div>
 
             {/********Line---3*************/}
-            <div className="form-group">
-              <div className="password">
-                <label style={{ marginLeft: '0px' }}>Password</label>
-                <input className="form-control"
-                  style={{ marginLeft: "0px" }} type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+            <div className="sign-group">
+              <div className="password" style={{ marginLeft: '5px' }}>
+                <label>Password</label>
+                <input style={{ width: '250px' }} type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
               </div>
 
               <div className="password1">
-                <label style={{ marginLeft: '30px' }}>Confirm Password</label>
-                <input className="form-control"
-                  style={{ marginLeft: "30px" }} value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required />
+                <label>Confirm Password</label>
+                <input style={{ width: '250px' }} value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required />
               </div>
             </div>
 
+
+
             {/*******SUBMIT BUTTON***********/}
-            <div className="form-group">
-              <button className="btn btn-primary" type="submit"> Sign Up</button>
+            <div className="signmit">
+              <button className="sign-btn" type="submit"> Sign Up</button>
             </div>
             <div className="already-text">
               <h1>Already have an account?<a href="./Login">Login</a></h1>
@@ -118,7 +117,7 @@ function SignupPage() {
       {/*************FOOTER****************/}
       < div className="foot" > <Footer /></div >
 
-      
+
     </div >
   );
 }

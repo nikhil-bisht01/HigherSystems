@@ -98,8 +98,8 @@ function Business() {
               <p className="bus-p1">Document Management System </p>
             </div>
             {isHovered && (
-              <div className="busdesc">A Document Management System (DMS) organizes, stores, and tracks electronic documents and images, enhancing efficiency and accessibility for businesses. 
-              It streamlines document workflows, facilitates collaboration, and ensures compliance with regulatory standards.</div>
+              <div className="busdesc">A Document Management System (DMS) organizes, stores, and tracks electronic documents and images, enhancing efficiency and accessibility for businesses.
+                It streamlines document workflows, facilitates collaboration, and ensures compliance with regulatory standards.</div>
             )}
           </div>
 
@@ -109,9 +109,9 @@ function Business() {
               <p className="bus-p1">Content Management System</p>
             </div>
             {isHovered && (
-              <div className="busdesc">A Content Management System (CMS) is a software platform that enables users to create, manage, and 
-              modify digital content on websites without extensive technical knowledge. It simplifies content publishing, allows collaborative 
-              editing, and often includes features like version control and workflow management.</div>
+              <div className="busdesc">A Content Management System (CMS) is a software platform that enables users to create, manage, and
+                modify digital content on websites without extensive technical knowledge. It simplifies content publishing, allows collaborative
+                editing, and often includes features like version control and workflow management.</div>
             )}
           </div>
 
@@ -121,9 +121,9 @@ function Business() {
               <p className="bus-p1">Human Resource Management System </p>
             </div>
             {isHovered && (
-              <div className="busdesc">A Human Resource Management System (HRMS) is software that automates HR tasks, including payroll, employee 
-              data management, recruitment, and performance evaluation. It centralizes HR processes, improves efficiency, and enhances employee management 
-              across an organization.</div>
+              <div className="busdesc">A Human Resource Management System (HRMS) is software that automates HR tasks, including payroll, employee
+                data management, recruitment, and performance evaluation. It centralizes HR processes, improves efficiency, and enhances employee management
+                across an organization.</div>
             )}
           </div>
         </div >
@@ -134,13 +134,13 @@ function Business() {
 
           <div className="bus-child-2" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div>
-              <img onClick={() => handleImageClick("Asset Management System")} src={require('./assets (2).svg')} alt="img" />
+              <img style={{ marginright: '2%' }} onClick={() => handleImageClick("Asset Management System")} src={require('./assets (2).svg')} alt="img" />
               <p className="bus-p2">Asset Management System</p>
             </div>
             {isHovered && (
-              <div className="busdesc">An Asset Management System (AMS) tracks and manages an organization's physical and digital 
-              assets throughout their lifecycle, from acquisition to disposal. It optimizes resource utilization, streamlines maintenance, 
-              and ensures regulatory compliance for efficient asset management.</div>
+              <div className="busdesc">An Asset Management System (AMS) tracks and manages an organization's physical and digital
+                assets throughout their lifecycle, from acquisition to disposal. It optimizes resource utilization, streamlines maintenance,
+                and ensures regulatory compliance for efficient asset management.</div>
             )}
           </div>
 
@@ -150,9 +150,9 @@ function Business() {
               <p className="bus-p2">Inventory Management System</p>
             </div>
             {isHovered && (
-              <div className="busdesc">An Inventory Management System (IMS) tracks and controls a company's stocked goods, facilitating 
-              efficient ordering, stocking, and selling processes. It optimizes inventory levels, reduces carrying costs, and minimizes 
-              stockouts for improved supply chain management.</div>
+              <div className="busdesc">An Inventory Management System (IMS) tracks and controls a company's stocked goods, facilitating
+                efficient ordering, stocking, and selling processes. It optimizes inventory levels, reduces carrying costs, and minimizes
+                stockouts for improved supply chain management.</div>
             )}
           </div>
 
@@ -162,9 +162,9 @@ function Business() {
               <p className="bus-p2">Digital Transformation and E-Learning </p>
             </div>
             {isHovered && (
-              <div className="busdesc">Digital Transformation leverages technology to reshape organizational processes, culture, and customer 
-              experiences, driving innovation and competitiveness. E-Learning utilizes digital platforms to deliver educational content and 
-              training remotely, enabling flexible learning opportunities and skill development.</div>
+              <div className="busdesc">Digital Transformation leverages technology to reshape organizational processes, culture, and customer
+                experiences, driving innovation and competitiveness. E-Learning utilizes digital platforms to deliver educational content and
+                training remotely, enabling flexible learning opportunities and skill development.</div>
             )}
           </div>
         </div>
@@ -172,18 +172,18 @@ function Business() {
 
         {/*****************     PARRENT-3        *****************/}
         <div className="bus-parrent-3">
-        <div className="bus-child-3" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <div className="bus-child-3" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div>
               <img onClick={() => handleImageClick("Enterprise-Level Software Solutions")} src={require('./enterprisre.svg')} alt="img" />
               <p className="bus-p3">Enterprise-Level Software Solutions</p>
             </div>
             {isHovered && (
-              <div className="busdesc">Enterprise-Level Software Solutions are comprehensive platforms designed to meet the complex needs of 
-              large organizations, providing scalable, integrated, and customizable software applications for various business functions. They 
-              streamline operations, enhance productivity, and support strategic decision-making across the enterprise.</div>
+              <div className="busdesc">Enterprise-Level Software Solutions are comprehensive platforms designed to meet the complex needs of
+                large organizations, providing scalable, integrated, and customizable software applications for various business functions. They
+                streamline operations, enhance productivity, and support strategic decision-making across the enterprise.</div>
             )}
           </div>
-          
+
         </div>
       </div>
 
@@ -198,7 +198,7 @@ function Business() {
       <div id="play"></div>
       <div id="play"></div>
 
-      
+
 
 
       {/**********************    QUERY FORM    *******************************/}

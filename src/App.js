@@ -12,7 +12,6 @@ import Employee from './Employee'
 import Solution from './Solution'
 import Business from './Business'
 import Implementation from './Implementation'
-import DMS from './DMS'
 import Infra from './Infra'
 import Navbar from './Navbar'
 import Contactform from './Contactform'
@@ -21,7 +20,6 @@ import Forget from './Forget'
 import OTP from './OTP'
 import Password from './Password'
 import Registration from './Registration'
-import Dashboard from './Dashboard'
 
 
 
@@ -39,7 +37,6 @@ function App() {
       <Route path='/Employee' element={<Employee />} />
       <Route path='/Business' element={<Business />} />
       <Route path='/Infra' element={<Infra />} />
-      <Route path='/DMS' element={<DMS />} />
       <Route path='/Solution' element={<Solution />} />
       <Route path='/Contactform' element={<Contactform />} />
       <Route path='/Implementation' element={<Implementation />} />
@@ -49,11 +46,7 @@ function App() {
       <Route path='/OTP' element={<OTP />} />
       <Route path='/Password' element={<Password />} />
       <Route path='/Reg' element={<Registration />} />
-      <Route path='/Dash' element={<Dashboard/>}/>
-    
     </Routes>
-
   )
 }
-
 export default App
