@@ -1,4 +1,4 @@
-.login-img {
+/* .login-img {
   background-color: #D8E9F2;
   width: 100%;
   height: 700px;
@@ -12,7 +12,7 @@
   height: 550px;
 }
 
-.login-form {
+.login-form { 
   display: inline;
   position: absolute;
   top: 17.2%;
@@ -23,7 +23,7 @@
   background-color: #ffffff79;
   justify-content: center;
   box-shadow: 5px 5px 5px 5px #0000002e;
-}
+} 
 
 .heading {
   font-size: 45px;
@@ -126,7 +126,7 @@
 
 
 /*****************    MEDIA QUERY FOR 412PX      **************************/
-@media only screen and (max-width: 412px) {
+/* @media only screen and (max-width: 412px) {
   .login-img {
     background-color: #D8E9F2;
     width: 100%;
@@ -242,4 +242,4 @@
     margin-left: 60%;
     margin-top: -24px;
   }
-}
+}  */
