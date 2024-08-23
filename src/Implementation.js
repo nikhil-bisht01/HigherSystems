@@ -156,7 +156,7 @@ function Implementation() {
       <div id="play"></div>
       <div id="play"></div>
 
-    
+
 
 
       {/********************************      QUERY FORM        ***************************************** */}
@@ -171,6 +171,8 @@ function Implementation() {
             <div className='query-label'>
               <label htmlFor="name">Service Name</label>
               <input type="text" name="name" value={formValues.name} onChange={handleChange} readOnly />
+              <label htmlFor="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Full Name" value={formValues.fullName} onChange={handleChange}required/>
               <label htmlFor="email">E-mail</label>
               <input type="email" name="email" placeholder="Email" value={formValues.email} onChange={handleChange} required />
               <label htmlFor="Phoneno">Phone No</label>

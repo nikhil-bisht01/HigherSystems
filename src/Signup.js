@@ -7,7 +7,7 @@ function SignupPage() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
-  const [phoneNo, setPhone] = useState("");
+  const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
@@ -20,7 +20,7 @@ function SignupPage() {
     }
 
     try {
-      const response = await fetch("http://localhost:4000/signup", {
+      const response = await fetch("https://highersystembackend-2.onrender.com/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -29,7 +29,7 @@ function SignupPage() {
           firstName,
           lastName,
           email,
-          phoneNo,
+          phone,
           password,
         }),
       });
@@ -38,7 +38,6 @@ function SignupPage() {
 
       if (response.ok) {
         alert("Signup Successful");
-        // Redirect the user to the dashboard or login page
       } else {
         alert("Signup failed: " + data.error);
       }
@@ -63,12 +62,12 @@ function SignupPage() {
             <div className="sign-group">
               <div className="e-mail" style={{ marginLeft: '5px' }}>
                 <label >First Name *</label>
-                <input style={{ width: '250px' }} type="email" value={firstName} onChange={(e) => setEmail(e.target.value)} required />
+                <input style={{ width: '250px' }} type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} required />
               </div>
 
               <div className="e-mail1">
                 <label>Last Name</label>
-                <input style={{ width: '250px' }} type="tel" value={lastName} onChange={(e) => setPhone(e.target.value)} required />
+                <input style={{ width: '250px' }} type="text" value={lastName} onChange={(e) => setLastName(e.target.value)} required />
               </div>
             </div>
 
@@ -83,7 +82,7 @@ function SignupPage() {
 
               <div className="e-mail1">
                 <label>Phone No.*</label>
-                <input style={{ width: '250px' }} type="tel" value={phoneNo} onChange={(e) => setPhone(e.target.value)} required />
+                <input style={{ width: '250px' }} type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} required />
               </div>
             </div>
 

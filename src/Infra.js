@@ -267,6 +267,8 @@ function Infra() {
               <div className='infra-label'>
                 <label htmlFor="name">Service Name</label>
                 <input type="text" name="name" value={formValues.name} onChange={handleChange} readOnly />
+                <label htmlFor="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName"value={formValues.fullName} onChange={handleChange}required/>
                 <label htmlFor="email">E-mail</label>
                 <input type="email" name="email" placeholder="Email" value={formValues.email} onChange={handleChange} required />
                 <label htmlFor="Phoneno">Phone No</label>
