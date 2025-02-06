@@ -42,7 +42,6 @@ const Login = () => {
       return;
     }
 
-    console.log('Logging in with:', formData);
     setNotificationShow(true);
     setNotification("Login successful")
   };

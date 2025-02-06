@@ -24,13 +24,13 @@ const SignUp = () => {
   }, [animating]);
   
   return (
-    <div className="flex justify-between bg-[#005AE6]">
+    <div className="flex justify-between md:bg-[#005AE6] bg-white">
       {notificationShow && <CustomAlert onClose={setNotificationShow} message={notification} />}
       {loader && <Loader/>}
-      <div className="bg-[#005AE6] w-1/2">
+      <div className="md:bg-[#005AE6] w-1/2 hidden md:block">
         <img src={loginBg} alt="signup" />
       </div>
-      <div className="flex justify-center items-start w-1/2 bg-white rounded-r-md shadow-xl">
+      <div className="flex justify-center items-start md:w-1/2 w-full bg-white rounded-r-md shadow-xl">
       {toggleForm ? <LoginComponent setLoader={setLoader} toggleForm = {handleToggleForm} animating={animating} setNotification={setNotification} setNotificationShow={setNotificationShow}/> : 
         <SignUpComponent setLoader={setLoader} toggleForm={handleToggleForm} animating={animating} setNotification={setNotification} setNotificationShow={setNotificationShow}/>}
       </div>

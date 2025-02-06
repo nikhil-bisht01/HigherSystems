@@ -8,7 +8,7 @@ const BackToTop = () => {
         });
       }
   return (
-    <div onClick={scrollToTop} className='fixed bottom-10 right-10 text-white bg-[#005AE6] rounded-full p-5 text-2xl cursor-pointer border-[#005AE6]  hover:bg-blue-700 transition duration-300'><FaArrowUp /></div>
+    <div onClick={scrollToTop} className='fixed bottom-10 right-10 text-white bg-[#005AE6] rounded-full p-5 text-2xl cursor-pointer border-[#005AE6]  hover:bg-blue-700 transition duration-300 z-10'><FaArrowUp /></div>
   )
 }
 

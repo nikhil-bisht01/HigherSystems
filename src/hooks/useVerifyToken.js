@@ -11,18 +11,20 @@ const useVerifyToken = () => {
         try {
             const user = JSON.parse(localStorage.getItem("higherIndia"));
             if(!user){
-              navigate("/auth/login")
+              navigate("/auth/login");
+              localStorage.removeItem("higherIndia");
               return;
             }
             const url = api+"/custlog/verify-token";
             const res = await axios.post(url,{token:user?.token});            
             setUser(res.data)
         } catch (error) {
+            localStorage.removeItem("higherIndia");
             navigate("/auth/login");
         }
     }
     useEffect(()=>{
-        verifyToken();
+        localStorage.getItem("higherIndia") && verifyToken();
         // eslint-disable-next-line
     },[])
 }

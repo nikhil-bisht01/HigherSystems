@@ -6,6 +6,8 @@ import OurServices from '../components/OurServices'
 import Contact from '../components/Contact'
 import CarouselHomePage from '../components/CarouselHomePage'
 const Home = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0; 
   return (
     <div>
         <CarouselHomePage/>

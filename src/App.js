@@ -7,8 +7,16 @@ import SignUp from './pages/SignUp';
 import DashboardPartner from './pages/DashboardPartner';
 import OtpVerification from './pages/OtpVerification';
 import DashboardUser from './pages/DashboardUser';
+import Services from './pages/Services';
+import { useEffect } from 'react';
+import Product from './pages/Product';
 
 function App() {
+
+  useEffect(()=>{
+    document.body.style.zoom = "100%";
+  },[])
+
   const router = createBrowserRouter([
     {
       path:"/",
@@ -33,6 +41,14 @@ function App() {
         {
           path:"/partner",
           element:<DashboardPartner/>
+        },
+        {
+          path:"/our-services/:options",
+          element:<Services/>
+        },
+        {
+          path:"/product/:options",
+          element:<Product/>
         }
       ]
     },
@@ -43,7 +59,7 @@ function App() {
   ]);
 
   return (
-    <div className="App">
+    <div className="App h-screen overflow-auto">
       <RouterProvider router={router} />
     </div>
   );

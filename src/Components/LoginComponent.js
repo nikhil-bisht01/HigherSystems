@@ -80,7 +80,7 @@ const LoginComponent = ({ toggleForm, animating, setNotification, setNotificatio
   return (
     <div
       key={toggleForm ? 'login' : 'signup'}
-      className={`form-container ${animating ? 'animate-exit' : 'animate-enter'}`}
+      className={`form-container  -mt-28 md:mt-0 ${animating ? 'animate-exit' : 'animate-enter'}`}
     >
       <h1 className="font-bold text-3xl mb-4">Login to your Account</h1>
       <p className="font-medium text-sm text-[#555555] mb-8">Welcome back! Select a method to log in:</p>

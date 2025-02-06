@@ -42,7 +42,22 @@ const OtpValidationPage = ({ isOpen, onClose, onValidate }) => {
     }
   };
 
+  const addToCrm = async()=>{
+    setLoader(true);
+    try {
+      const url = api+"/custlog/add";
+      await axios.post(url,user);
+      await signup();
+    } catch (error) {
+      setNotificationShow(true);
+      setNotificationMessage('Sign-up failed!');
+    }finally{
+      setLoader(false);
+    }
+  }
+
   const signup = async ()=>{
+    setLoader(true);
     try {
       const url = api+"/custlog/signup";
       await axios.post(url, user);
@@ -52,6 +67,8 @@ const OtpValidationPage = ({ isOpen, onClose, onValidate }) => {
     } catch (error) {
       setNotificationShow(true);
       setNotificationMessage('Sign-up failed!');
+    }finally{
+      setLoader(false);
     }
   }
 
@@ -67,7 +84,7 @@ const OtpValidationPage = ({ isOpen, onClose, onValidate }) => {
     const verifyRes = await verifyOtp(user.email_id, enteredOtp);
 
     if(verifyRes === true){
-      await signup();
+      await addToCrm();
     }else if(verifyRes === 400){      
       setNotificationMessage("Invalid OTP or OTP has expired.");
       setNotificationShow(true);
@@ -77,7 +94,7 @@ const OtpValidationPage = ({ isOpen, onClose, onValidate }) => {
       setNotificationShow(true);
       return;
     }
-    setLoader(true);
+    setLoader(false);
   };
 
   const resendOtp = async (e)=>{

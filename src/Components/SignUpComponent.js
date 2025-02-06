@@ -153,7 +153,7 @@ const SignUpComponent = ({
   return (
     <div
       key={!toggleForm ? 'login' : 'signup'}
-      className={`form-container -mt-20 ${
+      className={`form-container -mt-32 md:mt-0 ${
         animating ? 'animate-exit' : 'animate-enter'
       }`}
     >

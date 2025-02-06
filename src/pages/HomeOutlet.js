@@ -7,14 +7,18 @@ import BackToTop from '../components/BackToTop'
 const HomeOutlet = () => {
   const [isVisible, setIsVisible] = useState(false);
   const toggleVisibility = () => {
-    if (window.pageYOffset > 300) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
+    console.log("D");
+    
+    // if (window.pageYOffset > 300) {
+    //   setIsVisible(true);
+    // } else {
+    //   setIsVisible(false);
+    // }
   };
   useEffect(() => {
     window.addEventListener("scroll", toggleVisibility);
+    console.log(window);
+    
   }, []);
   
   return (

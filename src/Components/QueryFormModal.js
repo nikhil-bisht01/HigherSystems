@@ -2,10 +2,10 @@ import React from "react";
 import { IoClose } from "react-icons/io5";
 import ContactQueryForm from "./ContactQueryForm";
 
-const QueryFormModal = ({ service, isVisible, closeModal,setLoader,setNotification,setNotificationShow }) => {
+const QueryFormModal = ({ service, isVisible, closeModal, setLoader, setNotification, setNotificationShow }) => {
   return (
     <div
-      className={`fixed top-24 right-14 bg-[#FBFCF8] p-4 rounded-lg z-[10000000] w-[400px] shadow-lg transition-all duration-1000 ${
+      className={`fixed top-24 right-5 md:right-14 bg-[#FBFCF8] p-4 rounded-lg z-[10000000] w-[90%] sm:w-[400px] md:w-[400px] shadow-lg transition-all duration-1000 ${
         isVisible ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
       }`}
     >
@@ -24,7 +24,12 @@ const QueryFormModal = ({ service, isVisible, closeModal,setLoader,setNotificati
         disabled
         className="w-full p-3 border-[2px] rounded-md font-medium text-sm mb-6 focus:border-blue-600 focus:outline-none bg-white"
       />
-      <ContactQueryForm productQuery={service} setLoader={setLoader} setNotification={setNotification} setNotificationShow={setNotificationShow}/>
+      <ContactQueryForm 
+        productQuery={service} 
+        setLoader={setLoader} 
+        setNotification={setNotification} 
+        setNotificationShow={setNotificationShow}
+      />
     </div>
   );
 };
