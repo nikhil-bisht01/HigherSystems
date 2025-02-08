@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import Header from '../components/Header'
+import Header from '../Components/Header.js'
 import { Outlet } from 'react-router-dom'
-import Footer from '../components/Footer'
-import BackToTop from '../components/BackToTop'
+import Footer from '../Components/Footer.js'
+import BackToTop from '../Components/BackToTop.js'
 
 const HomeOutlet = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -23,12 +23,13 @@ const HomeOutlet = () => {
   
   return (
     <div>
-        <Header/>
+        {/* <Header/> */}
         {isVisible && <BackToTop/>}
         <main>
             <Outlet/>
         </main>
-        <Footer/>
+        {/* <Footer/> */}
+        
     </div>
   )
 }

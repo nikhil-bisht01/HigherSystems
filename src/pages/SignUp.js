@@ -1,9 +1,9 @@
 import React, { useCallback, useState } from 'react';
 import loginBg from '../assets/signup.png';
-import SignUpComponent from '../components/SignUpComponent';
-import LoginComponent from '../components/LoginComponent';
-import CustomAlert from '../components/CustomAlert';
-import Loader from "../components/Loader";
+import SignUpComponent from '../Components/SignUpComponent.js';
+import LoginComponent from '../Components/LoginComponent.js';
+import CustomAlert from '../Components/CustomAlert.js';
+import Loader from "../Components/Loader.js";
 
 const SignUp = () => {
   const url = window.location.pathname;
