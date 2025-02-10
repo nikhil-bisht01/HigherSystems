@@ -1,10 +1,10 @@
 import React from 'react'
-import AddressSection from '../components/AddressSection.js'
-import AboutCompany from '../components/AboutCompany.js'
-import AboutUs from '../components/AboutUs.js'
-import OurServices from '../components/OurServices.js'
-import Contact from '../components/Contact.js'
-import CarouselHomePage from '../components/CarouselHomePage.js'
+import AddressSection from '../Components/AddressSection.js'
+import AboutCompany from '../Components/AboutCompany.js'
+import AboutUs from '../Components/AboutUs.js'
+import OurServices from '../Components/OurServices.js'
+import Contact from '../Components/Contact.js'
+import CarouselHomePage from '../Components/CarouselHomePage.js'
 const Home = () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0; 

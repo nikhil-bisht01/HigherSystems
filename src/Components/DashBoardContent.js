@@ -1,110 +1,126 @@
-import React, { useEffect, useState } from 'react';
-// import React from 'react'
+import React from 'react'
 import rectangleImage from "../assets/Rectangle1.png";
 import profilePic from "../assets/profilepics1.png";
 import profileImg from "../assets/profileImg.png";
 import { IoIosSearch } from "react-icons/io";
-import axios from 'axios';
-import { api } from '../utils/utility';
-// import { json } from 'express';
+import { Link, useNavigate } from "react-router-dom";
+
+
 export default function DashBoardContent() {
-  const [userData, setUserData] = useState(null);
 
+  
+  const services = [
+    {
+      id: 1,
+      title: "Document Management",
+      description: "Manage your documents efficiently with our system.",
+      image: rectangleImage,
+    },
+    {
+      id: 2,
+      title: "Asset Management",
+      description: "Simplify your asset tracking and monitoring process.",
+      image: rectangleImage,
+    },
+    {
+      id: 3,
+      title: "Leave Management",
+      description: "Easily track and approve employee leaves.",
+      image: rectangleImage,
+    },
+    {
+      id: 4,
+      title: "Communication Service",
+      description: "Seamlessly connect with your team and clients.",
+      image: rectangleImage,
+    },
+    {
+      id: 5,
+      title: "Financial Planning",
+      description: "Plan your finances effectively for better growth.",
+      image: rectangleImage,
+    },
+    {
+      id: 6,
+      title: "Insurance Services",
+      description: "Secure your future with our reliable insurance plans.",
+      image: rectangleImage,
+    },
+  ];
+  const navigate = useNavigate(); 
 
-  useEffect(() => {
-    const fetchUserData = async () => {
-      //fetch token
-      const token =JSON.parse( localStorage.getItem('higherIndia'))
-      console.log('Token:', token); 
-      try {
-        if (!token) {
-          console.error('No token found in localStorage');
-          return;
-        }
-        const response = await axios.get("https://demo.higherindia.net:3440/customers", {
-          headers: {
-            Authorization: `Bearer ${token.token}`,
-          },
-        });
-        console.log(response);
-        
-        const customer = response.data[0]; 
-        setUserData(customer);
-      } catch (error) {
-        console.error('Error fetching user data:', error);
-      }
-    };
-  
-    fetchUserData();
-  }, []);
-  
   
   return (
     <div>
        <div className="pb-10  pt-[116px] ">
             {/* personal info  */}
 
-            <div className="flex flex-wrap gap-[6px]">
-          <div className="border-[0.4px] border-[#DDDDDD] rounded-[6px] px-[16px] h-[220px]">
-            <div className="flex mt-[22px] mb-1 justify-center">
-              <img src={profileImg} className="rounded-full w-[80px] h-[80px]" alt="Profile Pic" />
+            <div className=" flex flex-wrap gap-[6px]    ">
+              <div className="border-[0.4px] border-[#DDDDDD] rounded-[6px] px-[16px] h-[220px]  ">
+                <div className="flex mt-[22px] mb-1 justify-center">
+                  <img
+                    src={profileImg}
+                    className="rounded-full w-[80px] h-[80px] "
+                    alt="Profile Pic"
+                  />
+                </div>
+                <p className="font-semibold text-[#00388E] text-center py-1">
+                  Satyarth Verma
+                </p>
+                <p className="text-[10px] font-medium text-[#6C6C6C] text-center">
+                  satyarthpundir123@example.com
+                </p>
+                <div className="flex mt-[10px]">
+                  <div className="border-r-[0.8px] border-[#B8B8B8] px-2 text-center">
+                    <p className="text-[20px] font-semibold ">8</p>
+                    <p className="text-[8px] font-medium  text-[#8D8D8D]">
+                      Owned Services
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="border-[0.4px] border-[#DDDDDD] rounded-[6px] p-7  max-w-[556px] ">
+                <div className="flex justify-between flex-wrap gap-x-16 gap-y-8">
+                  <div>
+                    <p className="font-medium text-[10px] text-[#797979]">
+                      Phone Number
+                    </p>
+                    <p className="text-sm font-medium">+91-9876543210</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[10px] text-[#797979]">
+                      Registered Date
+                    </p>
+                    <p className="text-sm font-medium">12 January 2025</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[10px] text-[#797979]">
+                      Member Status
+                    </p>
+                    <p className="text-sm font-medium">Active Member</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[10px] text-[#797979]">
+                      Street Address
+                    </p>
+                    <p className="text-sm font-medium">Clock Tower</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[10px] text-[#797979]">
+                      City
+                    </p>
+                    <p className="text-sm font-medium">Dehradun</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[10px] text-[#797979]">
+                      Zip Code
+                    </p>
+                    <p className="text-sm font-medium">609087</p>
+                  </div>
+                </div>
+              </div>
+              <div className="border-[0.4px] border-[#DDDDDD] rounded-[6px] px-[14px] h-[220px] w-[215px] "></div>
             </div>
-            <p className="font-semibold text-[#00388E] text-center py-1">
-              {userData ? userData.customer_id : 'Loading...'}
-            </p>
-            <p className="text-[10px] font-medium text-[#6C6C6C] text-center">
-              {userData ? userData.customer_name : 'Loading...'}
-            </p>
-            <div className="flex mt-[10px]">
-              <div className="border-r-[0.8px] border-[#B8B8B8] px-2 text-center">
-                <p className="text-[20px] font-semibold">{userData ? userData.gst_number : 'N/A'}</p>
-                <p className="text-[8px] font-medium text-[#8D8D8D]">GST Number</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="border-[0.4px] border-[#DDDDDD] rounded-[6px] p-7 max-w-[556px]">
-            <div className="flex justify-between flex-wrap gap-x-16 gap-y-8">
-              <div>
-                <p className="font-medium text-[10px] text-[#797979]">Phone Number</p>
-                <p className="text-sm font-medium">{userData ? userData.landline_num : 'Loading...'}</p>
-              </div>
-              <div>
-                <p className="font-medium text-[10px] text-[#797979]">Email</p>
-                <p className="text-sm font-medium">{userData ? userData.email_id : 'Loading...'}</p>
-              </div>
-              <div>
-                <p className="font-medium text-[10px] text-[#797979]">PAN Number</p>
-                <p className="text-sm font-medium">{userData ? userData.pan_no : 'N/A'}</p>
-              </div>
-              <div>
-                <p className="font-medium text-[10px] text-[#797979]">TAN Number</p>
-                <p className="text-sm font-medium">{userData ? userData.tan_number || 'N/A' : 'Loading...'}</p>
-              </div>
-              <div>
-                <p className="font-medium text-[10px] text-[#797979]">Address</p>
-                <p className="text-sm font-medium">{userData ? userData.address : 'Loading...'}</p>
-              </div>
-              <div>
-                <p className="font-medium text-[10px] text-[#797979]">City</p>
-                <p className="text-sm font-medium">{userData ? userData.city : 'Loading...'}</p>
-              </div>
-              <div>
-                <p className="font-medium text-[10px] text-[#797979]">State</p>
-                <p className="text-sm font-medium">{userData ? userData.state : 'Loading...'}</p>
-              </div>
-              <div>
-                <p className="font-medium text-[10px] text-[#797979]">Country</p>
-                <p className="text-sm font-medium">{userData ? userData.country : 'Loading...'}</p>
-              </div>
-              <div>
-                <p className="font-medium text-[10px] text-[#797979]">Zip Code</p>
-                <p className="text-sm font-medium">{userData ? userData.pincode : 'Loading...'}</p>
-              </div>
-            </div>
-          </div>
-          <div className="border-[0.4px] border-[#DDDDDD] rounded-[6px] px-[14px] h-[220px] w-[215px]"></div>
-        </div>
 
             {/* Content */}
             <div className=" mt-9  ">
@@ -158,46 +174,22 @@ export default function DashBoardContent() {
                 <input className="" type="text" placeholder="Search services" />
               </div>
               <div className="flex flex-wrap gap-5">
-                <div className="w-[227px] rounded-lg border-[0.3px] border-[#D9D9D9] py-[5px] px-[6px] shadow-xl">
-                  <div>
-                    <img
-                      src={rectangleImage}
-                      className="rounded-lg"
-                      alt="Rectangle Image"
-                    />
-                  </div>
-                  <p className="font-semibold text-sm py-2">
-                    Document Management
-                  </p>
-                  <p className="font-medium text-[10px] text-[#707070]">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore etc
-                  </p>
-                  <button className="font-medium text-[12px] text-[#005AE6] w-full border border-[#005AE6] py-[10px] rounded-3xl mt-4 hover:text-white hover:bg-[#005AE6]">
-                    Explore
-                  </button>
-                </div>
-
-                <div className="w-[227px] rounded-lg border-[0.3px] border-[#D9D9D9] py-[5px] px-[6px] shadow-xl">
-                  <div>
-                    <img
-                      src={rectangleImage}
-                      className="rounded-lg"
-                      alt="Rectangle Image"
-                    />
-                  </div>
-                  <p className="font-semibold text-sm py-2">
-                    Document Management
-                  </p>
-                  <p className="font-medium text-[10px] text-[#707070]">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore etc
-                  </p>
-                  <button className="font-medium text-[12px] text-[#005AE6] w-full border border-[#005AE6] py-[10px] rounded-3xl mt-4">
-                    Explore
-                  </button>
-                </div>
-              </div>
+      {services.map((service) => (
+        <div key={service.id} className="w-[227px] rounded-lg border-[0.3px] border-[#D9D9D9] py-[5px] px-[6px] shadow-xl">
+          <div>
+            <img src={service.image}  className="rounded-lg" alt="Service Image" />
+          </div>
+          <p className="font-semibold text-sm py-2">{service.title}</p>
+          <p className="font-medium text-[10px] text-[#707070] h-[30px]">{service.description}</p>
+          <button  
+            onClick={() => navigate("/services")} 
+            className="font-medium text-[12px] text-[#005AE6] w-full border border-[#005AE6] py-[10px] rounded-3xl my-4 hover:text-white hover:bg-[#005AE6]"
+          >
+            Explore
+          </button>
+        </div>
+      ))}
+    </div>
             </div>
           </div>
     </div>

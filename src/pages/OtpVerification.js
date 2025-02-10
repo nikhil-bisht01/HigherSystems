@@ -6,8 +6,8 @@ import { sendEmailOtp, verifyOtp } from "../utils/functions";
 import { api } from "../utils/utility";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import Loader from "../components/Loader"
-import CustomAlert from "../components/CustomAlert";
+import Loader from "../Components/Loader"
+import CustomAlert from "../Components/CustomAlert";
 
 const OtpValidationPage = ({ isOpen, onClose, onValidate }) => {
   const [otp, setOtp] = useState(["", "", "", ""]);

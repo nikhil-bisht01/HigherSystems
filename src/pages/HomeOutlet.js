@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import Header from '../components/Header.js'
+import Header from '../Components/Header.js'
 import { Outlet } from 'react-router-dom'
-import Footer from '../components/Footer.js'
-import BackToTop from '../components/BackToTop.js'
+import Footer from '../Components/Footer.js'
+import BackToTop from '../Components/BackToTop.js'
 const HomeOutlet = () => {
   const [isVisible, setIsVisible] = useState(false);
   const toggleVisibility = () => {

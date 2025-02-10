@@ -1,9 +1,9 @@
 import React, { useCallback, useState } from 'react';
 import loginBg from '../assets/signup.png';
-import CustomAlert from '../components/CustomAlert.js';
-import Loader from "../components/Loader.js" 
-import LoginComponent from "../components/LoginComponent.js";
-import SignUpComponent from "../components/SignUpComponent.js";
+import CustomAlert from '../Components/CustomAlert.js';
+import Loader from "../Components/Loader.js" 
+import LoginComponent from "../Components/LoginComponent.js";
+import SignUpComponent from "../Components/SignUpComponent.js";
 const SignUp = () => {
   const url = window.location.pathname;
   const [toggleForm,setToggleForm] = useState(url === "/auth/login" ?true : false);

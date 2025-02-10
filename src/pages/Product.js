@@ -4,9 +4,9 @@ import {
   implementationAndSupportServices,
   itServices,
 } from "../utils/data";
-import QueryFormModal from "../components/QueryFormModal";
-import CustomAlert from "../components/CustomAlert";
-import Loader from "../components/Loader";
+import QueryFormModal from "../Components/QueryFormModal";
+import CustomAlert from "../Components/CustomAlert";
+import Loader from "../Components/Loader";
 const Product = () => {
 
   useEffect(() => {
