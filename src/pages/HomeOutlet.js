@@ -23,12 +23,12 @@ const HomeOutlet = () => {
   
   return (
     <div>
-        {/* <Header/> */}
+        <Header/>
         {isVisible && <BackToTop/>}
         <main>
             <Outlet/>
         </main>
-        {/* <Footer/> */}
+        <Footer/>
         
     </div>
   )

@@ -3,8 +3,8 @@ import { IoMdHome } from "react-icons/io";
 import profilePic from "../assets/profilepics1.png";
 export default function DashboardHeader() {
   return (
-    <div className='py-4 bg-white fixed z-10 '>
-     <div className="bg-[#005AE6] text-white h-[82px] rounded-lg w-[1000px]  flex justify-between items-center shadow-lg px-4   ">
+    <div className='pt-4 pr-4 bg-white   z-10  fixed w-[80vw]'>
+     <div className="bg-[#005AE6] text-white h-[82px] rounded-lg w-full  flex justify-between items-center shadow-lg px-4   ">
             <div className="flex gap-4">
               <IoMdHome size={24} />
               <p className="font-semibold text-[20px]">Dashboard</p>
