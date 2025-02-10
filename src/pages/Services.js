@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { businessServices, implementationAndSupportServices, itServices } from '../utils/data';
-import ServicePageCard from '../Components/ServicePageCard.js';
-
+import ServicePageCard from '../components/ServicePageCard'
 const Services = () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0; 

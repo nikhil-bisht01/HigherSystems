@@ -49,7 +49,7 @@ import React, { useContext } from 'react';
 import { UserDataContext } from '../context/UserContext';
 import useVerifyToken from '../hooks/useVerifyToken';
 import { useNavigate } from 'react-router-dom';
-import DashboardView from '../Components/DashboardView'
+import DashboardView from '../components/DashboardView'
 
 export default function DashboardPartner() {
   useVerifyToken();

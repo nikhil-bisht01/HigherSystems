@@ -2,7 +2,7 @@ import crmImage from '../assets/crm.png'
 import assets from "../assets/assestImg.png";
 import leave from "../assets/leaveManagement.png";
 import humanResource from "../assets/humanResource.png"
-import document from "../assets/Document.png"
+import document from "../assets/document.png"
 import it_infrastructure_solution from "../assets/it_service.png";
 import business_solution from "../assets/business_solution.png";
 import implementation_support from "../assets/Implementation_support.png";

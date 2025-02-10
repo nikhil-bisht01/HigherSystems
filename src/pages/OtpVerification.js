@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from "react";
-import CustomAlert from "../Components/CustomAlert.js";
 import image from "../assets/otpBg.png";
 import userIcon from "../assets/user.png"
 import { UserDataContext } from "../context/UserContext";
@@ -7,7 +6,8 @@ import { sendEmailOtp, verifyOtp } from "../utils/functions";
 import { api } from "../utils/utility";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import Loader from "../Components/Loader.js";
+import Loader from "../components/Loader"
+import CustomAlert from "../components/CustomAlert";
 
 const OtpValidationPage = ({ isOpen, onClose, onValidate }) => {
   const [otp, setOtp] = useState(["", "", "", ""]);

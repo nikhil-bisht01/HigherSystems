@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { FaEye, FaEyeSlash } from 'react-icons/fa6';
 import { CiLock } from 'react-icons/ci';
 import { MdOutlineEmail } from 'react-icons/md';
-import CustomAlert from '../Components/CustomAlert';
+import CustomAlert from '../components/CustomAlert';
 import { validationFormInput } from '../utils/validation';
 
 const Login = () => {

@@ -5,6 +5,7 @@ import profilePic from "../assets/profilepics1.png";
 import profileImg from "../assets/profileImg.png";
 import { IoIosSearch } from "react-icons/io";
 import axios from 'axios';
+import { api } from '../utils/utility';
 // import { json } from 'express';
 export default function DashBoardContent() {
   const [userData, setUserData] = useState(null);
@@ -12,19 +13,22 @@ export default function DashBoardContent() {
 
   useEffect(() => {
     const fetchUserData = async () => {
+      //fetch token
       const token =JSON.parse( localStorage.getItem('higherIndia'))
-      console.log('Token:', token); // Log the token to ensure it is being retrieved
+      console.log('Token:', token); 
       try {
         if (!token) {
           console.error('No token found in localStorage');
           return;
         }
-        const response = await axios.get('http://higherindia.net:3440/customers', {
+        const response = await axios.get("https://demo.higherindia.net:3440/customers", {
           headers: {
             Authorization: `Bearer ${token.token}`,
           },
         });
-        const customer = response.data[0]; // Assuming first customer for now
+        console.log(response);
+        
+        const customer = response.data[0]; 
         setUserData(customer);
       } catch (error) {
         console.error('Error fetching user data:', error);

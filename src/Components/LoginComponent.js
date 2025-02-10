@@ -67,6 +67,7 @@ const LoginComponent = ({ toggleForm, animating, setNotification, setNotificatio
       };
       const url = `${api}/custlog/login`;
       const res = await axios.post(url, data);
+      console.log(res.data);
       localStorage.setItem("higherIndia",JSON.stringify(res.data));
       navigate("/user-dashboard");
     } catch (error) {
