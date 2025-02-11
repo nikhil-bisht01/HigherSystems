@@ -6,7 +6,7 @@ import {userDashBoardServices} from "../utils/data"
 
 export default function DashBoardContant2() {
   const serviceId = window.location.pathname.split('/')[2]
-  const service = userDashBoardServices.filter((s)=>s.id == Number.parseInt(serviceId))
+  const service = userDashBoardServices.filter((s)=>s.id === Number.parseInt(serviceId))
   console.log()
   return (
     <div className=" font-inter bg-[#FAF9F6]  ">

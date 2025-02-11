@@ -1,1 +1,1 @@
-export const api = "https://intranet.higherindia.net:3443";
+export const api = "http://demo.higherindia.net:3006";

@@ -1,24 +1,30 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import rectangleImage from "../assets/Rectangle1.png";
 import profilePic from "../assets/profilepics1.png";
 import profileImg from "../assets/profileImg.png";
 import { IoIosSearch } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import {userDashBoardServices} from "../utils/data"
+import { UserDataContext } from '../context/UserContext';
+import { api } from '../utils/utility';
+import useVerifyToken from '../hooks/useVerifyToken';
 
 
 
 
 export default function DashBoardContent() {
+  useVerifyToken()
   const [customerData, setCustomerData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
-
+  const {user} = useContext(UserDataContext);
+  console.log(user);
+  
   const fetchData = async () => {
     try {
       const response = await fetch(
-        "https://intranet.higherindia.net:3443/custlog/2"
+        api+"/custlog/"+user.customerId
       );
       if (!response.ok) {
         throw new Error("Failed to fetch data");
@@ -39,8 +45,8 @@ export default function DashBoardContent() {
   };
 
   useEffect(() => {
-    fetchData();
-  }, []);
+    user?.customerId  && fetchData();
+  }, [user?.customerId]);
 
   // Handling loading and error states
   if (loading) {
