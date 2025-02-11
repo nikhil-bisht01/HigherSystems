@@ -60,7 +60,7 @@ function App() {
       
     },
     {
-      path:'/services',
+      path:'/services/:id',
       element:<DashBoardContant2/>
     }
   ]);

@@ -1,8 +1,12 @@
 import React from "react";
 import DashboardSidebar from "./DashboardSidebar";
 import DashboardHeader from "./DashboardHeader";
+import {userDashBoardServices} from "../utils/data"
+
 
 export default function DashBoardContant2() {
+  const service = userDashBoardServices.filter((s)=>s.id===2)
+  console.log(service)
   return (
     <div className=" font-inter bg-[#FAF9F6]  ">
       <div className="">
@@ -123,27 +127,13 @@ export default function DashBoardContant2() {
                 </div>
               </div>
 
-<div className="justify-end flex">
-  <button className="rounded-lg bg-green-500 text-white font-medium py-3 px-5 mt-5  ">Buy Product</button>
-</div>
-
+              <div className="justify-end flex">
+                <button className="rounded-lg bg-green-500 text-white font-medium py-3 px-5 mt-5  ">
+                  Buy Product
+                </button>
+              </div>
             </div>
           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
       </div>
     </div>

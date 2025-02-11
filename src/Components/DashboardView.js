@@ -13,7 +13,7 @@ import DashBoardContent from "./DashBoardContent";
 
 
 
-export default function DashboardView() {
+export default function DashboardView( {user}) {
   return (
     <div className=" font-inter bg-[#FAF9F6]  ">
       <div className="">
@@ -23,12 +23,11 @@ export default function DashboardView() {
         {/* Main View */}
         <div className="  ml-[20vw]  ">
           {/* Header */}
-          <DashboardHeader />
+          <DashboardHeader user={user}  />
 
 
 
-<DashBoardContent/>
-          {/* <DashBoardContant2/> */}
+<DashBoardContent user={user} />
 
          
         </div>

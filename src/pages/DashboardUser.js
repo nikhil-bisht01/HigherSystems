@@ -62,7 +62,7 @@ export default function DashboardPartner() {
     }
   return (
     <div>
-      <DashboardView/>
+      <DashboardView user={user} />
     </div>
   )
 }
