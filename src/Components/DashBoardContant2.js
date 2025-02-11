@@ -5,8 +5,9 @@ import {userDashBoardServices} from "../utils/data"
 
 
 export default function DashBoardContant2() {
-  const service = userDashBoardServices.filter((s)=>s.id===2)
-  console.log(service)
+  const serviceId = window.location.pathname.split('/')[2]
+  const service = userDashBoardServices.filter((s)=>s.id == Number.parseInt(serviceId))
+  console.log()
   return (
     <div className=" font-inter bg-[#FAF9F6]  ">
       <div className="">
@@ -21,7 +22,7 @@ export default function DashBoardContant2() {
           <div className="pt-[116px] pb-10">
             <div className="border-[#DDDDDD] border-[1px] rounded-lg max-w-[840px] px-8 py-5  ">
               <p className="font-semibold text-[20px] text-[#00235A]">
-                Document Management
+                {service[0]?.title}
               </p>
               <p className="text-sm font-semibold text-[#00235A] py-2">
                 Subscription Plan

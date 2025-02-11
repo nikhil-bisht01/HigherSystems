@@ -3,7 +3,7 @@ import rectangleImage from "../assets/Rectangle1.png";
 import profilePic from "../assets/profilepics1.png";
 import profileImg from "../assets/profileImg.png";
 import { IoIosSearch } from "react-icons/io";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {userDashBoardServices} from "../utils/data"
 
 
@@ -15,30 +15,30 @@ export default function DashBoardContent() {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          "https://intranet.higherindia.net:3443/custlog/2"
-        );
-        if (!response.ok) {
-          throw new Error("Failed to fetch data");
-        }
-        const data = await response.json();
-        console.log("Fetched Data:", data); // Debugging log
-        if (Array.isArray(data) && data.length > 0) {
-          setCustomerData(data[0]); // Assuming the first object contains needed data
-        } else {
-          throw new Error("No data found");
-        }
-      } catch (error) {
-        console.error("Fetch Error:", error);
-        setError(error.message);
-      } finally {
-        setLoading(false);
+  const fetchData = async () => {
+    try {
+      const response = await fetch(
+        "https://intranet.higherindia.net:3443/custlog/2"
+      );
+      if (!response.ok) {
+        throw new Error("Failed to fetch data");
       }
-    };
+      const data = await response.json();
+      console.log("Fetched Data:", data); // Debugging log
+      if (Array.isArray(data) && data.length > 0) {
+        setCustomerData(data[0]); // Assuming the first object contains needed data
+      } else {
+        throw new Error("No data found");
+      }
+    } catch (error) {
+      console.error("Fetch Error:", error);
+      setError(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
 
+  useEffect(() => {
     fetchData();
   }, []);
 
@@ -51,47 +51,6 @@ export default function DashBoardContent() {
     return <div>Error: {error}</div>;
   }
 
-
-  const services = [
-    {
-      id: 1,
-      title: "Document Management",
-      description: "Manage your documents efficiently with our system.",
-      image: rectangleImage,
-    },
-    {
-      id: 2,
-      title: "Asset Management",
-      description: "Simplify your asset tracking and monitoring process.",
-      image: rectangleImage,
-    },
-    {
-      id: 3,
-      title: "Leave Management",
-      description: "Easily track and approve employee leaves.",
-      image: rectangleImage,
-    },
-    {
-      id: 4,
-      title: "Communication Service",
-      description: "Seamlessly connect with your team and clients.",
-      image: rectangleImage,
-    },
-    {
-      id: 5,
-      title: "Financial Planning",
-      description: "Plan your finances effectively for better growth.",
-      image: rectangleImage,
-    },
-    {
-      id: 6,
-      title: "Insurance Services",
-      description: "Secure your future with our reliable insurance plans.",
-      image: rectangleImage,
-    },
-  ];
-
-  
   return (
     <div>
        <div className="pb-10  pt-[116px] ">

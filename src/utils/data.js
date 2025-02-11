@@ -2,7 +2,7 @@ import crmImage from '../assets/crm.png'
 import assets from "../assets/assestImg.png";
 import leave from "../assets/leaveManagement.png";
 import humanResource from "../assets/humanResource.png"
-import document from "../assets/Document.png"
+import document from "../assets/document.png"
 import it_infrastructure_solution from "../assets/it_service.png";
 import business_solution from "../assets/business_solution.png";
 import implementation_support from "../assets/Implementation_support.png";
@@ -253,10 +253,6 @@ export const implementationAndSupportServices = [
     detailDescription:"Network design, implementation, and support form the backbone of a reliable and secure IT infrastructure. Our expert team designs customized network solutions tailored to your organization's specific needs, ensuring optimal performance, scalability, and security. From planning and architecture to the seamless implementation of hardware and software components, we create networks that empower your business to operate efficiently. Our ongoing support services include monitoring, troubleshooting, and regular updates to maintain network integrity and performance."
   },
 ];
-
-
-
-
 
 export const userDashBoardServices = [
   {
