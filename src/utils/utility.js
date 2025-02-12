@@ -1,0 +1,1 @@
+export const api = "https://intranet.higherindia.net:3443";
