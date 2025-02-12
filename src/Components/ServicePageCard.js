@@ -3,6 +3,8 @@ import { FaArrowRight } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
 const ServicePageCard = ({ card }) => {
+  console.log(card);
+  
   return (
     <div className="relative flex flex-col justify-between bg-white rounded-lg shadow-lg p-4 md:p-6 lg:p-8 text-center hover:shadow-2xl transition duration-300 cursor-pointer">
       {/* Top Icon */}

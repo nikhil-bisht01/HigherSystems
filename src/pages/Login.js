@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { FaEye, FaEyeSlash } from 'react-icons/fa6';
 import { CiLock } from 'react-icons/ci';
 import { MdOutlineEmail } from 'react-icons/md';
-import CustomAlert from '../components/CustomAlert';
+import CustomAlert from '../Components/CustomAlert';
 import { validationFormInput } from '../utils/validation';
 
 const Login = () => {
@@ -117,7 +117,7 @@ const Login = () => {
             Log In
           </button>
           <p className="text-center mt-2">
-            Don't have an account? <Link to="/signup" className="text-[#005AE6]">Create an Account</Link>
+            Don't have an account? <Link to="/auth/signup" className="text-[#005AE6]">Create an Account</Link>
           </p>
         </div>
       </div>

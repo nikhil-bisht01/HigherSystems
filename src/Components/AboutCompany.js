@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../assets/Implementation_support.png'
+import image from '../assets/aboutHigherCompany1.jpg'
 
 const AboutCompany = () => {
   return (
@@ -14,8 +14,8 @@ const AboutCompany = () => {
           Higher India Pvt. Ltd. is a leading company in software products and system integration, known for providing innovative and reliable solutions. We offer advanced software and IT integration services that help businesses grow, stay efficient, and achieve long-term success.
         </p>
       </div>
-      <div className='lg:w-[49%] mt-6 lg:mt-0'>
-        <img className='w-full h-auto object-cover' src={image} alt='about-company' />
+      <div className='lg:w-[49%] mt-6 lg:mt-0 h-[600px]'>
+        <img  className='h-full w-full' src={image} alt='about-company' />
       </div>
     </section>
   )
