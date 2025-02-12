@@ -5,17 +5,19 @@ import AboutUs from '../Components/AboutUs.js'
 import OurServices from '../Components/OurServices.js'
 import Contact from '../Components/Contact.js'
 import CarouselHomePage from '../Components/CarouselHomePage.js'
+import Buss from '../Components/Buss.js'
 const Home = () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0; 
   return (
     <div>
-        <CarouselHomePage/>
+        {/* <CarouselHomePage/>
         <OurServices/>
-        <AboutCompany/>
-        <AboutUs/>
+        <AboutCompany/> */}
+        <Buss/>
+        {/* <AboutUs/>
         <Contact/>
-        <AddressSection/>
+        <AddressSection/> */}
         
     </div>
   )

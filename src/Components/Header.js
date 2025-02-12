@@ -6,6 +6,8 @@ import { UserDataContext } from "../context/UserContext";
 import useVerifyToken from "../hooks/useVerifyToken";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaArrowRight } from "react-icons/fa6";
+import LOGO2 from "../assets/SOFTTRAILS.svg";
+
 
 const Header = () => {
   const navigate = useNavigate();
@@ -27,7 +29,7 @@ const Header = () => {
       <div className="flex justify-between items-center h-16">
         {/* Logo Section */}
         <div className="flex-shrink-0">
-          <img src={logo} alt="Logo" className="h-12 md:h-16 w-auto" />
+          <img src={LOGO2} alt="Logo" className="rounded-full w-[123px] h-[24px]" />
         </div>
 
         {/* Hamburger Icon for Mobile */}
@@ -47,14 +49,14 @@ const Header = () => {
               Home
             </Link>
           </ScrollIntoView>
-          <ScrollIntoView selector="#services" alignToTop={true}>
+          {/* <ScrollIntoView selector="#services" alignToTop={true}>
             <Link
               className="text-sm md:text-base text-black hover:text-blue-600 transition duration-300"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
               Services
             </Link>
-          </ScrollIntoView>
+          </ScrollIntoView> */}
           <ScrollIntoView selector="#about" alignToTop={true}>
             <Link
               className="text-sm md:text-base text-black hover:text-blue-600 transition duration-300"
