@@ -37,29 +37,57 @@
 
 import React from "react";
 import AboutusBanner from "../assets/AboutusBanner.png";
+import AboutusContent from "../assets/AboutusContent.png";
+
+import AboutusNikilsir from "../assets/AboutusNikilsir.png";
+
+import AboutusPankaj from "../assets/AboutusPankaj.png";
+
+import AboutusTeam from "../assets/AboutusTeam.png";
+
 import AboutuslaptopPhoto from "../assets/AboutuslaptopPhoto.png";
 import { coreComponents } from "../utils/data";
+import { motion } from "framer-motion";
+
 
 export default function AboutUs() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+
+
+  const logos = [
+    "/logo1.png",
+    "/logo2.png",
+    "/logo3.png",
+    "/logo4.png",
+    "/logo5.png",
+    "/logo6.png",
+    "/logo7.png",
+    "/logo8.png",
+    "/logo9.png",
+    "/logo10.png",
+  ];
   return (
     <div>
      <div className="relative">
   <img src={AboutusBanner} className="w-full h-[400px] object-cover" alt="Profile Pic" />
+  <div className="text-white absolute z-10 top-10 left-1/2 -translate-x-1/2 text-center">
+  <p className="text-[50px] font-bold ">About us</p>
+    <p className="text-[18px] font-medium  max-w-[700px]">Leveraging our skilled team and customer-centric approach, we empower businesses to achieve their digital goals.</p>
+  </div>
   <div className="absolute top-[280px] left-1/2 -translate-x-1/2 flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-11 items-center w-full px-4">
     <img
-      src={AboutusBanner}
+      src={AboutusPankaj}
       className="w-[120px] h-[120px] sm:w-[180px] sm:h-[180px] md:w-[250px] md:h-[250px] lg:w-[287px] lg:h-[287px] rounded-2xl"
       alt="Profile Pic"
     />
     <img
-      src={AboutusBanner}
+      src={AboutusNikilsir}
       className="w-[120px] h-[90px] sm:w-[180px] sm:h-[130px] md:w-[250px] md:h-[180px] lg:w-[287px] lg:h-[198px] rounded-2xl"
       alt="Profile Pic"
     />
     <img
-      src={AboutusBanner}
+      src={AboutusTeam}
       className="w-[120px] h-[120px] sm:w-[180px] sm:h-[180px] md:w-[250px] md:h-[250px] lg:w-[287px] lg:h-[287px] rounded-2xl"
       alt="Profile Pic"
     />
@@ -96,9 +124,9 @@ export default function AboutUs() {
 </div>
 
 
-      <div className="flex md:flex-row flex-col items-center px-[100px] py-28 gap-11">
+      <div className="flex md:flex-row flex-col items-center px-[100px] py-24 gap-11">
         <img
-          src={AboutusBanner}
+          src={AboutusContent}
           className=" w-[504px] h-[332px] rounded-lg  "
           alt="Profile Pic "
         />
@@ -158,7 +186,7 @@ export default function AboutUs() {
           </div>
         </div>
       </div> */}
-      {/* <div className="bg-gray-50 py-10 px-6 lg:px-20">
+      <div className="bg-gray-50  px-6 lg:px-20">
         <section>
           <h2 className="text-2xl font-bold text-[#005AE6] mb-10 text-center">
             Core Competencies{" "}
@@ -177,7 +205,29 @@ export default function AboutUs() {
             ))}
           </div>
         </section>
-      </div> */}
+      </div>
+
+
+
+
+
+      <div className="overflow-hidden bg-gray-900 py-4 my-10">
+      <motion.div
+        className="flex space-x-10 w-max"
+        animate={{ x: ["0%", "-50%"] }}
+        transition={{ ease: "linear", duration: 10, repeat: Infinity }}
+      >
+        {/* Duplicate Logos to Ensure Seamless Loop */}
+        {[...logos, ...logos].map((logo, index) => (
+          <img
+            key={index}
+            src={logo}
+            alt={`Company Logo ${index + 1}`}
+            className="w-32 h-auto object-contain"
+          />
+        ))}
+      </motion.div>
+    </div>
     </div>
   );
 }
