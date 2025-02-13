@@ -19,19 +19,11 @@ import rectangleImage from "../assets/Rectangle1.png";
 
 export const slides = [
     {
-      title:"Leave Management System",
-      des:"Efficiently manage employee absences with a streamlined system that automates leave requests, approvals, and tracking. Enhance workforce productivity and simplify leave management processes.",
-      image:leave,
-      queryUrl:"#",
-      moreDetailsUrl:"#",
-      backgroundColor:"#4E3066"
-    },
-    {
       title:"Asset Management System",
       des:"Streamline resource utilization with a system that tracks, manages, and maintains assets in real-time. Minimize losses, improve accountability, and optimize asset lifecycle efficiency.",
       image:assets,
       queryUrl:"#",
-      moreDetailsUrl:"#",
+      moreDetailsUrl:"/product/enterprise-asset-management",
       backgroundColor:"#245B70"
     },
     {
@@ -39,7 +31,7 @@ export const slides = [
       des:"Transform HR operations with an integrated Human Resource Management System that handles recruitment, payroll, performance, and employee engagement.",
       image:humanResource,
       queryUrl:"#",
-      moreDetailsUrl:"#",
+      moreDetailsUrl:"/product/human-resource-management",
       backgroundColor:"#0F3E85"
     },
     {
@@ -47,7 +39,7 @@ export const slides = [
       des:"Securely store, organize, and retrieve critical documents with ease. Simplify collaboration and improve efficiency through a centralized digital repository.",
       image:document,
       queryUrl:"#",
-      moreDetailsUrl:"#",
+      moreDetailsUrl:"/product/document-management",
       backgroundColor:"#542D26"
     },
     {
@@ -55,9 +47,17 @@ export const slides = [
       des:"Enhance customer satisfaction and accelerate sales with a robust CRM system. Efficiently manage leads, build strong relationships, and deliver personalized interactions effortlessl",
       image:crmImage,
       queryUrl:"#",
-      moreDetailsUrl:"#",
+      moreDetailsUrl:"/product/customer-relation-management",
       backgroundColor:"#6F2D2D"
     },
+    {
+      title:"Leave Management System",
+      des:"Efficiently manage employee absences with a streamlined system that automates leave requests, approvals, and tracking. Enhance workforce productivity and simplify leave management processes.",
+      image:leave,
+      queryUrl:"#",
+      moreDetailsUrl:"#",
+      backgroundColor:"#4E3066"
+    }
   ]
 export const services =[
     {
