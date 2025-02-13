@@ -101,77 +101,77 @@ export const itServices = [
     title: "Cloud Computing",
     description: "Empower your business with scalable and flexible cloud solutions.",
     icon: "☁️", // Cloud icon
-    url: "/product/cloud-computing",
+    // url: "/product/cloud-computing",
     detailDescription: "Cloud computing is revolutionizing the way businesses operate, offering unparalleled flexibility, scalability, and efficiency. By leveraging the power of the cloud, businesses can reduce costs, enhance collaboration, and access critical data and applications from anywhere in the world. At Higher India Pvt. Ltd., we specialize in providing top-tier cloud computing solutions that align with your business goals and drive innovation. Our consultants work closely with your team to develop a customized cloud strategy that aligns with your business objectives. At Higher India, we pride ourselves on delivering cloud solutions that are tailored to your unique business needs. We’ve helped businesses across various industries transform their operations with cloud technology. We partner with leading cloud providers like AWS Authorities to bring you the best solutions available. Our strong relationships with the providers ensure that you receive the highest level of service and support. Our cloud computing solutions are designed to meet the needs of a wide range of industries, including: Finance, Healthcare, Retail, Manufacturing, Education, Government."
   },
   {
     title: "Network & Wifi",
     description: "Ensure seamless connectivity and high-speed internet access.",
     icon: "📶", // Wi-Fi icon
-    url: "/product/network-wifi",
+    // url: "/product/network-wifi",
     detailDescription:"Higher India Pvt Ltd specializes in delivering comprehensive networking solutions tailored to your specific needs. From the initial design and implementation of your network infrastructure to ongoing optimization, troubleshooting, and management, we provide expert guidance and support every step of the way. Our team is dedicated to ensuring that your network operates at peak performance, enabling seamless communication, efficient data sharing, and uninterrupted access to essential online resources. With our expertise in network design, WiFi optimization, troubleshooting, and management, you can trust us to build and maintain a network that empowers your business and drives success in the digital age."
   },
   {
     title: "Virtualization",
     description: "Maximize efficiency by running multiple virtual systems on a single machine.",
     icon: "🖥️", // Virtual system icon
-    url: "/product/virtualization",
+    // url: "/product/virtualization",
     detailDescription:"Virtualization is the process of creating virtual versions of physical hardware, including servers, storage devices, and networks. By abstracting hardware through software, virtualization allows multiple virtual machines to run on a single physical device, optimizing resource use, and providing greater flexibility and scalability. At Higher India Pvt. Ltd., we bring extensive expertise in virtualization technologies to help you optimize your IT infrastructure. Our solutions are designed to reduce costs, improve efficiency, and enhance flexibility, enabling your business to adapt to changing demands. We partner with industry leaders like VMware, Microsoft, Cisco, Checkpoint, Aruba and TP -link to deliver cutting-edge virtualization solutions that meet your unique needs. Our virtualization services are designed to benefit a wide range of industries, including: Finance, Healthcare, Retail, Manufacturing, Education, Government. Virtualization offers numerous benefits, including reduced hardware costs, improved resource utilization, enhanced scalability, and simplified management."
   },
   {
     title: "Privileged Identity Management",
     description: "Manage and secure access to critical resources with advanced identity solutions.",
     icon: "🔑", // Key icon
-    url: "/product/privileged-identity-management",
+    // url: "/product/privileged-identity-management",
     detailDescription:"Privileged Identity Management (PIM) is essential for safeguarding the identities that have elevated access within your organization. These privileged identities, such as administrators or superusers, are often targeted by cybercriminals due to their broad access to critical systems and data. Our PIM services focus on managing, monitoring, and securing these high-risk identities to prevent unauthorized access and potential security breaches"
   },
   {
     title: "Privileged Access Management",
     description: "Safeguard sensitive information with robust access control systems.",
     icon: "🔐", // Lock icon
-    url: "/product/privileged-access-management",
+    // url: "/product/privileged-access-management",
     detailDescription :"Privileged Access Management (PAM) is a crucial component of any robust security strategy. PAM focuses on controlling and monitoring access to critical systems and sensitive data by privileged accounts. Our PAM services provide comprehensive solutions to ensure that privileged access is tightly managed, minimizing the risk of unauthorized access and potential breaches"
   },
   {
     title: "Security System",
     description: "Protect your organization with comprehensive surveillance and monitoring solutions.",
     icon: "🛡️", // Shield icon
-    url: "/product/security-system",
+    // url: "/product/security-system",
     detailDescription:"A comprehensive security system is essential for protecting your organization from a wide range of threats, both physical and digital. It integrates various technologies and strategies, such as surveillance cameras, access control systems, alarm systems, and cybersecurity measures, to provide a multi-layered defense. These systems work together to monitor and secure your premises, detect unauthorized access, and safeguard critical data. With features like real-time monitoring, automated alerts, and advanced threat detection, a robust security system ensures that your assets, employees, and sensitive information remain protected from potential risks. Investing in a reliable security system not only enhances safety but also provides peace of mind and business continuity."
   },
   {
     title: "Data Security",
     description: "Secure your data from breaches with cutting-edge encryption and protection tools.",
     icon: "🔒", // Closed lock icon
-    url: "/product/data-security",
+    // url: "/product/data-security",
     detailDescription:"Data security is a critical aspect of protecting your organization's sensitive information from unauthorized access, breaches, and cyber threats. It involves implementing robust measures such as encryption, access controls, and multi-factor authentication to safeguard data throughout its lifecycle—whether in storage, transit, or during processing. By preventing unauthorized access, data security solutions help maintain the confidentiality, integrity, and availability of your information. These solutions also ensure compliance with industry regulations, helping you avoid costly fines and reputation damage. With comprehensive data security in place, you can confidently manage your business while protecting valuable assets from evolving cyber risks."
   },
   {
     title: "Firewall & Gateway Security",
     description: "Defend your network perimeter with advanced firewall and gateway solutions.",
     icon: "🚪", // Door icon
-    url: "/product/firewall-gateway-security",
+    // url: "/product/firewall-gateway-security",
     detailDescription:"Firewall security services are essential for safeguarding your organization's digital assets from cyber threats. These services act as a protective barrier between your internal network and external entities, filtering incoming and outgoing traffic based on predefined security rules. By identifying and blocking malicious activities such as hacking attempts, malware, and unauthorized access, firewall solutions ensure your sensitive data remains secure. With advanced features like intrusion prevention, real-time monitoring, and customizable policies, firewall security services not only enhance the protection of your network but also ensure compliance with industry standards, reducing the risk of data breaches and cyberattacks."
   },
   {
     title: "Storage & Backup Solutions",
     description: "Safeguard your data with reliable storage and backup services.",
     icon: "💾", // Floppy disk icon
-    url: "/product/storage-backup-solutions",
+    // url: "/product/storage-backup-solutions",
     detailDescription:"Storage and backup solutions are essential for managing and safeguarding your business’s critical data. Storage solutions ensure that your data is organized, accessible, and scalable, while backup solutions protect your data from loss or corruption by creating copies that can be restored in case of an emergency. Our enterprise storage solutions provide scalable and secure data storage options that grow with your business. Whether you need on-premises storage, cloud storage, or a hybrid solution, we design and implement systems that meet your unique needs"
   },
   {
     title: "Security Information & Event Management",
     description: "Monitor and analyze security events to prevent potential threats.",
     icon: "📊", // Bar chart icon
-    url: "/product/security-information-event-management",
+    // url: "/product/security-information-event-management",
     detailDescription:"In today's complex digital landscape, safeguarding your business against cyber threats is more critical than ever. Our Security Information and Event Management (SIEM) services offer a comprehensive approach to monitoring, detecting, and responding to security incidents in real time. SIEM, combines both security information management(SIM) and security event management(SEM) into one security management system. SIEM technology collects event log data from a range of sources, identify activity that deviates from the norms with real-time analysis, and takes appropriate action."
   },
   {
     title: "IT Managed Services",
     description: "Delegate IT management to ensure smooth operations and business continuity.",
     icon: "🛠️", // Wrench and hammer icon
-    url: "/product/it-managed-services",
+    // url: "/product/it-managed-services",
     detailDescription:"Annual Maintenance Contracts (AMCs)--We provide reliable AMC services to keep your IT infrastructure in optimal condition. Our proactive approach ensures regular maintenance, minimizing downtime and preventing potential issues before they impact your business.Facility Management Services (FMS)--Our FMS solutions cover end-to-end management of IT facilities, including hardware, software, and network management. We ensure that your IT environment is always operational, allowing your business to focus on its core activities."
   },
 ];
@@ -216,21 +216,21 @@ export const businessServices = [
     title: "Directory Service",
     description: "Consider accessability guidelines to make your service cards usable by everyone",
     icon: "📊", // Chart icon
-    url: "/product/directory-service",
+    // url: "/product/directory-service",
     detailDescription:"Our core product, Inventory Management Solutions, completely transforms how businesses handle their inventory procedures. Our Inventory Management Solutions provide unmatched efficiency and control over supply chain operations because to painstaking attention to detail and a thorough grasp of industry needs. Our solutions optimize stock replenishment, reduce procurement procedures, and give real-time visibility into inventory levels while seamlessly integrating with current systems.Our inventory management solutions serve a wide range of industry verticals, from startups to major corporations, enabling businesses to remain flexible, competitive, and ahead of market trends."
   },
   {
     title: "Content Management",
     description: "Reate and manage digital content",
     icon: "💻", // Laptop icon
-    url: "/product/content-management",
+    // url: "/product/content-management",
     detailDescription:"With specialized industry knowledge and a strong network of partners, we empower our customers to stay ahead in their respective fields. Our comprehensive professional services and support teams guide customers through every stage of their Digital Transformation journey. By bridging the gap between digital vision and reality, we enable accelerated transformation across platforms, backed by strategic guidance, operational support, and training. Our agile and adaptive approach ensures we meet consumer demands effectively. With an innovative, goal-centric team, we're committed to developing, deploying, supporting, and evolving products and services to drive success."
   },
   {
     title: "Enterprise-Level Software Solution",
     description: "The solution should be handle increase traffic and data volumes",
     icon: "💻", // Laptop icon
-    url: "/product/content-management",
+    // url: "/product/content-management",
     detailDescription:"With specialized industry knowledge and a strong network of partners, we empower our customers to stay ahead in their respective fields. Our comprehensive professional services and support teams guide customers through every stage of their Digital Transformation journey. By bridging the gap between digital vision and reality, we enable accelerated transformation across platforms, backed by strategic guidance, operational support, and training. Our agile and adaptive approach ensures we meet consumer demands effectively. With an innovative, goal-centric team, we're committed to developing, deploying, supporting, and evolving products and services to drive success."
   },
 ];
@@ -240,28 +240,28 @@ export const implementationAndSupportServices = [
     title: "Oracle Utilities Application Framework Implementation",
     description: "Deploy and optimize Oracle Utilities to enhance operational efficiency and scalability.",
     icon: "⚙️", // Gear icon
-    url: "/product/oracle-utilities-framework-implementation",
+    // url: "/product/oracle-utilities-framework-implementation",
     detailDescription:"Higher India strategically leverages Oracle Utilities Application Framework (OUAF) to address utility companies' complex needs, providing tailored solutions that optimize operations and enhance customer satisfaction. Seamlessly integrating OUAF with existing systems ensures a smooth transition without disrupting daily operations. With our expertise and Oracle's cutting-edge technology, utility businesses can confidently embrace digital transformation, maintain their competitive edge, and optimize operations. Additionally, we offer a suite of Oracle solutions, including IAM, OUD, SOA, WebCenter Portal, and Content."
   },
   {
     title: "Active Directory Implementation",
     description: "Set up and manage Active Directory to centralize and streamline IT resource management.",
     icon: "🛠️", // Wrench and hammer icon
-    url: "/product/active-directory-implementation",
+    // url: "/product/active-directory-implementation",
     detailDescription:"Higher India implements Active Directory (AD) to centralize and optimize identity and access management within enterprises. AD serves as a single directory service, efficiently controlling network-wide user accounts, group memberships, and access rights. By implementing centralized authentication and permission procedures, AD reduces the risk of unauthorized access and security breaches while enhancing security. It also simplifies administration tasks such as group policy enforcement, password management, and user provisioning, increasing operational effectiveness and reducing management overhead."
   },
   {
     title: "Firewall Implementation & Support",
     description: "Implement robust firewall solutions to safeguard networks from unauthorized access.",
     icon: "🛡️", // Shield icon
-    url: "/product/firewall-implementation-support",
+    // url: "/product/firewall-implementation-support",
     detailDescription:"irewall implementation and support are critical components of a comprehensive network security strategy. A firewall acts as a barrier between a trusted internal network and untrusted external networks, blocking unauthorized access while allowing legitimate traffic. Our firewall implementation services ensure that your security infrastructure is configured to protect sensitive data, mitigate threats, and prevent cyberattacks. We tailor firewall solutions to your organization's unique requirements, providing ongoing support, including updates, performance monitoring, and incident response"
   },
   {
     title: "Network Design Implementation & Support",
     description: "Design, implement, and maintain high-performance networks for seamless connectivity.",
     icon: "🌐", // Globe icon
-    url: "/product/network-design-implementation-support",
+    // url: "/product/network-design-implementation-support",
     detailDescription:"Network design, implementation, and support form the backbone of a reliable and secure IT infrastructure. Our expert team designs customized network solutions tailored to your organization's specific needs, ensuring optimal performance, scalability, and security. From planning and architecture to the seamless implementation of hardware and software components, we create networks that empower your business to operate efficiently. Our ongoing support services include monitoring, troubleshooting, and regular updates to maintain network integrity and performance."
   },
 ];
