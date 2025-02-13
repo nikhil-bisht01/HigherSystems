@@ -48,6 +48,22 @@ import AboutusTeam from "../assets/AboutusTeam.png";
 import AboutuslaptopPhoto from "../assets/AboutuslaptopPhoto.png";
 import { coreComponents } from "../utils/data";
 import { motion } from "framer-motion";
+import logo1 from "../assets/logo1.svg";
+import logo2 from "../assets/logo2.svg";
+import logo3 from "../assets/logo3.svg";
+import logo4 from "../assets/logo4.svg";
+import logo5 from "../assets/logo5.svg";
+import logo6 from "../assets/logo6.svg";
+import logo7 from "../assets/logo7.svg";
+import logo8 from "../assets/logo8.svg";
+import logo9 from "../assets/logo9.svg";
+import logo10 from "../assets/logo10.svg";
+import logo11 from "../assets/logo11.svg";
+import logo12 from "../assets/logo12.svg";
+
+
+
+
 
 
 export default function AboutUs() {
@@ -56,17 +72,19 @@ export default function AboutUs() {
 
 
   const logos = [
-    "/logo1.png",
-    "/logo2.png",
-    "/logo3.png",
-    "/logo4.png",
-    "/logo5.png",
-    "/logo6.png",
-    "/logo7.png",
-    "/logo8.png",
-    "/logo9.png",
-    "/logo10.png",
-  ];
+    { image: logo1 },
+    { image: logo2 }, // Add other logos as needed
+    { image: logo4 },
+    { image: logo5 },
+    { image: logo6 },
+    { image: logo7 },
+    { image: logo8 },
+    { image: logo9 },
+    { image: logo10 },
+    { image: logo11 },
+    { image: logo12 },
+
+ ];
   return (
     <div>
      <div className="relative">
@@ -145,47 +163,7 @@ export default function AboutUs() {
         </div>
       </div>
 
-      {/* <div>
-        <p className="text-[32px] font-semibold text-center">
-          CORE COMPETENCIES
-        </p>
-        <div className="flex gap-12 px-[100px] py-12">
-          <div>
-            <p className="text-[24px] font-medium">Technical Expertise</p>
-            <p className="text-[18px] font-medium">
-              Higher India boasts a team of seasoned software engineers,
-              architects, and designers with expertise in the latest
-              technologies.This technical prowess enables the company to develop
-              innovative and scalable solutions tailored to meet the unique
-              needs of each client.
-            </p>
-          </div>
-          
-          <div>
-            <p className="text-[24px] font-medium">Industry Specialization</p>
-            <p className="text-[18px] font-medium">
-              The company has successfully served clients across diverse
-              industries. This broad industry exposure has equipped Higher India
-              with valuable insights and a nuanced understanding of
-              industryspecific challenges and opportunities.
-            </p>
-          </div>
-          <div>
-            <div>
-              <p className="text-[24px] font-medium">
-                Quality Assurance and Compliance{" "}
-              </p>
-              <p className="text-[18px] font-medium">
-                Higher India places a strong emphasis on quality assurance and
-                compliance with industry standards and regulations. Rigorous
-                testing protocols and adherence to best practices ensure that
-                the delivered solutions meet the highest quality standards and
-                are in compliance with relevant regulations.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> */}
+      
       <div className="bg-gray-50  px-6 lg:px-20">
         <section>
           <h2 className="text-2xl font-bold text-[#005AE6] mb-10 text-center">
@@ -195,7 +173,7 @@ export default function AboutUs() {
             {coreComponents.map((component, index) => (
               <div
                 key={index}
-                className="bg-white shadow-lg p-6 rounded-lg border-t-4 border-blue-600 transition duration-300 hover:scale-105"
+                className="bg-white border-[1px] border-[#D6D6D6] hover:shadow-lg p-6 rounded-lg border-t-4 transition duration-300 hover:scale-105"
               >
                 <h3 className="text-xl font-semibold text-[#005AE6] mb-2">
                   {component.title}
@@ -211,23 +189,23 @@ export default function AboutUs() {
 
 
 
-      <div className="overflow-hidden bg-gray-900 py-4 my-10">
-      <motion.div
-        className="flex space-x-10 w-max"
-        animate={{ x: ["0%", "-50%"] }}
-        transition={{ ease: "linear", duration: 10, repeat: Infinity }}
-      >
-        {/* Duplicate Logos to Ensure Seamless Loop */}
-        {[...logos, ...logos].map((logo, index) => (
-          <img
-            key={index}
-            src={logo}
-            alt={`Company Logo ${index + 1}`}
-            className="w-32 h-auto object-contain"
-          />
-        ))}
-      </motion.div>
-    </div>
+      <div className="overflow-hidden  py-4 my-10">
+        <motion.div
+          className="flex space-x-10 w-max"
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{ ease: "linear", duration: 10, repeat: Infinity }}
+        >
+          {/* Duplicate Logos to Ensure Seamless Loop */}
+          {[...logos, ...logos].map((logo, index) => (
+            <img
+              key={index}
+              src={logo.image}  // Corrected here, referencing `logo.image`
+              alt={`Company Logo ${index + 1}`}
+              className="w-32 h-auto object-contain"
+            />
+          ))}
+        </motion.div>
+      </div>
     </div>
   );
 }
