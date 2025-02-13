@@ -1,7 +1,9 @@
 import React from "react";
 import it_infrastructure_solution from "../assets/it_service.png";
+import { useNavigate } from "react-router-dom";
 
 const CarouselCard = ({ s, formShow }) => {
+  const navigate = useNavigate();
   return (
     <div
       style={{ backgroundColor: s.backgroundColor }}
@@ -15,7 +17,7 @@ const CarouselCard = ({ s, formShow }) => {
           {s.des}
         </p>
         <div className="flex flex-col lg:flex-row">
-          <button className="bg-[#005AE6] border-[#005AE6] border-2 mb-4 lg:mb-0 lg:mr-5 px-6 py-2 rounded-lg text-white hover:bg-blue-700 transition duration-300 text-base">
+          <button onClick={()=>navigate(s.moreDetailsUrl)} className="bg-[#005AE6] border-[#005AE6] border-2 mb-4 lg:mb-0 lg:mr-5 px-6 py-2 rounded-lg text-white hover:bg-blue-700 transition duration-300 text-base">
             More Details
           </button>
           <button
