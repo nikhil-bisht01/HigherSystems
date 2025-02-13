@@ -54,6 +54,8 @@ import DashboardView from '../Components/DashboardView'
 export default function DashboardPartner() {
   useVerifyToken();
     const { user } = useContext(UserDataContext);
+    console.log(user);
+    
     const navigate = useNavigate()
     
     const handleLogout = () => {
@@ -62,7 +64,7 @@ export default function DashboardPartner() {
     }
   return (
     <div>
-      <DashboardView/>
+      <DashboardView user={user}  onLogout={handleLogout} />
     </div>
   )
 }
