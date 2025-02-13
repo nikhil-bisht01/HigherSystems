@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../assets/Implementation_support.png'
+import image from '../assets/aboutHigherCompany.jpg'
 import { FaArrowRight } from 'react-icons/fa6'
 import { useNavigate } from 'react-router-dom'
 
@@ -11,8 +11,8 @@ const AboutUs = () => {
       style={{ fontFamily: "Inter , sans-serif" }}
       className='px-6 sm:px-12 lg:px-36 pt-24 flex flex-col lg:flex-row justify-between'
     >
-      <div className='lg:w-[49%]'>
-        <img className='w-full h-auto object-cover' src={image} alt='about-company' />
+      <div className='lg:w-[49%] h-[600px]'>
+        <img className='h-full w-full' src={image} alt='about-company' />
       </div>
       <div className='lg:w-[49%] mt-6 lg:mt-0'>
         <h1 className='font-medium text-2xl mb-2 text-[#005AE6]'>About Us</h1>

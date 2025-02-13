@@ -2,12 +2,17 @@ import crmImage from '../assets/crm.png'
 import assets from "../assets/assestImg.png";
 import leave from "../assets/leaveManagement.png";
 import humanResource from "../assets/humanResource.png"
-// import document from "../assets/Document.png
+import document from "../assets/document.png"
 import it_infrastructure_solution from "../assets/it_service.png";
 import business_solution from "../assets/business_solution.png";
 import implementation_support from "../assets/Implementation_support.png";
-import rectangleImage from "../assets/Rectangle1.png";
-
+import assestImg from "../assets/assestImg3.png"
+import assestProductImg from "../assets/assestProductImg.png"
+import humanResource1 from "../assets/humanResourceImg.png"
+import humanResourceProduct from "../assets/humanResourceProductImg.png"
+import crmProduct from "../assets/crmProductImg.png"
+import communicationServiceProduct from "../assets/communicationServiceProduct.png"
+import documentManageProduct from "../assets/documentProdcutImg.png"
 
 export const slides = [
     {
@@ -173,53 +178,60 @@ export const itServices = [
 
 export const businessServices = [
   {
-    title: "Document Management System",
-    description: "Organize, store, and retrieve documents efficiently with a centralized system.",
+    title: "Enterprise Asset Management",
+    description: "Optimize Your Assets, Maximize Your Operations",
     icon: "📂", // Folder icon
-    url: "/product/document-management-system",
-    detailDescription:"Our Document Management System (DMS) delivered by our team provides a complete solution looking for document optimization based on document- related operations. Our DMS makes it possible to save, retrieve, and manage electronic documents effectively, which lowers the need for paper-based solutions and boosts output. With capabilities like version control, automated workflows, and document indexing, our system enables businesses to efficiently and securely store and retrieve information. Permissions that can be customized guarantee data integrity and adherence to legal standards, and smooth connection with current systems improves workflow effectiveness. Delivering cutting-edge DMS solutions that enhance document management and promote corporate success is our mission at Higher India"
+    url: "/product/enterprise-asset-management",
+    detailDescription:""
   },
   {
-    title: "Cloud Management System",
-    description: "Manage cloud resources and services to ensure optimal performance and scalability.",
+    title: "Human Resource Management",
+    description: "Elevate Your Workforce, Optimize Your Business",
+    icon: "📂", // Folder icon
+    url: "/product/human-resource-management",
+    detailDescription:""
+  },
+  {
+    title: "Customer Relation Management",
+    description: "Deliver Exceptional Customer Experience at every Touchpoint",
     icon: "☁️", // Cloud icon
-    url: "/product/cloud-management-system",
-    detailDescription:"The Content Management System (CMS) delivered by us website-based Content Management System simplifies content generation, organization, and dissemination. With the help of our CMS, customers can easily create, update, and manage digital material thanks to its user-friendly features. Our system guarantees effective content collaboration and approval procedures with features like version control, workflow automation, and customizable templates. Furthermore, our CMS easily interfaces with other corporate systems, enabling centralized management of various content kinds across a variety of channels. The content management system helps businesses to effectively engage their audience and maintain a dynamic online presence, whether it is through the management of papers, multimedia assets, or website content."
+    url: "/product/customer-relation-management",
+    detailDescription:"eaike version control, workflow automation, and customizable templates. Furthermore, our CMS easily interfaces with other corporate systems, enabling centralized management of various content kinds across a variety of channels. The content management system helps businesses to effectively engage their audience and maintain a dynamic online presence, whether it is through the management of papers, multimedia assets, or website content."
   },
   {
-    title: "Human Resource Management System",
-    description: "Streamline HR processes, including recruitment, payroll, and employee management.",
+    title: "Communication Service",
+    description: "Utilize the latest tools and techniques to deliver innovative solutions",
     icon: "👥", // People icon
-    url: "/product/human-resource-management-system",
+    url: "/product/communication-service",
     detailDescription:"Higher India have designed a Human Resource Management System (HRMS) solution that is painstakingly designed to transform how businesses handle their people resources. Our HRMS system, which was created as a flagship product, offers an extensive set of tools and features to simplify and maximize all facets of HR operations. Our solution unifies all HR operations into a single platform, streamlining administrative work and improving speed and accuracy. This includes hiring and onboarding as well as payroll processing, benefits administration, and performance monitoring. Our HRMS gives HR managers the tools they need to make data-driven choices, improve employee engagement, and propel organizational success."
   },
   {
-    title: "Asset Management System",
-    description: "Track and manage physical and digital assets to maximize their value.",
+    title: "Document Management",
+    description: "Emphasize the importance of data security and privacy",
     icon: "📦", // Box icon
-    url: "/product/asset-management-system",
+    url: "/product/document-management",
     detailDescription:"Higher India Company offers unique Asset Management System Solutions designed to revolutionize the management of digital and physical assets for businesses. Our cutting-edge product enables comprehensive tracking, monitoring, and optimization of asset lifecycles for enhanced performance and cost-efficiency. With robust capabilities including utilization optimization, depreciation management, maintenance scheduling, and real-time tracking, our solutions empower organizations to make informed decisions and maximize asset value. Boost productivity, accelerate corporate development, and streamline processes with our Asset Management System Solutions. Committed to quality and leveraging cutting-edge technology, Higher India is your trusted partner for innovative asset management."
   },
   {
-    title: "Inventory Management System",
-    description: "Monitor stock levels, orders, and deliveries with real-time inventory tracking.",
+    title: "Directory Service",
+    description: "Consider accessability guidelines to make your service cards usable by everyone",
     icon: "📊", // Chart icon
-    url: "/product/inventory-management-system",
+    url: "/product/directory-service",
     detailDescription:"Our core product, Inventory Management Solutions, completely transforms how businesses handle their inventory procedures. Our Inventory Management Solutions provide unmatched efficiency and control over supply chain operations because to painstaking attention to detail and a thorough grasp of industry needs. Our solutions optimize stock replenishment, reduce procurement procedures, and give real-time visibility into inventory levels while seamlessly integrating with current systems.Our inventory management solutions serve a wide range of industry verticals, from startups to major corporations, enabling businesses to remain flexible, competitive, and ahead of market trends."
   },
   {
-    title: "Digital Transformation & E-Learning",
-    description: "Drive business innovation and growth with digital tools and online learning platforms.",
+    title: "Content Management",
+    description: "Reate and manage digital content",
     icon: "💻", // Laptop icon
-    url: "/product/digital-transformation-e-learning",
+    url: "/product/content-management",
     detailDescription:"With specialized industry knowledge and a strong network of partners, we empower our customers to stay ahead in their respective fields. Our comprehensive professional services and support teams guide customers through every stage of their Digital Transformation journey. By bridging the gap between digital vision and reality, we enable accelerated transformation across platforms, backed by strategic guidance, operational support, and training. Our agile and adaptive approach ensures we meet consumer demands effectively. With an innovative, goal-centric team, we're committed to developing, deploying, supporting, and evolving products and services to drive success."
   },
   {
-    title: "Enterprise-Level Software Solutions",
-    description: "Develop custom software tailored to meet the specific needs of large organizations.",
-    icon: "🏢", // Office building icon
-    url: "/product/enterprise-level-software-solutions",
-    detailDescription:"At Higher India, we take great satisfaction in our ability to create innovative custom workflow solutions and enterprise-level software solutions that are suited to the changing demands of contemporary businesses. Our software product suite has been carefully designed to tackle the intricate problems that businesses in a range of sectors encounter. Our Enterprise-Level Software Solutions provide a wide range of modules and features that are intended to simplify essential company operations, with a particular focus on improving operational efficiency, productivity, and agility."
+    title: "Enterprise-Level Software Solution",
+    description: "The solution should be handle increase traffic and data volumes",
+    icon: "💻", // Laptop icon
+    url: "/product/content-management",
+    detailDescription:"With specialized industry knowledge and a strong network of partners, we empower our customers to stay ahead in their respective fields. Our comprehensive professional services and support teams guide customers through every stage of their Digital Transformation journey. By bridging the gap between digital vision and reality, we enable accelerated transformation across platforms, backed by strategic guidance, operational support, and training. Our agile and adaptive approach ensures we meet consumer demands effectively. With an innovative, goal-centric team, we're committed to developing, deploying, supporting, and evolving products and services to drive success."
   },
 ];
 
@@ -254,43 +266,167 @@ export const implementationAndSupportServices = [
   },
 ];
 
-export const userDashBoardServices = [
-  {
-    id: 1,
-    title: "Document Management",
-    description: "Manage your documents efficiently with our system.",
-    image: rectangleImage,
-  },
-  {
-    id: 2,
-    title: "Asset Management",
-    description: "Simplify your asset tracking and monitoring process.",
-    image: rectangleImage,
-  },
-  {
-    id: 3,
-    title: "Leave Management",
-    description: "Easily track and approve employee leaves.",
-    image: rectangleImage,
-  },
-  {
-    id: 4,
-    title: "Communication Service",
-    description: "Seamlessly connect with your team and clients.",
-    image: rectangleImage,
-  },
-  {
-    id: 5,
-    title: "Financial Planning",
-    description: "Plan your finances effectively for better growth.",
-    image: rectangleImage,
-  },
-  {
-    id: 6,
-    title: "Insurance Services",
-    description: "Secure your future with our reliable insurance plans.",
-    image: rectangleImage,
-  },
-];
+export const productsDetails = [ 
 
+  {
+    id:"1",
+    slug:"/product/enterprise-asset-management",
+    title: "Enterprise Asset Management",
+    description: "Real-Time Insights to track, manage and optimize assets.",
+    subDescription: "Empower your business with real-time asset tracking, management, and optimization. Gain valuable insights to make informed decisions and drive operational efficiency.",
+    descriptionText: "Designed to deliver a robust and seamless solution for tracking, managing, and optimizing enterprise assets. Gain real-time visibility and actionable insights for better control. Leverage data-driven intelligence to make informed decisions, enhance efficiency, reduce costs, and maximize asset performance.",
+    detailDescription:[
+      {
+        id:"1",
+        title:"Assets Centralization",
+        description:"Consolidate all your assets in one secure, easy-to-access platform. Our centralized system ensures you have real-time visibility and control over your entire asset inventory, driving better decision-making and improved operational efficiency.",
+      },
+      {
+        id:"2",
+        title:"Asset Approval Process",
+        description:"Streamline the approval of asset purchases, transfers, or disposals with our automated approval workflows. Our system ensures compliance, reduces bottlenecks, and speeds up decision-making, while maintaining full audit trails for accountability."
+      },
+      {
+        id:"3",
+        title:"Asset Lifecycle Management",
+        description:"Manage the complete lifecycle of your assets—from acquisition to disposal. Our solution helps you track and maintain assets throughout their lifespan, optimizing usage, minimizing downtime, and extending asset value."
+      },
+      {
+        id:"4",
+        title:"Asset Valuation",
+        description:"Accurately assess the value of your assets with our robust valuation tools. We provide real-time market insights and depreciation tracking, enabling you to make informed financial decisions and maintain precise asset records."
+      }
+    ],
+    images:assestImg,
+    image:assestProductImg
+  },
+  {
+    id:"2",
+    slug:"/product/human-resource-management",
+    title: "Human Resource Management",
+    description: "Empowering Workforce Efficiency, One Insight at a Time.",
+    subDescription: "Optimize your workforce with intelligent solutions that boost efficiency and performance.",
+    descriptionText: "Involves managing an organization's most valuable asset—its people. Our HRMS solution simplifies the entire employee lifecycle, from recruitment and onboarding to performance tracking and development. By providing real-time data and insights, we enable businesses to make informed decisions, enhance workforce efficiency, and foster a culture of continuous growth and improvement.",
+    detailDescription:[
+      {
+        id:"1",
+        title:"Employee Data Management",
+        description:"The system securely stores employee details and records, allowing easy access to documents and history. Role-based access ensures data security, while a self-service portal lets employees update their information.",
+      },
+      {
+        id:"2",
+        title:"User Roles & Access Control",
+        description:"Our HRMS allows role-based permissions, managing workflows and approval hierarchies. It secures sensitive data and tracks user activities for compliance and security."
+      },
+      {
+        id:"3",
+        title:"Organization Setup & Department Management",
+        description:"Manage the complete lifecycle of your assets—from acquisition to disposal. Our solution helps you track and maintain assets throughout their lifespan, optimizing usage, minimizing downtime, and extending asset value."
+      },
+      {
+        id:"4",
+        title:"Leave Management",
+        description:"Our HRMS simplifies leave requests and approvals, tracking balances and history in real-time. It supports custom leave policies and holiday calendars. Automated notifications keep everyone updated on approvals and schedules."
+      }
+    ],
+    images:humanResource1,
+    image:humanResourceProduct
+  },
+  {
+    id:"3",
+    slug:"/product/customer-relation-management",
+    title: "Customer Relationship Management",
+    description: "Building Stronger Customer Connections One Interaction at a Time",
+    subDescription: "Elevate Customer Engagement with Smart Solutions for Lasting Success",
+    descriptionText: "Simplifying customer management by organizing leads, tracking sales, and nurturing relationships. It uses smart automation and real-time insights to boost productivity, enhance customer satisfaction, and drive business growth. Seamlessly integrate with your existing systems for a unified workflow.",
+    detailDescription:[
+      {
+        id:"1",
+        title:"Centralized Customer Database",
+        description:"Stores all customer details and leads in one place, providing easy access to contact information, interaction history, and purchase records.",
+      },
+      {
+        id:"2",
+        title:"Lead Management",
+        description:"Efficiently organizes and tracks customer leads through the sales pipeline, ensuring no opportunity is missed and improving conversion rates."
+      },
+      {
+        id:"3",
+        title:"Seamless Integration",
+        description:"Integrates smoothly with other business solutions, enabling a unified workflow and consistent data across all platforms."
+      },
+      {
+        id:"4",
+        title:"Automation & Insights",
+        description:"Automates repetitive tasks and provides real-time insights, helping teams make informed decisions and enhance customer engagement."
+      }
+    ],
+    images:"",
+    image:crmProduct
+  },
+  {
+    id:"4",
+    slug:"/product/communication-service",
+    title: "Cummunication Service",
+    description: "Connecting Teams Seamlessly, One Message at a Time",
+    subDescription: "Enhance Team Communication with Intelligent Solutions for Seamless Collaboration and Productivity",
+    descriptionText: "Enables seamless connectivity and collaboration through reliable messaging and real-time notifications. It streamlines team interactions, enhances productivity, and ensures effective communication across all channels. Easily scalable to meet the needs of growing teams, it adapts effortlessly to dynamic business requirements.",
+    detailDescription:[
+      {
+        id:"1",
+        title:"Template Management",
+        description:"Stores all customer details and leads in one place, providing easy access to contact information, interaction history, and purchase records.Create and manage customizable templates for consistent messaging, ensuring clear and professional communication every time.",
+      },
+      {
+        id:"2",
+        title:"Module Mapping:",
+        description:"Map templates to specific modules, enabling targeted communication tailored to different business functions and workflows."
+      },
+      {
+        id:"3",
+        title:"Automated Notifications",
+        description:"Trigger notifications based on module events, sending timely updates and alerts via email or SMS to the relevant users"
+      },
+      {
+        id:"4",
+        title:"Multi-Channel Delivery",
+        description:"Seamlessly deliver messages through email or SMS, ensuring effective reach and engagement across preferred communication channels."
+      }
+    ],
+    images:"",
+    image:communicationServiceProduct
+  },
+  {
+    id:"5",
+    slug:"/product/document-management",
+    title: "Docuument Management",
+    description: "Manage Documents Seamlessly – Upload, Store, and Retrieve with Ease",
+    subDescription: "Organize Your Documents with Smart Solutions that Enhance Access and Efficiency",
+    descriptionText: "Easily upload, store, and retrieve documents in a secure, centralized location. It enhances organization and ensures quick access to files, improving team collaboration and productivity. With advanced search and version control, managing documents becomes efficient and seamless.",
+    detailDescription:[
+      {
+        id:"1",
+        title:"Centralized Storage",
+        description:"Securely stores all documents in one centralized location, ensuring easy access and organized file management.",
+      },
+      {
+        id:"2",
+        title:"Advanced Search & Retrieval",
+        description:"Quickly find documents using advanced search features, including keywords, tags, and filters for efficient retrieval."
+      },
+      {
+        id:"3",
+        title:"Version Control",
+        description:"Maintains version history to track changes, ensuring users access the latest updates while preserving previous versions."
+      },
+      {
+        id:"4",
+        title:"Access Control & Security",
+        description:"Provides role-based access permissions to protect sensitive information and maintain data confidentiality."
+      }
+    ],
+    images:"",
+    image:documentManageProduct
+  }
+]
 

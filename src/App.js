@@ -2,7 +2,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home';
 import HomeOutlet from './pages/HomeOutlet';
 import AboutUs from './pages/AboutUs';
-// import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import DashboardPartner from './pages/DashboardPartner';
 import OtpVerification from './pages/OtpVerification';
@@ -11,6 +10,7 @@ import Services from './pages/Services';
 import { useEffect } from 'react';
 import Product from './pages/Product';
 import DashBoardContant2 from './Components/DashBoardContant2';
+import IndividualServicePage from './pages/IndividualServicePage';
 
 function App() {
 
@@ -49,8 +49,12 @@ function App() {
         },
         {
           path:"/product/:options",
-          element:<Product/>
+          element:<IndividualServicePage/>
         },
+        {
+          path:"/our-services/product/:service",
+          element:<IndividualServicePage/>
+        }
        
       ]
     },

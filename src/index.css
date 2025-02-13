@@ -92,3 +92,8 @@ body{
   background-image: url('./assets/services.png');
   object-fit: cover;
 }
+
+
+.bg-image1{
+  background-image: url("./assets/assestImg2.jpg");
+}
