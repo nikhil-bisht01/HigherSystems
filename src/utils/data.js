@@ -2,7 +2,7 @@ import crmImage from '../assets/crm.png'
 import assets from "../assets/assestImg.png";
 import leave from "../assets/leaveManagement.png";
 import humanResource from "../assets/humanResource.png"
-import document from "../assets/document.png"
+import document from "../assets/Document.png"
 import it_infrastructure_solution from "../assets/it_service.png";
 import business_solution from "../assets/business_solution.png";
 import implementation_support from "../assets/Implementation_support.png";
@@ -13,6 +13,9 @@ import humanResourceProduct from "../assets/humanResourceProductImg.png"
 import crmProduct from "../assets/crmProductImg.png"
 import communicationServiceProduct from "../assets/communicationServiceProduct.png"
 import documentManageProduct from "../assets/documentProdcutImg.png"
+import rectangleImage from "../assets/Rectangle1.png";
+
+
 
 export const slides = [
     {
@@ -430,3 +433,41 @@ export const productsDetails = [
   }
 ]
 
+export const userDashBoardServices = [
+  {
+    id: 1,
+    title: "Document Management",
+    description: "Manage your documents efficiently with our system.",
+    image: rectangleImage,
+  },
+  {
+    id: 2,
+    title: "Asset Management",
+    description: "Simplify your asset tracking and monitoring process.",
+    image: rectangleImage,
+  },
+  {
+    id: 3,
+    title: "Leave Management",
+    description: "Easily track and approve employee leaves.",
+    image: rectangleImage,
+  },
+  {
+    id: 4,
+    title: "Communication Service",
+    description: "Seamlessly connect with your team and clients.",
+    image: rectangleImage,
+  },
+  {
+    id: 5,
+    title: "Financial Planning",
+    description: "Plan your finances effectively for better growth.",
+    image: rectangleImage,
+  },
+  {
+    id: 6,
+    title: "Insurance Services",
+    description: "Secure your future with our reliable insurance plans.",
+    image: rectangleImage,
+  },
+];

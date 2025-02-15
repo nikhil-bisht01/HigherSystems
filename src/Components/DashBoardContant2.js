@@ -1,8 +1,25 @@
 import React from "react";
 import DashboardSidebar from "./DashboardSidebar";
 import DashboardHeader from "./DashboardHeader";
+import {userDashBoardServices} from "../utils/data"
+
 
 export default function DashBoardContant2() {
+  const serviceId = window.location.pathname.split("/")[2];
+  const service = userDashBoardServices.find((s) => s.id === Number.parseInt(serviceId));
+
+  const handlePurchase = () => {
+    let purchasedServices = JSON.parse(localStorage.getItem("purchasedServices")) || [];
+
+    // Avoid duplicate purchases
+    if (!purchasedServices.some((s) => s.id === service?.id)) {
+      purchasedServices.push(service);
+      localStorage.setItem("purchasedServices", JSON.stringify(purchasedServices));
+    }
+
+    window.location.href = "/user-dashboard"; // Redirect back to Dashboard
+  };
+
   return (
     <div className=" font-inter bg-[#FAF9F6]  ">
       <div className="">
@@ -17,7 +34,8 @@ export default function DashBoardContant2() {
           <div className="pt-[116px] pb-10">
             <div className="border-[#DDDDDD] border-[1px] rounded-lg max-w-[840px] px-8 py-5  ">
               <p className="font-semibold text-[20px] text-[#00235A]">
-                Document Management
+                {/* {service[0]?.title} */}
+                {service?.title}
               </p>
               <p className="text-sm font-semibold text-[#00235A] py-2">
                 Subscription Plan
@@ -62,7 +80,10 @@ export default function DashBoardContant2() {
                   <p className="text-sm font-semibold text-[#00235A] py-2">
                     Enable auto renew
                   </p>
-                  <input type="radio" />
+                  <label className="relative inline-flex items-center cursor-pointer">
+  <input type="checkbox" className="sr-only peer" />
+  <div className="w-11 h-6 bg-gray-200 rounded-full peer -mt-3 peer-checked:bg-blue-600 peer-checked:after:translate-x-5 after:content-[''] after:absolute after:top-1 after:left-1 after:bg-white after:border after:rounded-full after:h-4 after:w-4 after:transition-all"></div>
+</label>
                 </div>
                 <p className="text-[#898989] text-[13px] font-medium">
                   This option; if checked, will renew your productive
@@ -123,27 +144,13 @@ export default function DashBoardContant2() {
                 </div>
               </div>
 
-<div className="justify-end flex">
-  <button className="rounded-lg bg-green-500 text-white font-medium py-3 px-5 mt-5  ">Buy Product</button>
-</div>
-
+              <div className="justify-end flex">
+              <button onClick={handlePurchase} className="rounded-lg bg-green-500 text-white font-medium py-3 px-5 mt-5">
+                Buy Product
+              </button>
+              </div>
             </div>
           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
       </div>
     </div>

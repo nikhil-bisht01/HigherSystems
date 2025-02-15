@@ -9,12 +9,12 @@ const AboutUs = () => {
     <section
       id='about'
       style={{ fontFamily: "Inter , sans-serif" }}
-      className='px-6 sm:px-12 lg:px-36 pt-24 flex flex-col lg:flex-row justify-between'
+      className='px-6 sm:px-12 lg:px-36  flex flex-col lg:flex-row justify-between items-center pt-10'
     >
-      <div className='lg:w-[49%] h-[600px]'>
-        <img className='h-full w-full' src={image} alt='about-company' />
+      <div className='lg:w-[49%] h-[500px] bg-black'>
+        {/* <img className='h-full w-full' src={image} alt='about-company' /> */}
       </div>
-      <div className='lg:w-[49%] mt-6 lg:mt-0'>
+      <div className='lg:w-[45%] mt-6 lg:mt-0'>
         <h1 className='font-medium text-2xl mb-2 text-[#005AE6]'>About Us</h1>
         <p className='font-medium text-lg'>
           Founded in 2014, Higher India has quickly become a global leader in software products and IT solutions. The company specializes in custom software development, IT integration, and cloud-based solutions. With a team of experienced professionals and a strong commitment to customer success, Higher India has delivered reliable and impactful solutions across various industries.
