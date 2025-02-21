@@ -124,14 +124,14 @@ const Header = () => {
                 Home
               </Link>
             </ScrollIntoView>
-            <ScrollIntoView selector="#services" alignToTop={true}>
+            {/* <ScrollIntoView selector="#services" alignToTop={true}>
               <Link
                 className="text-sm text-black hover:text-blue-600 transition duration-300"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 Services
               </Link>
-            </ScrollIntoView>
+            </ScrollIntoView> */}
             <ScrollIntoView selector="#about" alignToTop={true}>
               <Link
                 className="text-sm text-black hover:text-blue-600 transition duration-300"
