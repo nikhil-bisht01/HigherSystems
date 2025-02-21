@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div>
         <CarouselHomePage/>
-        <OurServices/>
+        {/* <OurServices/> */}
         {/* <AboutCompany/>  */}
         <Buss/>
         {/* <IndividualServicePage/> */}
