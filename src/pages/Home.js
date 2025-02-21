@@ -6,6 +6,8 @@ import OurServices from '../Components/OurServices.js'
 import Contact from '../Components/Contact.js'
 import CarouselHomePage from '../Components/CarouselHomePage.js'
 import Buss from '../Components/Buss.js'
+import IndividualServicePage from '../Components/IndividualServicePage.js'
+
 const Home = () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0; 
@@ -15,6 +17,10 @@ const Home = () => {
         <OurServices/>
         <AboutCompany/> */}
         <Buss/>
+        {/* <IndividualServicePage/> */}
+        {/* <AbouutUss/> */}
+        {/* <ABBOUUTUSSS/> */}
+        
         {/* <AboutUs/>
         <Contact/>
         <AddressSection/> */}

@@ -8,6 +8,24 @@ import business_solution from "../assets/business_solution.png";
 import implementation_support from "../assets/Implementation_support.png";
 import rectangleImage from "../assets/Rectangle1.png";
 
+import HumanResourceManagementicon from "../assets/HumanResourceManagementicon.svg";
+import Communicationserviceicon from "../assets/Communicationserviceicon.svg";
+import customerRelationManagementicon from "../assets/customerRelationManagementicon.svg";
+import DocumentManagementicon from "../assets/DocumentManagementicon.svg";
+import DirectoryServiceicon from "../assets/DirectoryServiceicon.svg";
+import ContentManagementicon from "../assets/ContentManagementicon.svg";
+import Enterprise from "../assets/Enterprise.svg";
+import EnterpriseAssetManagementicon from "../assets/EnterpriseAssetManagementicon.svg";
+
+import assestImg from "../assets/assestImg3.png"
+import assestProductImg from "../assets/assestProductImg.png"
+import humanResource1 from "../assets/humanResourceImg.png"
+import humanResourceProduct from "../assets/humanResourceProductImg.png"
+import crmProduct from "../assets/crmProductImg.png"
+import communicationServiceProduct from "../assets/communicationServiceProduct.png"
+import documentManageProduct from "../assets/documentProdcutImg.png"
+
+
 
 export const slides = [
     {
@@ -294,3 +312,227 @@ export const userDashBoardServices = [
 ];
 
 
+
+export const productsDetails = [ 
+
+  {
+    id:"1",
+    slug:"/product/enterprise-asset-management",
+    title: "Enterprise Asset Management",
+    description: "Real-Time Insights to track, manage and optimize assets.",
+    subDescription: "Empower your business with real-time asset tracking, management, and optimization. Gain valuable insights to make informed decisions and drive operational efficiency.",
+    descriptionText: "Designed to deliver a robust and seamless solution for tracking, managing, and optimizing enterprise assets. Gain real-time visibility and actionable insights for better control. Leverage data-driven intelligence to make informed decisions, enhance efficiency, reduce costs, and maximize asset performance.",
+    detailDescription:[
+      {
+        id:"1",
+        title:"Assets Centralization",
+        description:"Consolidate all your assets in one secure, easy-to-access platform. Our centralized system ensures you have real-time visibility and control over your entire asset inventory, driving better decision-making and improved operational efficiency.",
+      },
+      {
+        id:"2",
+        title:"Asset Approval Process",
+        description:"Streamline the approval of asset purchases, transfers, or disposals with our automated approval workflows. Our system ensures compliance, reduces bottlenecks, and speeds up decision-making, while maintaining full audit trails for accountability."
+      },
+      {
+        id:"3",
+        title:"Asset Lifecycle Management",
+        description:"Manage the complete lifecycle of your assets—from acquisition to disposal. Our solution helps you track and maintain assets throughout their lifespan, optimizing usage, minimizing downtime, and extending asset value."
+      },
+      {
+        id:"4",
+        title:"Asset Valuation",
+        description:"Accurately assess the value of your assets with our robust valuation tools. We provide real-time market insights and depreciation tracking, enabling you to make informed financial decisions and maintain precise asset records."
+      }
+    ],
+    images:assestImg,
+    image:assestProductImg
+  },
+  {
+    id:"2",
+    slug:"/product/human-resource-management",
+    title: "Human Resource Management",
+    description: "Empowering Workforce Efficiency, One Insight at a Time.",
+    subDescription: "Optimize your workforce with intelligent solutions that boost efficiency and performance.",
+    descriptionText: "Involves managing an organization's most valuable asset—its people. Our HRMS solution simplifies the entire employee lifecycle, from recruitment and onboarding to performance tracking and development. By providing real-time data and insights, we enable businesses to make informed decisions, enhance workforce efficiency, and foster a culture of continuous growth and improvement.",
+    detailDescription:[
+      {
+        id:"1",
+        title:"Employee Data Management",
+        description:"The system securely stores employee details and records, allowing easy access to documents and history. Role-based access ensures data security, while a self-service portal lets employees update their information.",
+      },
+      {
+        id:"2",
+        title:"User Roles & Access Control",
+        description:"Our HRMS allows role-based permissions, managing workflows and approval hierarchies. It secures sensitive data and tracks user activities for compliance and security."
+      },
+      {
+        id:"3",
+        title:"Organization Setup & Department Management",
+        description:"Manage the complete lifecycle of your assets—from acquisition to disposal. Our solution helps you track and maintain assets throughout their lifespan, optimizing usage, minimizing downtime, and extending asset value."
+      },
+      {
+        id:"4",
+        title:"Leave Management",
+        description:"Our HRMS simplifies leave requests and approvals, tracking balances and history in real-time. It supports custom leave policies and holiday calendars. Automated notifications keep everyone updated on approvals and schedules."
+      }
+    ],
+    images:humanResource1,
+    image:humanResourceProduct
+  },
+  {
+    id:"3",
+    slug:"/product/customer-relation-management",
+    title: "Customer Relationship Management",
+    description: "Building Stronger Customer Connections One Interaction at a Time",
+    subDescription: "Elevate Customer Engagement with Smart Solutions for Lasting Success",
+    descriptionText: "Simplifying customer management by organizing leads, tracking sales, and nurturing relationships. It uses smart automation and real-time insights to boost productivity, enhance customer satisfaction, and drive business growth. Seamlessly integrate with your existing systems for a unified workflow.",
+    detailDescription:[
+      {
+        id:"1",
+        title:"Centralized Customer Database",
+        description:"Stores all customer details and leads in one place, providing easy access to contact information, interaction history, and purchase records.",
+      },
+      {
+        id:"2",
+        title:"Lead Management",
+        description:"Efficiently organizes and tracks customer leads through the sales pipeline, ensuring no opportunity is missed and improving conversion rates."
+      },
+      {
+        id:"3",
+        title:"Seamless Integration",
+        description:"Integrates smoothly with other business solutions, enabling a unified workflow and consistent data across all platforms."
+      },
+      {
+        id:"4",
+        title:"Automation & Insights",
+        description:"Automates repetitive tasks and provides real-time insights, helping teams make informed decisions and enhance customer engagement."
+      }
+    ],
+    images:"",
+    image:crmProduct
+  },
+  {
+    id:"4",
+    slug:"/product/communication-service",
+    title: "Cummunication Service",
+    description: "Connecting Teams Seamlessly, One Message at a Time",
+    subDescription: "Enhance Team Communication with Intelligent Solutions for Seamless Collaboration and Productivity",
+    descriptionText: "Enables seamless connectivity and collaboration through reliable messaging and real-time notifications. It streamlines team interactions, enhances productivity, and ensures effective communication across all channels. Easily scalable to meet the needs of growing teams, it adapts effortlessly to dynamic business requirements.",
+    detailDescription:[
+      {
+        id:"1",
+        title:"Template Management",
+        description:"Stores all customer details and leads in one place, providing easy access to contact information, interaction history, and purchase records.Create and manage customizable templates for consistent messaging, ensuring clear and professional communication every time.",
+      },
+      {
+        id:"2",
+        title:"Module Mapping:",
+        description:"Map templates to specific modules, enabling targeted communication tailored to different business functions and workflows."
+      },
+      {
+        id:"3",
+        title:"Automated Notifications",
+        description:"Trigger notifications based on module events, sending timely updates and alerts via email or SMS to the relevant users"
+      },
+      {
+        id:"4",
+        title:"Multi-Channel Delivery",
+        description:"Seamlessly deliver messages through email or SMS, ensuring effective reach and engagement across preferred communication channels."
+      }
+    ],
+    images:"",
+    image:communicationServiceProduct
+  },
+  {
+    id:"5",
+    slug:"/product/document-management",
+    title: "Docuument Management",
+    description: "Manage Documents Seamlessly – Upload, Store, and Retrieve with Ease",
+    subDescription: "Organize Your Documents with Smart Solutions that Enhance Access and Efficiency",
+    descriptionText: "Easily upload, store, and retrieve documents in a secure, centralized location. It enhances organization and ensures quick access to files, improving team collaboration and productivity. With advanced search and version control, managing documents becomes efficient and seamless.",
+    detailDescription:[
+      {
+        id:"1",
+        title:"Centralized Storage",
+        description:"Securely stores all documents in one centralized location, ensuring easy access and organized file management.",
+      },
+      {
+        id:"2",
+        title:"Advanced Search & Retrieval",
+        description:"Quickly find documents using advanced search features, including keywords, tags, and filters for efficient retrieval."
+      },
+      {
+        id:"3",
+        title:"Version Control",
+        description:"Maintains version history to track changes, ensuring users access the latest updates while preserving previous versions."
+      },
+      {
+        id:"4",
+        title:"Access Control & Security",
+        description:"Provides role-based access permissions to protect sensitive information and maintain data confidentiality."
+      }
+    ],
+    images:"",
+    image:documentManageProduct
+  }
+]
+
+
+export const cardData = [
+  {
+    title: "Enterprise Asset Management",
+    description: "Optimize Your Assets, Maximize Your Operations",
+    icon: EnterpriseAssetManagementicon,
+    url: "/product/enterprise-asset-management",
+  },
+  {
+    title: "Enterprise-Level Software Solution",
+    description:
+      "The solution should be able to handle increasing traffic and data volumes",
+    icon: Enterprise,
+    url: "/product/enterprise-level-software-solution",
+
+  },
+  {
+    title: "Human Resource Management",
+    description: "Elevate Your Workforce, Optimize Your Business",
+    icon: HumanResourceManagementicon,
+    url: "/product/human-resource-management",
+
+  },
+  {
+    title: "customer Relation Management",
+    description: "Deliver exceptional customer experiences at every touchpoint",
+    icon: customerRelationManagementicon,
+    url: "/product/customer-relation-management",
+  },
+  {
+    title: "Communication service",
+    description:
+      "utilize the latest tools and techniques to deliver innovative solutions",
+    icon: Communicationserviceicon,
+    url: "/product/communication-service",
+
+  },
+  {
+    title: "Document Management",
+    description: "Emphasize the importance of data security and privacy.",
+    icon: DocumentManagementicon,
+    url: "/product/document-management",
+
+  },
+  {
+    title: "Directory Service",
+    description: "Consider accessibility guidelines to make your service cards",
+    icon: DirectoryServiceicon,
+    url: "/product/directory-service",
+
+  },
+  {
+    title: "Content Management",
+    description: "reate and manage digital content",
+    icon: ContentManagementicon,
+    url: "/product/content-management",
+
+  },
+];

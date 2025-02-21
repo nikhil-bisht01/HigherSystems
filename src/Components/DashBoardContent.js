@@ -3,11 +3,12 @@
   import profilePic from "../assets/profilepics1.png";
   import profileImg from "../assets/profileImg.png";
   import { IoIosSearch } from "react-icons/io";
-  import { useNavigate } from "react-router-dom";
+  import { Link, useNavigate } from "react-router-dom";
   import {userDashBoardServices} from "../utils/data"
   import { UserDataContext } from '../context/UserContext';
   import { api } from '../utils/utility';
   import useVerifyToken from '../hooks/useVerifyToken';
+  import { cardData } from '../utils/data';
 
 
 
@@ -150,7 +151,7 @@
                   <p className="font-semibold text-sm py-2">{service.title}</p>
             <p className="font-medium text-[10px] text-[#707070] h-[30px]">{service.description}</p>
 
-                  <button className="font-medium text-[12px] text-[#005AE6] w-full border border-[#005AE6] py-[10px] rounded-3xl mt-4 mb-2">
+                  <button  onClick={() => navigate("/services/" + service.id)} className="font-medium text-[12px] text-[#005AE6] w-full border border-[#005AE6] py-[10px] rounded-3xl mt-4 mb-2">
                     Access
                   </button>
                 </div>
@@ -188,9 +189,11 @@
                   <p className="font-semibold text-sm py-2">{service.title}</p>
                   <p className="font-medium text-[10px] text-[#707070] h-[30px]">{service.description}</p>
 
-                  <button onClick={() => navigate("/services/" + service.id)} className="font-medium text-[12px] text-[#005AE6] w-full border border-[#005AE6] py-[10px] rounded-3xl mt-4 mb-2">
+                  <Link  >
+                  <button className="font-medium text-[12px] text-[#005AE6] w-full border border-[#005AE6] py-[10px] rounded-3xl mt-4 mb-2">
                     Explore
                   </button>
+                  </Link>
                 </div>
               ))
             ) : (
@@ -198,7 +201,6 @@
             )}
           </div>
         </div>
-      {/* </div> */}
             </div>
       </div>
     )

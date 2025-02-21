@@ -11,6 +11,7 @@ import Services from './pages/Services';
 import { useEffect } from 'react';
 import Product from './pages/Product';
 import DashBoardContant2 from './Components/DashBoardContant2';
+import IndividualServicePage from './Components/IndividualServicePage';
 
 function App() {
 
@@ -49,8 +50,12 @@ function App() {
         },
         {
           path:"/product/:options",
-          element:<Product/>
+          element:<IndividualServicePage/>
         },
+        {
+          path:"/our-services/product/:service",
+          element:<IndividualServicePage/>
+        }
        
       ]
     },
