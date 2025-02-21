@@ -92,7 +92,8 @@ const ContactQueryForm = ({ productQuery, setLoader, setNotification, setNotific
       setNotificationShow(true);
       resetForm();
     } catch (error) {
-
+      setNotification("Something went wrong")
+      setNotificationShow(true);
     } finally {
       setLoader(false);
     }

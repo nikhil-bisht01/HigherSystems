@@ -13,17 +13,15 @@ const Home = () => {
   document.documentElement.scrollTop = 0; 
   return (
     <div>
-        {/* <CarouselHomePage/>
+        <CarouselHomePage/>
         <OurServices/>
-        <AboutCompany/> */}
+        {/* <AboutCompany/>  */}
         <Buss/>
         {/* <IndividualServicePage/> */}
         {/* <AbouutUss/> */}
         {/* <ABBOUUTUSSS/> */}
         
-        {/* <AboutUs/>
-        <Contact/>
-        <AddressSection/> */}
+       
         
     </div>
   )

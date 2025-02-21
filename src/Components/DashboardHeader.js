@@ -53,5 +53,5 @@ export default function DashboardHeader({user,onLogout}) {
         </div>
           </div>
     </div>
-  )
+  );
 }

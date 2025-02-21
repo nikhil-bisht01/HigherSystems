@@ -2,7 +2,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home';
 import HomeOutlet from './pages/HomeOutlet';
 import AboutUs from './pages/AboutUs';
-// import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import DashboardPartner from './pages/DashboardPartner';
 import OtpVerification from './pages/OtpVerification';
