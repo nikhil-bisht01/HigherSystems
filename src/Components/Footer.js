@@ -26,7 +26,7 @@ const Footer = () => {
         <div>
           <h6 className='text-lg font-semibold mb-5'>Contact Us</h6>
           <div>
-            <h1 className='block text-xs font-light'>Sales@higher.co.in</h1>
+            <h1 className='block text-xs font-light'>Sales@higherindia.net</h1>
             <div>
               <p className='w-full md:w-[80%] text-xs font-light leading-6 mt-3'>
                 Higher India Private Limited, 2/1 Raipur road ,Survey Chowk, Dehrdaun. 248001
