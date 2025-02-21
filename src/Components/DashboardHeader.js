@@ -1,7 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState, useRef, useEffect } from "react";
 import { IoMdHome } from "react-icons/io";
 import profilePic from "../assets/profilepics1.png";
-export default function DashboardHeader({user,onLogout}) {
+
+export default function DashboardHeader({ user, onLogout }) {
   const [showPopup, setShowPopup] = useState(false);
   const popupRef = useRef(null);
 
@@ -17,15 +18,16 @@ export default function DashboardHeader({user,onLogout}) {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
   return (
-    <div className='pt-4 pr-4 bg-white   z-10  fixed w-[80vw] rounded-lg'>
-     <div className="bg-[#005AE6] text-white h-[82px] rounded-lg w-full  flex justify-between items-center shadow-lg px-4   ">
-            <div className="flex gap-4">
-              <IoMdHome size={24} />
-              <p className="font-semibold text-[20px]">Dashboard</p>
-            </div>
-          
-            <div className="relative" ref={popupRef}>
+    <div className="pt-4 pr-4 bg-white z-10 fixed w-[80vw] rounded-lg">
+      <div className="bg-[#005AE6] text-white h-[82px] rounded-lg w-full flex justify-between items-center shadow-lg px-4">
+        <div className="flex gap-4">
+          <IoMdHome size={24} />
+          <p className="font-semibold text-[20px]">Dashboard</p>
+        </div>
+
+        <div className="relative" ref={popupRef}>
           {/* Profile Section - Click to Toggle Popup */}
           <div
             className="bg-white w-[174px] h-[45px] text-black rounded-[30px] flex items-center justify-between cursor-pointer"
@@ -51,7 +53,7 @@ export default function DashboardHeader({user,onLogout}) {
             </div>
           )}
         </div>
-          </div>
+      </div>
     </div>
   );
 }

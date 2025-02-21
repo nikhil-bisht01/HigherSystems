@@ -15,17 +15,6 @@ import communicationServiceProduct from "../assets/communicationServiceProduct.p
 import documentManageProduct from "../assets/documentProdcutImg.png"
 import rectangleImage from "../assets/Rectangle1.png";
 
-import HumanResourceManagementicon from "../assets/HumanResourceManagementicon.svg";
-import Communicationserviceicon from "../assets/Communicationserviceicon.svg";
-import customerRelationManagementicon from "../assets/customerRelationManagementicon.svg";
-import DocumentManagementicon from "../assets/DocumentManagementicon.svg";
-import DirectoryServiceicon from "../assets/DirectoryServiceicon.svg";
-import ContentManagementicon from "../assets/ContentManagementicon.svg";
-import Enterprise from "../assets/Enterprise.svg";
-import EnterpriseAssetManagementicon from "../assets/EnterpriseAssetManagementicon.svg";
-
-
-
 
 
 export const slides = [
@@ -413,7 +402,7 @@ export const productsDetails = [
   {
     id:"5",
     slug:"/product/document-management",
-    title: "Document Management",
+    title: "Docuument Management",
     description: "Manage Documents Seamlessly – Upload, Store, and Retrieve with Ease",
     subDescription: "Organize Your Documents with Smart Solutions that Enhance Access and Efficiency",
     descriptionText: "Easily upload, store, and retrieve documents in a secure, centralized location. It enhances organization and ensures quick access to files, improving team collaboration and productivity. With advanced search and version control, managing documents becomes efficient and seamless.",
@@ -480,69 +469,5 @@ export const userDashBoardServices = [
     title: "Insurance Services",
     description: "Secure your future with our reliable insurance plans.",
     image: rectangleImage,
-  },
-];
-
-
-
-
-
-
-export const cardData = [
-  {
-    title: "Enterprise Asset Management",
-    description: "Optimize Your Assets, Maximize Your Operations",
-    icon: EnterpriseAssetManagementicon,
-    url: "/product/enterprise-asset-management",
-  },
-  {
-    title: "Enterprise-Level Software Solution",
-    description:
-      "The solution should be able to handle increasing traffic and data volumes",
-    icon: Enterprise,
-    url: "/product/enterprise-level-software-solution",
-
-  },
-  {
-    title: "Human Resource Management",
-    description: "Elevate Your Workforce, Optimize Your Business",
-    icon: HumanResourceManagementicon,
-    url: "/product/human-resource-management",
-
-  },
-  {
-    title: "customer Relation Management",
-    description: "Deliver exceptional customer experiences at every touchpoint",
-    icon: customerRelationManagementicon,
-    url: "/product/customer-relation-management",
-  },
-  {
-    title: "Communication service",
-    description:
-      "utilize the latest tools and techniques to deliver innovative solutions",
-    icon: Communicationserviceicon,
-    url: "/product/communication-service",
-
-  },
-  {
-    title: "Document Management",
-    description: "Emphasize the importance of data security and privacy.",
-    icon: DocumentManagementicon,
-    url: "/product/document-management",
-
-  },
-  {
-    title: "Directory Service",
-    description: "Consider accessibility guidelines to make your service cards",
-    icon: DirectoryServiceicon,
-    url: "/product/directory-service",
-
-  },
-  {
-    title: "Content Management",
-    description: "reate and manage digital content",
-    icon: ContentManagementicon,
-    url: "/product/content-management",
-
   },
 ];

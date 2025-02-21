@@ -13,7 +13,7 @@ import DashBoardContent from "./DashBoardContent";
 
 
 
-export default function DashboardView( {user,onLogout}) {
+export default function DashboardView( {user ,onLogout}) {
   return (
     <div className=" font-inter bg-[#FAF9F6]  ">
       <div className="">

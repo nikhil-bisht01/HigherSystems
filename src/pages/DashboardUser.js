@@ -64,7 +64,7 @@ export default function DashboardPartner() {
     }
   return (
     <div>
-      <DashboardView user={user}  onLogout={handleLogout}/>
+      <DashboardView user={user}  onLogout={handleLogout} />
     </div>
   )
 }

@@ -10,7 +10,7 @@ import Services from './pages/Services';
 import { useEffect } from 'react';
 import Product from './pages/Product';
 import DashBoardContant2 from './Components/DashBoardContant2';
-import IndividualServicePage from './Components/IndividualServicePage';
+import IndividualServicePage from './pages/IndividualServicePage';
 
 function App() {
 
