@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, useLocation, useNavigate } from 'react-router-dom';
 import Home from './pages/Home';
 import HomeOutlet from './pages/HomeOutlet';
 import AboutUs from './pages/AboutUs';
@@ -17,6 +17,8 @@ function App() {
   useEffect(()=>{
     document.body.style.zoom = "100%";
   },[])
+
+
 
   const router = createBrowserRouter([
     {
@@ -64,14 +66,14 @@ function App() {
       
     },
     {
-      path:'/services',
+      path:'/services/:id',
       element:<DashBoardContant2/>
     }
   ]);
 
   return (
     <div className="App h-screen overflow-auto">
-      <RouterProvider router={router} />
+      <RouterProvider router={router} future={{ scrollRestoration: true }}/>
   
     </div>
   );

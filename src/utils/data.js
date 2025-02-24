@@ -13,6 +13,9 @@ import humanResourceProduct from "../assets/humanResourceProductImg.png"
 import crmProduct from "../assets/crmProductImg.png"
 import communicationServiceProduct from "../assets/communicationServiceProduct.png"
 import documentManageProduct from "../assets/documentProdcutImg.png"
+import rectangleImage from "../assets/Rectangle1.png";
+
+
 
 export const slides = [
     {
@@ -61,19 +64,19 @@ export const services =[
         name:"IT Infrastructure Solution",
         image:it_infrastructure_solution,
         description:"Build a robust and scalable IT infrastructure with us. Our solutions ensure seamless operations, enhanced performance, and high availability, tailored to meet your business needs.",
-        url:"IT-Infrastructure-Solution",
+        url:"it-infrastructure-solution",
     },
     {
         name:"Business Solution",
         image:business_solution,
         description:"Empower your business with customized solutions designed to drive efficiency and growth. We offer strategic planning, smart integration, and scalable tools to ensure your long-term success.",
-        url:"Business-Solution",
+        url:"business-solution",
     },
     {
         name:"Implementation and Support",
         image:implementation_support,
         description:"Experience hassle-free implementation and ongoing support with our dedicated team. We provide expert assistance to ensure smooth operations, minimal downtime, and continuous system optimization.",
-        url:"Implementation-and-Support",
+        url:"implementation-and-support",
     }
 ]
 
@@ -430,3 +433,41 @@ export const productsDetails = [
   }
 ]
 
+export const userDashBoardServices = [
+  {
+    id: 1,
+    title: "Document Management",
+    description: "Manage your documents efficiently with our system.",
+    image: rectangleImage,
+  },
+  {
+    id: 2,
+    title: "Asset Management",
+    description: "Simplify your asset tracking and monitoring process.",
+    image: rectangleImage,
+  },
+  {
+    id: 3,
+    title: "Leave Management",
+    description: "Easily track and approve employee leaves.",
+    image: rectangleImage,
+  },
+  {
+    id: 4,
+    title: "Communication Service",
+    description: "Seamlessly connect with your team and clients.",
+    image: rectangleImage,
+  },
+  {
+    id: 5,
+    title: "Financial Planning",
+    description: "Plan your finances effectively for better growth.",
+    image: rectangleImage,
+  },
+  {
+    id: 6,
+    title: "Insurance Services",
+    description: "Secure your future with our reliable insurance plans.",
+    image: rectangleImage,
+  },
+];
