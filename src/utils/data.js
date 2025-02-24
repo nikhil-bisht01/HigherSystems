@@ -2,7 +2,7 @@ import crmImage from '../assets/crm.png'
 import assets from "../assets/assestImg.png";
 import leave from "../assets/leaveManagement.png";
 import humanResource from "../assets/humanResource.png"
-import document from "../assets/Document.png"
+import document from "../assets/document.png"
 import it_infrastructure_solution from "../assets/it_service.png";
 import business_solution from "../assets/business_solution.png";
 import implementation_support from "../assets/Implementation_support.png";
@@ -64,19 +64,19 @@ export const services =[
         name:"IT Infrastructure Solution",
         image:it_infrastructure_solution,
         description:"Build a robust and scalable IT infrastructure with us. Our solutions ensure seamless operations, enhanced performance, and high availability, tailored to meet your business needs.",
-        url:"IT-Infrastructure-Solution",
+        url:"it-infrastructure-solution",
     },
     {
         name:"Business Solution",
         image:business_solution,
         description:"Empower your business with customized solutions designed to drive efficiency and growth. We offer strategic planning, smart integration, and scalable tools to ensure your long-term success.",
-        url:"Business-Solution",
+        url:"business-solution",
     },
     {
         name:"Implementation and Support",
         image:implementation_support,
         description:"Experience hassle-free implementation and ongoing support with our dedicated team. We provide expert assistance to ensure smooth operations, minimal downtime, and continuous system optimization.",
-        url:"Implementation-and-Support",
+        url:"implementation-and-support",
     }
 ]
 

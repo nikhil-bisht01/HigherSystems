@@ -69,6 +69,7 @@ import logo12 from "../assets/logo12.svg";
 export default function AboutUs() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+  
 
 
   const logos = [
