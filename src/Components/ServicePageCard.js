@@ -24,7 +24,7 @@ const ServicePageCard = ({ card }) => {
 
       {/* Bottom Arrow */}
       <div className="mt-4 md:mt-6 flex items-center justify-center">
-        <Link to={card.url}><button className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 bg-blue-500 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+        <Link to={card?.url || "#" }><button className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 bg-blue-500 text-white rounded-full flex items-center justify-center hover:bg-blue-600 transition">
           <FaArrowRight />
         </button></Link>
       </div>
