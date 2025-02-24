@@ -21,7 +21,7 @@ const Header = () => {
   };
 
   const goToDashboard = () => {
-    navigate("/user-dashboard");
+    navigate("/user-dashboard"); 
   };
 
   return (
