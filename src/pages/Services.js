@@ -69,11 +69,11 @@ const Services = () => {
 
     const handleServiceNavigation = ()=>{
         switch(service){
-          case "/our-services/Business-Solution":
+          case "/our-services/business-solution":
             return <BusinessSolution/>
-          case "/our-services/IT-Infrastructure-Solution":
+          case "/our-services/it-infrastructure-solution":
             return <ItInfrastructureSolution/>
-          case "/our-services/Implementation-and-Support":
+          case "/our-services/implementation-and-support":
             return <ImplementationAndSupport/>
           default: return false;
         }
@@ -95,13 +95,13 @@ const Services = () => {
       {/* Button Group */}
       <div className="flex flex-wrap justify-center gap-2 md:gap-0 py-6 md:py-12 w-full">
         <div className='w-3/4'>
-            <button onClick={()=>setService("/our-services/Business-Solution")} className={`${service === "/our-services/Business-Solution" ? "bg-[#005AE6] text-white border-[#005AE6] border" : "bg-gray-100 hover:bg-gray-200 border border-gray-300"} transition-all py-2 px-6 md:px-10 hover:bg-blue-700 rounded-l-3xl w-1/3`}>
+            <button onClick={()=>setService("/our-services/business-solution")} className={`${service === "/our-services/business-solution" ? "bg-[#005AE6] text-white border-[#005AE6] border" : "bg-gray-100 hover:bg-gray-200 border border-gray-300"} transition-all py-2 px-6 md:px-10 hover:bg-blue-700 rounded-l-3xl w-1/3`}>
               Business Solution
             </button>
-            <button onClick={()=>setService("/our-services/IT-Infrastructure-Solution")} className={`${service === "/our-services/IT-Infrastructure-Solution" ? "bg-[#005AE6] text-white border-[#005AE6] border" : "bg-gray-100 hover:bg-gray-200 border border-gray-300"} transition-all py-2 px-6 md:px-10 hover:bg-blue-700 w-1/3`}>
+            <button onClick={()=>setService("/our-services/it-infrastructure-solution")} className={`${service === "/our-services/it-infrastructure-solution" ? "bg-[#005AE6] text-white border-[#005AE6] border" : "bg-gray-100 hover:bg-gray-200 border border-gray-300"} transition-all py-2 px-6 md:px-10 hover:bg-blue-700 w-1/3`}>
               IT Infrastructure Solution
             </button>
-            <button onClick={()=>setService("/our-services/Implementation-and-Support")} className={`${service === "/our-services/Implementation-and-Support" ? "bg-[#005AE6] text-white border-[#005AE6] border" : "bg-gray-100 hover:bg-gray-200 border border-gray-300"} transition-all py-2 px-6 md:px-10 hover:bg-blue-700 rounded-r-3xl w-1/3`}>
+            <button onClick={()=>setService("/our-services/implementation-and-support")} className={`${service === "/our-services/implementation-and-support" ? "bg-[#005AE6] text-white border-[#005AE6] border" : "bg-gray-100 hover:bg-gray-200 border border-gray-300"} transition-all py-2 px-6 md:px-10 hover:bg-blue-700 rounded-r-3xl w-1/3`}>
               Implementation and Support
             </button>
         </div>
